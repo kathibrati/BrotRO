@@ -1,0 +1,1592 @@
+--
+-- Table structure for table `vip_storage`
+--
+
+CREATE TABLE IF NOT EXISTS `vip_storage` (
+  `id` int(11) unsigned NOT NULL auto_increment,
+  `account_id` int(11) unsigned NOT NULL default '0',
+  `nameid` int(10) unsigned NOT NULL default '0',
+  `amount` smallint(11) unsigned NOT NULL default '0',
+  `equip` int(11) unsigned NOT NULL default '0',
+  `identify` smallint(6) unsigned NOT NULL default '0',
+  `refine` tinyint(3) unsigned NOT NULL default '0',
+  `attribute` tinyint(4) unsigned NOT NULL default '0',
+  `card0` int(10) unsigned NOT NULL default '0',
+  `card1` int(10) unsigned NOT NULL default '0',
+  `card2` int(10) unsigned NOT NULL default '0',
+  `card3` int(10) unsigned NOT NULL default '0',
+  `option_id0` smallint(5) unsigned NOT NULL default '0',
+  `option_val0` smallint(5) unsigned NOT NULL default '0',
+  `option_parm0` tinyint(3) unsigned NOT NULL default '0',
+  `option_id1` smallint(5) unsigned NOT NULL default '0',
+  `option_val1` smallint(5) unsigned NOT NULL default '0',
+  `option_parm1` tinyint(3) unsigned NOT NULL default '0',
+  `option_id2` smallint(5) unsigned NOT NULL default '0',
+  `option_val2` smallint(5) unsigned NOT NULL default '0',
+  `option_parm2` tinyint(3) unsigned NOT NULL default '0',
+  `option_id3` smallint(5) unsigned NOT NULL default '0',
+  `option_val3` smallint(5) unsigned NOT NULL default '0',
+  `option_parm3` tinyint(3) unsigned NOT NULL default '0',
+  `option_id4` smallint(5) unsigned NOT NULL default '0',
+  `option_val4` smallint(5) unsigned NOT NULL default '0',
+  `option_parm4` tinyint(3) unsigned NOT NULL default '0',
+  `expire_time` int(11) unsigned NOT NULL default '0',
+  `bound` tinyint(3) unsigned NOT NULL default '0',
+  `unique_id` bigint(20) unsigned NOT NULL default '0',
+  `enchantgrade` tinyint unsigned NOT NULL default '0',
+  PRIMARY KEY  (`id`),
+  KEY `account_id` (`account_id`)
+) ENGINE=MyISAM;
+ALTER TABLE `pet`
+	ADD COLUMN `autofeed` tinyint(2) NOT NULL default '0' AFTER `incubate`;
+
+UPDATE `inventory` `i`
+INNER JOIN `char` `c`
+ON `i`.`char_id` = `c`.`char_id` AND `c`.`pet_id` <> '0'
+SET `i`.`attribute` = '1'
+WHERE
+	`i`.`card0` = '256'
+AND
+	( `i`.`card1` | ( `i`.`card2` << 16 ) ) = `c`.`pet_id`
+;
+
+INSERT INTO `inventory`( `char_id`, `nameid`, `amount`, `equip`, `identify`, `refine`, `attribute`, `card0`, `card1`, `card2`, `card3` )
+SELECT
+	`p`.`char_id`,						-- Character ID
+	`p`.`egg_id`,						-- Egg Item ID
+	'1',								-- Amount
+	'0',								-- Equip
+	'1',								-- Identify
+	'0',								-- Refine
+	'1',								-- Attribute
+	'256',								-- Card0
+	( `p`.`pet_id` & 0xFFFF ),			-- Card1
+	( ( `p`.`pet_id` >> 16 ) & 0xFFFF ),	-- Card2
+	'0'									-- Card3
+FROM `pet` `p`
+LEFT JOIN `inventory` `i`
+ON
+	`i`.`char_id` = `p`.`char_id`
+AND
+	`i`.`nameid` = `p`.`egg_id`
+AND
+	`i`.`card0` = '256'
+AND
+	( `i`.`card1` | ( `i`.`card2` << 16 ) ) = `p`.`pet_id`
+WHERE
+	`p`.`incubate` = '0'
+AND
+	`i`.`id` IS NULL
+;
+ALTER TABLE `mob_db`
+	MODIFY `Sprite` varchar(24) NOT NULL,
+	ADD UNIQUE KEY (`Sprite`)
+;
+
+ALTER TABLE `mob_db_re`
+	MODIFY `Sprite` varchar(24) NOT NULL,
+	ADD UNIQUE KEY (`Sprite`)
+;
+
+ALTER TABLE `mob_db2`
+	MODIFY `Sprite` varchar(24) NOT NULL,
+	ADD UNIQUE KEY (`Sprite`)
+;
+
+ALTER TABLE `mob_db2_re`
+	MODIFY `Sprite` varchar(24) NOT NULL,
+	ADD UNIQUE KEY (`Sprite`)
+;
+ALTER TABLE `ipbanlist`
+	CHANGE COLUMN `list` `list` VARCHAR(15) NOT NULL DEFAULT '' FIRST;
+DROP TABLE `ragsrvinfo`;
+ALTER TABLE `bonus_script`
+    ADD PRIMARY KEY (`char_id`, `type`);
+
+ALTER TABLE `buyingstore_items`
+    ADD PRIMARY KEY (`buyingstore_id`, `index`);
+
+ALTER TABLE `friends`
+    DROP INDEX `char_id`,
+    ADD PRIMARY KEY (`char_id`, `friend_id`);
+
+ALTER TABLE `interlog`
+    ADD COLUMN `id` INT NOT NULL AUTO_INCREMENT FIRST,
+    ADD PRIMARY KEY (`id`),
+    ADD INDEX `time` (`time`);
+
+ALTER TABLE `ipbanlist`
+    DROP INDEX `list`,
+    ADD PRIMARY KEY (`list`, `btime`);
+
+ALTER TABLE `sc_data`
+    DROP INDEX `account_id`,
+    DROP INDEX `char_id`,
+    ADD PRIMARY KEY (`char_id`, `type`);
+
+ALTER TABLE `skillcooldown`
+    DROP INDEX `account_id`,
+    DROP INDEX `char_id`,
+    ADD PRIMARY KEY (`char_id`, `skill`);
+
+ALTER TABLE `vending_items`
+    ADD PRIMARY KEY (`vending_id`, `index`);
+
+DROP TABLE `sstatus`;
+ALTER TABLE `charlog`
+    DROP PRIMARY KEY, -- comment if primary key has not been created yet
+    ADD COLUMN `id` bigint(20) unsigned NOT NULL auto_increment first,
+    ADD PRIMARY KEY (`id`),
+    ADD KEY `account_id` (`account_id`);
+ALTER TABLE `acc_reg_num`
+	MODIFY `value` bigint(11) NOT NULL default '0';
+
+ALTER TABLE `global_acc_reg_num`
+	MODIFY `value` bigint(11) NOT NULL default '0';
+
+ALTER TABLE `char_reg_num`
+	MODIFY `value` bigint(11) NOT NULL default '0';
+ALTER TABLE `achievement`
+	MODIFY `count1` int unsigned NOT NULL default '0',
+	MODIFY `count2` int unsigned NOT NULL default '0',
+	MODIFY `count3` int unsigned NOT NULL default '0',
+	MODIFY `count4` int unsigned NOT NULL default '0',
+	MODIFY `count5` int unsigned NOT NULL default '0',
+	MODIFY `count6` int unsigned NOT NULL default '0',
+	MODIFY `count7` int unsigned NOT NULL default '0',
+	MODIFY `count8` int unsigned NOT NULL default '0',
+	MODIFY `count9` int unsigned NOT NULL default '0',
+	MODIFY `count10` int unsigned NOT NULL default '0';
+ALTER TABLE `guild_member`
+	DROP COLUMN `account_id`,
+	DROP COLUMN `hair`,
+	DROP COLUMN `hair_color`,
+	DROP COLUMN `gender`,
+	DROP COLUMN `class`,
+	DROP COLUMN `lv`,
+	DROP COLUMN `exp_payper`,
+	DROP COLUMN `online`,
+	DROP COLUMN `name`;
+
+ALTER TABLE `friends`
+	DROP COLUMN `friend_account`;
+UPDATE `char_reg_num` SET `key` = 'ep14_3_newerabs' WHERE `key` = 'ep14_3_dimensional_travel' AND `index` = 0 AND `value` < 2;
+UPDATE `char_reg_num` SET `key` = 'ep14_3_newerabs', `value` = 3 WHERE `key` = 'ep14_3_dimensional_travel' AND `index` = 0 AND `value` = 2;
+UPDATE `char_reg_num` SET `key` = 'ep14_3_newerabs', `value` = `value` + 2 WHERE `key` = 'ep14_3_dimensional_travel' AND `index` = 0 AND `value` < 8;
+UPDATE `char_reg_num` SET `key` = 'ep14_3_newerabs', `value` = `value` + 7 WHERE `key` = 'ep14_3_dimensional_travel' AND `index` = 0 AND `value` > 7;
+DROP TABLE `interreg`;
+-- AB_EUCHARISTICA
+UPDATE `char` c, `skill` s SET `c`.skill_point = `c`.skill_point + `s`.lv WHERE `s`.id = 2049 AND `c`.char_id = `s`.char_id;
+DELETE FROM `skill` WHERE `id` = 2049;
+
+-- GN_SLINGITEM
+UPDATE `char` c, `skill` s SET `c`.skill_point = `c`.skill_point + `s`.lv WHERE `s`.id = 2493 AND `c`.char_id = `s`.char_id;
+DELETE FROM `skill` WHERE `id` = 2493;
+
+-- GN_MAKEBOMB
+UPDATE `char` c, `skill` s SET `c`.skill_point = `c`.skill_point + `s`.lv WHERE `s`.id = 2496 AND `c`.char_id = `s`.char_id;
+DELETE FROM `skill` WHERE `id` = 2496;
+
+-- ONLY RUN THE BELOW QUERIES IF YOU ARE ON RENEWAL
+-- CR_CULTIVATION
+UPDATE `char` c, `skill` s SET `c`.skill_point = `c`.skill_point + `s`.lv WHERE `s`.id = 491 AND `c`.char_id = `s`.char_id;
+DELETE FROM `skill` WHERE `id` = 491;
+-- HT_SANDMAN
+UPDATE `char` c, `skill` s SET `c`.skill_point = `c`.skill_point + `s`.lv WHERE (`c`.class = 4190 OR `c`.class = 4191) AND `s`.id = 119 AND `c`.char_id = `s`.char_id;
+DELETE FROM `skill` USING `skill`, `char` WHERE (`char`.class = 4190 OR `char`.class = 4191) AND `skill`.id = 119 AND `char`.char_id = `skill`.char_id;
+
+-- HT_FLASHER
+UPDATE `char` c, `skill` s SET `c`.skill_point = `c`.skill_point + `s`.lv WHERE (`c`.class = 4190 OR `c`.class = 4191) AND `s`.id = 120 AND `c`.char_id = `s`.char_id;
+DELETE FROM `skill` USING `skill`, `char` WHERE (`char`.class = 4190 OR `char`.class = 4191) AND `skill`.id = 120 AND `char`.char_id = `skill`.char_id;
+
+-- HT_FREEZINGTRAP
+UPDATE `char` c, `skill` s SET `c`.skill_point = `c`.skill_point + `s`.lv WHERE (`c`.class = 4190 OR `c`.class = 4191) AND `s`.id = 121 AND `c`.char_id = `s`.char_id;
+DELETE FROM `skill` USING `skill`, `char` WHERE (`char`.class = 4190 OR `char`.class = 4191) AND `skill`.id = 121 AND `char`.char_id = `skill`.char_id;
+-- WM_DOMINION_IMPULSE
+UPDATE `char` c, `skill` s SET `c`.skill_point = `c`.skill_point + `s`.lv WHERE `s`.id = 2417 AND `c`.char_id = `s`.char_id;
+DELETE FROM `skill` WHERE `id` = 2417;
+ALTER TABLE  `char` ADD COLUMN `hotkey_rowshift2` TINYINT(3) UNSIGNED NOT NULL DEFAULT  '0' AFTER `hotkey_rowshift`;
+UPDATE `char` `c`
+INNER JOIN `login` `l`
+ON `l`.`account_id` = `c`.`account_id`
+SET `c`.`sex` = `l`.`sex`
+WHERE
+	`c`.`sex` = 'U'
+AND
+	`l`.`sex` <> 'S'
+;
+
+ALTER TABLE `char`
+	MODIFY `sex` ENUM('M','F') NOT NULL
+;
+UPDATE `char_reg_num` SET `value` = `value` * 100 WHERE `key` = 'guildtime' AND `index` = 0 AND `value` < 24;
+ALTER TABLE `login`
+	ADD COLUMN `web_auth_token` VARCHAR(17) NULL AFTER `old_group`,
+	ADD COLUMN `web_auth_token_enabled` tinyint(2) NOT NULL default '0' AFTER `web_auth_token`,
+	ADD UNIQUE KEY `web_auth_token_key` (`web_auth_token`)
+;
+-- Fix rename flag and intimacy in inventories
+update `inventory` `i`
+inner join `pet` `p`
+on
+	`i`.`card0` = 256
+and
+	( `i`.`card1` | ( `i`.`card2` << 16 ) ) = `p`.`pet_id`
+set
+	`i`.`card3` = 
+		( 
+			CASE
+				WHEN `p`.`intimate` < 100 THEN
+					1 -- awkward
+				WHEN `p`.`intimate` < 250 THEN
+					2 -- shy
+				WHEN `p`.`intimate` < 750 THEN
+					3 -- neutral
+				WHEN `p`.`intimate` < 910 THEN
+					4 -- cordial
+				WHEN `p`.`intimate` <= 1000 THEN
+					5 -- loyal
+				ELSE 0 -- unrecognized
+			END << 1
+		) | `p`.`rename_flag`
+;
+
+-- Fix rename flag and intimacy in carts
+update `cart_inventory` `i`
+inner join `pet` `p`
+on
+	`i`.`card0` = 256
+and
+	( `i`.`card1` | ( `i`.`card2` << 16 ) ) = `p`.`pet_id`
+set
+	`i`.`card3` = 
+		( 
+			CASE
+				WHEN `p`.`intimate` < 100 THEN
+					1 -- awkward
+				WHEN `p`.`intimate` < 250 THEN
+					2 -- shy
+				WHEN `p`.`intimate` < 750 THEN
+					3 -- neutral
+				WHEN `p`.`intimate` < 910 THEN
+					4 -- cordial
+				WHEN `p`.`intimate` <= 1000 THEN
+					5 -- loyal
+				ELSE 0 -- unrecognized
+			END << 1
+		) | `p`.`rename_flag`
+;
+
+-- Fix rename flag and intimacy in storages
+update `storage` `i`
+inner join `pet` `p`
+on
+	`i`.`card0` = 256
+and
+	( `i`.`card1` | ( `i`.`card2` << 16 ) ) = `p`.`pet_id`
+set
+	`i`.`card3` = 
+		( 
+			CASE
+				WHEN `p`.`intimate` < 100 THEN
+					1 -- awkward
+				WHEN `p`.`intimate` < 250 THEN
+					2 -- shy
+				WHEN `p`.`intimate` < 750 THEN
+					3 -- neutral
+				WHEN `p`.`intimate` < 910 THEN
+					4 -- cordial
+				WHEN `p`.`intimate` <= 1000 THEN
+					5 -- loyal
+				ELSE 0 -- unrecognized
+			END << 1
+		) | `p`.`rename_flag`
+;
+
+-- Fix rename flag and intimacy in guild storages
+update `guild_storage` `i`
+inner join `pet` `p`
+on
+	`i`.`card0` = 256
+and
+	( `i`.`card1` | ( `i`.`card2` << 16 ) ) = `p`.`pet_id`
+set
+	`i`.`card3` = 
+		( 
+			CASE
+				WHEN `p`.`intimate` < 100 THEN
+					1 -- awkward
+				WHEN `p`.`intimate` < 250 THEN
+					2 -- shy
+				WHEN `p`.`intimate` < 750 THEN
+					3 -- neutral
+				WHEN `p`.`intimate` < 910 THEN
+					4 -- cordial
+				WHEN `p`.`intimate` <= 1000 THEN
+					5 -- loyal
+				ELSE 0 -- unrecognized
+			END << 1
+		) | `p`.`rename_flag`
+;
+ALTER TABLE `guild`
+	CHANGE COLUMN `next_exp` `next_exp` bigint(20) unsigned NOT NULL default '0';
+-- WL_SUMMONFB
+UPDATE `char` c, `skill` s SET `c`.skill_point = `c`.skill_point + (`s`.lv - 2), `s`.lv = 2 WHERE `s`.id = 2222 AND `s`.lv > 2 AND `c`.char_id = `s`.char_id;
+
+-- WL_SUMMONBL
+UPDATE `char` c, `skill` s SET `c`.skill_point = `c`.skill_point + (`s`.lv - 2), `s`.lv = 2 WHERE `s`.id = 2223 AND `s`.lv > 2 AND `c`.char_id = `s`.char_id;
+
+-- WL_SUMMONWB
+UPDATE `char` c, `skill` s SET `c`.skill_point = `c`.skill_point + (`s`.lv - 2), `s`.lv = 2 WHERE `s`.id = 2224 AND `s`.lv > 2 AND `c`.char_id = `s`.char_id;
+
+-- WL_SUMMONSTONE
+UPDATE `char` c, `skill` s SET `c`.skill_point = `c`.skill_point + (`s`.lv - 2), `s`.lv = 2 WHERE `s`.id = 2229 AND `s`.lv > 2 AND `c`.char_id = `s`.char_id;
+ALTER TABLE `feedinglog`
+	MODIFY `item_id` int(10) unsigned NOT NULL default '0';
+
+ALTER TABLE `mvplog`
+	MODIFY `prize` int(10) unsigned NOT NULL default '0';
+
+ALTER TABLE `picklog`
+	MODIFY `nameid` int(10) unsigned NOT NULL default '0',
+	MODIFY `card0` int(10) unsigned NOT NULL default '0',
+	MODIFY `card1` int(10) unsigned NOT NULL default '0',
+	MODIFY `card2` int(10) unsigned NOT NULL default '0',
+	MODIFY `card3` int(10) unsigned NOT NULL default '0';
+ALTER TABLE `auction`
+	MODIFY `nameid` int(10) unsigned NOT NULL default '0',
+	MODIFY `card0` int(10) unsigned NOT NULL default '0',
+	MODIFY `card1` int(10) unsigned NOT NULL default '0',
+	MODIFY `card2` int(10) unsigned NOT NULL default '0',
+	MODIFY `card3` int(10) unsigned NOT NULL default '0';
+
+ALTER TABLE `cart_inventory`
+	MODIFY `nameid` int(10) unsigned NOT NULL default '0',
+	MODIFY `card0` int(10) unsigned NOT NULL default '0',
+	MODIFY `card1` int(10) unsigned NOT NULL default '0',
+	MODIFY `card2` int(10) unsigned NOT NULL default '0',
+	MODIFY `card3` int(10) unsigned NOT NULL default '0';
+
+ALTER TABLE `db_roulette`
+	MODIFY `item_id` int(10) unsigned NOT NULL default '0';
+
+ALTER TABLE `guild_storage`
+	MODIFY `nameid` int(10) unsigned NOT NULL default '0',
+	MODIFY `card0` int(10) unsigned NOT NULL default '0',
+	MODIFY `card1` int(10) unsigned NOT NULL default '0',
+	MODIFY `card2` int(10) unsigned NOT NULL default '0',
+	MODIFY `card3` int(10) unsigned NOT NULL default '0';
+
+ALTER TABLE `guild_storage_log`
+	MODIFY `nameid` int(10) unsigned NOT NULL default '0',
+	MODIFY `card0` int(10) unsigned NOT NULL default '0',
+	MODIFY `card1` int(10) unsigned NOT NULL default '0',
+	MODIFY `card2` int(10) unsigned NOT NULL default '0',
+	MODIFY `card3` int(10) unsigned NOT NULL default '0';
+
+ALTER TABLE `inventory`
+	MODIFY `nameid` int(10) unsigned NOT NULL default '0',
+	MODIFY `card0` int(10) unsigned NOT NULL default '0',
+	MODIFY `card1` int(10) unsigned NOT NULL default '0',
+	MODIFY `card2` int(10) unsigned NOT NULL default '0',
+	MODIFY `card3` int(10) unsigned NOT NULL default '0';
+
+ALTER TABLE `mail_attachments`
+	MODIFY `nameid` int(10) unsigned NOT NULL default '0',
+	MODIFY `card0` int(10) unsigned NOT NULL default '0',
+	MODIFY `card1` int(10) unsigned NOT NULL default '0',
+	MODIFY `card2` int(10) unsigned NOT NULL default '0',
+	MODIFY `card3` int(10) unsigned NOT NULL default '0';
+
+ALTER TABLE `market`
+	MODIFY `nameid` int(10) unsigned NOT NULL default '0';
+
+ALTER TABLE `pet`
+	MODIFY `egg_id` int(10) unsigned NOT NULL default '0',
+	MODIFY `equip` int(10) unsigned NOT NULL default '0';
+
+ALTER TABLE `sales`
+	MODIFY `nameid` int(10) unsigned NOT NULL;
+
+ALTER TABLE `storage`
+	MODIFY `nameid` int(10) unsigned NOT NULL default '0',
+	MODIFY `card0` int(10) unsigned NOT NULL default '0',
+	MODIFY `card1` int(10) unsigned NOT NULL default '0',
+	MODIFY `card2` int(10) unsigned NOT NULL default '0',
+	MODIFY `card3` int(10) unsigned NOT NULL default '0';
+
+ALTER TABLE `item_cash_db`
+	MODIFY `item_id` int(10) unsigned NOT NULL default '0';
+
+ALTER TABLE `item_cash_db2`
+	MODIFY `item_id` int(10) unsigned NOT NULL default '0';
+
+ALTER TABLE `item_db`
+	MODIFY `id` int(10) unsigned NOT NULL default '0';
+
+ALTER TABLE `item_db_re`
+	MODIFY `id` int(10) unsigned NOT NULL default '0';
+
+ALTER TABLE `item_db2`
+	MODIFY `id` int(10) unsigned NOT NULL default '0';
+
+ALTER TABLE `item_db2_re`
+	MODIFY `id` int(10) unsigned NOT NULL default '0';
+
+ALTER TABLE `mob_db`
+	MODIFY `MVP1id` int(10) unsigned NOT NULL default '0',
+	MODIFY `MVP2id` int(10) unsigned NOT NULL default '0',
+	MODIFY `MVP3id` int(10) unsigned NOT NULL default '0',
+	MODIFY `Drop1id` int(10) unsigned NOT NULL default '0',
+	MODIFY `Drop2id` int(10) unsigned NOT NULL default '0',
+	MODIFY `Drop3id` int(10) unsigned NOT NULL default '0',
+	MODIFY `Drop4id` int(10) unsigned NOT NULL default '0',
+	MODIFY `Drop5id` int(10) unsigned NOT NULL default '0',
+	MODIFY `Drop6id` int(10) unsigned NOT NULL default '0',
+	MODIFY `Drop7id` int(10) unsigned NOT NULL default '0',
+	MODIFY `Drop8id` int(10) unsigned NOT NULL default '0',
+	MODIFY `Drop9id` int(10) unsigned NOT NULL default '0',
+	MODIFY `DropCardid` int(10) unsigned NOT NULL default '0';
+
+ALTER TABLE `mob_db_re`
+	MODIFY `MVP1id` int(10) unsigned NOT NULL default '0',
+	MODIFY `MVP2id` int(10) unsigned NOT NULL default '0',
+	MODIFY `MVP3id` int(10) unsigned NOT NULL default '0',
+	MODIFY `Drop1id` int(10) unsigned NOT NULL default '0',
+	MODIFY `Drop2id` int(10) unsigned NOT NULL default '0',
+	MODIFY `Drop3id` int(10) unsigned NOT NULL default '0',
+	MODIFY `Drop4id` int(10) unsigned NOT NULL default '0',
+	MODIFY `Drop5id` int(10) unsigned NOT NULL default '0',
+	MODIFY `Drop6id` int(10) unsigned NOT NULL default '0',
+	MODIFY `Drop7id` int(10) unsigned NOT NULL default '0',
+	MODIFY `Drop8id` int(10) unsigned NOT NULL default '0',
+	MODIFY `Drop9id` int(10) unsigned NOT NULL default '0',
+	MODIFY `DropCardid` int(10) unsigned NOT NULL default '0';
+
+ALTER TABLE `mob_db2`
+	MODIFY `MVP1id` int(10) unsigned NOT NULL default '0',
+	MODIFY `MVP2id` int(10) unsigned NOT NULL default '0',
+	MODIFY `MVP3id` int(10) unsigned NOT NULL default '0',
+	MODIFY `Drop1id` int(10) unsigned NOT NULL default '0',
+	MODIFY `Drop2id` int(10) unsigned NOT NULL default '0',
+	MODIFY `Drop3id` int(10) unsigned NOT NULL default '0',
+	MODIFY `Drop4id` int(10) unsigned NOT NULL default '0',
+	MODIFY `Drop5id` int(10) unsigned NOT NULL default '0',
+	MODIFY `Drop6id` int(10) unsigned NOT NULL default '0',
+	MODIFY `Drop7id` int(10) unsigned NOT NULL default '0',
+	MODIFY `Drop8id` int(10) unsigned NOT NULL default '0',
+	MODIFY `Drop9id` int(10) unsigned NOT NULL default '0',
+	MODIFY `DropCardid` int(10) unsigned NOT NULL default '0';
+
+ALTER TABLE `mob_db2_re`
+	MODIFY `MVP1id` int(10) unsigned NOT NULL default '0',
+	MODIFY `MVP2id` int(10) unsigned NOT NULL default '0',
+	MODIFY `MVP3id` int(10) unsigned NOT NULL default '0',
+	MODIFY `Drop1id` int(10) unsigned NOT NULL default '0',
+	MODIFY `Drop2id` int(10) unsigned NOT NULL default '0',
+	MODIFY `Drop3id` int(10) unsigned NOT NULL default '0',
+	MODIFY `Drop4id` int(10) unsigned NOT NULL default '0',
+	MODIFY `Drop5id` int(10) unsigned NOT NULL default '0',
+	MODIFY `Drop6id` int(10) unsigned NOT NULL default '0',
+	MODIFY `Drop7id` int(10) unsigned NOT NULL default '0',
+	MODIFY `Drop8id` int(10) unsigned NOT NULL default '0',
+	MODIFY `Drop9id` int(10) unsigned NOT NULL default '0',
+	MODIFY `DropCardid` int(10) unsigned NOT NULL default '0';
+-- Verus police quests
+DELETE FROM `char_reg_num` WHERE `key` = 'trap_doom_prayers' AND `index` = 0;
+DELETE FROM `char_reg_num` WHERE `key` = 'count_stone_seiden' AND `index` = 0;
+-- Verus Wandering Bard quest
+DELETE FROM `char_reg_num` WHERE `key` = 'wandering_bard_quest' AND `index` = 0;
+-- To Phantasmagorika! quest
+UPDATE `char_reg_num` SET `key` = 'ep15_1_elb' WHERE `key` = 'VER_ELEVATOR' AND `value` < 100 AND `index` = 0;
+UPDATE `char_reg_num` SET `key` = 'ep15_1_elb', `value` = `value` - 94 WHERE `key` = 'VER_ELEVATOR' AND `value` >= 100 AND `value` < 1000 AND `index` = 0;
+-- Vestige quest
+UPDATE `char_reg_num` SET `key` = 'ep15_2_bslast', `value` = `value` - 999 WHERE `key` = 'VER_ELEVATOR' AND `value` >= 1000 AND `index` = 0;
+-- Krotzel's Request quests
+UPDATE `char_reg_num` SET `key` = 'ep15_2_brigan' WHERE `key` = 'VER_REPORTER' AND `index` = 0;
+-- Main quest
+INSERT INTO `char_reg_num` (`char_id`, `key`, `index`, `value`) SELECT `char_id`, 'ep15_2_permit', 0, 1 FROM `char_reg_num` WHERE `key` = 'VER_MAIN' AND `value` >= 19 AND `index` = 0;
+UPDATE `char_reg_num` SET `key` = 'ep15_1_atnad' WHERE `key` = 'VER_MAIN' AND `value` < 31 AND `index` = 0;
+UPDATE `char_reg_num` SET `key` = 'ep15_1_atnad', `value` = 30 WHERE `key` = 'VER_MAIN' AND `value` > 30 AND `value` < 37 AND `index` = 0;
+UPDATE `char_reg_num` SET `key` = 'ep15_1_atnad', `value` = `value` - 6 WHERE `key` = 'VER_MAIN' AND `value` > 36 AND `index` = 0;
+DELETE FROM `char_reg_num` WHERE `key` = 'VERUS_DAILY_QUEST' AND `index` = 0;
+-- Memory quest
+DELETE FROM `char_reg_num` WHERE `key` = 'recorder_quest_type' AND `index` = 0;
+DELETE FROM `char_reg_num` WHERE `key` = 'recorder_quest_status' AND `index` = 0;
+DELETE s FROM `skill` s, `char` c WHERE `s`.char_id = `c`.char_id AND (`c`.class = 4218 OR `c`.class = 4220) AND `c`.job_level > 60;
+UPDATE `char` c SET `c`.job_level = 60, `c`.skill_point = 59 WHERE (`c`.class = 4218 OR `c`.class = 4220) AND `c`.job_level > 60;
+ALTER TABLE `auction`
+	ADD COLUMN `enchantgrade` tinyint unsigned NOT NULL default '0';
+
+ALTER TABLE `cart_inventory`
+	ADD COLUMN `enchantgrade` tinyint unsigned NOT NULL default '0';
+
+ALTER TABLE `guild_storage`
+	ADD COLUMN `enchantgrade` tinyint unsigned NOT NULL default '0';
+
+ALTER TABLE `guild_storage_log`
+	ADD COLUMN `enchantgrade` tinyint unsigned NOT NULL default '0';
+
+ALTER TABLE `inventory`
+	ADD COLUMN `enchantgrade` tinyint unsigned NOT NULL default '0';
+
+ALTER TABLE `mail_attachments`
+	ADD COLUMN `enchantgrade` tinyint unsigned NOT NULL default '0';
+
+ALTER TABLE `storage`
+	ADD COLUMN `enchantgrade` tinyint unsigned NOT NULL default '0';
+INSERT IGNORE INTO `sc_data` (`account_id`, `char_id`, `type`, `tick`) SELECT `account_id`, `char_id`, '752', '-1' FROM `char` WHERE `option` & '4194304' != '0';
+-- 16.1 official variables
+UPDATE `char_reg_num` SET `key` = 'ep16_royal' WHERE `key` = 'banquet_main_quest' AND `value` < 16;
+UPDATE `char_reg_num` SET `key` = 'ep16_royal', `value` = `value` - 1 WHERE `key` = 'banquet_main_quest' AND `value` < 20;
+UPDATE `char_reg_num` SET `key` = 'ep16_royal', `value` = `value` - 2 WHERE `key` = 'banquet_main_quest' AND `value` < 26;
+UPDATE `char_reg_num` SET `key` = 'ep16_royal', `value` = 25 WHERE `key` = 'banquet_main_quest' AND `value` > 25;
+
+DELETE FROM `char_reg_num` WHERE `key` = 'banquet_nerius_quest';
+DELETE FROM `char_reg_num` WHERE `key` = 'banquet_heine_quest';
+DELETE FROM `char_reg_num` WHERE `key` = 'banquet_richard_quest';
+
+UPDATE `char_reg_num` SET `key` = 'ep16_wal' WHERE `key` = 'banquet_walther_quest' AND `value` < 2;
+UPDATE `char_reg_num` SET `key` = 'ep16_wal', `value` = `value` - 1 WHERE `key` = 'banquet_walther_quest' AND `value` > 1;
+UPDATE `char_reg_num` SET `key` = 'ep16_lug' WHERE `key` = 'banquet_roegenburg_quest';
+UPDATE `char_reg_num` SET `key` = 'ep16_gaobs' WHERE `key` = 'banquet_geoborg_quest';
+
+UPDATE `char_reg_num` SET `key` = 'ep16_wig' WHERE `key` = 'banquet_wigner_quest' AND `value` < 5;
+UPDATE `char_reg_num` SET `key` = 'ep16_wig', `value` = `value` + 5 WHERE `key` = 'banquet_wigner_quest' AND `value` > 5;
+UPDATE `char_reg_num` c, `quest` q SET c.`key` = 'ep16_wig', c.`value` = 10
+WHERE c.`key` = 'banquet_wigner_quest' AND c.`value` = 5 AND q.`quest_id` = 14482 AND q.`state` = 1;
+UPDATE `char_reg_num` c, `quest` q SET c.`key` = 'ep16_wig', c.`value` = 9
+WHERE c.`key` = 'banquet_wigner_quest' AND c.`value` = 5 AND q.`quest_id` = 14480 AND q.`state` = 2;
+UPDATE `char_reg_num` c, `quest` q SET c.`key` = 'ep16_wig', c.`value` = 8
+WHERE c.`key` = 'banquet_wigner_quest' AND c.`value` = 5 AND q.`quest_id` = 14480 AND q.`state` = 1;
+UPDATE `char_reg_num` c, `quest` q SET c.`key` = 'ep16_wig', c.`value` = 7
+WHERE c.`key` = 'banquet_wigner_quest' AND c.`value` = 5 AND q.`quest_id` = 14481 AND q.`state` = 2;
+UPDATE `char_reg_num` c, `quest` q SET c.`key` = 'ep16_wig', c.`value` = 6
+WHERE c.`key` = 'banquet_wigner_quest' AND c.`value` = 5 AND q.`quest_id` = 14481 AND q.`state` = 1;
+UPDATE `char_reg_num` SET `key` = 'ep16_wig' WHERE `key` = 'banquet_wigner_quest' AND `value` = 5;
+
+UPDATE `char_reg_num` SET `key` = 'ep16_cookbs' WHERE `key` = 'banquet_quest_cooking' AND `value` < 3;
+UPDATE `char_reg_num` SET `key` = 'ep16_cookbs', `value` = 2 WHERE `key` = 'banquet_quest_cooking' AND `value` = 3;
+UPDATE `char_reg_num` SET `key` = 'ep16_cookbs', `value` = `value` + 8 WHERE `key` = 'banquet_quest_cooking' AND `value` > 3;
+
+DELETE FROM `quest` WHERE `quest_id` = 11428;
+DELETE FROM `quest` WHERE `quest_id` = 11429;
+DELETE FROM `quest` WHERE `quest_id` = 11430;
+DELETE FROM `quest` WHERE `quest_id` = 11431;
+
+DELETE FROM `char_reg_num` WHERE `key` = 'banquet_quest_sauce';
+UPDATE `inventory` SET `card2` = `card2` & 65535 WHERE `card0` = 254 OR `card0` = 255;
+UPDATE `cart_inventory` SET `card2` = `card2` & 65535 WHERE `card0` = 254 OR `card0` = 255;
+UPDATE `storage` SET `card2` = `card2` & 65535 WHERE `card0` = 254 OR `card0` = 255;
+UPDATE `guild_storage` SET `card2` = `card2` & 65535 WHERE `card0` = 254 OR `card0` = 255;
+ALTER TABLE `picklog`
+	ADD COLUMN `enchantgrade` tinyint unsigned NOT NULL default '0'
+;
+ALTER TABLE `item_db`
+	MODIFY `name_english` varchar(100);
+ALTER TABLE `item_db2`
+	MODIFY `name_english` varchar(100);
+ALTER TABLE `item_db_re`
+	MODIFY `name_english` varchar(100);
+ALTER TABLE `item_db2_re`
+	MODIFY `name_english` varchar(100);
+ALTER TABLE `bonus_script`
+    DROP PRIMARY KEY,
+    ADD KEY `char_id` (`char_id`);
+ALTER TABLE `item_db_re`
+	ADD COLUMN `class_fourth` tinyint unsigned DEFAULT NULL
+;
+ALTER TABLE `item_db2_re`
+	ADD COLUMN `class_fourth` tinyint unsigned DEFAULT NULL
+;
+ALTER TABLE `char` 
+	ADD COLUMN `pow` SMALLINT(4) UNSIGNED NOT NULL DEFAULT '0' AFTER `luk`,
+	ADD COLUMN `sta` SMALLINT(4) UNSIGNED NOT NULL DEFAULT '0' AFTER `pow`,
+	ADD COLUMN `wis` SMALLINT(4) UNSIGNED NOT NULL DEFAULT '0' AFTER `sta`,
+	ADD COLUMN `spl` SMALLINT(4) UNSIGNED NOT NULL DEFAULT '0' AFTER `wis`,
+	ADD COLUMN `con` SMALLINT(4) UNSIGNED NOT NULL DEFAULT '0' AFTER `spl`,
+	ADD COLUMN `crt` SMALLINT(4) UNSIGNED NOT NULL DEFAULT '0' AFTER `con`,
+	ADD COLUMN `max_ap` INT(11) UNSIGNED NOT NULL DEFAULT '0' AFTER `sp`,
+	ADD COLUMN `ap` INT(11) UNSIGNED NOT NULL DEFAULT '0' AFTER `max_ap`,
+	ADD COLUMN `trait_point` INT(11) UNSIGNED NOT NULL DEFAULT '0' AFTER `skill_point`
+;
+ALTER TABLE `char`
+	ADD COLUMN `inventory_slots` smallint(6) NOT NULL default '100'
+;
+ALTER TABLE `picklog`
+	MODIFY `type` enum('M','P','L','T','V','S','N','C','A','R','G','E','B','O','I','X','D','U','$','F','Y','Z','Q','H','J') NOT NULL default 'P'
+;
+
+ALTER TABLE `zenylog`
+	MODIFY `type` enum('T','V','P','M','S','N','D','C','A','E','I','B','K','J') NOT NULL default 'S'
+;
+--
+-- Table `barter` for barter shop persistency
+--
+
+CREATE TABLE IF NOT EXISTS `barter` (
+  `name` varchar(50) NOT NULL DEFAULT '',
+  `index` SMALLINT(5) UNSIGNED NOT NULL,
+  `amount` SMALLINT(5) UNSIGNED NOT NULL,
+  PRIMARY KEY  (`name`,`index`)
+) ENGINE=MyISAM;
+ALTER TABLE `market`
+MODIFY `amount` INT(11) NOT NULL
+;
+ALTER TABLE `picklog`
+	MODIFY `type` enum('M','P','L','T','V','S','N','C','A','R','G','E','B','O','I','X','D','U','$','F','Y','Z','Q','H','J') NOT NULL default 'P'
+;
+
+ALTER TABLE `zenylog`
+	MODIFY `type` enum('T','V','P','M','S','N','D','C','A','E','I','B','K','J') NOT NULL default 'S'
+;
+ALTER TABLE `mob_db`
+	ADD COLUMN `racegroup_malangdo` tinyint unsigned DEFAULT NULL
+;
+ALTER TABLE `mob_db2`
+	ADD COLUMN `racegroup_malangdo` tinyint unsigned DEFAULT NULL
+;
+ALTER TABLE `mob_db_re`
+	ADD COLUMN `racegroup_malangdo` tinyint unsigned DEFAULT NULL
+;
+ALTER TABLE `mob_db2_re`
+	ADD COLUMN `racegroup_malangdo` tinyint unsigned DEFAULT NULL
+;
+-- Reset the following quests to match official Rockridge quests
+DELETE FROM `quest` WHERE `quest_id` = 1321;
+DELETE FROM `quest` WHERE `quest_id` = 1322;
+DELETE FROM `quest` WHERE `quest_id` = 1323;
+DELETE FROM `quest` WHERE `quest_id` = 1324;
+DELETE FROM `quest` WHERE `quest_id` = 1325;
+DELETE FROM `quest` WHERE `quest_id` = 1326;
+DELETE FROM `quest` WHERE `quest_id` = 1327;
+DELETE FROM `quest` WHERE `quest_id` = 1328;
+DELETE FROM `quest` WHERE `quest_id` = 1329;
+DELETE FROM `quest` WHERE `quest_id` = 1330;
+-- Reset Nameless Island and Geoborg Family Curse quests which were using custom IDs that have been overtaken
+DELETE FROM `quest` WHERE `quest_id` >= 17000 AND `quest_id` <= 17017;
+DELETE FROM `quest` WHERE `quest_id` >= 18030 AND `quest_id` <= 18052;
+
+ALTER TABLE `zenylog`
+	MODIFY `type` enum('T','V','P','M','S','N','D','C','A','E','I','B','K','J','X') NOT NULL default 'S'
+;
+ALTER TABLE `picklog`
+	MODIFY `type` enum('M','P','L','T','V','S','N','C','A','R','G','E','B','O','I','X','D','U','$','F','Y','Z','Q','H','J','W','0','1','2') NOT NULL default 'P'
+;
+
+ALTER TABLE `zenylog`
+	MODIFY `type` enum('T','V','P','M','S','N','D','C','A','E','I','B','K','J','X','0','2') NOT NULL default 'S'
+;
+
+--
+-- Table structure for table `guild_emblems`
+--
+
+CREATE TABLE IF NOT EXISTS `guild_emblems` (
+  `world_name` varchar(32) NOT NULL,
+  `guild_id` int(11) unsigned NOT NULL,
+  `file_type` varchar(255) NOT NULL,
+  `file_data` blob,
+  `version` int(11) unsigned NOT NULL default '0',
+  PRIMARY KEY (`world_name`, `guild_id`)
+) ENGINE=MyISAM;
+
+--
+-- Table structure for table `user_configs`
+--
+
+CREATE TABLE IF NOT EXISTS `user_configs` (
+  `world_name` varchar(32) NOT NULL,
+  `account_id` int(11) unsigned NOT NULL,
+  `data` longtext NOT NULL,
+  PRIMARY KEY (`world_name`, `account_id`)
+) ENGINE=MyISAM;
+
+
+--
+-- Table structure for table `char_configs`
+--
+
+CREATE TABLE IF NOT EXISTS `char_configs` (
+  `world_name` varchar(32) NOT NULL,
+  `account_id` int(11) unsigned NOT NULL,
+  `char_id` int(11) unsigned NOT NULL,
+  `data` longtext NOT NULL,
+  PRIMARY KEY (`world_name`, `account_id`, `char_id`)
+) ENGINE=MyISAM;
+
+--
+-- Table structure for table `merchant_configs`
+--
+
+CREATE TABLE IF NOT EXISTS `merchant_configs` (
+  `world_name` varchar(32) NOT NULL,
+  `account_id` int(11) unsigned NOT NULL,
+  `char_id` INT(11) UNSIGNED NOT NULL,
+  `store_type` tinyint(3) UNSIGNED NOT NULL DEFAULT 0,
+  `data` longtext NOT NULL,
+  PRIMARY KEY (`world_name`, `account_id`, `char_id`)
+) ENGINE=MyISAM;
+UPDATE `mail`
+SET `send_id`='0'
+WHERE `send_id` NOT IN (
+	select `char_id`
+	from `char`
+)
+;
+ALTER TABLE `char`
+	ADD COLUMN `body_direction` tinyint unsigned NOT NULL default '0'
+;
+ALTER TABLE `char`
+	ADD COLUMN `disable_call` tinyint unsigned NOT NULL default '0'
+;
+ALTER TABLE `picklog`
+	MODIFY `type` enum('M','P','L','T','V','S','N','C','A','R','G','E','B','O','I','X','D','U','$','F','Y','Z','Q','H','J','W','0','1','2','3') NOT NULL default 'P'
+;
+ALTER TABLE `merchant_configs`
+	DROP PRIMARY KEY,
+	ADD PRIMARY KEY (`world_name`, `account_id`, `char_id`, `store_type`)
+;
+/**
+	ATTENTION!!!
+	Please make sure to create a backup of your live data before running this update.
+	This update is rather complicated and although I have tried my best I cannot guarantee that I did not make any mistake. [Lemongrass]
+	We would also advise you to check the data in the temporary table after the insert statement and before the update statements.
+	You could do so by running
+		select * from `tmp_randomoptionfix` where `new_index` <> `old_index`;
+	to see where changes happen and options will be moved.
+	For executing this update your user needs create table and drop table permissions. Either run the update with another user [admin or root for example] or give your database user these permissions temporarily.
+	Do not forget to remove these permissions again, as they are usually not necessary and it is rather dangerous, if someone gets access to your database user.
+	Additionally if you have more than one storage table (see conf/inter_server.yml) make sure to also update those tables (see instructions at the bottom of this script).
+
+
+
+
+
+
+
+
+	Comment the line below to really run the script, this is a safeguard that you confirm you have read and understood what was written above.
+**/
+cancel;
+
+-- Create a temporary table to store the data for the update
+create table `tmp_randomoptionfix` (
+	`id` int(11) unsigned NOT NULL,
+	`new_index` smallint(5) NOT NULL,
+	`old_index` smallint(5) NOT NULL,
+	`option_id` smallint(5) NOT NULL,
+	`option_val` smallint(5) NOT NULL,
+	`option_parm` tinyint(3) NOT NULL,
+	PRIMARY KEY ( `id`, `old_index` )
+);
+
+-- Create auction data
+insert into `tmp_randomoptionfix` ( `id`, `new_index`, `old_index`, `option_id`, `option_val`, `option_parm` )
+select
+	`id`,
+	row_number() over( partition by `id` order by `old_index` asc ) - 1 as `new_index`,
+	`old_index`,
+	`option_id`,
+	`option_val`,
+	`option_parm`
+from (
+	select * from (
+		select
+				`auction_id` as `id`,
+				0 as `old_index`,
+				`option_id0` as `option_id`,
+				`option_val0` as `option_val`,
+				`option_parm0` as `option_parm`
+			from `auction`
+			where `option_id0` <> 0
+		union
+			select
+				`auction_id` as `id`,
+				1 as `old_index`,
+				`option_id1` as `option_id`,
+				`option_val1` as `option_val`,
+				`option_parm1` as `option_parm`
+			from `auction`
+			where `option_id1` <> 0
+		union
+			select
+				`auction_id` as `id`,
+				2 as `old_index`,
+				`option_id2` as `option_id`,
+				`option_val2` as `option_val`,
+				`option_parm2` as `option_parm`
+			from `auction`
+			where `option_id2` <> 0
+		union
+			select
+				`auction_id` as `id`,
+				3 as `old_index`,
+				`option_id3` as `option_id`,
+				`option_val3` as `option_val`,
+				`option_parm3` as `option_parm`
+			from `auction`
+			where `option_id3` <> 0
+		union
+			select
+				`auction_id` as `id`,
+				4 as `old_index`,
+				`option_id4` as `option_id`,
+				`option_val4` as `option_val`,
+				`option_parm4` as `option_parm`
+			from `auction`
+			where `option_id4` <> 0
+	) t2
+	order by `id`, `old_index`
+) t ;
+
+-- Fix option 0
+update `auction`
+left join `tmp_randomoptionfix`
+on `auction`.`auction_id` = `tmp_randomoptionfix`.`id` and `tmp_randomoptionfix`.`new_index` = 0
+set
+	`option_id0` = coalesce( `tmp_randomoptionfix`.`option_id`, 0 ),
+	`option_val0` = coalesce( `tmp_randomoptionfix`.`option_val`, 0 ),
+	`option_parm0` = coalesce( `tmp_randomoptionfix`.`option_parm`, 0 )
+;
+
+-- Fix option 1
+update `auction`
+left join `tmp_randomoptionfix`
+on `auction`.`auction_id` = `tmp_randomoptionfix`.`id` and `tmp_randomoptionfix`.`new_index` = 1
+set
+	`option_id1` = coalesce( `tmp_randomoptionfix`.`option_id`, 0 ),
+	`option_val1` = coalesce( `tmp_randomoptionfix`.`option_val`, 0 ),
+	`option_parm1` = coalesce( `tmp_randomoptionfix`.`option_parm`, 0 )
+;
+
+-- Fix option 2
+update `auction`
+left join `tmp_randomoptionfix`
+on `auction`.`auction_id` = `tmp_randomoptionfix`.`id` and `tmp_randomoptionfix`.`new_index` = 2
+set
+	`option_id2` = coalesce( `tmp_randomoptionfix`.`option_id`, 0 ),
+	`option_val2` = coalesce( `tmp_randomoptionfix`.`option_val`, 0 ),
+	`option_parm2` = coalesce( `tmp_randomoptionfix`.`option_parm`, 0 )
+;
+
+-- Fix option 3
+update `auction`
+left join `tmp_randomoptionfix`
+on `auction`.`auction_id` = `tmp_randomoptionfix`.`id` and `tmp_randomoptionfix`.`new_index` = 3
+set
+	`option_id3` = coalesce( `tmp_randomoptionfix`.`option_id`, 0 ),
+	`option_val3` = coalesce( `tmp_randomoptionfix`.`option_val`, 0 ),
+	`option_parm3` = coalesce( `tmp_randomoptionfix`.`option_parm`, 0 )
+;
+
+-- Fix option 4
+update `auction`
+left join `tmp_randomoptionfix`
+on `auction`.`auction_id` = `tmp_randomoptionfix`.`id` and `tmp_randomoptionfix`.`new_index` = 4
+set
+	`option_id4` = coalesce( `tmp_randomoptionfix`.`option_id`, 0 ),
+	`option_val4` = coalesce( `tmp_randomoptionfix`.`option_val`, 0 ),
+	`option_parm4` = coalesce( `tmp_randomoptionfix`.`option_parm`, 0 )
+;
+
+-- Delete the data to have a clean table for the next run
+delete from `tmp_randomoptionfix`;
+
+-- Create cart_inventory data
+insert into `tmp_randomoptionfix` ( `id`, `new_index`, `old_index`, `option_id`, `option_val`, `option_parm` )
+select
+	`id`,
+	row_number() over( partition by `id` order by `old_index` asc ) - 1 as `new_index`,
+	`old_index`,
+	`option_id`,
+	`option_val`,
+	`option_parm`
+from (
+	select * from (
+		select
+				`id`,
+				0 as `old_index`,
+				`option_id0` as `option_id`,
+				`option_val0` as `option_val`,
+				`option_parm0` as `option_parm`
+			from `cart_inventory`
+			where `option_id0` <> 0
+		union
+			select
+				`id`,
+				1 as `old_index`,
+				`option_id1` as `option_id`,
+				`option_val1` as `option_val`,
+				`option_parm1` as `option_parm`
+			from `cart_inventory`
+			where `option_id1` <> 0
+		union
+			select
+				`id`,
+				2 as `old_index`,
+				`option_id2` as `option_id`,
+				`option_val2` as `option_val`,
+				`option_parm2` as `option_parm`
+			from `cart_inventory`
+			where `option_id2` <> 0
+		union
+			select
+				`id`,
+				3 as `old_index`,
+				`option_id3` as `option_id`,
+				`option_val3` as `option_val`,
+				`option_parm3` as `option_parm`
+			from `cart_inventory`
+			where `option_id3` <> 0
+		union
+			select
+				`id`,
+				4 as `old_index`,
+				`option_id4` as `option_id`,
+				`option_val4` as `option_val`,
+				`option_parm4` as `option_parm`
+			from `cart_inventory`
+			where `option_id4` <> 0
+	) t2
+	order by `id`, `old_index`
+) t ;
+
+-- Fix option 0
+update `cart_inventory`
+left join `tmp_randomoptionfix`
+on `cart_inventory`.`id` = `tmp_randomoptionfix`.`id` and `tmp_randomoptionfix`.`new_index` = 0
+set
+	`option_id0` = coalesce( `tmp_randomoptionfix`.`option_id`, 0 ),
+	`option_val0` = coalesce( `tmp_randomoptionfix`.`option_val`, 0 ),
+	`option_parm0` = coalesce( `tmp_randomoptionfix`.`option_parm`, 0 )
+;
+
+-- Fix option 1
+update `cart_inventory`
+left join `tmp_randomoptionfix`
+on `cart_inventory`.`id` = `tmp_randomoptionfix`.`id` and `tmp_randomoptionfix`.`new_index` = 1
+set
+	`option_id1` = coalesce( `tmp_randomoptionfix`.`option_id`, 0 ),
+	`option_val1` = coalesce( `tmp_randomoptionfix`.`option_val`, 0 ),
+	`option_parm1` = coalesce( `tmp_randomoptionfix`.`option_parm`, 0 )
+;
+
+-- Fix option 2
+update `cart_inventory`
+left join `tmp_randomoptionfix`
+on `cart_inventory`.`id` = `tmp_randomoptionfix`.`id` and `tmp_randomoptionfix`.`new_index` = 2
+set
+	`option_id2` = coalesce( `tmp_randomoptionfix`.`option_id`, 0 ),
+	`option_val2` = coalesce( `tmp_randomoptionfix`.`option_val`, 0 ),
+	`option_parm2` = coalesce( `tmp_randomoptionfix`.`option_parm`, 0 )
+;
+
+-- Fix option 3
+update `cart_inventory`
+left join `tmp_randomoptionfix`
+on `cart_inventory`.`id` = `tmp_randomoptionfix`.`id` and `tmp_randomoptionfix`.`new_index` = 3
+set
+	`option_id3` = coalesce( `tmp_randomoptionfix`.`option_id`, 0 ),
+	`option_val3` = coalesce( `tmp_randomoptionfix`.`option_val`, 0 ),
+	`option_parm3` = coalesce( `tmp_randomoptionfix`.`option_parm`, 0 )
+;
+
+-- Fix option 4
+update `cart_inventory`
+left join `tmp_randomoptionfix`
+on `cart_inventory`.`id` = `tmp_randomoptionfix`.`id` and `tmp_randomoptionfix`.`new_index` = 4
+set
+	`option_id4` = coalesce( `tmp_randomoptionfix`.`option_id`, 0 ),
+	`option_val4` = coalesce( `tmp_randomoptionfix`.`option_val`, 0 ),
+	`option_parm4` = coalesce( `tmp_randomoptionfix`.`option_parm`, 0 )
+;
+
+-- Delete the data to have a clean table for the next run
+delete from `tmp_randomoptionfix`;
+
+-- Create guild_storage data
+insert into `tmp_randomoptionfix` ( `id`, `new_index`, `old_index`, `option_id`, `option_val`, `option_parm` )
+select
+	`id`,
+	row_number() over( partition by `id` order by `old_index` asc ) - 1 as `new_index`,
+	`old_index`,
+	`option_id`,
+	`option_val`,
+	`option_parm`
+from (
+	select * from (
+		select
+				`id`,
+				0 as `old_index`,
+				`option_id0` as `option_id`,
+				`option_val0` as `option_val`,
+				`option_parm0` as `option_parm`
+			from `guild_storage`
+			where `option_id0` <> 0
+		union
+			select
+				`id`,
+				1 as `old_index`,
+				`option_id1` as `option_id`,
+				`option_val1` as `option_val`,
+				`option_parm1` as `option_parm`
+			from `guild_storage`
+			where `option_id1` <> 0
+		union
+			select
+				`id`,
+				2 as `old_index`,
+				`option_id2` as `option_id`,
+				`option_val2` as `option_val`,
+				`option_parm2` as `option_parm`
+			from `guild_storage`
+			where `option_id2` <> 0
+		union
+			select
+				`id`,
+				3 as `old_index`,
+				`option_id3` as `option_id`,
+				`option_val3` as `option_val`,
+				`option_parm3` as `option_parm`
+			from `guild_storage`
+			where `option_id3` <> 0
+		union
+			select
+				`id`,
+				4 as `old_index`,
+				`option_id4` as `option_id`,
+				`option_val4` as `option_val`,
+				`option_parm4` as `option_parm`
+			from `guild_storage`
+			where `option_id4` <> 0
+	) t2
+	order by `id`, `old_index`
+) t ;
+
+-- Fix option 0
+update `guild_storage`
+left join `tmp_randomoptionfix`
+on `guild_storage`.`id` = `tmp_randomoptionfix`.`id` and `tmp_randomoptionfix`.`new_index` = 0
+set
+	`option_id0` = coalesce( `tmp_randomoptionfix`.`option_id`, 0 ),
+	`option_val0` = coalesce( `tmp_randomoptionfix`.`option_val`, 0 ),
+	`option_parm0` = coalesce( `tmp_randomoptionfix`.`option_parm`, 0 )
+;
+
+-- Fix option 1
+update `guild_storage`
+left join `tmp_randomoptionfix`
+on `guild_storage`.`id` = `tmp_randomoptionfix`.`id` and `tmp_randomoptionfix`.`new_index` = 1
+set
+	`option_id1` = coalesce( `tmp_randomoptionfix`.`option_id`, 0 ),
+	`option_val1` = coalesce( `tmp_randomoptionfix`.`option_val`, 0 ),
+	`option_parm1` = coalesce( `tmp_randomoptionfix`.`option_parm`, 0 )
+;
+
+-- Fix option 2
+update `guild_storage`
+left join `tmp_randomoptionfix`
+on `guild_storage`.`id` = `tmp_randomoptionfix`.`id` and `tmp_randomoptionfix`.`new_index` = 2
+set
+	`option_id2` = coalesce( `tmp_randomoptionfix`.`option_id`, 0 ),
+	`option_val2` = coalesce( `tmp_randomoptionfix`.`option_val`, 0 ),
+	`option_parm2` = coalesce( `tmp_randomoptionfix`.`option_parm`, 0 )
+;
+
+-- Fix option 3
+update `guild_storage`
+left join `tmp_randomoptionfix`
+on `guild_storage`.`id` = `tmp_randomoptionfix`.`id` and `tmp_randomoptionfix`.`new_index` = 3
+set
+	`option_id3` = coalesce( `tmp_randomoptionfix`.`option_id`, 0 ),
+	`option_val3` = coalesce( `tmp_randomoptionfix`.`option_val`, 0 ),
+	`option_parm3` = coalesce( `tmp_randomoptionfix`.`option_parm`, 0 )
+;
+
+-- Fix option 4
+update `guild_storage`
+left join `tmp_randomoptionfix`
+on `guild_storage`.`id` = `tmp_randomoptionfix`.`id` and `tmp_randomoptionfix`.`new_index` = 4
+set
+	`option_id4` = coalesce( `tmp_randomoptionfix`.`option_id`, 0 ),
+	`option_val4` = coalesce( `tmp_randomoptionfix`.`option_val`, 0 ),
+	`option_parm4` = coalesce( `tmp_randomoptionfix`.`option_parm`, 0 )
+;
+
+-- Delete the data to have a clean table for the next run
+delete from `tmp_randomoptionfix`;
+
+-- Create inventory data
+insert into `tmp_randomoptionfix` ( `id`, `new_index`, `old_index`, `option_id`, `option_val`, `option_parm` )
+select
+	`id`,
+	row_number() over( partition by `id` order by `old_index` asc ) - 1 as `new_index`,
+	`old_index`,
+	`option_id`,
+	`option_val`,
+	`option_parm`
+from (
+	select * from (
+		select
+				`id`,
+				0 as `old_index`,
+				`option_id0` as `option_id`,
+				`option_val0` as `option_val`,
+				`option_parm0` as `option_parm`
+			from `inventory`
+			where `option_id0` <> 0
+		union
+			select
+				`id`,
+				1 as `old_index`,
+				`option_id1` as `option_id`,
+				`option_val1` as `option_val`,
+				`option_parm1` as `option_parm`
+			from `inventory`
+			where `option_id1` <> 0
+		union
+			select
+				`id`,
+				2 as `old_index`,
+				`option_id2` as `option_id`,
+				`option_val2` as `option_val`,
+				`option_parm2` as `option_parm`
+			from `inventory`
+			where `option_id2` <> 0
+		union
+			select
+				`id`,
+				3 as `old_index`,
+				`option_id3` as `option_id`,
+				`option_val3` as `option_val`,
+				`option_parm3` as `option_parm`
+			from `inventory`
+			where `option_id3` <> 0
+		union
+			select
+				`id`,
+				4 as `old_index`,
+				`option_id4` as `option_id`,
+				`option_val4` as `option_val`,
+				`option_parm4` as `option_parm`
+			from `inventory`
+			where `option_id4` <> 0
+	) t2
+	order by `id`, `old_index`
+) t ;
+
+-- Fix option 0
+update `inventory`
+left join `tmp_randomoptionfix`
+on `inventory`.`id` = `tmp_randomoptionfix`.`id` and `tmp_randomoptionfix`.`new_index` = 0
+set
+	`option_id0` = coalesce( `tmp_randomoptionfix`.`option_id`, 0 ),
+	`option_val0` = coalesce( `tmp_randomoptionfix`.`option_val`, 0 ),
+	`option_parm0` = coalesce( `tmp_randomoptionfix`.`option_parm`, 0 )
+;
+
+-- Fix option 1
+update `inventory`
+left join `tmp_randomoptionfix`
+on `inventory`.`id` = `tmp_randomoptionfix`.`id` and `tmp_randomoptionfix`.`new_index` = 1
+set
+	`option_id1` = coalesce( `tmp_randomoptionfix`.`option_id`, 0 ),
+	`option_val1` = coalesce( `tmp_randomoptionfix`.`option_val`, 0 ),
+	`option_parm1` = coalesce( `tmp_randomoptionfix`.`option_parm`, 0 )
+;
+
+-- Fix option 2
+update `inventory`
+left join `tmp_randomoptionfix`
+on `inventory`.`id` = `tmp_randomoptionfix`.`id` and `tmp_randomoptionfix`.`new_index` = 2
+set
+	`option_id2` = coalesce( `tmp_randomoptionfix`.`option_id`, 0 ),
+	`option_val2` = coalesce( `tmp_randomoptionfix`.`option_val`, 0 ),
+	`option_parm2` = coalesce( `tmp_randomoptionfix`.`option_parm`, 0 )
+;
+
+-- Fix option 3
+update `inventory`
+left join `tmp_randomoptionfix`
+on `inventory`.`id` = `tmp_randomoptionfix`.`id` and `tmp_randomoptionfix`.`new_index` = 3
+set
+	`option_id3` = coalesce( `tmp_randomoptionfix`.`option_id`, 0 ),
+	`option_val3` = coalesce( `tmp_randomoptionfix`.`option_val`, 0 ),
+	`option_parm3` = coalesce( `tmp_randomoptionfix`.`option_parm`, 0 )
+;
+
+-- Fix option 4
+update `inventory`
+left join `tmp_randomoptionfix`
+on `inventory`.`id` = `tmp_randomoptionfix`.`id` and `tmp_randomoptionfix`.`new_index` = 4
+set
+	`option_id4` = coalesce( `tmp_randomoptionfix`.`option_id`, 0 ),
+	`option_val4` = coalesce( `tmp_randomoptionfix`.`option_val`, 0 ),
+	`option_parm4` = coalesce( `tmp_randomoptionfix`.`option_parm`, 0 )
+;
+
+-- Delete the data to have a clean table for the next run
+delete from `tmp_randomoptionfix`;
+
+-- Create mail_attachments data
+insert into `tmp_randomoptionfix` ( `id`, `new_index`, `old_index`, `option_id`, `option_val`, `option_parm` )
+select
+	`id`,
+	row_number() over( partition by `id` order by `old_index` asc ) - 1 as `new_index`,
+	`old_index`,
+	`option_id`,
+	`option_val`,
+	`option_parm`
+from (
+	select * from (
+		select
+				`id`,
+				0 as `old_index`,
+				`option_id0` as `option_id`,
+				`option_val0` as `option_val`,
+				`option_parm0` as `option_parm`
+			from `mail_attachments`
+			where `option_id0` <> 0
+		union
+			select
+				`id`,
+				1 as `old_index`,
+				`option_id1` as `option_id`,
+				`option_val1` as `option_val`,
+				`option_parm1` as `option_parm`
+			from `mail_attachments`
+			where `option_id1` <> 0
+		union
+			select
+				`id`,
+				2 as `old_index`,
+				`option_id2` as `option_id`,
+				`option_val2` as `option_val`,
+				`option_parm2` as `option_parm`
+			from `mail_attachments`
+			where `option_id2` <> 0
+		union
+			select
+				`id`,
+				3 as `old_index`,
+				`option_id3` as `option_id`,
+				`option_val3` as `option_val`,
+				`option_parm3` as `option_parm`
+			from `mail_attachments`
+			where `option_id3` <> 0
+		union
+			select
+				`id`,
+				4 as `old_index`,
+				`option_id4` as `option_id`,
+				`option_val4` as `option_val`,
+				`option_parm4` as `option_parm`
+			from `mail_attachments`
+			where `option_id4` <> 0
+	) t2
+	order by `id`, `old_index`
+) t ;
+
+-- Fix option 0
+update `mail_attachments`
+left join `tmp_randomoptionfix`
+on `mail_attachments`.`id` = `tmp_randomoptionfix`.`id` and `tmp_randomoptionfix`.`new_index` = 0
+set
+	`option_id0` = coalesce( `tmp_randomoptionfix`.`option_id`, 0 ),
+	`option_val0` = coalesce( `tmp_randomoptionfix`.`option_val`, 0 ),
+	`option_parm0` = coalesce( `tmp_randomoptionfix`.`option_parm`, 0 )
+;
+
+-- Fix option 1
+update `mail_attachments`
+left join `tmp_randomoptionfix`
+on `mail_attachments`.`id` = `tmp_randomoptionfix`.`id` and `tmp_randomoptionfix`.`new_index` = 1
+set
+	`option_id1` = coalesce( `tmp_randomoptionfix`.`option_id`, 0 ),
+	`option_val1` = coalesce( `tmp_randomoptionfix`.`option_val`, 0 ),
+	`option_parm1` = coalesce( `tmp_randomoptionfix`.`option_parm`, 0 )
+;
+
+-- Fix option 2
+update `mail_attachments`
+left join `tmp_randomoptionfix`
+on `mail_attachments`.`id` = `tmp_randomoptionfix`.`id` and `tmp_randomoptionfix`.`new_index` = 2
+set
+	`option_id2` = coalesce( `tmp_randomoptionfix`.`option_id`, 0 ),
+	`option_val2` = coalesce( `tmp_randomoptionfix`.`option_val`, 0 ),
+	`option_parm2` = coalesce( `tmp_randomoptionfix`.`option_parm`, 0 )
+;
+
+-- Fix option 3
+update `mail_attachments`
+left join `tmp_randomoptionfix`
+on `mail_attachments`.`id` = `tmp_randomoptionfix`.`id` and `tmp_randomoptionfix`.`new_index` = 3
+set
+	`option_id3` = coalesce( `tmp_randomoptionfix`.`option_id`, 0 ),
+	`option_val3` = coalesce( `tmp_randomoptionfix`.`option_val`, 0 ),
+	`option_parm3` = coalesce( `tmp_randomoptionfix`.`option_parm`, 0 )
+;
+
+-- Fix option 4
+update `mail_attachments`
+left join `tmp_randomoptionfix`
+on `mail_attachments`.`id` = `tmp_randomoptionfix`.`id` and `tmp_randomoptionfix`.`new_index` = 4
+set
+	`option_id4` = coalesce( `tmp_randomoptionfix`.`option_id`, 0 ),
+	`option_val4` = coalesce( `tmp_randomoptionfix`.`option_val`, 0 ),
+	`option_parm4` = coalesce( `tmp_randomoptionfix`.`option_parm`, 0 )
+;
+
+-- Delete the data to have a clean table for the next run
+delete from `tmp_randomoptionfix`;
+
+-- Create storage data
+insert into `tmp_randomoptionfix` ( `id`, `new_index`, `old_index`, `option_id`, `option_val`, `option_parm` )
+select
+	`id`,
+	row_number() over( partition by `id` order by `old_index` asc ) - 1 as `new_index`,
+	`old_index`,
+	`option_id`,
+	`option_val`,
+	`option_parm`
+from (
+	select * from (
+		select
+				`id`,
+				0 as `old_index`,
+				`option_id0` as `option_id`,
+				`option_val0` as `option_val`,
+				`option_parm0` as `option_parm`
+			from `storage`
+			where `option_id0` <> 0
+		union
+			select
+				`id`,
+				1 as `old_index`,
+				`option_id1` as `option_id`,
+				`option_val1` as `option_val`,
+				`option_parm1` as `option_parm`
+			from `storage`
+			where `option_id1` <> 0
+		union
+			select
+				`id`,
+				2 as `old_index`,
+				`option_id2` as `option_id`,
+				`option_val2` as `option_val`,
+				`option_parm2` as `option_parm`
+			from `storage`
+			where `option_id2` <> 0
+		union
+			select
+				`id`,
+				3 as `old_index`,
+				`option_id3` as `option_id`,
+				`option_val3` as `option_val`,
+				`option_parm3` as `option_parm`
+			from `storage`
+			where `option_id3` <> 0
+		union
+			select
+				`id`,
+				4 as `old_index`,
+				`option_id4` as `option_id`,
+				`option_val4` as `option_val`,
+				`option_parm4` as `option_parm`
+			from `storage`
+			where `option_id4` <> 0
+	) t2
+	order by `id`, `old_index`
+) t ;
+
+-- Fix option 0
+update `storage`
+left join `tmp_randomoptionfix`
+on `storage`.`id` = `tmp_randomoptionfix`.`id` and `tmp_randomoptionfix`.`new_index` = 0
+set
+	`option_id0` = coalesce( `tmp_randomoptionfix`.`option_id`, 0 ),
+	`option_val0` = coalesce( `tmp_randomoptionfix`.`option_val`, 0 ),
+	`option_parm0` = coalesce( `tmp_randomoptionfix`.`option_parm`, 0 )
+;
+
+-- Fix option 1
+update `storage`
+left join `tmp_randomoptionfix`
+on `storage`.`id` = `tmp_randomoptionfix`.`id` and `tmp_randomoptionfix`.`new_index` = 1
+set
+	`option_id1` = coalesce( `tmp_randomoptionfix`.`option_id`, 0 ),
+	`option_val1` = coalesce( `tmp_randomoptionfix`.`option_val`, 0 ),
+	`option_parm1` = coalesce( `tmp_randomoptionfix`.`option_parm`, 0 )
+;
+
+-- Fix option 2
+update `storage`
+left join `tmp_randomoptionfix`
+on `storage`.`id` = `tmp_randomoptionfix`.`id` and `tmp_randomoptionfix`.`new_index` = 2
+set
+	`option_id2` = coalesce( `tmp_randomoptionfix`.`option_id`, 0 ),
+	`option_val2` = coalesce( `tmp_randomoptionfix`.`option_val`, 0 ),
+	`option_parm2` = coalesce( `tmp_randomoptionfix`.`option_parm`, 0 )
+;
+
+-- Fix option 3
+update `storage`
+left join `tmp_randomoptionfix`
+on `storage`.`id` = `tmp_randomoptionfix`.`id` and `tmp_randomoptionfix`.`new_index` = 3
+set
+	`option_id3` = coalesce( `tmp_randomoptionfix`.`option_id`, 0 ),
+	`option_val3` = coalesce( `tmp_randomoptionfix`.`option_val`, 0 ),
+	`option_parm3` = coalesce( `tmp_randomoptionfix`.`option_parm`, 0 )
+;
+
+-- Fix option 4
+update `storage`
+left join `tmp_randomoptionfix`
+on `storage`.`id` = `tmp_randomoptionfix`.`id` and `tmp_randomoptionfix`.`new_index` = 4
+set
+	`option_id4` = coalesce( `tmp_randomoptionfix`.`option_id`, 0 ),
+	`option_val4` = coalesce( `tmp_randomoptionfix`.`option_val`, 0 ),
+	`option_parm4` = coalesce( `tmp_randomoptionfix`.`option_parm`, 0 )
+;
+
+-- Delete the data to have a clean table for the next run
+delete from `tmp_randomoptionfix`;
+
+-- Repeat this for any other storage tables that you have created (for example VIP)
+-- To do this copy paste the code below and replace ${other_storage} with the name of your table
+/**
+	-- Create ${other_storage} data
+	insert into `tmp_randomoptionfix` ( `id`, `new_index`, `old_index`, `option_id`, `option_val`, `option_parm` )
+	select
+		`id`,
+		row_number() over( partition by `id` order by `old_index` asc ) - 1 as `new_index`,
+		`old_index`,
+		`option_id`,
+		`option_val`,
+		`option_parm`
+	from (
+		select * from (
+			select
+					`id`,
+					0 as `old_index`,
+					`option_id0` as `option_id`,
+					`option_val0` as `option_val`,
+					`option_parm0` as `option_parm`
+				from `${other_storage}`
+				where `option_id0` <> 0
+			union
+				select
+					`id`,
+					1 as `old_index`,
+					`option_id1` as `option_id`,
+					`option_val1` as `option_val`,
+					`option_parm1` as `option_parm`
+				from `${other_storage}`
+				where `option_id1` <> 0
+			union
+				select
+					`id`,
+					2 as `old_index`,
+					`option_id2` as `option_id`,
+					`option_val2` as `option_val`,
+					`option_parm2` as `option_parm`
+				from `${other_storage}`
+				where `option_id2` <> 0
+			union
+				select
+					`id`,
+					3 as `old_index`,
+					`option_id3` as `option_id`,
+					`option_val3` as `option_val`,
+					`option_parm3` as `option_parm`
+				from `${other_storage}`
+				where `option_id3` <> 0
+			union
+				select
+					`id`,
+					4 as `old_index`,
+					`option_id4` as `option_id`,
+					`option_val4` as `option_val`,
+					`option_parm4` as `option_parm`
+				from `${other_storage}`
+				where `option_id4` <> 0
+		) t2
+		order by `id`, `old_index`
+	) t ;
+
+	-- Fix option 0
+	update `${other_storage}`
+	left join `tmp_randomoptionfix`
+	on `${other_storage}`.`id` = `tmp_randomoptionfix`.`id` and `tmp_randomoptionfix`.`new_index` = 0
+	set
+		`option_id0` = coalesce( `tmp_randomoptionfix`.`option_id`, 0 ),
+		`option_val0` = coalesce( `tmp_randomoptionfix`.`option_val`, 0 ),
+		`option_parm0` = coalesce( `tmp_randomoptionfix`.`option_parm`, 0 )
+	;
+
+	-- Fix option 1
+	update `${other_storage}`
+	left join `tmp_randomoptionfix`
+	on `${other_storage}`.`id` = `tmp_randomoptionfix`.`id` and `tmp_randomoptionfix`.`new_index` = 1
+	set
+		`option_id1` = coalesce( `tmp_randomoptionfix`.`option_id`, 0 ),
+		`option_val1` = coalesce( `tmp_randomoptionfix`.`option_val`, 0 ),
+		`option_parm1` = coalesce( `tmp_randomoptionfix`.`option_parm`, 0 )
+	;
+
+	-- Fix option 2
+	update `${other_storage}`
+	left join `tmp_randomoptionfix`
+	on `${other_storage}`.`id` = `tmp_randomoptionfix`.`id` and `tmp_randomoptionfix`.`new_index` = 2
+	set
+		`option_id2` = coalesce( `tmp_randomoptionfix`.`option_id`, 0 ),
+		`option_val2` = coalesce( `tmp_randomoptionfix`.`option_val`, 0 ),
+		`option_parm2` = coalesce( `tmp_randomoptionfix`.`option_parm`, 0 )
+	;
+
+	-- Fix option 3
+	update `${other_storage}`
+	left join `tmp_randomoptionfix`
+	on `${other_storage}`.`id` = `tmp_randomoptionfix`.`id` and `tmp_randomoptionfix`.`new_index` = 3
+	set
+		`option_id3` = coalesce( `tmp_randomoptionfix`.`option_id`, 0 ),
+		`option_val3` = coalesce( `tmp_randomoptionfix`.`option_val`, 0 ),
+		`option_parm3` = coalesce( `tmp_randomoptionfix`.`option_parm`, 0 )
+	;
+
+	-- Fix option 4
+	update `${other_storage}`
+	left join `tmp_randomoptionfix`
+	on `${other_storage}`.`id` = `tmp_randomoptionfix`.`id` and `tmp_randomoptionfix`.`new_index` = 4
+	set
+		`option_id4` = coalesce( `tmp_randomoptionfix`.`option_id`, 0 ),
+		`option_val4` = coalesce( `tmp_randomoptionfix`.`option_val`, 0 ),
+		`option_parm4` = coalesce( `tmp_randomoptionfix`.`option_parm`, 0 )
+	;
+
+	-- Delete the data to have a clean table for the next run
+	delete from `tmp_randomoptionfix`;
+**/
+
+drop table `tmp_randomoptionfix`;
+--
+-- Table structure for table `party_bookings`
+--
+
+CREATE TABLE IF NOT EXISTS `party_bookings` (
+  `world_name` varchar(32) NOT NULL,
+  `account_id` int(11) unsigned NOT NULL,
+  `char_id` int(11) unsigned NOT NULL,
+  `char_name` varchar(23) NOT NULL,
+  `purpose` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `assist` tinyint(3) unsigned NOT NULL DEFAULT '0',
+  `damagedealer` tinyint(3) unsigned NOT NULL DEFAULT '0',
+  `healer` tinyint(3) unsigned NOT NULL DEFAULT '0',
+  `tanker` tinyint(3) unsigned NOT NULL DEFAULT '0',
+  `minimum_level` smallint(5) unsigned NOT NULL,
+  `maximum_level` smallint(5) unsigned NOT NULL,
+  `comment` varchar(255) NOT NULL DEFAULT '',
+  `created` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`world_name`, `account_id`, `char_id`)
+) ENGINE=MyISAM;
