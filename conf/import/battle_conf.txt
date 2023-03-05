@@ -1,5 +1,5 @@
 // Rate at which exp. is given. (Note 2)
-base_exp_rate: 110
+base_exp_rate: 1000
 
 // Rate at which job exp. is given. (Note 2)
-job_exp_rate: 110
+job_exp_rate: 1000
