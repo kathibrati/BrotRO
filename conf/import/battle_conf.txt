@@ -55,3 +55,6 @@ item_drop_add_max: 100000
 item_rate_treasure: 1000
 item_drop_treasure_min: 10
 item_drop_treasure_max: 100000
+
+restart_hp_rate: 100
+restart_sp_rate: 100
