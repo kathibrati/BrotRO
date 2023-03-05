@@ -1,0 +1,5 @@
+// Rate at which exp. is given. (Note 2)
+base_exp_rate: 110
+
+// Rate at which job exp. is given. (Note 2)
+job_exp_rate: 110

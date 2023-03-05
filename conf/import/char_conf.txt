@@ -1,0 +1,5 @@
+userid: BrotRO
+passwd: roflcopter123
+server_name: BrotRO
+wisp_server_name: BrotRO
+pincode_enabled: no
