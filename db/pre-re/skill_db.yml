@@ -2425,7 +2425,7 @@ Body:
           Amount: 30
       ItemCost:
         - Item: Holy_Water
-          Amount: 1
+          Amount: 0
     Status: Aspersio
   - Id: 69
     Name: PR_BENEDICTIO
@@ -19701,7 +19701,7 @@ Body:
         - Item: Ansila
           Amount: 1
         - Item: Holy_Water
-          Amount: 1
+          Amount: 0
     Unit:
       Id: Epiclesis
       Range: 2
@@ -23311,7 +23311,7 @@ Body:
           Amount: 60
       ItemCost:
         - Item: Holy_Water
-          Amount: 2
+          Amount: 0
   - Id: 2323
     Name: LG_EARTHDRIVE
     Description: Earth Drive
