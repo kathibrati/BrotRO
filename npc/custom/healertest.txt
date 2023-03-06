@@ -45,4 +45,4 @@
 
 // Duplicates
 //============================================================
-payon,170,95,6	duplicate(Healer)	Healer#pay	909
+payon,166,99,6	duplicate(Healer)	Healer#pay	909
