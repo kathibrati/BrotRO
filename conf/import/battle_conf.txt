@@ -58,3 +58,11 @@ item_drop_treasure_max: 100000
 
 restart_hp_rate: 100
 restart_sp_rate: 100
+
+// Are arrows/ammo consumed when used on a bow/gun?
+// 0 = No
+// 1 = Yes
+// 2 = Yes even for skills that do not specify arrow consumption when said 
+//     skill is weapon-based and used with ranged weapons (auto-guesses which 
+//     skills should consume ammo when it's acquired via a card or plagiarize)
+arrow_decrement: 0
