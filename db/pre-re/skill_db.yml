@@ -527,7 +527,7 @@ Body:
           Amount: 40
       ItemCost:
         - Item: Blue_Gemstone
-          Amount: 1
+          Amount: 0
     Unit:
       Id: Safetywall
       Interval: -1
@@ -822,7 +822,7 @@ Body:
           Amount: 16
       ItemCost:
         - Item: Red_Gemstone
-          Amount: 1
+          Amount: 0
     Status: StoneWait
   - Id: 17
     Name: MG_FIREBALL
@@ -1396,7 +1396,7 @@ Body:
           Amount: 26
       ItemCost:
         - Item: Blue_Gemstone
-          Amount: 1
+          Amount: 0
     Unit:
       Id: Warp_Active
       AlternateId: Warp_Waiting
@@ -1938,7 +1938,7 @@ Body:
         Bow: true
       Ammo:
         Arrow: true
-      AmmoAmount: 1
+      AmmoAmount: 0
   - Id: 48
     Name: TF_DOUBLE
     Description: Double Attack
@@ -2073,7 +2073,7 @@ Body:
       SpCost: 60
       ItemCost:
         - Item: Blue_Gemstone
-          Amount: 1
+          Amount: 0
   - Id: 55
     Name: KN_SPEARMASTERY
     Description: Spear Mastery
@@ -2527,7 +2527,7 @@ Body:
           Amount: 42
       ItemCost:
         - Item: Blue_Gemstone
-          Amount: 1
+          Amount: 0
     Unit:
       Id: Sanctuary
       Layout: -1
@@ -2856,7 +2856,7 @@ Body:
           Amount: 58
       ItemCost:
         - Item: Blue_Gemstone
-          Amount: 1
+          Amount: 0
     Unit:
       Id: Magnus
       Layout: -1
@@ -2979,19 +2979,19 @@ Body:
       SpCost: 75
       ItemCost:
         - Item: Blue_Gemstone
-          Amount: 1
+          Amount: 0
           Level: 6
         - Item: Blue_Gemstone
-          Amount: 1
+          Amount: 0
           Level: 7
         - Item: Blue_Gemstone
-          Amount: 1
+          Amount: 0
           Level: 8
         - Item: Blue_Gemstone
-          Amount: 1
+          Amount: 0
           Level: 9
         - Item: Blue_Gemstone
-          Amount: 1
+          Amount: 0
           Level: 10
     Unit:
       Id: Firepillar_Waiting
@@ -4981,7 +4981,7 @@ Body:
       SpCost: 20
       ItemCost:
         - Item: Red_Gemstone
-          Amount: 1
+          Amount: 0
     Unit:
       Id: Venomdust
       Layout: -1
@@ -5058,7 +5058,7 @@ Body:
           Amount: 30
       ItemCost:
         - Item: Red_Gemstone
-          Amount: 1
+          Amount: 0
     Status: Splasher
   - Id: 142
     Name: NV_FIRSTAID
@@ -5157,7 +5157,7 @@ Body:
         Bow: true
       Ammo:
         Arrow: true
-      AmmoAmount: 1
+      AmmoAmount: 0
   - Id: 149
     Name: TF_SPRINKLESAND
     Description: Sand Attack
@@ -6340,7 +6340,7 @@ Body:
       SpCost: 15
       ItemCost:
         - Item: Red_Gemstone
-          Amount: 1
+          Amount: 0
     Unit:
       Id: Graffiti
       Interval: -1
@@ -7818,7 +7818,7 @@ Body:
           Amount: 40
       ItemCost:
         - Item: Yellow_Gemstone
-          Amount: 1
+          Amount: 0
     Unit:
       Id: Volcano
       Layout: 3
@@ -7868,7 +7868,7 @@ Body:
           Amount: 40
       ItemCost:
         - Item: Yellow_Gemstone
-          Amount: 1
+          Amount: 0
     Unit:
       Id: Deluge
       Layout: 3
@@ -7918,7 +7918,7 @@ Body:
           Amount: 40
       ItemCost:
         - Item: Yellow_Gemstone
-          Amount: 1
+          Amount: 0
     Unit:
       Id: Violentgale
       Layout: 3
@@ -7965,9 +7965,9 @@ Body:
           Amount: 50
       ItemCost:
         - Item: Blue_Gemstone
-          Amount: 1
+          Amount: 0
         - Item: Yellow_Gemstone
-          Amount: 1
+          Amount: 0
     Unit:
       Id: Landprotector
       Layout:
@@ -8007,7 +8007,7 @@ Body:
       SpCost: 1
       ItemCost:
         - Item: Yellow_Gemstone
-          Amount: 1
+          Amount: 0
   - Id: 290
     Name: SA_ABRACADABRA
     Description: Hocus-pocus
@@ -8023,7 +8023,7 @@ Body:
       SpCost: 50
       ItemCost:
         - Item: Yellow_Gemstone
-          Amount: 2
+          Amount: 0
   - Id: 291
     Name: SA_MONOCELL
     Description: Monocell
@@ -8529,7 +8529,7 @@ Body:
         Musical: true
       Ammo:
         Arrow: true
-      AmmoAmount: 1
+      AmmoAmount: 0
   - Id: 317
     Name: BA_DISSONANCE
     Description: Unchained Serenade
@@ -8821,7 +8821,7 @@ Body:
         Whip: true
       Ammo:
         Arrow: true
-      AmmoAmount: 1
+      AmmoAmount: 0
   - Id: 325
     Name: DC_UGLYDANCE
     Description: Hip Shaker
@@ -9787,13 +9787,13 @@ Body:
           Amount: 120
       ItemCost:
         - Item: Yellow_Gemstone
-          Amount: 1
+          Amount: 0
         - Item: Red_Gemstone
-          Amount: 1
+          Amount: 0
         - Item: Blue_Gemstone
-          Amount: 1
+          Amount: 0
         - Item: Holy_Water
-          Amount: 1
+          Amount: 0
     Unit:
       Id: Basilica
       Layout: 2
@@ -10413,7 +10413,7 @@ Body:
         Bow: true
       Ammo:
         Arrow: true
-      AmmoAmount: 1
+      AmmoAmount: 0
   - Id: 383
     Name: SN_WINDWALK
     Description: Wind Walker
@@ -10768,7 +10768,7 @@ Body:
         Whip: true
       Ammo:
         Arrow: true
-      AmmoAmount: 1
+      AmmoAmount: 0
   - Id: 395
     Name: CG_MOONLIT
     Description: Sheltering Bliss
@@ -13162,9 +13162,9 @@ Body:
       SpCost: 40
       ItemCost:
         - Item: Yellow_Gemstone
-          Amount: 1
+          Amount: 0
         - Item: Blue_Gemstone
-          Amount: 1
+          Amount: 0
   - Id: 484
     Name: HW_GRAVITATION
     Description: Gravitation Field
@@ -13214,7 +13214,7 @@ Body:
           Amount: 100
       ItemCost:
         - Item: Blue_Gemstone
-          Amount: 1
+          Amount: 0
     Unit:
       Id: Gravitation
       Layout: 2
@@ -13673,7 +13673,7 @@ Body:
         Bow: true
       Ammo:
         Arrow: true
-      AmmoAmount: 1
+      AmmoAmount: 0
   - Id: 500
     Name: GS_GLITTERING
     Description: Flip the Coin
@@ -17032,7 +17032,7 @@ Body:
       SpCost: 15
       Ammo:
         Dagger: true
-      AmmoAmount: 1
+      AmmoAmount: 0
   - Id: 1005
     Name: RG_CLOSECONFINE
     Description: Close Confine
@@ -18187,7 +18187,7 @@ Body:
           Amount: 40
       ItemCost:
         - Item: Red_Gemstone
-          Amount: 2
+          Amount: 0
   - Id: 2208
     Name: WL_RADIUS
     Description: Radius
@@ -18395,7 +18395,7 @@ Body:
           Amount: 800
       ItemCost:
         - Item: Red_Gemstone
-          Amount: 2
+          Amount: 0
     Unit:
       Id: Dummyskill
       Range: 9
@@ -19448,7 +19448,7 @@ Body:
       SpRateCost: -10
       ItemCost:
         - Item: Blue_Gemstone
-          Amount: 1
+          Amount: 0
   - Id: 2040
     Name: AB_ADORAMUS
     Description: Adoramus
@@ -19555,7 +19555,7 @@ Body:
           Amount: 76
       ItemCost:
         - Item: Blue_Gemstone
-          Amount: 1
+          Amount: 0
   - Id: 2041
     Name: AB_CLEMENTIA
     Description: Crementia
@@ -20279,7 +20279,7 @@ Body:
         Bow: true
       Ammo:
         Arrow: true
-      AmmoAmount: 10
+      AmmoAmount: 0
   - Id: 2234
     Name: RA_FEARBREEZE
     Description: Fear Breeze
@@ -20347,7 +20347,7 @@ Body:
         Bow: true
       Ammo:
         Arrow: true
-      AmmoAmount: 1
+      AmmoAmount: 0
   - Id: 2237
     Name: RA_DETONATOR
     Description: Detonator
@@ -21098,7 +21098,7 @@ Body:
           Amount: 60
       Ammo:
         Cannonball: true
-      AmmoAmount: 1
+      AmmoAmount: 0
       State: Mado
       ItemCost:
         - Item: Magic_Gear_Fuel
@@ -26353,7 +26353,7 @@ Body:
           Amount: 78
       ItemCost:
         - Item: Red_Gemstone
-          Amount: 2
+          Amount: 0
     Unit:
       Id: Cloud_Kill
       Range: 3
@@ -26710,7 +26710,7 @@ Body:
           Amount: 50
       ItemCost:
         - Item: Yellow_Gemstone
-          Amount: 1
+          Amount: 0
   - Id: 2456
     Name: SO_EL_CONTROL
     Description: Spirit Control
@@ -27212,7 +27212,7 @@ Body:
           Amount: 50
       Ammo:
         Cannonball: true
-      AmmoAmount: 1
+      AmmoAmount: 0
       State: Cart
   - Id: 2478
     Name: GN_CARTBOOST
@@ -27899,7 +27899,7 @@ Body:
       SpCost: 4
       Ammo:
         Throwweapon: true
-      AmmoAmount: 1
+      AmmoAmount: 0
   - Id: 2494
     Name: GN_CHANGEMATERIAL
     Description: Change Material
@@ -30341,7 +30341,7 @@ Body:
       State: Elementalspirit2
       ItemCost:
         - Item: Blue_Gemstone
-          Amount: 1
+          Amount: 0
   - Id: 5009
     Name: SR_FLASHCOMBO
     Description: Flash Combo
@@ -32484,7 +32484,7 @@ Body:
       SpCost: 12
       Ammo:
         Arrow: true
-      AmmoAmount: 1
+      AmmoAmount: 0
   - Id: 8208
     Name: MA_SHOWER
     Description: Arrow_Shower
@@ -32508,7 +32508,7 @@ Body:
       SpCost: 15
       Ammo:
         Arrow: true
-      AmmoAmount: 1
+      AmmoAmount: 0
   - Id: 8209
     Name: MA_SKIDTRAP
     Description: Skid_Trap
@@ -32725,7 +32725,7 @@ Body:
       SpCost: 15
       Ammo:
         Arrow: true
-      AmmoAmount: 1
+      AmmoAmount: 0
   - Id: 8215
     Name: MA_SHARPSHOOTING
     Description: Focused_Arrow_Strike
@@ -32763,7 +32763,7 @@ Body:
           Amount: 30
       Ammo:
         Arrow: true
-      AmmoAmount: 1
+      AmmoAmount: 0
   - Id: 8216
     Name: ML_PIERCE
     Description: Pierce
