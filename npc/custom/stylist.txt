@@ -221,7 +221,4 @@ payon,183,102,5 script  Adv. Stylist#main       878,{
         doevent "Stylist::OnTalk";
 }
 
-prontera,115,181,5      duplicate(Adv. Stylist#main)    Adv. Stylist#1  878
-prontera,115,181,5      duplicate(Adv. Stylist#main)    Adv. Stylist#2  878
 payon,183,102,5 duplicate(Adv. Stylist#main)    Adv. Stylist#3  878
-
