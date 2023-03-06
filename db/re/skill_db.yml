@@ -2461,7 +2461,7 @@ Body:
           Amount: 30
       ItemCost:
         - Item: Holy_Water
-          Amount: 1
+          Amount: 0
     Status: Aspersio
   - Id: 69
     Name: PR_BENEDICTIO
@@ -21070,7 +21070,7 @@ Body:
         - Item: Ansila
           Amount: 1
         - Item: Holy_Water
-          Amount: 1
+          Amount: 0
     Unit:
       Id: Epiclesis
       Range: 2
@@ -22438,7 +22438,7 @@ Body:
       - Level: 4
         Time: 250
       - Level: 5
-        Time: 300 
+        Time: 300
     FixedCastTime:
       - Level: 1
         Time: 500
@@ -24698,7 +24698,7 @@ Body:
           Amount: 60
       ItemCost:
         - Item: Holy_Water
-          Amount: 2
+          Amount: 0
     Status: Benedictio
   - Id: 2323
     Name: LG_EARTHDRIVE
@@ -36001,7 +36001,7 @@ Body:
           Amount: 70
       ItemCost:
         - Item: Holy_Water
-          Amount: 1
+          Amount: 0
     Status: Holy_Oil
   - Id: 5242
     Name: IQ_SINCERE_FAITH
