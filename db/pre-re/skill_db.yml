@@ -1802,25 +1802,25 @@ Body:
       SpCost: 5
       ZenyCost:
         - Level: 1
-          Amount: 100
+          Amount: 1
         - Level: 2
-          Amount: 200
+          Amount: 2
         - Level: 3
-          Amount: 300
+          Amount: 3
         - Level: 4
-          Amount: 400
+          Amount: 4
         - Level: 5
-          Amount: 500
+          Amount: 5
         - Level: 6
-          Amount: 600
+          Amount: 6
         - Level: 7
-          Amount: 700
+          Amount: 7
         - Level: 8
-          Amount: 800
+          Amount: 8
         - Level: 9
-          Amount: 900
+          Amount: 9
         - Level: 10
-          Amount: 1000
+          Amount: 10
   - Id: 43
     Name: AC_OWL
     Description: Owl's Eye
