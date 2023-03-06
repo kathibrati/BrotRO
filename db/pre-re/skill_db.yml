@@ -4158,7 +4158,7 @@ Body:
       SpCost: 10
       ItemCost:
         - Item: Booby_Trap
-          Amount: 1
+          Amount: 0
     Unit:
       Id: Skidtrap
       Range: 1
@@ -4206,7 +4206,7 @@ Body:
       SpCost: 10
       ItemCost:
         - Item: Booby_Trap
-          Amount: 1
+          Amount: 0
     Unit:
       Id: Landmine
       Range: 1
@@ -4258,7 +4258,7 @@ Body:
       SpCost: 12
       ItemCost:
         - Item: Booby_Trap
-          Amount: 1
+          Amount: 0
     Unit:
       Id: Anklesnare
       Range: 1
@@ -4302,7 +4302,7 @@ Body:
       SpCost: 45
       ItemCost:
         - Item: Booby_Trap
-          Amount: 2
+          Amount: 0
     Unit:
       Id: Shockwave
       Range: 1
@@ -4345,7 +4345,7 @@ Body:
       SpCost: 12
       ItemCost:
         - Item: Booby_Trap
-          Amount: 1
+          Amount: 0
     Unit:
       Id: Sandman
       Range: 1
@@ -4389,7 +4389,7 @@ Body:
       SpCost: 12
       ItemCost:
         - Item: Booby_Trap
-          Amount: 2
+          Amount: 0
     Unit:
       Id: Flasher
       Range: 1
@@ -4449,7 +4449,7 @@ Body:
       SpCost: 10
       ItemCost:
         - Item: Booby_Trap
-          Amount: 2
+          Amount: 0
     Unit:
       Id: Freezingtrap
       Range: 1
@@ -4499,7 +4499,7 @@ Body:
       SpCost: 10
       ItemCost:
         - Item: Booby_Trap
-          Amount: 1
+          Amount: 0
     Unit:
       Id: Blastmine
       Range: 1
@@ -4549,7 +4549,7 @@ Body:
       SpCost: 15
       ItemCost:
         - Item: Booby_Trap
-          Amount: 2
+          Amount: 0
     Unit:
       Id: Claymoretrap
       Range: 1
@@ -4593,7 +4593,7 @@ Body:
       SpCost: 1
       ItemCost:
         - Item: Booby_Trap
-          Amount: 1
+          Amount: 0
     Unit:
       Id: Talkiebox
       Range: 1
@@ -6716,7 +6716,7 @@ Body:
       SpCost: 10
       ItemCost:
         - Item: Germination_Breed
-          Amount: 1
+          Amount: 0
   - Id: 244
     Name: AM_REST
     Description: Vaporize
@@ -7668,7 +7668,7 @@ Body:
       SpCost: 40
       ItemCost:
         - Item: Boody_Red
-          Amount: 1
+          Amount: 0
     Status: FireWeapon
   - Id: 281
     Name: SA_FROSTWEAPON
@@ -7702,7 +7702,7 @@ Body:
       SpCost: 40
       ItemCost:
         - Item: Crystal_Blue
-          Amount: 1
+          Amount: 0
     Status: WaterWeapon
   - Id: 282
     Name: SA_LIGHTNINGLOADER
@@ -7736,7 +7736,7 @@ Body:
       SpCost: 40
       ItemCost:
         - Item: Wind_Of_Verdure
-          Amount: 1
+          Amount: 0
     Status: WindWeapon
   - Id: 283
     Name: SA_SEISMICWEAPON
@@ -7770,7 +7770,7 @@ Body:
       SpCost: 40
       ItemCost:
         - Item: Yellow_Live
-          Amount: 1
+          Amount: 0
     Status: EarthWeapon
   - Id: 284
     Name: SA_DRAGONOLOGY
@@ -8023,7 +8023,7 @@ Body:
       SpCost: 50
       ItemCost:
         - Item: Yellow_Gemstone
-          Amount: 0
+          Amount: 1
   - Id: 291
     Name: SA_MONOCELL
     Description: Monocell
@@ -11115,7 +11115,7 @@ Body:
       SpCost: 50
       ItemCost:
         - Item: Spiderweb
-          Amount: 1
+          Amount: 0
     Unit:
       Id: Spiderweb
       Interval: -1
@@ -14826,7 +14826,7 @@ Body:
           Amount: 48
       ItemCost:
         - Item: Shadow_Orb
-          Amount: 1
+          Amount: 0
     Status: Bunsinjyutsu
   - Id: 533
     Name: NJ_NINPOU
@@ -14953,7 +14953,7 @@ Body:
       SpCost: 25
       ItemCost:
         - Item: Flame_Stone
-          Amount: 1
+          Amount: 0
     Unit:
       Id: Kaen
       Layout: -1
@@ -14994,7 +14994,7 @@ Body:
           Amount: 40
       ItemCost:
         - Item: Flame_Stone
-          Amount: 1
+          Amount: 0
     Unit:
       Id: Dummyskill
       Layout: 2
@@ -15162,7 +15162,7 @@ Body:
           Amount: 42
       ItemCost:
         - Item: Ice_Stone
-          Amount: 1
+          Amount: 0
     Unit:
       Id: Suiton
       Layout:
@@ -15243,7 +15243,7 @@ Body:
           Amount: 60
       ItemCost:
         - Item: Ice_Stone
-          Amount: 1
+          Amount: 0
     Unit:
       Id: Dummyskill
       Layout: 3
@@ -15362,7 +15362,7 @@ Body:
           Amount: 32
       ItemCost:
         - Item: Wind_Stone
-          Amount: 1
+          Amount: 0
     Unit:
       Id: Dummyskill
       Layout:
@@ -15434,7 +15434,7 @@ Body:
           Amount: 40
       ItemCost:
         - Item: Wind_Stone
-          Amount: 1
+          Amount: 0
   - Id: 543
     Name: NJ_NEN
     Description: Soul
@@ -20399,7 +20399,7 @@ Body:
       SpCost: 35
       ItemCost:
         - Item: Special_Alloy_Trap
-          Amount: 1
+          Amount: 0
     Unit:
       Id: Electricshocker
       Range: 1
@@ -20436,7 +20436,7 @@ Body:
       SpCost: 20
       ItemCost:
         - Item: Special_Alloy_Trap
-          Amount: 1
+          Amount: 0
     Unit:
       Id: Clusterbomb
       Range: 1
@@ -20649,9 +20649,9 @@ Body:
       SpCost: 10
       ItemCost:
         - Item: Special_Alloy_Trap
-          Amount: 1
+          Amount: 0
         - Item: Scarlet_Pts
-          Amount: 1
+          Amount: 0
     Unit:
       Id: Magentatrap
       Range: 1
@@ -20686,9 +20686,9 @@ Body:
       SpCost: 10
       ItemCost:
         - Item: Special_Alloy_Trap
-          Amount: 1
+          Amount: 0
         - Item: Indigo_Pts
-          Amount: 1
+          Amount: 0
     Unit:
       Id: Cobalttrap
       Range: 1
@@ -20723,9 +20723,9 @@ Body:
       SpCost: 10
       ItemCost:
         - Item: Special_Alloy_Trap
-          Amount: 1
+          Amount: 0
         - Item: Lime_Green_Pts
-          Amount: 1
+          Amount: 0
     Unit:
       Id: Maizetrap
       Range: 1
@@ -20760,9 +20760,9 @@ Body:
       SpCost: 10
       ItemCost:
         - Item: Special_Alloy_Trap
-          Amount: 1
+          Amount: 0
         - Item: Yellow_Wish_Pts
-          Amount: 1
+          Amount: 0
     Unit:
       Id: Verduretrap
       Range: 1
@@ -20801,7 +20801,7 @@ Body:
       SpCost: 10
       ItemCost:
         - Item: Special_Alloy_Trap
-          Amount: 1
+          Amount: 0
     Unit:
       Id: Firingtrap
       Range: 1
@@ -20839,7 +20839,7 @@ Body:
       SpCost: 10
       ItemCost:
         - Item: Special_Alloy_Trap
-          Amount: 1
+          Amount: 0
     Unit:
       Id: Iceboundtrap
       Range: 1
@@ -20944,7 +20944,7 @@ Body:
       State: Mado
       ItemCost:
         - Item: Vulcan_Bullet
-          Amount: 1
+          Amount: 0
   - Id: 2259
     Name: NC_FLAMELAUNCHER
     Description: Flame Launcher
@@ -20987,7 +20987,7 @@ Body:
         - Item: Flame_Thrower
           Amount: 0
         - Item: Magic_Gear_Fuel
-          Amount: 1
+          Amount: 0
   - Id: 2260
     Name: NC_COLDSLOWER
     Description: Cold Slower
@@ -21031,9 +21031,9 @@ Body:
       State: Mado
       ItemCost:
         - Item: Magic_Gear_Fuel
-          Amount: 1
+          Amount: 0
         - Item: Liquid_Condensed_Bullet
-          Amount: 1
+          Amount: 0
   - Id: 2261
     Name: NC_ARMSCANNON
     Description: Arm Cannon
@@ -21102,7 +21102,7 @@ Body:
       State: Mado
       ItemCost:
         - Item: Magic_Gear_Fuel
-          Amount: 1
+          Amount: 0
   - Id: 2262
     Name: NC_ACCELERATION
     Description: Acceleration
@@ -21132,7 +21132,7 @@ Body:
       State: Mado
       ItemCost:
         - Item: Magic_Gear_Fuel
-          Amount: 1
+          Amount: 0
       Equipment:
         Accelerator: true
   - Id: 2263
@@ -21152,7 +21152,7 @@ Body:
       State: Mado
       ItemCost:
         - Item: Magic_Gear_Fuel
-          Amount: 1
+          Amount: 0
       Equipment:
         Hovering_Booster: true
   - Id: 2264
@@ -21173,7 +21173,7 @@ Body:
       State: Mado
       ItemCost:
         - Item: Magic_Gear_Fuel
-          Amount: 1
+          Amount: 0
   - Id: 2265
     Name: NC_B_SIDESLIDE
     Description: Back-Side Slide
@@ -21192,7 +21192,7 @@ Body:
       State: Mado
       ItemCost:
         - Item: Magic_Gear_Fuel
-          Amount: 1
+          Amount: 0
   - Id: 2266
     Name: NC_MAINFRAME
     Description: Mainframe Restructure
@@ -21236,7 +21236,7 @@ Body:
       State: Mado
       ItemCost:
         - Item: Magic_Gear_Fuel
-          Amount: 3
+          Amount: 0
       Equipment:
         Suicidal_Device: true
   - Id: 2268
@@ -21262,19 +21262,19 @@ Body:
       State: Mado
       ItemCost:
         - Item: Scarlet_Pts
-          Amount: 3
+          Amount: 0
           Level: 1
         - Item: Lime_Green_Pts
-          Amount: 3
+          Amount: 0
           Level: 2
         - Item: Yellow_Wish_Pts
-          Amount: 3
+          Amount: 0
           Level: 3
         - Item: Indigo_Pts
-          Amount: 3
+          Amount: 0
           Level: 4
         - Item: Magic_Gear_Fuel
-          Amount: 2
+          Amount: 0
       Equipment:
         Shape_Shifter: true
   - Id: 2269
@@ -21295,7 +21295,7 @@ Body:
       State: Mado
       ItemCost:
         - Item: Magic_Gear_Fuel
-          Amount: 1
+          Amount: 0
       Equipment:
         Cooling_Device: true
         High_Quality_Cooler: true
@@ -21344,7 +21344,7 @@ Body:
       State: Mado
       ItemCost:
         - Item: Magic_Gear_Fuel
-          Amount: 1
+          Amount: 0
   - Id: 2272
     Name: NC_MAGNETICFIELD
     Description: Magnetic Field
@@ -21383,7 +21383,7 @@ Body:
       State: Mado
       ItemCost:
         - Item: Magic_Gear_Fuel
-          Amount: 2
+          Amount: 0
       Equipment:
         Mag_Field_Generator: true
   - Id: 2273
@@ -21422,7 +21422,7 @@ Body:
       State: Mado
       ItemCost:
         - Item: Magic_Gear_Fuel
-          Amount: 1
+          Amount: 0
       Equipment:
         Barrier_Builder: true
     Unit:
@@ -21465,7 +21465,7 @@ Body:
       State: Mado
       ItemCost:
         - Item: Magic_Gear_Fuel
-          Amount: 2
+          Amount: 0
       Equipment:
         Camouflage_Generator: true
     Unit:
@@ -21523,15 +21523,15 @@ Body:
       State: Mado
       ItemCost:
         - Item: RepairA
-          Amount: 1
+          Amount: 0
         - Item: RepairA
-          Amount: 1
+          Amount: 0
         - Item: RepairB
-          Amount: 1
+          Amount: 0
         - Item: RepairB
-          Amount: 1
+          Amount: 0
         - Item: RepairC
-          Amount: 1
+          Amount: 0
         - Item: Repair_Kit
           Amount: 0
   - Id: 2276
@@ -21837,7 +21837,7 @@ Body:
       SpCost: 15
       ItemCost:
         - Item: Monkey_Wrench
-          Amount: 1
+          Amount: 0
   - Id: 2284
     Name: SC_FATALMENACE
     Description: Fatal Menace
@@ -22146,7 +22146,7 @@ Body:
         - Item: Paint_Brush
           Amount: 0
         - Item: Surface_Paint
-          Amount: 1
+          Amount: 0
   - Id: 2290
     Name: SC_INVISIBILITY
     Description: Invisibility
@@ -22237,7 +22237,7 @@ Body:
           Amount: 50
       ItemCost:
         - Item: Face_Paint
-          Amount: 1
+          Amount: 0
         - Item: Makeover_Brush
           Amount: 0
   - Id: 2293
@@ -22271,7 +22271,7 @@ Body:
           Amount: 50
       ItemCost:
         - Item: Face_Paint
-          Amount: 1
+          Amount: 0
         - Item: Makeover_Brush
           Amount: 0
   - Id: 2294
@@ -22305,7 +22305,7 @@ Body:
           Amount: 50
       ItemCost:
         - Item: Face_Paint
-          Amount: 1
+          Amount: 0
         - Item: Makeover_Brush
           Amount: 0
   - Id: 2295
@@ -22339,7 +22339,7 @@ Body:
           Amount: 50
       ItemCost:
         - Item: Face_Paint
-          Amount: 1
+          Amount: 0
         - Item: Makeover_Brush
           Amount: 0
   - Id: 2296
@@ -22373,7 +22373,7 @@ Body:
           Amount: 50
       ItemCost:
         - Item: Face_Paint
-          Amount: 1
+          Amount: 0
         - Item: Makeover_Brush
           Amount: 0
   - Id: 2297
@@ -22407,7 +22407,7 @@ Body:
           Amount: 50
       ItemCost:
         - Item: Face_Paint
-          Amount: 1
+          Amount: 0
         - Item: Makeover_Brush
           Amount: 0
   - Id: 2298
@@ -22487,7 +22487,7 @@ Body:
         - Item: Paint_Brush
           Amount: 0
         - Item: Surface_Paint
-          Amount: 1
+          Amount: 0
     Unit:
       Id: Manhole
       Range: 1
@@ -22530,7 +22530,7 @@ Body:
         - Item: Paint_Brush
           Amount: 0
         - Item: Surface_Paint
-          Amount: 1
+          Amount: 0
     Unit:
       Id: Dimensiondoor
       Interval: 1000
@@ -22583,7 +22583,7 @@ Body:
         - Item: Paint_Brush
           Amount: 0
         - Item: Surface_Paint
-          Amount: 2
+          Amount: 0
     Unit:
       Id: Chaospanic
       Layout: 2
@@ -22633,7 +22633,7 @@ Body:
         - Item: Paint_Brush
           Amount: 0
         - Item: Surface_Paint
-          Amount: 2
+          Amount: 0
     Unit:
       Id: Maelstrom
       Layout: 2
@@ -22675,7 +22675,7 @@ Body:
         - Item: Paint_Brush
           Amount: 0
         - Item: Surface_Paint
-          Amount: 2
+          Amount: 0
     Unit:
       Id: Bloodylust
       Layout: 3
@@ -22750,7 +22750,7 @@ Body:
         - Item: Paint_Brush
           Amount: 0
         - Item: Surface_Paint
-          Amount: 1
+          Amount: 0
     Unit:
       Id: Feintbomb
       Range: 2
@@ -25066,7 +25066,7 @@ Body:
         Whip: true
       ItemCost:
         - Item: Protect_Neck_Candy
-          Amount: 1
+          Amount: 0
     Unit:
       Id: Netherworld
       Range: 1
@@ -25176,7 +25176,7 @@ Body:
         Whip: true
       ItemCost:
         - Item: Heartbroken_Tears
-          Amount: 1
+          Amount: 0
   - Id: 2422
     Name: WM_LULLABY_DEEPSLEEP
     Description: Deep Sleep Lullaby
@@ -25390,7 +25390,7 @@ Body:
           Amount: 120
       ItemCost:
         - Item: Protect_Neck_Candy
-          Amount: 1
+          Amount: 0
   - Id: 2427
     Name: WM_SONG_OF_MANA
     Description: Song of Mana
@@ -26762,13 +26762,13 @@ Body:
           Amount: 200
       ItemCost:
         - Item: Boody_Red
-          Amount: 3
+          Amount: 0
           Level: 1
         - Item: Boody_Red
-          Amount: 6
+          Amount: 0
           Level: 2
         - Item: Flame_Heart
-          Amount: 1
+          Amount: 0
           Level: 3
   - Id: 2458
     Name: SO_SUMMON_AQUA
@@ -26806,13 +26806,13 @@ Body:
           Amount: 200
       ItemCost:
         - Item: Crystal_Blue
-          Amount: 3
+          Amount: 0
           Level: 1
         - Item: Crystal_Blue
-          Amount: 6
+          Amount: 0
           Level: 2
         - Item: Mistic_Frozen
-          Amount: 1
+          Amount: 0
           Level: 3
   - Id: 2459
     Name: SO_SUMMON_VENTUS
@@ -26850,13 +26850,13 @@ Body:
           Amount: 200
       ItemCost:
         - Item: Wind_Of_Verdure
-          Amount: 3
+          Amount: 0
           Level: 1
         - Item: Wind_Of_Verdure
-          Amount: 6
+          Amount: 0
           Level: 2
         - Item: Rough_Wind
-          Amount: 1
+          Amount: 0
           Level: 3
   - Id: 2460
     Name: SO_SUMMON_TERA
@@ -26894,13 +26894,13 @@ Body:
           Amount: 200
       ItemCost:
         - Item: Yellow_Live
-          Amount: 3
+          Amount: 0
           Level: 1
         - Item: Yellow_Live
-          Amount: 6
+          Amount: 0
           Level: 2
         - Item: Great_Nature
-          Amount: 1
+          Amount: 0
           Level: 3
   - Id: 2461
     Name: SO_EL_ACTION
@@ -26982,13 +26982,13 @@ Body:
           Amount: 38
       ItemCost:
         - Item: Scarlet_Pts
-          Amount: 1
+          Amount: 0
           Level: 1
         - Item: Scarlet_Pts
-          Amount: 2
+          Amount: 0
           Level: 2
         - Item: Scarlet_Pts
-          Amount: 3
+          Amount: 0
           Level: 3
     Unit:
       Id: Fire_Insignia
@@ -27024,13 +27024,13 @@ Body:
           Amount: 38
       ItemCost:
         - Item: Indigo_Pts
-          Amount: 1
+          Amount: 0
           Level: 1
         - Item: Indigo_Pts
-          Amount: 2
+          Amount: 0
           Level: 2
         - Item: Indigo_Pts
-          Amount: 3
+          Amount: 0
           Level: 3
     Unit:
       Id: Water_Insignia
@@ -27066,13 +27066,13 @@ Body:
           Amount: 38
       ItemCost:
         - Item: Yellow_Wish_Pts
-          Amount: 1
+          Amount: 0
           Level: 1
         - Item: Yellow_Wish_Pts
-          Amount: 2
+          Amount: 0
           Level: 2
         - Item: Yellow_Wish_Pts
-          Amount: 3
+          Amount: 0
           Level: 3
     Unit:
       Id: Wind_Insignia
@@ -27108,13 +27108,13 @@ Body:
           Amount: 38
       ItemCost:
         - Item: Lime_Green_Pts
-          Amount: 1
+          Amount: 0
           Level: 1
         - Item: Lime_Green_Pts
-          Amount: 2
+          Amount: 0
           Level: 2
         - Item: Lime_Green_Pts
-          Amount: 3
+          Amount: 0
           Level: 3
     Unit:
       Id: Earth_Insignia
@@ -27284,7 +27284,7 @@ Body:
           Amount: 38
       ItemCost:
         - Item: Seed_Of_Horny_Plant
-          Amount: 1
+          Amount: 0
     Unit:
       Id: Thorns_Trap
       Range: 1
@@ -27337,7 +27337,7 @@ Body:
           Amount: 50
       ItemCost:
         - Item: Bloodsuck_Plant_Seed
-          Amount: 1
+          Amount: 0
   - Id: 2481
     Name: GN_SPORE_EXPLOSION
     Description: Spore Explosion
@@ -27402,7 +27402,7 @@ Body:
           Amount: 84
       ItemCost:
         - Item: Bomb_Mushroom_Spore
-          Amount: 1
+          Amount: 0
   - Id: 2482
     Name: GN_WALLOFTHORN
     Description: Wall of Thorns
@@ -27451,7 +27451,7 @@ Body:
           Amount: 80
       ItemCost:
         - Item: Seed_Of_Horny_Plant
-          Amount: 1
+          Amount: 0
     Unit:
       Id: Wallofthorn
       AlternateId: Firewall
@@ -27527,7 +27527,7 @@ Body:
           Amount: 60
       ItemCost:
         - Item: Seed_Of_Horny_Plant
-          Amount: 1
+          Amount: 0
   - Id: 2484
     Name: GN_CRAZYWEED_ATK
     Description: Crazy Weed Attack
@@ -28232,7 +28232,7 @@ Body:
       SpiritSphereCost: 1
       ItemCost:
         - Item: Special_Alloy_Trap
-          Amount: 1
+          Amount: 0
     Unit:
       Id: B_Trap
       Range:
@@ -29117,7 +29117,7 @@ Body:
           Amount: 9
       ItemCost:
         - Item: Explosive_Kunai
-          Amount: 1
+          Amount: 0
     Unit:
       Id: Dummyskill
       Range: 1
@@ -29370,19 +29370,19 @@ Body:
           Amount: 21
       ItemCost:
         - Item: Makibishi
-          Amount: 3
+          Amount: 0
           Level: 1
         - Item: Makibishi
-          Amount: 4
+          Amount: 0
           Level: 2
         - Item: Makibishi
-          Amount: 5
+          Amount: 0
           Level: 3
         - Item: Makibishi
-          Amount: 6
+          Amount: 0
           Level: 4
         - Item: Makibishi
-          Amount: 7
+          Amount: 0
           Level: 5
     Unit:
       Id: Makibishi
@@ -29567,7 +29567,7 @@ Body:
       SpCost: 20
       ItemCost:
         - Item: Charm_Fire
-          Amount: 1
+          Amount: 0
   - Id: 3016
     Name: KO_HYOUHU_HUBUKI
     Description: Ice Charm
@@ -29584,7 +29584,7 @@ Body:
       SpCost: 20
       ItemCost:
         - Item: Charm_Ice
-          Amount: 1
+          Amount: 0
   - Id: 3017
     Name: KO_KAZEHU_SEIRAN
     Description: Wind Charm
@@ -29601,7 +29601,7 @@ Body:
       SpCost: 20
       ItemCost:
         - Item: Charm_Wind
-          Amount: 1
+          Amount: 0
   - Id: 3018
     Name: KO_DOHU_KOUKAI
     Description: Earth Charm
@@ -29618,7 +29618,7 @@ Body:
       SpCost: 20
       ItemCost:
         - Item: Charm_Earth
-          Amount: 1
+          Amount: 0
   - Id: 3019
     Name: KO_KAIHOU
     Description: Release Ninja Spell
@@ -29800,7 +29800,7 @@ Body:
       SpCost: 50
       ItemCost:
         - Item: Shadow_Orb
-          Amount: 1
+          Amount: 0
   - Id: 3025
     Name: KG_KAGEMUSYA
     Description: Shadow Warrior
@@ -29838,7 +29838,7 @@ Body:
           Amount: 80
       ItemCost:
         - Item: Ancient_Grudge
-          Amount: 1
+          Amount: 0
   - Id: 3026
     Name: OB_ZANGETSU
     Description: Distorted Crescent
@@ -30324,7 +30324,7 @@ Body:
         Whip: true
       ItemCost:
         - Item: Heartbroken_Tears
-          Amount: 1
+          Amount: 0
   - Id: 5008
     Name: SO_ELEMENTAL_SHIELD
     Description: Elemental Shield
@@ -30428,7 +30428,7 @@ Body:
           Amount: 14
       ItemCost:
         - Item: Special_Alloy_Trap
-          Amount: 1
+          Amount: 0
     Unit:
       Id: Anklesnare
       Range: 1
