@@ -6444,7 +6444,7 @@ Body:
       SpCost: 10
       ItemCost:
         - Item: Fire_Bottle
-          Amount: 1
+          Amount: 0
     Unit:
       Id: Demonstration
       Range: 1
@@ -6490,7 +6490,7 @@ Body:
       SpCost: 15
       ItemCost:
         - Item: Acid_Bottle
-          Amount: 1
+          Amount: 0
     Status: Bleeding
   - Id: 231
     Name: AM_POTIONPITCHER
