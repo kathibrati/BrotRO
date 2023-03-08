@@ -66,3 +66,18 @@ restart_sp_rate: 100
 //     skill is weapon-based and used with ranged weapons (auto-guesses which 
 //     skills should consume ammo when it's acquired via a card or plagiarize)
 arrow_decrement: 0
+
+// Allow use of SG skills without proper day (Sun/Moon/Star) ?
+allow_skill_without_day: yes
+
+// Allow use of ES-type magic on players?
+allow_es_magic_player: yes
+
+// Miracle of the Sun, Moon and Stars skill ratio (100% = 10000)
+sg_miracle_skill_ratio: 100
+
+// Miracle of the Sun, Moon and Stars skill duration in milliseconds
+sg_miracle_skill_duration: 3600000
+
+// Angel of the Sun, Moon and Stars skill ratio (100% = 10000)
+sg_angel_skill_ratio: 100
