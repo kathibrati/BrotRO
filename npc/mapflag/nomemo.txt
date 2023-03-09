@@ -17,7 +17,7 @@
 //============================================================
 // Municipality (Cities/Towns/Villages)
 //============================================================
-ayo_in01	mapflag	nomemo
+/*ayo_in01	mapflag	nomemo
 ayo_in02	mapflag	nomemo
 alb_ship	mapflag	nomemo
 alberta_in	mapflag	nomemo
@@ -83,7 +83,7 @@ ve_in	mapflag	nomemo
 ve_in02	mapflag	nomemo
 thor_camp	mapflag	nomemo
 moc_para01	mapflag	nomemo
-
+*/
 //============================================================
 // Airport
 //============================================================
