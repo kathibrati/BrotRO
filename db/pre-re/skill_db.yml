@@ -11647,7 +11647,7 @@ Body:
     HitCount: 1
     Element: Weapon
     SplashArea: 1
-    Knockback: 2
+    #Knockback: 2
     CastCancel: true
     AfterCastActDelay: 1000
     Duration1:
@@ -11681,7 +11681,7 @@ Body:
     HitCount: 1
     Element: Weapon
     SplashArea: 1
-    Knockback: 2
+    #Knockback: 2
     CastCancel: true
     AfterCastActDelay: 1000
     Duration1:
@@ -11715,7 +11715,7 @@ Body:
     HitCount: 1
     Element: Weapon
     SplashArea: 1
-    Knockback: 2
+    #Knockback: 2
     CastCancel: true
     AfterCastActDelay: 1000
     Duration1:
