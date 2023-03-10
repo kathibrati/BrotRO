@@ -1578,7 +1578,7 @@ Body:
     AegisName: Center_Potion
     Name: Concentration Potion
     Type: Usable
-    Buy: 1200
+    Buy: 800
     Weight: 100
     Flags:
       BuyingStore: true
@@ -1588,7 +1588,7 @@ Body:
     AegisName: Awakening_Potion
     Name: Awakening Potion
     Type: Usable
-    Buy: 2200
+    Buy: 1500
     Weight: 150
     Jobs:
       Alchemist: true
@@ -1625,7 +1625,7 @@ Body:
     AegisName: Berserk_Potion
     Name: Berserk Potion
     Type: Usable
-    Buy: 4500
+    Buy: 3000
     Weight: 200
     Jobs:
       Alchemist: true
