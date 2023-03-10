@@ -6117,7 +6117,7 @@ Body:
       IgnoreFlee: true
     Flags:
       AllowWhenHidden: true
-    Range: -1
+    Range: 1
     Hit: Single
     HitCount: 1
     Element: Weapon
