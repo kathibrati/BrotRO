@@ -5407,16 +5407,16 @@ int skill_castend_damage_id (struct block_list* src, struct block_list *bl, uint
 				short x, y;
 
 				if (dir > 0 && dir < 4)
-					x = -1;
+					x = 0;
 				else if (dir > 4)
-					x = 1;
+					x = 0;
 				else
 					x = 0;
 
 				if (dir > 2 && dir < 6)
-					y = -1;
+					y = 0;
 				else if (dir == 7 || dir < 2)
-					y = 1;
+					y = 0;
 				else
 					y = 0;
 
