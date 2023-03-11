@@ -4005,15 +4005,15 @@ Body:
     SplashArea: -1
     Duration1:
       - Level: 1
-        Time: 10000
-      - Level: 2
-        Time: 20000
-      - Level: 3
         Time: 30000
+      - Level: 2
+        Time: 60000
+      - Level: 3
+        Time: 90000
       - Level: 4
-        Time: 40000
+        Time: 120000
       - Level: 5
-        Time: 50000
+        Time: 150000
     Requires:
       SpCost:
         - Level: 1
@@ -4043,15 +4043,15 @@ Body:
     SplashArea: -1
     Duration1:
       - Level: 1
-        Time: 20000
+        Time: 30000
       - Level: 2
-        Time: 40000
-      - Level: 3
         Time: 60000
+      - Level: 3
+        Time: 90000
       - Level: 4
-        Time: 80000
+        Time: 120000
       - Level: 5
-        Time: 100000
+        Time: 150000
     Requires:
       SpCost:
         - Level: 1
