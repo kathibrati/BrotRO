@@ -1102,8 +1102,6 @@ Body:
     Flags:
       BuyingStore: true
       Container: true
-    Trade:
-      NoSell: true
     Script: |
       getrandgroupitem(IG_BlueBox,1);
   - Id: 604
@@ -1253,8 +1251,6 @@ Body:
     Flags:
       BuyingStore: true
       Container: true
-    Trade:
-      NoSell: true
     Script: |
       getrandgroupitem(IG_VioletBox,1);
   - Id: 618
