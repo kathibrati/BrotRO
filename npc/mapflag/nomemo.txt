@@ -191,7 +191,7 @@ um_fild01	mapflag	nomemo
 um_fild02	mapflag	nomemo
 um_fild03	mapflag	nomemo
 yuno_fild02	mapflag	nomemo
-yuno_fild03	mapflag	nomemo
+//yuno_fild03	mapflag	nomemo
 yuno_fild04	mapflag	nomemo
 yuno_fild05	mapflag	nomemo
 yuno_fild07	mapflag	nomemo
