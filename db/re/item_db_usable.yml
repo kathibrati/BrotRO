@@ -6636,14 +6636,6 @@ Body:
     Delay:
       Duration: 60000
       Status: Reuse_Limit_D
-    Trade:
-      NoDrop: true
-      NoTrade: true
-      NoSell: true
-      NoCart: true
-      NoGuildStorage: true
-      NoMail: true
-      NoAuction: true
     Script: |
       sc_start SC_ITEMBOOST,1800000,100;
   - Id: 12211
@@ -7282,14 +7274,6 @@ Body:
     Type: Usable
     Buy: 2
     Weight: 10
-    Trade:
-      NoDrop: true
-      NoTrade: true
-      NoSell: true
-      NoCart: true
-      NoGuildStorage: true
-      NoMail: true
-      NoAuction: true
     Script: |
       sc_start SC_ITEMBOOST,1800000,200;
   - Id: 12265
@@ -10021,14 +10005,6 @@ Body:
     Type: Usable
     Buy: 2
     Weight: 10
-    Trade:
-      NoDrop: true
-      NoTrade: true
-      NoSell: true
-      NoCart: true
-      NoGuildStorage: true
-      NoMail: true
-      NoAuction: true
     Script: |
       sc_start SC_ITEMBOOST,1800000,100;
   - Id: 12498
@@ -10747,14 +10723,6 @@ Body:
     Type: Usable
     Buy: 2
     Weight: 10
-    Trade:
-      NoDrop: true
-      NoTrade: true
-      NoCart: true
-      NoSell: true
-      NoGuildStorage: true
-      NoMail: true
-      NoAuction: true
     Script: |
       sc_start SC_ITEMBOOST,3600000,100;
   - Id: 12563
@@ -11427,15 +11395,6 @@ Body:
     Delay:
       Duration: 3000
       Status: All_Riding_Reuse_Limit
-    Trade:
-      NoDrop: true
-      NoTrade: true
-      NoSell: true
-      NoCart: true
-      NoStorage: true
-      NoGuildStorage: true
-      NoMail: true
-      NoAuction: true
     Script: |
       setmounting();
     UnEquipScript: |
@@ -14149,15 +14108,6 @@ Body:
     Type: Usable
     Flags:
       NoConsume: true
-    Trade:
-      NoDrop: true
-      NoTrade: true
-      NoSell: true
-      NoCart: true
-      NoStorage: true
-      NoGuildStorage: true
-      NoMail: true
-      NoAuction: true
     Script: |
       itemskill "AL_TELEPORT",1;
   - Id: 12888
@@ -14284,14 +14234,6 @@ Body:
     Weight: 10
     Flags:
       UniqueId: true
-    Trade:
-      NoDrop: true
-      NoTrade: true
-      NoSell: true
-      NoCart: true
-      NoGuildStorage: true
-      NoMail: true
-      NoAuction: true
     Script: |
       getitem 12210,10;
   - Id: 12903
@@ -17871,14 +17813,6 @@ Body:
     Weight: 10
     Flags:
       UniqueId: true
-    Trade:
-      NoDrop: true
-      NoTrade: true
-      NoSell: true
-      NoCart: true
-      NoGuildStorage: true
-      NoMail: true
-      NoAuction: true
     Script: |
       getitem 12210,1;
   - Id: 13607
@@ -17889,14 +17823,6 @@ Body:
     Weight: 10
     Flags:
       UniqueId: true
-    Trade:
-      NoDrop: true
-      NoTrade: true
-      NoSell: true
-      NoCart: true
-      NoGuildStorage: true
-      NoMail: true
-      NoAuction: true
     Script: |
       getitem 12210,5;
   - Id: 13608
@@ -24416,14 +24342,6 @@ Body:
     Weight: 10
     Flags:
       UniqueId: true
-    Trade:
-      NoDrop: true
-      NoTrade: true
-      NoSell: true
-      NoCart: true
-      NoGuildStorage: true
-      NoMail: true
-      NoAuction: true
     Script: |
       rentitem 5394,86400;
   - Id: 13969
@@ -27918,14 +27836,6 @@ Body:
     Weight: 10
     Flags:
       UniqueId: true
-    Trade:
-      NoDrop: true
-      NoTrade: true
-      NoSell: true
-      NoCart: true
-      NoGuildStorage: true
-      NoMail: true
-      NoAuction: true
     Script: |
       getitem 12210,10;
   - Id: 14159
@@ -28947,14 +28857,6 @@ Body:
     Weight: 10
     Flags:
       UniqueId: true
-    Trade:
-      NoDrop: true
-      NoTrade: true
-      NoSell: true
-      NoCart: true
-      NoGuildStorage: true
-      NoMail: true
-      NoAuction: true
     Script: |
       getitem 12210,1;
   - Id: 14216
@@ -28965,14 +28867,6 @@ Body:
     Weight: 10
     Flags:
       UniqueId: true
-    Trade:
-      NoDrop: true
-      NoTrade: true
-      NoSell: true
-      NoCart: true
-      NoGuildStorage: true
-      NoMail: true
-      NoAuction: true
     Script: |
       getitem 12210,5;
   - Id: 14217
@@ -38272,14 +38166,6 @@ Body:
     Weight: 10
     Flags:
       Container: true
-    Trade:
-      NoDrop: true
-      NoTrade: true
-      NoSell: true
-      NoCart: true
-      NoGuildStorage: true
-      NoMail: true
-      NoAuction: true
     Script: |
       getgroupitem(IG_Mouth_Bubble_Gum_Box);
       /*rentitem Bubble_Gum_In_Mouth,3600;*/
@@ -38289,14 +38175,6 @@ Body:
     Type: Cash
     Buy: 20
     Weight: 10
-    Trade:
-      NoDrop: true
-      NoTrade: true
-      NoSell: true
-      NoCart: true
-      NoGuildStorage: true
-      NoMail: true
-      NoAuction: true
     Script: |
       getgroupitem(IG_F_BGUM_BOX_IN_MOUTH);
   - Id: 16378
@@ -38493,14 +38371,6 @@ Body:
     Type: Cash
     Buy: 20
     Weight: 10
-    Trade:
-      NoDrop: true
-      NoTrade: true
-      NoSell: true
-      NoCart: true
-      NoGuildStorage: true
-      NoMail: true
-      NoAuction: true
     Script: |
       getgroupitem(IG_F_BGUM_BOX_IN_MOUTH2);
   - Id: 16392
@@ -38509,14 +38379,6 @@ Body:
     Type: Cash
     Buy: 20
     Weight: 10
-    Trade:
-      NoDrop: true
-      NoTrade: true
-      NoSell: true
-      NoCart: true
-      NoGuildStorage: true
-      NoMail: true
-      NoAuction: true
     Script: |
       getgroupitem(IG_F_BGUM_BOX_IN_MOUTH4);
   - Id: 16393
@@ -39266,14 +39128,6 @@ Body:
     Type: Cash
     Buy: 10
     Weight: 10
-    Trade:
-      NoDrop: true
-      NoTrade: true
-      NoSell: true
-      NoCart: true
-      NoGuildStorage: true
-      NoMail: true
-      NoAuction: true
     Script: |
       getitem 12210,10;
   - Id: 16505
@@ -53145,14 +52999,6 @@ Body:
     AegisName: Comp_Battle_Bubble
     Name: "[Sale] Battle Manual and Bubble Gum"
     Type: Usable
-    Trade:
-      NoDrop: true
-      NoTrade: true
-      NoSell: true
-      NoCart: true
-      NoGuildStorage: true
-      NoMail: true
-      NoAuction: true
     Script: |
       sc_start SC_EXPBOOST,1800000,50;
       sc_start SC_ITEMBOOST,1800000,100;
@@ -65383,14 +65229,6 @@ Body:
     Weight: 100
     Flags:
       UniqueId: true
-    Trade:
-      NoDrop: true
-      NoTrade: true
-      NoSell: true
-      NoCart: true
-      NoGuildStorage: true
-      NoMail: true
-      NoAuction: true
     Script: |
       getitem 12264,10;
   - Id: 101355
