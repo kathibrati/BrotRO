@@ -1175,7 +1175,7 @@ Body:
     AegisName: Leaf_Of_Yggdrasil
     Name: Yggdrasil Leaf
     Type: Delayconsume
-    Buy: 12000
+    Buy: 4000
     Weight: 100
     Flags:
       BuyingStore: true
