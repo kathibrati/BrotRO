@@ -55,10 +55,10 @@ yuno_in04	mapflag	noteleport
 yuno_in05	mapflag	noteleport
 ein_in01	mapflag	noteleport
 lighthalzen	mapflag	noteleport
-yuno	mapflag	noteleport
+//yuno	mapflag	noteleport
 yuno_pre	mapflag	noteleport
-einbroch	mapflag	noteleport
-einbech	mapflag	noteleport
+//einbroch	mapflag	noteleport
+//einbech	mapflag	noteleport
 lhz_que01	mapflag	noteleport
 lhz_cube	mapflag	noteleport
 lhz_in01	mapflag	noteleport
@@ -81,7 +81,7 @@ kh_school	mapflag	noteleport
 kh_vila	mapflag	noteleport
 ve_in	mapflag	noteleport
 ve_in02	mapflag	noteleport
-thor_camp	mapflag	noteleport
+//thor_camp	mapflag	noteleport
 
 //============================================================
 // Dungeons
