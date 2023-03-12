@@ -6303,15 +6303,6 @@ Body:
     Name: Fruit Juice
     Type: Healing
     Weight: 10
-    Trade:
-      NoDrop: true
-      NoTrade: true
-      NoSell: true
-      NoCart: true
-      NoStorage: true
-      NoGuildStorage: true
-      NoMail: true
-      NoAuction: true
     Script: |
       percentheal 0,6;
   - Id: 12333
