@@ -156,7 +156,7 @@ mjolnir_07	mapflag	nomemo
 mjolnir_08	mapflag	nomemo
 mjolnir_10	mapflag	nomemo
 mjolnir_11	mapflag	nomemo
-moc_fild01	mapflag	nomemo
+//moc_fild01	mapflag	nomemo
 moc_fild02	mapflag	nomemo
 moc_fild03	mapflag	nomemo
 //moc_fild04	mapflag	nomemo
