@@ -14247,27 +14247,6 @@ Body:
         Shotgun: true
       Ammo:
         Bullet: true
-      AmmoAmount:
-        - Level: 1
-          Amount: 0
-        - Level: 2
-          Amount: 0
-        - Level: 3
-          Amount: 0
-        - Level: 4
-          Amount: 0
-        - Level: 5
-          Amount: 0
-        - Level: 6
-          Amount: 0
-        - Level: 7
-          Amount: 0
-        - Level: 8
-          Amount: 0
-        - Level: 9
-          Amount: 0
-        - Level: 10
-          Amount: 0
   - Id: 520
     Name: GS_SPREADATTACK
     Description: Spread Attack
