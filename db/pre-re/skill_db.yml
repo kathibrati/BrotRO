@@ -1484,7 +1484,7 @@ Body:
       - Level: 9
         Time: 220000
       - Level: 10
-        Time: 240000
+        Time: 300000
     Requires:
       HpCost: 15
       SpCost:
@@ -1696,7 +1696,7 @@ Body:
       - Level: 9
         Time: 220000
       - Level: 10
-        Time: 240000
+        Time: 300000
     Requires:
       SpCost:
         - Level: 1
@@ -2341,7 +2341,7 @@ Body:
     HitCount: 1
     CastCancel: true
     AfterCastActDelay: 3000
-    Duration1: 60000
+    Duration1: 300000
     Requires:
       SpCost:
         - Level: 1
@@ -2410,7 +2410,7 @@ Body:
       - Level: 4
         Time: 150000
       - Level: 5
-        Time: 180000
+        Time: 300000
     Requires:
       SpCost:
         - Level: 1
@@ -2599,7 +2599,7 @@ Body:
     CastCancel: true
     CastTime: 2000
     AfterCastActDelay: 2000
-    Duration1: 120000
+    Duration1: 300000
     Requires:
       SpCost:
         - Level: 1
@@ -2648,7 +2648,7 @@ Body:
       - Level: 4
         Time: 75000
       - Level: 5
-        Time: 90000
+        Time: 300000
     Requires:
       SpCost: 40
     Status: Magnificat
@@ -2676,7 +2676,7 @@ Body:
       - Level: 4
         Time: 25000
       - Level: 5
-        Time: 30000
+        Time: 300000
     Requires:
       SpCost: 20
     Status: Gloria
