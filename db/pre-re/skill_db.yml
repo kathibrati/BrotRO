@@ -13688,7 +13688,6 @@ Body:
     Duration1: 600000
     Requires:
       SpCost: 2
-      ZenyCost: 1
   - Id: 501
     Name: GS_FLING
     Description: Fling
@@ -13705,7 +13704,6 @@ Body:
     Duration1: 30000
     Requires:
       SpCost: 10
-      SpiritSphereCost: 5
     Status: Fling
   - Id: 502
     Name: GS_TRIPLEACTION
@@ -13729,8 +13727,6 @@ Body:
         Kunai: true
         Cannonball: true
         Throwweapon: true
-      AmmoAmount: 1
-      SpiritSphereCost: 1
   - Id: 503
     Name: GS_BULLSEYE
     Description: Bulls Eye
@@ -13759,8 +13755,6 @@ Body:
         Kunai: true
         Cannonball: true
         Throwweapon: true
-      AmmoAmount: 1
-      SpiritSphereCost: 1
   - Id: 504
     Name: GS_MADNESSCANCEL
     Description: Madness Canceller
@@ -13776,7 +13770,6 @@ Body:
     Duration1: 15000
     Requires:
       SpCost: 30
-      SpiritSphereCost: 4
     Status: MadnessCancel
   - Id: 505
     Name: GS_ADJUSTMENT
@@ -13793,7 +13786,6 @@ Body:
     Duration1: 30000
     Requires:
       SpCost: 15
-      SpiritSphereCost: 2
     Status: Adjustment
   - Id: 506
     Name: GS_INCREASING
@@ -13809,7 +13801,6 @@ Body:
     Duration1: 60000
     Requires:
       SpCost: 30
-      SpiritSphereCost: 4
     Status: Increasing
   - Id: 507
     Name: GS_MAGICALBULLET
@@ -13823,7 +13814,6 @@ Body:
     Element: Ghost
     Requires:
       SpCost: 7
-      SpiritSphereCost: 1
   - Id: 508
     Name: GS_CRACKER
     Description: Cracker
@@ -13850,8 +13840,6 @@ Body:
         Kunai: true
         Cannonball: true
         Throwweapon: true
-      AmmoAmount: 1
-      SpiritSphereCost: 1
     Status: Stun
   - Id: 509
     Name: GS_SINGLEACTION
@@ -13934,7 +13922,6 @@ Body:
         Rifle: true
       Ammo:
         Bullet: true
-      AmmoAmount: 1
   - Id: 513
     Name: GS_DISARM
     Description: Disarm
@@ -13963,7 +13950,6 @@ Body:
         Rifle: true
       Ammo:
         Bullet: true
-      AmmoAmount: 1
     Status: StripWeapon
   - Id: 514
     Name: GS_PIERCINGSHOT
@@ -13998,7 +13984,6 @@ Body:
         Rifle: true
       Ammo:
         Bullet: true
-      AmmoAmount: 1
     Status: Bleeding
   - Id: 515
     Name: GS_RAPIDSHOWER
@@ -14039,7 +14024,6 @@ Body:
         Revolver: true
       Ammo:
         Bullet: true
-      AmmoAmount: 5
   - Id: 516
     Name: GS_DESPERADO
     Description: Desperado
@@ -14081,7 +14065,6 @@ Body:
         Revolver: true
       Ammo:
         Bullet: true
-      AmmoAmount: 10
     Unit:
       Id: Dummyskill
       Layout: 3
@@ -14185,7 +14168,6 @@ Body:
         Shotgun: true
       Ammo:
         Bullet: true
-      AmmoAmount: 1
   - Id: 519
     Name: GS_FULLBUSTER
     Description: Full Buster
@@ -14309,7 +14291,6 @@ Body:
         Shotgun: true
       Ammo:
         Bullet: true
-      AmmoAmount: 5
   - Id: 521
     Name: GS_GROUNDDRIFT
     Description: Ground Drift
@@ -14384,7 +14365,6 @@ Body:
         Grenade: true
       Ammo:
         Grenade: true
-      AmmoAmount: 1
     Unit:
       Id: Grounddrift_Wind
       Range: 1
@@ -14412,7 +14392,6 @@ Body:
       SpCost: 2
       Ammo:
         Shuriken: true
-      AmmoAmount: 1
   - Id: 524
     Name: NJ_KUNAI
     Description: Throw Kunai
