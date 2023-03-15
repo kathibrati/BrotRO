@@ -34294,4 +34294,5 @@ Body:
       IsGuild: true
       IgnoreKagehumi: true
     CastCancel: true
-    Duration2: 300000
+    Duration2: 300000 
+    
