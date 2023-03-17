@@ -124,7 +124,7 @@ new_5-4	mapflag	nomemo
 //============================================================
 // Fields
 //============================================================
-alb2trea	mapflag	nomemo
+/*alb2trea	mapflag	nomemo
 ayo_fild02	mapflag	nomemo
 cmd_fild01	mapflag	nomemo
 cmd_fild02	mapflag	nomemo
@@ -211,7 +211,7 @@ ve_fild03	mapflag	nomemo
 ve_fild04	mapflag	nomemo
 ve_fild06	mapflag	nomemo
 cave	mapflag	nomemo
-
+*/
 //============================================================
 // Job Quests
 //============================================================
@@ -709,7 +709,7 @@ bat_a02	mapflag	nomemo
 //============================================================
 // Episode 13
 //============================================================
-mid_campin	mapflag	nomemo
+//mid_campin	mapflag	nomemo
 man_fild01	mapflag	nomemo
 man_fild03	mapflag	nomemo
 spl_fild02	mapflag	nomemo
@@ -723,10 +723,10 @@ arug_que01	mapflag	nomemo
 arug_dun01	mapflag	nomemo
 nyd_dun01	mapflag	nomemo
 nyd_dun02	mapflag	nomemo
-manuk	mapflag	nomemo
+//manuk	mapflag	nomemo
 man_fild02	mapflag	nomemo
 man_in01	mapflag	nomemo
-splendide	mapflag	nomemo
+//splendide	mapflag	nomemo
 spl_fild01	mapflag	nomemo
 spl_in01	mapflag	nomemo
 spl_in02	mapflag	nomemo
