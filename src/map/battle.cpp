@@ -4083,7 +4083,8 @@ static int battle_calc_attack_skill_ratio(struct Damage* wd, struct block_list *
 		case MC_CARTREVOLUTION:
 			skillratio += 50;
 			if(sd && sd->cart_weight)
-				skillratio += 100 * sd->cart_weight / sd->cart_weight_max; // +1% every 1% weight
+				skillratio += 100;
+				//skillratio += 100 * sd->cart_weight / sd->cart_weight_max; // +1% every 1% weight
 			else if (!sd)
 				skillratio += 100; //Max damage for non players.
 			break;
@@ -4345,9 +4346,11 @@ static int battle_calc_attack_skill_ratio(struct Damage* wd, struct block_list *
 			if (i < 1) i = 1;
 			//Preserve damage ratio when max cart weight is changed.
 			if (sd && sd->cart_weight)
-				skillratio += sd->cart_weight / i * 80000 / battle_config.max_cart_weight - 100;
+				skillratio += 1350;
+				//skillratio += sd->cart_weight / i * 80000 / battle_config.max_cart_weight - 100;
 			else if (!sd)
-				skillratio += 80000 / i - 100;
+				skillratio += 1350;
+				//skillratio += 80000 / i - 100;
 			break;
 		case TK_DOWNKICK:
 		case TK_STORMKICK:
