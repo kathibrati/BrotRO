@@ -131,4 +131,4 @@
 
 // Duplicates
 //============================================================
-payon,166,105,6	duplicate(DressRoom)	DressRoom#pay	412
+payon,166,105,6	duplicate(DressRoom)	DressRoom#pay	2_M_DYEINGER
