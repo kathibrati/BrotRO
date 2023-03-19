@@ -129,4 +129,4 @@
     }
 // Duplicates
 //============================================================
-payon,166,104,6	duplicate(Healer)	Dressingroom#pay	412
+payon,166,104,6	duplicate(Dress Room)	Dress Room#pay	412
