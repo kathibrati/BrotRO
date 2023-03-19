@@ -51,9 +51,9 @@
             case Job_Wanderer:
             case Job_Warlock:
             // Uncomment lines below to enable certain job when their respective jRO costume is released and you patched the sprite in your client.
-            //case Job_Sorcerer:
-            //case Job_Sura:
-            //case Job_Rune_Knight:
+            case Job_Sorcerer:
+            case Job_Sura:
+            case Job_Rune_Knight:
                 return 1;
             default:
                 return 0;
