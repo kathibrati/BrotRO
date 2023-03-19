@@ -25,7 +25,7 @@
 //= TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 //============================================================
 
-payon,166,104,4	script	Dress Room#sc	2_M_DYEINGER,{
+payon,166,104,4	script	Dress Room#pay	2_M_DYEINGER,{
 function RestrictClass;
 function HasjROCostume;
 function ChangeAppr;
