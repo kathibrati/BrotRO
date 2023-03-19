@@ -129,4 +129,4 @@
     }
 // Duplicates
 //============================================================
-payon,166,104,6	duplicate(DressRoom)	DressRoom#pay	412
+payon,172,104,6	duplicate(DressRoom)	DressRoom#pay	412
