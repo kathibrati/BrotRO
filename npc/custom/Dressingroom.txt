@@ -25,8 +25,9 @@
 //= TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 //============================================================
 
--   script	DressRoom	-1,{
-    function RestrictClass;
+-	script	Healer	-1,{
+
+	function RestrictClass;
     function HasjROCostume;
     function ChangeAppr;
 
@@ -126,7 +127,9 @@
         .n$ = "[DressRoom]"; // NPC Name
         .cost_dressroom = 10000; // Cost
         .dress_perma = 1;
-    }
+}
+
+
 // Duplicates
 //============================================================
-payon,172,104,6	duplicate(DressRoom)	DressRoom#pay	412
+payon,172,104,6	duplicate(Healer)	Healer#pay	412
