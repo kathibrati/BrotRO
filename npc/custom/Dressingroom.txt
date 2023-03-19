@@ -25,7 +25,7 @@
 //= TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 //============================================================
 
--	script	Healer	-1,{
+-	script	DressRoom	-1,{
     function RestrictClass;
     function HasjROCostume;
     function ChangeAppr;
@@ -131,4 +131,4 @@
 
 // Duplicates
 //============================================================
-payon,176,99,6	duplicate(Healer)	Healer#pay	412
+payon,176,99,6	duplicate(DressRoom)	DressRoom#pay	412
