@@ -12583,7 +12583,7 @@ Body:
         Time: 2000
       - Level: 7
         Time: 1500
-    Duration1: 1800000
+    Duration1: 180000000000
     Duration2: 2000
     CastTimeFlags:
       IgnoreDex: true
