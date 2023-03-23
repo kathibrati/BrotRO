@@ -12851,8 +12851,21 @@ Body:
         Time: 2400
       - Level: 5
         Time: 2000
-    Duration1: 1800000
-    Duration2: 2000
+    Duration1:
+      - Level: 1
+        Time: 300000
+      - Level: 2
+        Time: 300000
+      - Level: 3
+        Time: 300000
+      - Level: 4
+        Time: 300000
+      - Level: 5
+        Time: 300000
+      - Level: 6
+        Time: 300000
+      - Level: 7
+        Time: 300000
     FixedCastTime:
       - Level: 1
         Time: 900
