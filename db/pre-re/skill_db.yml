@@ -12584,7 +12584,20 @@ Body:
       - Level: 7
         Time: 1500
     Duration1:
-      Time: 300000
+      - Level: 1
+        Time: 300000
+      - Level: 2
+        Time: 300000
+      - Level: 3
+        Time: 300000
+      - Level: 4
+        Time: 300000
+      - Level: 5
+        Time: 300000
+      - Level: 6
+        Time: 300000
+      - Level: 7
+        Time: 300000
     CastTimeFlags:
       IgnoreDex: true
     Requires:
