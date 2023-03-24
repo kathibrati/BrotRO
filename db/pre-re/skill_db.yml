@@ -11916,25 +11916,25 @@ Body:
     AfterCastActDelay: 500
     Duration1:
       - Level: 1
-        Time: 150000
+        Time: 1800000
       - Level: 2
-        Time: 200000
+        Time: 1800000
       - Level: 3
-        Time: 250000
+        Time: 1800000
       - Level: 4
-        Time: 300000
+        Time: 1800000
       - Level: 5
-        Time: 350000
+        Time: 1800000
     Requires:
       SpCost:
         - Level: 1
-          Amount: 460
+          Amount: 60
         - Level: 2
-          Amount: 360
+          Amount: 60
         - Level: 3
-          Amount: 260
+          Amount: 60
         - Level: 4
-          Amount: 160
+          Amount: 60
         - Level: 5
           Amount: 60
     Status: Spirit
@@ -11978,25 +11978,25 @@ Body:
     AfterCastActDelay: 500
     Duration1:
       - Level: 1
-        Time: 150000
+        Time: 1800000
       - Level: 2
-        Time: 200000
+        Time: 1800000
       - Level: 3
-        Time: 250000
+        Time: 1800000
       - Level: 4
-        Time: 300000
+        Time: 1800000
       - Level: 5
-        Time: 350000
+        Time: 1800000
     Requires:
       SpCost:
         - Level: 1
-          Amount: 460
+          Amount: 60
         - Level: 2
-          Amount: 360
+          Amount: 60
         - Level: 3
-          Amount: 260
+          Amount: 60
         - Level: 4
-          Amount: 160
+          Amount: 60
         - Level: 5
           Amount: 60
     Status: Spirit
@@ -12018,25 +12018,25 @@ Body:
     AfterCastActDelay: 500
     Duration1:
       - Level: 1
-        Time: 150000
+        Time: 1800000
       - Level: 2
-        Time: 200000
+        Time: 1800000
       - Level: 3
-        Time: 250000
+        Time: 1800000
       - Level: 4
-        Time: 300000
+        Time: 1800000
       - Level: 5
-        Time: 350000
+        Time: 1800000
     Requires:
       SpCost:
         - Level: 1
-          Amount: 460
+          Amount: 60
         - Level: 2
-          Amount: 360
+          Amount: 60
         - Level: 3
-          Amount: 260
+          Amount: 60
         - Level: 4
-          Amount: 160
+          Amount: 60
         - Level: 5
           Amount: 60
     Status: Spirit
@@ -12058,25 +12058,25 @@ Body:
     AfterCastActDelay: 500
     Duration1:
       - Level: 1
-        Time: 150000
+        Time: 1800000
       - Level: 2
-        Time: 200000
+        Time: 1800000
       - Level: 3
-        Time: 250000
+        Time: 1800000
       - Level: 4
-        Time: 300000
+        Time: 1800000
       - Level: 5
-        Time: 350000
+        Time: 1800000
     Requires:
       SpCost:
         - Level: 1
-          Amount: 460
+          Amount: 60
         - Level: 2
-          Amount: 360
+          Amount: 60
         - Level: 3
-          Amount: 260
+          Amount: 60
         - Level: 4
-          Amount: 160
+          Amount: 60
         - Level: 5
           Amount: 60
     Status: Spirit
@@ -12098,25 +12098,25 @@ Body:
     AfterCastActDelay: 500
     Duration1:
       - Level: 1
-        Time: 150000
+        Time: 1800000
       - Level: 2
-        Time: 200000
+        Time: 1800000
       - Level: 3
-        Time: 250000
+        Time: 1800000
       - Level: 4
-        Time: 300000
+        Time: 1800000
       - Level: 5
-        Time: 350000
+        Time: 1800000
     Requires:
       SpCost:
         - Level: 1
-          Amount: 460
+          Amount: 60
         - Level: 2
-          Amount: 360
+          Amount: 60
         - Level: 3
-          Amount: 260
+          Amount: 60
         - Level: 4
-          Amount: 160
+          Amount: 60
         - Level: 5
           Amount: 60
     Status: Spirit
@@ -12138,25 +12138,25 @@ Body:
     AfterCastActDelay: 500
     Duration1:
       - Level: 1
-        Time: 150000
+        Time: 1800000
       - Level: 2
-        Time: 200000
+        Time: 1800000
       - Level: 3
-        Time: 250000
+        Time: 1800000
       - Level: 4
-        Time: 300000
+        Time: 1800000
       - Level: 5
-        Time: 350000
+        Time: 1800000
     Requires:
       SpCost:
         - Level: 1
-          Amount: 460
+          Amount: 60
         - Level: 2
-          Amount: 360
+          Amount: 60
         - Level: 3
-          Amount: 260
+          Amount: 60
         - Level: 4
-          Amount: 160
+          Amount: 60
         - Level: 5
           Amount: 60
     Status: Spirit
@@ -12178,25 +12178,25 @@ Body:
     AfterCastActDelay: 500
     Duration1:
       - Level: 1
-        Time: 150000
+        Time: 1800000
       - Level: 2
-        Time: 200000
+        Time: 1800000
       - Level: 3
-        Time: 250000
+        Time: 1800000
       - Level: 4
-        Time: 300000
+        Time: 1800000
       - Level: 5
-        Time: 350000
+        Time: 1800000
     Requires:
       SpCost:
         - Level: 1
-          Amount: 460
+          Amount: 60
         - Level: 2
-          Amount: 360
+          Amount: 60
         - Level: 3
-          Amount: 260
+          Amount: 60
         - Level: 4
-          Amount: 160
+          Amount: 60
         - Level: 5
           Amount: 60
     Status: Spirit
@@ -12218,25 +12218,25 @@ Body:
     AfterCastActDelay: 500
     Duration1:
       - Level: 1
-        Time: 150000
+        Time: 1800000
       - Level: 2
-        Time: 200000
+        Time: 1800000
       - Level: 3
-        Time: 250000
+        Time: 1800000
       - Level: 4
-        Time: 300000
+        Time: 1800000
       - Level: 5
-        Time: 350000
+        Time: 1800000
     Requires:
       SpCost:
         - Level: 1
-          Amount: 460
+          Amount: 60
         - Level: 2
-          Amount: 360
+          Amount: 60
         - Level: 3
-          Amount: 260
+          Amount: 60
         - Level: 4
-          Amount: 160
+          Amount: 60
         - Level: 5
           Amount: 60
     Status: Spirit
@@ -12258,25 +12258,25 @@ Body:
     AfterCastActDelay: 500
     Duration1:
       - Level: 1
-        Time: 150000
+        Time: 1800000
       - Level: 2
-        Time: 200000
+        Time: 1800000
       - Level: 3
-        Time: 250000
+        Time: 1800000
       - Level: 4
-        Time: 300000
+        Time: 1800000
       - Level: 5
-        Time: 350000
+        Time: 1800000
     Requires:
       SpCost:
         - Level: 1
-          Amount: 460
+          Amount: 60
         - Level: 2
-          Amount: 360
+          Amount: 60
         - Level: 3
-          Amount: 260
+          Amount: 60
         - Level: 4
-          Amount: 160
+          Amount: 60
         - Level: 5
           Amount: 60
     Status: Spirit
@@ -12298,25 +12298,25 @@ Body:
     AfterCastActDelay: 500
     Duration1:
       - Level: 1
-        Time: 150000
+        Time: 1800000
       - Level: 2
-        Time: 200000
+        Time: 1800000
       - Level: 3
-        Time: 250000
+        Time: 1800000
       - Level: 4
-        Time: 300000
+        Time: 1800000
       - Level: 5
-        Time: 350000
+        Time: 1800000
     Requires:
       SpCost:
         - Level: 1
-          Amount: 460
+          Amount: 60
         - Level: 2
-          Amount: 360
+          Amount: 60
         - Level: 3
-          Amount: 260
+          Amount: 60
         - Level: 4
-          Amount: 160
+          Amount: 60
         - Level: 5
           Amount: 60
     Status: Spirit
@@ -12338,25 +12338,25 @@ Body:
     AfterCastActDelay: 500
     Duration1:
       - Level: 1
-        Time: 150000
+        Time: 1800000
       - Level: 2
-        Time: 200000
+        Time: 1800000
       - Level: 3
-        Time: 250000
+        Time: 1800000
       - Level: 4
-        Time: 300000
+        Time: 1800000
       - Level: 5
-        Time: 350000
+        Time: 1800000
     Requires:
       SpCost:
         - Level: 1
-          Amount: 460
+          Amount: 60
         - Level: 2
-          Amount: 360
+          Amount: 60
         - Level: 3
-          Amount: 260
+          Amount: 60
         - Level: 4
-          Amount: 160
+          Amount: 60
         - Level: 5
           Amount: 60
     Status: Spirit
@@ -12378,25 +12378,25 @@ Body:
     AfterCastActDelay: 500
     Duration1:
       - Level: 1
-        Time: 150000
+        Time: 1800000
       - Level: 2
-        Time: 200000
+        Time: 1800000
       - Level: 3
-        Time: 250000
+        Time: 1800000
       - Level: 4
-        Time: 300000
+        Time: 1800000
       - Level: 5
-        Time: 350000
+        Time: 1800000
     Requires:
       SpCost:
         - Level: 1
-          Amount: 460
+          Amount: 60
         - Level: 2
-          Amount: 360
+          Amount: 60
         - Level: 3
-          Amount: 260
+          Amount: 60
         - Level: 4
-          Amount: 160
+          Amount: 60
         - Level: 5
           Amount: 60
     Status: Spirit
@@ -12418,25 +12418,25 @@ Body:
     AfterCastActDelay: 500
     Duration1:
       - Level: 1
-        Time: 150000
+        Time: 1800000
       - Level: 2
-        Time: 200000
+        Time: 1800000
       - Level: 3
-        Time: 250000
+        Time: 1800000
       - Level: 4
-        Time: 300000
+        Time: 1800000
       - Level: 5
-        Time: 350000
+        Time: 1800000
     Requires:
       SpCost:
         - Level: 1
-          Amount: 460
+          Amount: 60
         - Level: 2
-          Amount: 360
+          Amount: 60
         - Level: 3
-          Amount: 260
+          Amount: 60
         - Level: 4
-          Amount: 160
+          Amount: 60
         - Level: 5
           Amount: 60
     Status: Spirit
@@ -12494,25 +12494,25 @@ Body:
     AfterCastActDelay: 500
     Duration1:
       - Level: 1
-        Time: 150000
+        Time: 1800000
       - Level: 2
-        Time: 200000
+        Time: 1800000
       - Level: 3
-        Time: 250000
+        Time: 1800000
       - Level: 4
-        Time: 300000
+        Time: 1800000
       - Level: 5
-        Time: 350000
+        Time: 1800000
     Requires:
       SpCost:
         - Level: 1
-          Amount: 460
+          Amount: 60
         - Level: 2
-          Amount: 360
+          Amount: 60
         - Level: 3
-          Amount: 260
+          Amount: 60
         - Level: 4
-          Amount: 160
+          Amount: 60
         - Level: 5
           Amount: 60
     Status: Spirit
@@ -12534,25 +12534,25 @@ Body:
     AfterCastActDelay: 500
     Duration1:
       - Level: 1
-        Time: 150000
+        Time: 1800000
       - Level: 2
-        Time: 200000
+        Time: 1800000
       - Level: 3
-        Time: 250000
+        Time: 1800000
       - Level: 4
-        Time: 300000
+        Time: 1800000
       - Level: 5
-        Time: 350000
+        Time: 1800000
     Requires:
       SpCost:
         - Level: 1
-          Amount: 460
+          Amount: 60
         - Level: 2
-          Amount: 360
+          Amount: 60
         - Level: 3
-          Amount: 260
+          Amount: 60
         - Level: 4
-          Amount: 160
+          Amount: 60
         - Level: 5
           Amount: 60
     Status: Spirit
