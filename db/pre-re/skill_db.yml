@@ -12617,7 +12617,7 @@ Body:
     HitCount: 1
     CastCancel: true
     AfterCastActDelay: 500
-    Duration1: 350000
+    Duration1: 1800000
     Requires:
       SpCost: 30
     Status: Kaahi
@@ -12635,7 +12635,7 @@ Body:
     CastCancel: true
     CastTime: 500
     AfterCastActDelay: 500
-    Duration1: 600000
+    Duration1: 1800000
     Requires:
       SpCost:
         - Level: 1
@@ -12674,19 +12674,19 @@ Body:
         Time: 3000
     Duration1:
       - Level: 1
-        Time: 60000
+        Time: 1800000
       - Level: 2
-        Time: 120000
+        Time: 1800000
       - Level: 3
-        Time: 180000
+        Time: 1800000
       - Level: 4
-        Time: 240000
+        Time: 1800000
       - Level: 5
-        Time: 300000
+        Time: 1800000
       - Level: 6
-        Time: 360000
+        Time: 1800000
       - Level: 7
-        Time: 600000
+        Time: 1800000
     Requires:
       SpCost: 70
     Status: Kaite
