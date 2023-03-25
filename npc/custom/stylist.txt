@@ -153,11 +153,11 @@ OnInit:
 
         // Blacklisted Style for each style and each gender.
         // --- Female ---
-        .blacklist_hairstyle_0$ = "101,102,103,104,105";
+        .blacklist_hairstyle_0$ = "84,100,101,102,103,104,105";
         .blacklist_haircolor_0$ = "";
         .blacklist_cloth_0$ = "";
         // --- Male ---
-        .blacklist_hairstyle_1$ = "";
+        .blacklist_hairstyle_1$ = "81,82,88,100,101,102,103,104,105";
         .blacklist_haircolor_1$ = "";
         .blacklist_cloth_1$ = "";
 
