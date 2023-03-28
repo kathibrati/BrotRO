@@ -41236,3 +41236,57 @@ Body:
     AttackDelay: 1872
     AttackMotion: 672
     DamageMotion: 480
+  - Id: 20600
+    AegisName: LOWWI
+    Name: Lowwi
+    Level: 1
+    Hp: 50
+    Attack: 1
+    Attack2: 1
+    AttackRange: 1
+    SkillRange: 1
+    ChaseRange: 1
+    Size: Medium
+    Race: Demihuman
+    Element: Neutral
+    ElementLevel: 1
+    WalkSpeed: 400
+    AttackDelay: 1872
+    AttackMotion: 672
+    DamageMotion: 480
+  - Id: 20601
+    AegisName: MIDDI
+    Name: Middi
+    Level: 1
+    Hp: 50
+    Attack: 1
+    Attack2: 1
+    AttackRange: 1
+    SkillRange: 1
+    ChaseRange: 1
+    Size: Medium
+    Race: Demihuman
+    Element: Neutral
+    ElementLevel: 1
+    WalkSpeed: 400
+    AttackDelay: 1872
+    AttackMotion: 672
+    DamageMotion: 480
+  - Id: 20602
+    AegisName: TOPPI
+    Name: Toppi
+    Level: 1
+    Hp: 50
+    Attack: 1
+    Attack2: 1
+    AttackRange: 1
+    SkillRange: 1
+    ChaseRange: 1
+    Size: Medium
+    Race: Demihuman
+    Element: Neutral
+    ElementLevel: 1
+    WalkSpeed: 400
+    AttackDelay: 1872
+    AttackMotion: 672
+    DamageMotion: 480
