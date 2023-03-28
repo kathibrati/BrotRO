@@ -41236,7 +41236,7 @@ Body:
     AttackDelay: 1872
     AttackMotion: 672
     DamageMotion: 480
-  - Id: 32001
+  - Id: 29503
     AegisName: LOWWI
     Name: Lowwi
     Level: 1
@@ -41260,7 +41260,7 @@ Body:
     AttackMotion: 672
     DamageMotion: 480
     Ai: 02
-  - Id: 32002
+  - Id: 29504
     AegisName: MIDDI
     Name: Middi
     Level: 1
@@ -41284,7 +41284,7 @@ Body:
     AttackMotion: 672
     DamageMotion: 480
     Ai: 02
-  - Id: 32003
+  - Id: 29505
     AegisName: TOPPI
     Name: Toppi
     Level: 1
