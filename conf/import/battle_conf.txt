@@ -91,10 +91,10 @@ homunculus_autoloot: yes
 homunculus_exp_gain: 100
 
 // At what dex does the cast time become zero (instacast)?
-castrate_dex_scale: 100
+castrate_dex_scale: 80
 
 // How much (dex*2+int) does variable cast turns zero?
-vcast_stat_scale: 250
+vcast_stat_scale: 200
 
 // For RENEWAL_CAST (Note 2)
 // By default skill that has '-1' value for Fixed Casting Time will use 20% of cast time
