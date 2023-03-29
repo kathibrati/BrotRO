@@ -84,3 +84,8 @@ sg_angel_skill_ratio: 10000
 
 // Does autoloot work, when a monster is killed by homunculus only?
 homunculus_autoloot: yes
+
+// The rate at which homunculus gain experience from kills. (Note 2)
+// Only applies to renewal mode.
+// Official: 10%
+homunculus_exp_gain: 100
