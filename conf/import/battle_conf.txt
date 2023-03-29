@@ -89,3 +89,9 @@ homunculus_autoloot: yes
 // Only applies to renewal mode.
 // Official: 10%
 homunculus_exp_gain: 100
+
+// At what dex does the cast time become zero (instacast)?
+castrate_dex_scale: 100
+
+// How much (dex*2+int) does variable cast turns zero?
+vcast_stat_scale: 250
