@@ -41260,6 +41260,24 @@ Body:
     AttackMotion: 672
     DamageMotion: 480
     Ai: 02
+    Drops:
+      - Item: Boody_Red
+        Rate: 70
+      - Item: Scorpion's_Tail
+        Rate: 5500
+      - Item: Elunium_Stone
+        Rate: 57
+      - Item: Solid_Shell
+        Rate: 210
+      - Item: Fine_Grit
+        Rate: 100
+      - Item: Yellow_Herb
+        Rate: 200
+      - Item: Lusty_Iron
+        Rate: 20
+      - Item: Scorpion_Card
+        Rate: 1
+        StealProtected: true
   - Id: 29504
     AegisName: MIDDI
     Name: Middi
@@ -41284,6 +41302,24 @@ Body:
     AttackMotion: 672
     DamageMotion: 480
     Ai: 02
+    Drops:
+      - Item: Boody_Red
+        Rate: 70
+      - Item: Scorpion's_Tail
+        Rate: 5500
+      - Item: Elunium_Stone
+        Rate: 57
+      - Item: Solid_Shell
+        Rate: 210
+      - Item: Fine_Grit
+        Rate: 100
+      - Item: Yellow_Herb
+        Rate: 200
+      - Item: Lusty_Iron
+        Rate: 20
+      - Item: Scorpion_Card
+        Rate: 1
+        StealProtected: true
   - Id: 29505
     AegisName: TOPPI
     Name: Toppi
@@ -41308,3 +41344,21 @@ Body:
     AttackMotion: 672
     DamageMotion: 480
     Ai: 02
+    Drops:
+      - Item: Boody_Red
+        Rate: 70
+      - Item: Scorpion's_Tail
+        Rate: 5500
+      - Item: Elunium_Stone
+        Rate: 57
+      - Item: Solid_Shell
+        Rate: 210
+      - Item: Fine_Grit
+        Rate: 100
+      - Item: Yellow_Herb
+        Rate: 200
+      - Item: Lusty_Iron
+        Rate: 20
+      - Item: Scorpion_Card
+        Rate: 1
+        StealProtected: true
