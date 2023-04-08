@@ -42140,7 +42140,88 @@ Body:
     DamageMotion: 480
     Ai: 02
     Drops:
-      - Item: C_Bicolor_Cat_Witch_Hat
+      - Item: C_Amistr_Bag
         Rate: 10
+      - Item: C_School_Bag_BL
+        Rate: 10
+      - Item: C_T_Bear_Bag
+        Rate: 10
+      - Item: C_Big_Ribbon_Cloak
+        Rate: 10
+      - Item: C_Blessed_Veil
+        Rate: 10
+      - Item: C_Bow_On_the_Back
+        Rate: 10
+      - Item: C_Evil_Druid_Cross
+        Rate: 10
+      - Item: C_Big_Foxtail
+        Rate: 10
+      - Item: C_Ice_Wing
+        Rate: 10
+      - Item: C_Full_BloomCherry_Tree
+        Rate: 10
+      - Item: C_GreatDevilWing
+        Rate: 10
+      - Item: C_Bravery_Bag
+        Rate: 10
+      - Item: C_Leaf_Umbrella
+        Rate: 10
+      - Item: C_Loli_Ruri_Moon
+        Rate: 10
+      - Item: C_HeartChocoBag
+        Rate: 10
+      - Item: C_Sakura_Wing
+        Rate: 10
+      - Item: C_Snow_Powder
+        Rate: 10
+      - Item: C_Thanatos_Sword
+        Rate: 10
+      - Item: C_P_Ulysses_Feather
+        Rate: 10
+      - Item: C_Valkyrie_Wing
+        Rate: 10
+      - Item: C_Archangel_Wing
+        Rate: 10
+      - Item: C_GiantCatBag_JP_BL
+        Rate: 10
+      - Item: C_Blue_Fairy_Wing
+        Rate: 10
+      - Item: Brilliant_Golden_Wings
+        Rate: 10
+      - Item: C_Nifl_Bloom
+        Rate: 10
+      - Item: C_Devil_Wing
+        Rate: 10
+      - Item: C_Evil_Scythe
+        Rate: 10
+      - Item: C_Fallen_Angel_Wing
+        Rate: 10
+      - Item: C_PinkButterfly_Wing
+        Rate: 10
+      - Item: C_Gerhard_Von_Devi_Bag
+        Rate: 10
+      - Item: C_GiantCatBag_TW
+        Rate: 10
+      - Item: C_Invisible_Manteau
+        Rate: 10
+      - Item: C_Wings_of_Michael
+        Rate: 10
+      - Item: C_Cupid_Wing_Pink
+        Rate: 10
+      - Item: C_Poring_Bag
+        Rate: 10
+      - Item: C_Santa_Backpack
+        Rate: 10
+      - Item: C_Shining_Angel_Wing
+        Rate: 10
+      - Item: C_Blessings_Of_Soul
+        Rate: 10
+      - Item: C_SwordWing
+        Rate: 10
+      - Item: C_Wings_of_Uriel
+        Rate: 10
+      - Item: C_WingOfHeart
+        Rate: 10
+
 
 
