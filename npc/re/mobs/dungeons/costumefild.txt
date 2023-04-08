@@ -1,0 +1,6 @@
+//==================================================
+// costumefild - Kostüme
+//==================================================
+costumefild,0,0	monster	LOWWI	29503,20
+costumefild,0,0	monster	MIDDI	29504,20
+costumefild,0,0	monster	TOPPI	29505,20
