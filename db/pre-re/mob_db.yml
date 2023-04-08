@@ -41261,8 +41261,234 @@ Body:
     DamageMotion: 480
     Ai: 02
     Drops:
-      - Item: C_Bicolor_Cat_Witch_Hat
-        Rate: 1
+      - Item: C_Book_Of_Magic
+        Rate: 10
+      - Item: Costume_Durumagi
+        Rate: 10
+      - Item: C_Eremes_Scarf_BU
+        Rate: 10
+      - Item: Costume_Fluffy_Semi_Long
+        Rate: 10
+      - Item: Earmuff_Flowerform
+        Rate: 10
+      - Item: Costume_Gambler_Card
+        Rate: 10
+      - Item: C_L_RibbonMuff_Black
+        Rate: 10
+      - Item: C_Love_Feelings
+        Rate: 10
+      - Item: C_Low_Pony_BL
+        Rate: 10
+      - Item: Costume_Medium_Wave_BD
+        Rate: 10
+      - Item: Costume_Mermaid_Wig
+        Rate: 10
+      - Item: Costume_Miracle_Plant
+        Rate: 10
+      - Item: C_Miyabi_Long_Hair
+        Rate: 10
+      - Item: Costume_Moon_Messenger_Robe
+        Rate: 10
+      - Item: C_Piamette_Curls_
+        Rate: 10
+      - Item: C_Poporing_Muffler
+        Rate: 10
+      - Item: C_Protect_Cloth
+        Rate: 10
+      - Item: C_Red_Pencil_In_Mouth
+        Rate: 10
+      - Item: C_Royalguard_Necklace
+        Rate: 10
+      - Item: Costume_Seraphim_Feather
+        Rate: 10
+      - Item: C_Sheep_Horn
+        Rate: 10
+      - Item: C_Sleep_Sheep_TW
+        Rate: 10
+      - Item: C_Dark_Snake_Lord_Stall
+        Rate: 10
+      - Item: C_Soda_in_Mouth
+        Rate: 10
+      - Item: C_Stall_Of_Angel
+        Rate: 10
+      - Item: Costume_Stem_In_Mouth
+        Rate: 10
+      - Item: C_Stole_Of_Dominion
+        Rate: 10
+      - Item: Costume_Sweets_Party
+        Rate: 10
+      - Item: C_Vajra
+        Rate: 10
+      - Item: C_Warm_Cat_Muffler_BL
+        Rate: 10
+      - Item: C_Wings_of_Protector_Lower
+        Rate: 10
+      - Item: Costume_Yawata_Seal
+        Rate: 10
+      - Item: C_Yellow_Scarf
+        Rate: 10
+      - Item: C_Subject_Aura
+        Rate: 10
+      - Item: C_Blessings_Of_Soul
+        Rate: 10
+      - Item: C_Brown_Stall
+        Rate: 10
+      - Item: C_Bubble_Gum_in_Mouth
+        Rate: 10
+      - Item: C_Candy_Cane_In_Mouth
+        Rate: 10
+      - Item: C_Centimental_Flower
+        Rate: 10
+      - Item: C_Red_Cherry_Blossom
+        Rate: 10
+      - Item: C_Chilly_Breath
+        Rate: 10
+      - Item: C_Choco_Donut_in_Mouth
+        Rate: 10
+      - Item: C_Well_Baked_Toast
+        Rate: 10
+      - Item: C_Pirate_Dagger
+        Rate: 10
+      - Item: C_Blossom_Fluttering
+        Rate: 10
+      - Item: C_Cons_Of_Darkness
+        Rate: 10
+      - Item: C_Donut_in_Mouth
+        Rate: 10
+      - Item: C_Dwarf_Beard
+        Rate: 10
+      - Item: Cons_Of_Earth
+        Rate: 10
+      - Item: C_Elegant_Wave
+        Rate: 10
+      - Item: C_Eremes_Scarf
+        Rate: 10
+      - Item: C_Fish_In_Mouth
+        Rate: 10
+      - Item: C_Fleece_Hat
+        Rate: 10
+      - Item: C_Flu_Mask
+        Rate: 10
+      - Item: C_FlyingGalapago
+        Rate: 10
+      - Item: C_Foxtail
+        Rate: 10
+      - Item: C_Frill_Collar
+        Rate: 10
+      - Item: C_Frozen_Land_Rose
+        Rate: 10
+      - Item: C_Gift_Of_Snow
+        Rate: 10
+      - Item: C_Nut_Donut_In_Mouth
+        Rate: 10
+      - Item: C_Invisible_Mask
+        Rate: 10
+      - Item: C_Iron_Cane
+        Rate: 10
+      - Item: C_Large_Ribbon_Muffler_Red
+        Rate: 10
+      - Item: C_L_Knitting_Low_Twin
+        Rate: 10
+      - Item: C_Mackerel_Pike
+        Rate: 10
+      - Item: C_Monster_Card
+        Rate: 10
+      - Item: C_NettyHeart_BalloonGum
+        Rate: 10
+      - Item: C_Blue_Pencil_In_Mouth
+        Rate: 10
+      - Item: C_Piamette_BowTie_Red
+        Rate: 10
+      - Item: C_Pink_Clover
+        Rate: 10
+      - Item: C_Smoking_Pipe
+        Rate: 10
+      - Item: C_Poring_Soap_Pipe
+        Rate: 10
+      - Item: aegis_31887
+        Rate: 10
+      - Item: C_Centimental_Leaf
+        Rate: 10
+      - Item: C_Romantic_White_Flower
+        Rate: 10
+      - Item: C_Mob_Scarf
+        Rate: 10
+      - Item: C_Suit_Sollar
+        Rate: 10
+      - Item: C_Sweet_Candy
+        Rate: 10
+      - Item: C_Tone_of_Gold
+        Rate: 10
+      - Item: C_Under_Lamp
+        Rate: 10
+      - Item: C_Under_Rim_Glasses_Red
+        Rate: 10
+      - Item: C_Subject_Aura_Red
+        Rate: 10
+      - Item: C_Worg_In_Mouth
+        Rate: 10
+      - Item: C_Eremes_Scarf_Black
+        Rate: 10
+      - Item: C_Happy_Balloon_J
+        Rate: 10
+      - Item: C_Imperial_Glory
+        Rate: 10
+      - Item: C_Happy_Rabbit_Ribbon
+        Rate: 10
+      - Item: Horo_Ears
+        Rate: 10
+      - Item: C_Charm_Of_Flame_Heart
+        Rate: 10
+      - Item: C_Charm_Of_Mistic_Froze
+        Rate: 10
+      - Item: C_CD_In_Mouth
+        Rate: 10
+      - Item: C_Flame_Muffler
+        Rate: 10
+      - Item: C_Fishbone_Hair
+        Rate: 10
+      - Item: C_Fallen_Angel_Valletta
+        Rate: 10
+      - Item: C_Lucky_Clover
+        Rate: 10
+      - Item: C_Necklace_Rosary
+        Rate: 10
+      - Item: C_Sailor_Collar_WH
+        Rate: 10
+      - Item: C_Stall_Of_Bat
+        Rate: 10
+      - Item: C_Scarlet_Rose
+        Rate: 10
+      - Item: C_Feather_Of_Seraphim
+        Rate: 10
+      - Item: C_Shadow_Devil
+        Rate: 10
+      - Item: C_Stall_Of_Dominions
+        Rate: 10
+      - Item: C_Strawberry_In_Mouth
+        Rate: 10
+      - Item: C_Cons_Of_Water
+        Rate: 10
+      - Item: C_FlutterButterfly_BL
+        Rate: 10
+      - Item: C_Miracle_Plant
+        Rate: 10
+      - Item: C_Foxtail
+        Rate: 10
+      - Item: C_Necklace_Rosary
+        Rate: 10
+      - Item: C_Pink_Clover
+        Rate: 10
+      - Item: C_Card_In_The_Mouth
+        Rate: 10
+      - Item: C_Stall_Of_Angel
+        Rate: 10
+      - Item: C_TW_1th_Balloon
+        Rate: 10
+      - Item: Protect_Feathers
+        Rate: 10
+      - Item: Cherry Blossom
+        Rate: 10
   - Id: 29504
     AegisName: MIDDI
     Name: Middi
@@ -41288,23 +41514,222 @@ Body:
     DamageMotion: 480
     Ai: 02
     Drops:
-      - Item: Boody_Red
-        Rate: 70
-      - Item: Scorpion's_Tail
-        Rate: 5500
-      - Item: Elunium_Stone
-        Rate: 57
-      - Item: Solid_Shell
-        Rate: 210
-      - Item: Fine_Grit
-        Rate: 100
-      - Item: Yellow_Herb
-        Rate: 200
-      - Item: Lusty_Iron
-        Rate: 20
-      - Item: Scorpion_Card
-        Rate: 1
-        StealProtected: true
+      - Item: C_Baby_Panda
+        Rate: 10
+      - Item: C_Baby_Penguin
+        Rate: 10
+      - Item: C_Blinking_Thin_Eyes
+        Rate: 10
+      - Item: C_Crow
+        Rate: 10
+      - Item: Costume_Drooping_Elven_Ears
+        Rate: 10
+      - Item: C_Fairy_Feathers
+        Rate: 10
+      - Item: C_Fluffy_Heart_Earmuffs
+        Rate: 10
+      - Item: C_Fox
+        Rate: 10
+      - Item: C_Large_Ribbon_Muffler_Mid
+        Rate: 10
+      - Item: Costume_Orange_Rabbit
+        Rate: 10
+      - Item: C_Orange_Tabby_Cat
+        Rate: 10
+      - Item: C_Picnic_Basket
+        Rate: 10
+      - Item: C_Poring_On_Shoulder
+        Rate: 10
+      - Item: C_Radiant_Rainbow_Wings
+        Rate: 10
+      - Item: C_Under_Rim_Glasses_Blue
+        Rate: 10
+      - Item: C_White_Cat
+        Rate: 10
+      - Item: C_Wings_Of_Victory_Mid
+        Rate: 10
+      - Item: C_Wonderful_Beast_Ear
+        Rate: 10
+      - Item: C_12_Anniversary_Elf_Ears
+        Rate: 10
+      - Item: C_93_Style_Bloody_Wings
+        Rate: 10
+      - Item: C_Ancient_Elven_Ear
+        Rate: 10
+      - Item: C_Baby_Polar_Bear
+        Rate: 10
+      - Item: C_Bell_Pigeon
+        Rate: 10
+      - Item: C_Black_Cat
+        Rate: 10
+      - Item: C_Black_Glasses
+        Rate: 10
+      - Item: C_Blessing_Of_Angels
+        Rate: 10
+      - Item: C_Blinker
+        Rate: 10
+      - Item: C_Blink_Eyes_Sakura
+        Rate: 10
+      - Item: C_Mouton_Life_BL
+        Rate: 10
+      - Item: C_Butterfly_Wing_Ear_J
+        Rate: 10
+      - Item: C_Crimson_Booster
+        Rate: 10
+      - Item: C_Deviruchi_Apron
+        Rate: 10
+      - Item: C_Elf_Ears
+        Rate: 10
+      - Item: C_Elven_Ears
+        Rate: 10
+      - Item: C_Ear_Of_Devils_Wing
+        Rate: 10
+      - Item: C_Exploding_Crimson_Flame
+        Rate: 10
+      - Item: C_False_Ears
+        Rate: 10
+      - Item: C_Fin_Helm
+        Rate: 10
+      - Item: C_First_Love_Cheek
+        Rate: 10
+      - Item: C_Floating_Ball_TW
+        Rate: 10
+      - Item: C_Phalanx
+        Rate: 10
+      - Item: C_Furious_Wave
+        Rate: 10
+      - Item: C_Gemini_Eyes
+        Rate: 10
+      - Item: GrimReaper_Protection
+        Rate: 10
+      - Item: C_ManyStars_TW
+        Rate: 10
+      - Item: C_Gryphon_Wing_Ears
+        Rate: 10
+      - Item: C_Happy_Lunatic_Ear
+        Rate: 10
+      - Item: C_Ice_Wing_Ear
+        Rate: 10
+      - Item: C_Idun_Wing_Ears
+        Rate: 10
+      - Item: C_Invisible_Sunglasses
+        Rate: 10
+      - Item: C_KarduiEar
+        Rate: 10
+      - Item: C_Katashiro_Flying
+        Rate: 10
+      - Item: C_Little_Aquarium
+        Rate: 10
+      - Item: C_Machoman_Glasses
+        Rate: 10
+      - Item: C_Magic_Heir_TW
+        Rate: 10
+      - Item: C_Snow_Fox_TW
+        Rate: 10
+      - Item: C_Maple_Which_Falls
+        Rate: 10
+      - Item: C_MoonStar_Accessory
+        Rate: 10
+      - Item: C_Pocketwatch_Hair_Ornament
+        Rate: 10
+      - Item: C_Rainbow_Wing_Ears
+        Rate: 10
+      - Item: C_Cat_Ears_Cape_Red
+        Rate: 10
+      - Item: C_Scratching_Cat
+        Rate: 10
+      - Item: C_SeraphimCoronet
+        Rate: 10
+      - Item: C_Shiba_Inu
+        Rate: 10
+      - Item: C_Small_Golden_Wings
+        Rate: 10
+      - Item: C_Pair_Of_Red_Ribbon
+        Rate: 10
+      - Item: C_Mike_Stand
+        Rate: 10
+      - Item: C_Sunglasses
+        Rate: 10
+      - Item: C_Happy_Parrot_J
+        Rate: 10
+      - Item: C_World_Star
+        Rate: 10
+      - Item: C_Twin_Margaret
+        Rate: 10
+      - Item: Costume_Twinkling_Red_Eyes
+        Rate: 10
+      - Item: C_Valhalla_Idol
+        Rate: 10
+      - Item: C_Vampire_Familiar
+        Rate: 10
+      - Item: C_White_Cat_On_Shoulder
+        Rate: 10
+      - Item: C_Wing_Angels_Ears
+        Rate: 10
+      - Item: C_Wings_Of_Victory
+        Rate: 10
+      - Item: C_Wonder_Egg_Basket
+        Rate: 10
+      - Item: C_Zealotus_Mask
+        Rate: 10
+      - Item: T_Sunglasses
+        Rate: 10
+      - Item: C_Alchemist_Square_Bag
+        Rate: 10
+      - Item: C_Black_Glasses
+        Rate: 10
+      - Item: C_Female_Poring_Earmuff
+        Rate: 10
+      - Item: C_Desert_Wolf_B
+        Rate: 10
+      - Item: C_Frantic_Looking
+        Rate: 10
+      - Item: C_Diabolus_Wing
+        Rate: 10
+      - Item: C_Deviruchi_Apron
+        Rate: 10
+      - Item: C_Fairy_Feathers
+        Rate: 10
+      - Item: C_Fish_Marche
+        Rate: 10
+      - Item: C_Geisha_Make
+        Rate: 10
+      - Item: C_Happy_Lunatic_Ear
+        Rate: 10
+      - Item: C_Lunatic_Ear_Black
+        Rate: 10
+      - Item: C_Heavenly_Order
+        Rate: 10
+      - Item: C_Mischievous_Fairy
+        Rate: 10
+      - Item: C_MoonStar_Accessory
+        Rate: 10
+      - Item: C_Spot_Light
+        Rate: 10
+      - Item: C_Wonderful_Beast_Ear
+        Rate: 10
+      - Item: C_Ancient_Elven_Ear
+        Rate: 10
+      - Item: C_Gemini_Eyes
+        Rate: 10
+      - Item: Dark_Blindfold_C
+        Rate: 10
+      - Item: C_Gryphon_Wing_Ears
+        Rate: 10
+      - Item: C_Mermaid_Headphone
+        Rate: 10
+      - Item: C_Floating_Parasol
+        Rate: 10
+      - Item: C_World_Star
+        Rate: 10
+      - Item: C_White_Cat
+        Rate: 10
+      - Item: C_Black_Cat
+        Rate: 10
+      - Item: C_White_Baby_Cat_Ears
+        Rate: 10
+      - Item: C_Cat_Hat_J
+        Rate: 10
   - Id: 29505
     AegisName: TOPPI
     Name: Toppi
