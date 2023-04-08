@@ -136,3 +136,6 @@ payon_in01,86,9,0	warp	payonwarp087	2,2,payon,266,152
 payon,270,152,0	warp	payonwarp088	2,2,payon_in01,90,9
 payon_in01,107,71,0	warp	payonwarp089	2,2,payon_in01,96,37
 payon_in01,93,37,0	warp	payonwarp090	2,2,payon_in01,104,71
+
+// -- Custom Warp --
+payon,187,135,0	warp	custompaywarp	2,2,costumefild,206,14
