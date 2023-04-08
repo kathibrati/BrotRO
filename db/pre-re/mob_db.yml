@@ -42115,4 +42115,32 @@ Body:
         Rate: 10
       - Item: C_Youinone_Mask
         Rate: 10
+  - Id: 29506
+    AegisName: GARMI
+    Name: Garmi
+    Level: 1
+    Hp: 50
+    BaseExp: 2
+    JobExp: 1
+    Attack: 7
+    Attack2: 10
+    MagicDefense: 5
+    Dex: 6
+    Luk: 30
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Plant
+    Element: Water
+    ElementLevel: 1
+    WalkSpeed: 400
+    AttackDelay: 1872
+    AttackMotion: 672
+    DamageMotion: 480
+    Ai: 02
+    Drops:
+      - Item: C_Bicolor_Cat_Witch_Hat
+        Rate: 10
+
 
