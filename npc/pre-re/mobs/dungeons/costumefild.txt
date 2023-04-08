@@ -4,3 +4,4 @@
 costumefild,0,0	monster	LOWWI	29503,100
 costumefild,0,0	monster	MIDDI	29504,100
 costumefild,0,0	monster	TOPPI	29505,100
+costumefild,0,0	monster	GARMI	29506,100
