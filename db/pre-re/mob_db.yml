@@ -41331,363 +41331,363 @@ Body:
     Ai: 02
     Drops:
       - Item: C_Bicolor_Cat_Witch_Hat
-        Rate: 1
-      - Item: C_Blue_Frill_Ribbon
-        Rate: 1
-      - Item: C_Cat_Ear_Witch_Hat
-        Rate: 1
-      - Item: C_Cherry
-        Rate: 1
-      - Item: C_Dog_Officer
-        Rate: 1
-      - Item: C_Fawn_Ear
-        Rate: 1
-      - Item: C_Forest_Guide
-        Rate: 1
-      - Item: C_Garnet_Tiara
-        Rate: 1
-      - Item: C_Ghost_Holiday
-        Rate: 1
-      - Item: C_Happy_Rabbit_Ribbon
-        Rate: 1
-      - Item: C_Rabbit_Hopping
-        Rate: 1
-      - Item: C_Isabella_Blue_Ears
-        Rate: 1
-      - Item: C_Large_Orc_Hero_Helm
-        Rate: 1
-      - Item: C_Large_Sorcerer_Crown
-        Rate: 1
-      - Item: C_Lazy_Cat
-        Rate: 1
-      - Item: C_Let_It_Snow
-        Rate: 1
-      - Item: C_Looking
-        Rate: 1
-      - Item: C_Lovely_Heart_Cap
-        Rate: 1
-      - Item: Costume_Nine_Tail_Fox_Hair
-        Rate: 1
-      - Item: C_Nydhog_Wig_WH
-        Rate: 1
-      - Item: C_Penguin_Cap_BU
-        Rate: 1
-      - Item: Costume_Poring_Beret
-        Rate: 1
-      - Item: C_Pretty_Bear_WH
-        Rate: 1
-      - Item: C_Princess_Ribbon_Crown
-        Rate: 1
-      - Item: C_ResonateTaego
-        Rate: 1
-      - Item: C_Ribbon
-        Rate: 1
-      - Item: C_Rune_Hairband
-        Rate: 1
-      - Item: C_SavageB_On_Shoulder
-        Rate: 1
-      - Item: Costume_Silver_Bunny_Band
-        Rate: 1
-      - Item: C_SnowFlake_Tiara
-        Rate: 1
-      - Item: C_Soda_in_Mouth
-        Rate: 1
-      - Item: C_Enchanted_Dog
-        Rate: 1
-      - Item: C_CatCoffeeCup_TW
-        Rate: 1
-      - Item: C_Valkyrie_Circlet
-        Rate: 1
-      - Item: C_Virgo_Crown
-        Rate: 1
-      - Item: C_White_Bird_Rose
-        Rate: 1
-      - Item: C_Cat_Ear_Hat_White
-        Rate: 1
-      - Item: C_Cherry_Blossom_Hat_YL
-        Rate: 1
-      - Item: C_Yggdrasil_Crown
-        Rate: 1
-      - Item: C_Cat_Santa_Hat
-        Rate: 1
-      - Item: C_Alice_Wig
-        Rate: 1
-      - Item: C_Alpaca_Hood
-        Rate: 1
-      - Item: C_Amistr_Cap
-        Rate: 1
-      - Item: C_Amistr_Beret
-        Rate: 1
-      - Item: C_Angelic_Chain
-        Rate: 1
-      - Item: C_Ear_Of_Angel's_Wing_
-        Rate: 1
-      - Item: C_Angeling_Hat
-        Rate: 1
-      - Item: C_Angeling_Pin
-        Rate: 1
-      - Item: C_Ascension_Black_Dragon
-        Rate: 1
-      - Item: C_Balloon_Hat
-        Rate: 1
-      - Item: C_Hair_Protector
-        Rate: 1
-      - Item: C_Baphomet_Hat
-        Rate: 1
-      - Item: C_Baseball_Cap
-        Rate: 1
-      - Item: C_Bell_Ribbon
-        Rate: 1
-      - Item: C_Beret
-        Rate: 1
-      - Item: C_Big_Golden_Bell
-        Rate: 1
-      - Item: C_Bijofnil_Wings
-        Rate: 1
-      - Item: C_Ear_Of_Black_Cat_
-        Rate: 1
-      - Item: C_Black_Cat_Ears_Beret
-        Rate: 1
-      - Item: C_Evil_Druid_Hat_Black
-        Rate: 1
-      - Item: C_Black_Rabbit_Headband
-        Rate: 1
-      - Item: C_Black_Witch_Hat
-        Rate: 1
-      - Item: C_Full_Bloom_Hairpin
-        Rate: 1
-      - Item: C_Bouquet_Hat
-        Rate: 1
-      - Item: C_Boys_Cap
-        Rate: 1
-      - Item: C_Bragi_Wing_Ears
-        Rate: 1
-      - Item: C_Bride_Corolla
-        Rate: 1
-      - Item: C_Bunny_Band
-        Rate: 1
-      - Item: C_Bunny_Head_Dress
-        Rate: 1
-      - Item: C_Rabbit_Ribbon_Hat
-        Rate: 1
-      - Item: C_Aniv_Star_Hat2
-        Rate: 1
-      - Item: C_Carnation_Hairband
-        Rate: 1
-      - Item: C_Cat_Hat_J
-        Rate: 1
-      - Item: C_Cat_Lace_Hairband
-        Rate: 1
-      - Item: C_PGstone_Knit_Hat_PK
-        Rate: 1
-      - Item: C_Celines_Ribbon
-        Rate: 1
-      - Item: C_Chasher_Ear
-        Rate: 1
-      - Item: C_Chung_Hairband
-        Rate: 1
-      - Item: C_Circlet
-        Rate: 1
-      - Item: C_Coronet
-        Rate: 1
-      - Item: C_Crown
-        Rate: 1
-      - Item: C_Mistress_Crown
-        Rate: 1
-      - Item: C_Darkness_Helm
-        Rate: 1
-      - Item: C_Dragon_Helm
-        Rate: 1
-      - Item: C_Drooping_Dorasuke
-        Rate: 1
-      - Item: C_Ear_Mufs
-        Rate: 1
-      - Item: C_Eleanor_Wig
-        Rate: 1
-      - Item: C_Elegant_Wave
-        Rate: 1
-      - Item: C_Elemental_Crown
-        Rate: 1
-      - Item: C_Evil_Druid_Hat
-        Rate: 1
-      - Item: C_Satanic_Chain
-        Rate: 1
-      - Item: C_Cap_Of_Blindness
-        Rate: 1
-      - Item: C_Fashionable_Glasses
-        Rate: 1
-      - Item: C_Feather_Beret
-        Rate: 1
-      - Item: C_Flower_Hairband
-        Rate: 1
-      - Item: C_Flower_Hairpin
-        Rate: 1
-      - Item: C_Fox_Ears_Bell_Ribbon
-        Rate: 1
-      - Item: C_Full_Blossom_Sakura_Hairpin_Blue
-        Rate: 1
-      - Item: C_Galapago_Cap
-        Rate: 1
-      - Item: C_Gram_Peony
-        Rate: 1
-      - Item: C_Lord_Circlet
-        Rate: 1
-      - Item: C_Greater_Dracul_Horn
-        Rate: 1
-      - Item: C_Green_Hat
-        Rate: 1
-      - Item: C_Hair_Band
-        Rate: 1
-      - Item: C_Halloween_Hat
-        Rate: 1
-      - Item: C_Happy_Cat_TW
-        Rate: 1
-      - Item: C_Helm
-        Rate: 1
-      - Item: C_Helm_Of_Angel
-        Rate: 1
-      - Item: C_Helm_of_Darkness
-        Rate: 1
-      - Item: C_Hibiscus
-        Rate: 1
-      - Item: C_Horse_Hairpin
-        Rate: 1
-      - Item: C_Hunting_Cap
-        Rate: 1
-      - Item: C_Husky_Hat
-        Rate: 1
-      - Item: C_Invisible_Cap
-        Rate: 1
-      - Item: C_Jack_A_Dandy
-        Rate: 1
-      - Item: C_Joker_Jester
-        Rate: 1
-      - Item: C_Mask_Of_Fox
-        Rate: 1
-      - Item: C_Cat_Hairband
-        Rate: 1
-      - Item: C_Leopard_Ear_Hat
-        Rate: 1
-      - Item: C_Lush_Rose
-        Rate: 1
-      - Item: C_Magestic_Goat
-        Rate: 1
-      - Item: C_Magical_Feather
-        Rate: 1
-      - Item: C_L_Magestic_Goat
-        Rate: 1
-      - Item: C_Mechanical_Feather_Hairband
-        Rate: 1
-      - Item: C_Misty_Ears
-        Rate: 1
-      - Item: C_Neko_Mimi_Kafra
-        Rate: 1
-      - Item: C_Nekomimi
-        Rate: 1
-      - Item: C_Nurse_Cap
-        Rate: 1
-      - Item: C_Nut_Cracker
-        Rate: 1
-      - Item: C_Panda_Cap
-        Rate: 1
-      - Item: C_Pecopeco_Cap
-        Rate: 1
-      - Item: C_Piamette_Hood
-        Rate: 1
-      - Item: C_Piamette_Red_Hood
-        Rate: 1
-      - Item: C_Piggyback
-        Rate: 1
-      - Item: C_Puppy_Headband
-        Rate: 1
-      - Item: C_Puppy_Love
-        Rate: 1
-      - Item: C_QueenAnzRevenge
-        Rate: 1
-      - Item: C_Rabbit_Earplug
-        Rate: 1
-      - Item: C_Red_Tailed_Ribbon
-        Rate: 1
-      - Item: C_Drooping_Kitty
-        Rate: 1
-      - Item: C_Detective_Hat_K
-        Rate: 1
-      - Item: C_Republic_Hat
-        Rate: 1
-      - Item: C_RuneHelm
-        Rate: 1
-      - Item: C_Saint_Frill_Ribbon
-        Rate: 1
-      - Item: C_Sakura_Coronet
-        Rate: 1
-      - Item: C_Sakura_Hairband
-        Rate: 1
-      - Item: C_Seraph_Wing_Helm
-        Rate: 1
-      - Item: C_Goat_Hat
-        Rate: 1
-      - Item: C_Snownow_Hat
-        Rate: 1
-      - Item: C_Soft_Sheep_Hat
-        Rate: 1
-      - Item: C_Soulless_Wing
-        Rate: 1
-      - Item: C_Spell_Circuit
-        Rate: 1
-      - Item: C_Sharp_Gear
-        Rate: 1
-      - Item: C_Spirit_Of_Chung_E
-        Rate: 1
-      - Item: C_Sprout_Hat
-        Rate: 1
-      - Item: C_Steampunk_Hat
-        Rate: 1
-      - Item: C_Sunday_Hat
-        Rate: 1
-      - Item: C_Brown_Bear_Cap
-        Rate: 1
-      - Item: C_Tiara
-        Rate: 1
-      - Item: C_Frog_Hood
-        Rate: 1
-      - Item: C_Two_Tone_Beret
-        Rate: 1
-      - Item: C_Valkyrie_Feather_Band
-        Rate: 1
-      - Item: C_Valkyrie_Helm
-        Rate: 1
-      - Item: C_Vanargandr_Helm
-        Rate: 1
-      - Item: C_Vicious_Stop_Bandage
-        Rate: 1
-      - Item: C_White_Lily
-        Rate: 1
-      - Item: C_White_Rabbit_Ear
-        Rate: 1
-      - Item: C_Whikebain_Ears
-        Rate: 1
-      - Item: C_Wild_Poring_Rider
-        Rate: 1
-      - Item: C_Wind_Wings
-        Rate: 1
-      - Item: C_Sunglasses_Bball_Hat
-        Rate: 1
-      - Item: Horse_King
-        Rate: 1
-      - Item: C_Magestic_Goat2
-        Rate: 1
-      - Item: Rain_Cloud
-        Rate: 1
-      - Item: Rainbow
-        Rate: 1
-      - Item: Nut_On_Head
-        Rate: 1
-      - Item: T_Valkyrie_Feather_Band
-        Rate: 1
-      - Item: Lightning_Cloud
-        Rate: 1
-      - Item: C_Minstrel_Hat
-        Rate: 1
-      - Item: C_Youinone_Mask
-        Rate: 1
+        Rate: 10
+      - Item: C_Blue_Frill_Ribbon
+        Rate: 10
+      - Item: C_Cat_Ear_Witch_Hat
+        Rate: 10
+      - Item: C_Cherry
+        Rate: 10
+      - Item: C_Dog_Officer
+        Rate: 10
+      - Item: C_Fawn_Ear
+        Rate: 10
+      - Item: C_Forest_Guide
+        Rate: 10
+      - Item: C_Garnet_Tiara
+        Rate: 10
+      - Item: C_Ghost_Holiday
+        Rate: 10
+      - Item: C_Happy_Rabbit_Ribbon
+        Rate: 10
+      - Item: C_Rabbit_Hopping
+        Rate: 10
+      - Item: C_Isabella_Blue_Ears
+        Rate: 10
+      - Item: C_Large_Orc_Hero_Helm
+        Rate: 10
+      - Item: C_Large_Sorcerer_Crown
+        Rate: 10
+      - Item: C_Lazy_Cat
+        Rate: 10
+      - Item: C_Let_It_Snow
+        Rate: 10
+      - Item: C_Looking
+        Rate: 10
+      - Item: C_Lovely_Heart_Cap
+        Rate: 10
+      - Item: Costume_Nine_Tail_Fox_Hair
+        Rate: 10
+      - Item: C_Nydhog_Wig_WH
+        Rate: 10
+      - Item: C_Penguin_Cap_BU
+        Rate: 10
+      - Item: Costume_Poring_Beret
+        Rate: 10
+      - Item: C_Pretty_Bear_WH
+        Rate: 10
+      - Item: C_Princess_Ribbon_Crown
+        Rate: 10
+      - Item: C_ResonateTaego
+        Rate: 10
+      - Item: C_Ribbon
+        Rate: 10
+      - Item: C_Rune_Hairband
+        Rate: 10
+      - Item: C_SavageB_On_Shoulder
+        Rate: 10
+      - Item: Costume_Silver_Bunny_Band
+        Rate: 10
+      - Item: C_SnowFlake_Tiara
+        Rate: 10
+      - Item: C_Soda_in_Mouth
+        Rate: 10
+      - Item: C_Enchanted_Dog
+        Rate: 10
+      - Item: C_CatCoffeeCup_TW
+        Rate: 10
+      - Item: C_Valkyrie_Circlet
+        Rate: 10
+      - Item: C_Virgo_Crown
+        Rate: 10
+      - Item: C_White_Bird_Rose
+        Rate: 10
+      - Item: C_Cat_Ear_Hat_White
+        Rate: 10
+      - Item: C_Cherry_Blossom_Hat_YL
+        Rate: 10
+      - Item: C_Yggdrasil_Crown
+        Rate: 10
+      - Item: C_Cat_Santa_Hat
+        Rate: 10
+      - Item: C_Alice_Wig
+        Rate: 10
+      - Item: C_Alpaca_Hood
+        Rate: 10
+      - Item: C_Amistr_Cap
+        Rate: 10
+      - Item: C_Amistr_Beret
+        Rate: 10
+      - Item: C_Angelic_Chain
+        Rate: 10
+      - Item: C_Ear_Of_Angel's_Wing_
+        Rate: 10
+      - Item: C_Angeling_Hat
+        Rate: 10
+      - Item: C_Angeling_Pin
+        Rate: 10
+      - Item: C_Ascension_Black_Dragon
+        Rate: 10
+      - Item: C_Balloon_Hat
+        Rate: 10
+      - Item: C_Hair_Protector
+        Rate: 10
+      - Item: C_Baphomet_Hat
+        Rate: 10
+      - Item: C_Baseball_Cap
+        Rate: 10
+      - Item: C_Bell_Ribbon
+        Rate: 10
+      - Item: C_Beret
+        Rate: 10
+      - Item: C_Big_Golden_Bell
+        Rate: 10
+      - Item: C_Bijofnil_Wings
+        Rate: 10
+      - Item: C_Ear_Of_Black_Cat_
+        Rate: 10
+      - Item: C_Black_Cat_Ears_Beret
+        Rate: 10
+      - Item: C_Evil_Druid_Hat_Black
+        Rate: 10
+      - Item: C_Black_Rabbit_Headband
+        Rate: 10
+      - Item: C_Black_Witch_Hat
+        Rate: 10
+      - Item: C_Full_Bloom_Hairpin
+        Rate: 10
+      - Item: C_Bouquet_Hat
+        Rate: 10
+      - Item: C_Boys_Cap
+        Rate: 10
+      - Item: C_Bragi_Wing_Ears
+        Rate: 10
+      - Item: C_Bride_Corolla
+        Rate: 10
+      - Item: C_Bunny_Band
+        Rate: 10
+      - Item: C_Bunny_Head_Dress
+        Rate: 10
+      - Item: C_Rabbit_Ribbon_Hat
+        Rate: 10
+      - Item: C_Aniv_Star_Hat2
+        Rate: 10
+      - Item: C_Carnation_Hairband
+        Rate: 10
+      - Item: C_Cat_Hat_J
+        Rate: 10
+      - Item: C_Cat_Lace_Hairband
+        Rate: 10
+      - Item: C_PGstone_Knit_Hat_PK
+        Rate: 10
+      - Item: C_Celines_Ribbon
+        Rate: 10
+      - Item: C_Chasher_Ear
+        Rate: 10
+      - Item: C_Chung_Hairband
+        Rate: 10
+      - Item: C_Circlet
+        Rate: 10
+      - Item: C_Coronet
+        Rate: 10
+      - Item: C_Crown
+        Rate: 10
+      - Item: C_Mistress_Crown
+        Rate: 10
+      - Item: C_Darkness_Helm
+        Rate: 10
+      - Item: C_Dragon_Helm
+        Rate: 10
+      - Item: C_Drooping_Dorasuke
+        Rate: 10
+      - Item: C_Ear_Mufs
+        Rate: 10
+      - Item: C_Eleanor_Wig
+        Rate: 10
+      - Item: C_Elegant_Wave
+        Rate: 10
+      - Item: C_Elemental_Crown
+        Rate: 10
+      - Item: C_Evil_Druid_Hat
+        Rate: 10
+      - Item: C_Satanic_Chain
+        Rate: 10
+      - Item: C_Cap_Of_Blindness
+        Rate: 10
+      - Item: C_Fashionable_Glasses
+        Rate: 10
+      - Item: C_Feather_Beret
+        Rate: 10
+      - Item: C_Flower_Hairband
+        Rate: 10
+      - Item: C_Flower_Hairpin
+        Rate: 10
+      - Item: C_Fox_Ears_Bell_Ribbon
+        Rate: 10
+      - Item: C_Full_Blossom_Sakura_Hairpin_Blue
+        Rate: 10
+      - Item: C_Galapago_Cap
+        Rate: 10
+      - Item: C_Gram_Peony
+        Rate: 10
+      - Item: C_Lord_Circlet
+        Rate: 10
+      - Item: C_Greater_Dracul_Horn
+        Rate: 10
+      - Item: C_Green_Hat
+        Rate: 10
+      - Item: C_Hair_Band
+        Rate: 10
+      - Item: C_Halloween_Hat
+        Rate: 10
+      - Item: C_Happy_Cat_TW
+        Rate: 10
+      - Item: C_Helm
+        Rate: 10
+      - Item: C_Helm_Of_Angel
+        Rate: 10
+      - Item: C_Helm_of_Darkness
+        Rate: 10
+      - Item: C_Hibiscus
+        Rate: 10
+      - Item: C_Horse_Hairpin
+        Rate: 10
+      - Item: C_Hunting_Cap
+        Rate: 10
+      - Item: C_Husky_Hat
+        Rate: 10
+      - Item: C_Invisible_Cap
+        Rate: 10
+      - Item: C_Jack_A_Dandy
+        Rate: 10
+      - Item: C_Joker_Jester
+        Rate: 10
+      - Item: C_Mask_Of_Fox
+        Rate: 10
+      - Item: C_Cat_Hairband
+        Rate: 10
+      - Item: C_Leopard_Ear_Hat
+        Rate: 10
+      - Item: C_Lush_Rose
+        Rate: 10
+      - Item: C_Magestic_Goat
+        Rate: 10
+      - Item: C_Magical_Feather
+        Rate: 10
+      - Item: C_L_Magestic_Goat
+        Rate: 10
+      - Item: C_Mechanical_Feather_Hairband
+        Rate: 10
+      - Item: C_Misty_Ears
+        Rate: 10
+      - Item: C_Neko_Mimi_Kafra
+        Rate: 10
+      - Item: C_Nekomimi
+        Rate: 10
+      - Item: C_Nurse_Cap
+        Rate: 10
+      - Item: C_Nut_Cracker
+        Rate: 10
+      - Item: C_Panda_Cap
+        Rate: 10
+      - Item: C_Pecopeco_Cap
+        Rate: 10
+      - Item: C_Piamette_Hood
+        Rate: 10
+      - Item: C_Piamette_Red_Hood
+        Rate: 10
+      - Item: C_Piggyback
+        Rate: 10
+      - Item: C_Puppy_Headband
+        Rate: 10
+      - Item: C_Puppy_Love
+        Rate: 10
+      - Item: C_QueenAnzRevenge
+        Rate: 10
+      - Item: C_Rabbit_Earplug
+        Rate: 10
+      - Item: C_Red_Tailed_Ribbon
+        Rate: 10
+      - Item: C_Drooping_Kitty
+        Rate: 10
+      - Item: C_Detective_Hat_K
+        Rate: 10
+      - Item: C_Republic_Hat
+        Rate: 10
+      - Item: C_RuneHelm
+        Rate: 10
+      - Item: C_Saint_Frill_Ribbon
+        Rate: 10
+      - Item: C_Sakura_Coronet
+        Rate: 10
+      - Item: C_Sakura_Hairband
+        Rate: 10
+      - Item: C_Seraph_Wing_Helm
+        Rate: 10
+      - Item: C_Goat_Hat
+        Rate: 10
+      - Item: C_Snownow_Hat
+        Rate: 10
+      - Item: C_Soft_Sheep_Hat
+        Rate: 10
+      - Item: C_Soulless_Wing
+        Rate: 10
+      - Item: C_Spell_Circuit
+        Rate: 10
+      - Item: C_Sharp_Gear
+        Rate: 10
+      - Item: C_Spirit_Of_Chung_E
+        Rate: 10
+      - Item: C_Sprout_Hat
+        Rate: 10
+      - Item: C_Steampunk_Hat
+        Rate: 10
+      - Item: C_Sunday_Hat
+        Rate: 10
+      - Item: C_Brown_Bear_Cap
+        Rate: 10
+      - Item: C_Tiara
+        Rate: 10
+      - Item: C_Frog_Hood
+        Rate: 10
+      - Item: C_Two_Tone_Beret
+        Rate: 10
+      - Item: C_Valkyrie_Feather_Band
+        Rate: 10
+      - Item: C_Valkyrie_Helm
+        Rate: 10
+      - Item: C_Vanargandr_Helm
+        Rate: 10
+      - Item: C_Vicious_Stop_Bandage
+        Rate: 10
+      - Item: C_White_Lily
+        Rate: 10
+      - Item: C_White_Rabbit_Ear
+        Rate: 10
+      - Item: C_Whikebain_Ears
+        Rate: 10
+      - Item: C_Wild_Poring_Rider
+        Rate: 10
+      - Item: C_Wind_Wings
+        Rate: 10
+      - Item: C_Sunglasses_Bball_Hat
+        Rate: 10
+      - Item: Horse_King
+        Rate: 10
+      - Item: C_Magestic_Goat2
+        Rate: 10
+      - Item: Rain_Cloud
+        Rate: 10
+      - Item: Rainbow
+        Rate: 10
+      - Item: Nut_On_Head
+        Rate: 10
+      - Item: T_Valkyrie_Feather_Band
+        Rate: 10
+      - Item: Lightning_Cloud
+        Rate: 10
+      - Item: C_Minstrel_Hat
+        Rate: 10
+      - Item: C_Youinone_Mask
+        Rate: 10
 
