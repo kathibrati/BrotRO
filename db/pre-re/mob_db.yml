@@ -41261,6 +41261,8 @@ Body:
     DamageMotion: 480
     Ai: 02
     Drops:
+      - Item: Jellopy
+        Rate: 100
       - Item: C_Book_Of_Magic
         Rate: 10
       - Item: Costume_Durumagi
@@ -41514,6 +41516,8 @@ Body:
     DamageMotion: 480
     Ai: 02
     Drops:
+      - Item: Jellopy
+        Rate: 100
       - Item: C_Baby_Panda
         Rate: 10
       - Item: C_Baby_Penguin
@@ -41755,6 +41759,8 @@ Body:
     DamageMotion: 480
     Ai: 02
     Drops:
+      - Item: Jellopy
+        Rate: 100
       - Item: C_Bicolor_Cat_Witch_Hat
         Rate: 10
       - Item: C_Blue_Frill_Ribbon
@@ -42140,6 +42146,8 @@ Body:
     DamageMotion: 480
     Ai: 02
     Drops:
+      - Item: Jellopy
+        Rate: 100
       - Item: C_Amistr_Bag
         Rate: 10
       - Item: C_School_Bag_BL
