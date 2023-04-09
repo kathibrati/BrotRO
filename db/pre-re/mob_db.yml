@@ -41262,9 +41262,9 @@ Body:
     Ai: 02
     Drops:
       - Item: Feather
-        Rate: 100
+        Rate: 500
       - Item: Jellopy
-        Rate: 100
+        Rate: 500
       - Item: C_Book_Of_Magic
         Rate: 10
       - Item: Costume_Durumagi
@@ -41487,8 +41487,6 @@ Body:
         Rate: 10
       - Item: C_Stall_Of_Angel
         Rate: 10
-      - Item: C_TW_1th_Balloon
-        Rate: 10
       - Item: Protect_Feathers
         Rate: 10
       - Item: Cherry Blossom
@@ -41519,9 +41517,9 @@ Body:
     Ai: 02
     Drops:
       - Item: Feather
-        Rate: 100
+        Rate: 500
       - Item: Jellopy
-        Rate: 100
+        Rate: 500
       - Item: C_Baby_Panda
         Rate: 10
       - Item: C_Baby_Penguin
@@ -41764,9 +41762,9 @@ Body:
     Ai: 02
     Drops:
       - Item: Feather
-        Rate: 100
+        Rate: 500
       - Item: Jellopy
-        Rate: 100
+        Rate: 500
       - Item: C_Bicolor_Cat_Witch_Hat
         Rate: 10
       - Item: C_Blue_Frill_Ribbon
@@ -42153,9 +42151,9 @@ Body:
     Ai: 02
     Drops:
       - Item: Jellopy
-        Rate: 100
+        Rate: 500
       - Item: Feather
-        Rate: 100
+        Rate: 500
       - Item: C_Amistr_Bag
         Rate: 10
       - Item: C_School_Bag_BL
