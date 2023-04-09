@@ -41261,6 +41261,8 @@ Body:
     DamageMotion: 480
     Ai: 02
     Drops:
+      - Item: Feather
+        Rate: 100
       - Item: Jellopy
         Rate: 100
       - Item: C_Book_Of_Magic
@@ -41516,6 +41518,8 @@ Body:
     DamageMotion: 480
     Ai: 02
     Drops:
+      - Item: Feather
+        Rate: 100
       - Item: Jellopy
         Rate: 100
       - Item: C_Baby_Panda
@@ -41759,6 +41763,8 @@ Body:
     DamageMotion: 480
     Ai: 02
     Drops:
+      - Item: Feather
+        Rate: 100
       - Item: Jellopy
         Rate: 100
       - Item: C_Bicolor_Cat_Witch_Hat
@@ -42147,6 +42153,8 @@ Body:
     Ai: 02
     Drops:
       - Item: Jellopy
+        Rate: 100
+      - Item: Feather
         Rate: 100
       - Item: C_Amistr_Bag
         Rate: 10
