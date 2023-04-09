@@ -101,3 +101,8 @@ vcast_stat_scale: 200
 // as Fixed Casting Time, and the rest (80%) as Variable Casting Time.
 // Put it 0 to disable default Fixed Casting Time (just like 0 in the skill_db.yml).
 default_fixed_castrate: 0
+
+// Does the delay time depend on the caster's DEX and/or AGI? (Note 1)
+// Note: On Official servers, neither Dex nor Agi affect delay time
+delay_dependon_dex: yes
+delay_dependon_agi: yes
