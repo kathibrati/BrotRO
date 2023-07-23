@@ -41481,8 +41481,6 @@ Body:
           Rate: 1
         - Item: C_Stall_Of_Angel
           Rate: 1
-        - Item: Protect_Feathers
-          Rate: 1
         - Item: Cherry Blossom
           Rate: 1
   - Id: 29504
@@ -41514,6 +41512,8 @@ Body:
           Rate: 500
         - Item: Jellopy
           Rate: 500
+        - Item: C_Protect_Feathers
+          Rate: 1
         - Item: aegis_410169
           Rate: 1
         - Item: C_Fish_Marche
@@ -42171,8 +42171,6 @@ Body:
         - Item: C_Big_Ribbon_Cloak
           Rate: 1
         - Item: C_Blessed_Veil
-          Rate: 1
-        - Item: C_Bow_On_the_Back
           Rate: 1
         - Item: C_Evil_Druid_Cross
           Rate: 1
