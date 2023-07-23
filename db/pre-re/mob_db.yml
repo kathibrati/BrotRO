@@ -41265,9 +41265,9 @@ Body:
           Rate: 500
         - Item: Jellopy
           Rate: 500
-        - Item: C_Book_Of_Magic
+        - Item: C_Flower_L_Knitting
           Rate: 1
-        - Item: Costume_Durumagi
+        - Item: C_Book_Of_Magic
           Rate: 1
         - Item: C_Eremes_Scarf_BU
           Rate: 1
@@ -41514,6 +41514,12 @@ Body:
           Rate: 500
         - Item: Jellopy
           Rate: 500
+        - Item: aegis_410169
+          Rate: 1
+        - Item: C_Fish_Marche
+          Rate: 1
+        - Item: C_Deviruchi_Apron
+          Rate: 1
         - Item: C_Baby_Panda
           Rate: 1
         - Item: C_Baby_Penguin
@@ -41755,6 +41761,24 @@ Body:
           Rate: 500
         - Item: Jellopy
           Rate: 500
+        - Item: C_Starving_Fish_Hat
+          Rate: 1
+        - Item: C_Yellow_Ribbon
+          Rate: 1
+        - Item: C_Charming_Ribbon
+          Rate: 1
+        - Item: C_Rune_Helm
+          Rate: 1
+        - Item: C_Fluffy_Rabbit_Cape
+          Rate: 1
+        - Item: C_Galanthus_Guard
+          Rate: 1
+        - Item: C_Clinging_Doram_2
+          Rate: 1
+        - Item: C_Asara_Fairy
+          Rate: 1
+        - Item: C_Crescent_Hairpin
+          Rate: 1
         - Item: C_Bicolor_Cat_Witch_Hat
           Rate: 1
         - Item: C_Blue_Frill_Ribbon
@@ -41904,8 +41928,6 @@ Body:
         - Item: C_PGstone_Knit_Hat_PK
           Rate: 1
         - Item: C_Celines_Ribbon
-          Rate: 1
-        - Item: C_Chasher_Ear
           Rate: 1
         - Item: C_Chung_Hairband
           Rate: 1
@@ -42224,6 +42246,61 @@ Body:
           Rate: 1
         - Item: C_WingOfHeart
           Rate: 1
-
-
-
+        - Item: C_Samba_Carnival
+          Rate: 1
+        - Item: C_Adventure_Cat_Bag
+          Rate: 1
+        - Item: C_Triple_Ice_Cream
+          Rate: 1
+        - Item: C_Diabolic_Rock_Guitar
+          Rate: 1
+        - Item: C_Beer_Server
+          Rate: 1
+        - Item: C_Cat_Fork
+          Rate: 1
+        - Item: C_BlueAngeling_Wing
+          Rate: 1
+        - Item: C_Rainbow_Shell
+          Rate: 1
+        - Item: C_chrismas_tree
+          Rate: 1
+        - Item: C_GoldButterfly_Wing
+          Rate: 1
+        - Item: C_Wing_Of_Angel_move_gd
+          Rate: 1
+        - Item: C_Mechanical_Butterfly
+          Rate: 1
+        - Item: C_Heart_Stick_Choco
+          Rate: 1
+        - Item: C_Wing_Of_Angel_move_BK
+          Rate: 1
+        - Item: C_G_DaeHyon_Sword_TW
+          Rate: 1
+        - Item: C_Guardian_Angelwing
+          Rate: 1
+        - Item: C_Guardian_Butterwing
+          Rate: 1
+        - Item: C_Guardian_Wingdeco
+          Rate: 1
+        - Item: C_Spoon_Fork_Set
+          Rate: 1
+        - Item: C_Clutch_Bouquet
+          Rate: 1
+        - Item: C_Flower_Wing
+          Rate: 1
+        - Item: C_Hooked_Straw_Hat
+          Rate: 1
+        - Item: C_Poring_Basket
+          Rate: 1
+        - Item: C_Mainspring_Screw
+          Rate: 1
+        - Item: C_Nydhog_Rumor
+          Rate: 1
+        - Item: C_Baldr_Wing_tw
+          Rate: 1
+        - Item: C_Heart_Wing_Backpack
+          Rate: 1
+        - Item: C_BlackCatBag_TW
+          Rate: 1
+        - Item: C_Poring_Basket
+          Rate: 1
