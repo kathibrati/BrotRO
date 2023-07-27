@@ -41431,8 +41431,6 @@ Body:
           Rate: 1
         - Item: C_Charm_Of_Flame_Heart
           Rate: 1
-        - Item: C_Charm_Of_Mistic_Froze
-          Rate: 1
         - Item: C_CD_In_Mouth
           Rate: 1
         - Item: C_Flame_Muffler
@@ -41450,8 +41448,6 @@ Body:
         - Item: C_Stall_Of_Bat
           Rate: 1
         - Item: C_Scarlet_Rose
-          Rate: 1
-        - Item: C_Shadow_Devil
           Rate: 1
         - Item: C_Stall_Of_Dominions
           Rate: 1
@@ -41673,8 +41669,6 @@ Body:
         - Item: C_Zealotus_Mask
           Rate: 1
         - Item: T_Sunglasses
-          Rate: 1
-        - Item: C_Alchemist_Square_Bag
           Rate: 1
         - Item: C_Black_Glasses
           Rate: 1
@@ -42311,8 +42305,6 @@ Body:
         - Item: C_Baldr_Wing_tw
           Rate: 1
         - Item: C_Heart_Wing_Backpack
-          Rate: 1
-        - Item: C_BlackCatBag_TW
           Rate: 1
         - Item: C_Poring_Basket
           Rate: 1
