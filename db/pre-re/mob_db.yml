@@ -41265,6 +41265,8 @@ Body:
           Rate: 500
         - Item: Jellopy
           Rate: 500
+        - Item: C_Poring_Letter
+          Rate: 1
         - Item: C_Flower_L_Knitting
           Rate: 1
         - Item: C_Book_Of_Magic
@@ -41287,8 +41289,6 @@ Body:
           Rate: 1
         - Item: Costume_Mermaid_Wig
           Rate: 1
-        - Item: Costume_Miracle_Plant
-          Rate: 1
         - Item: C_Miyabi_Long_Hair
           Rate: 1
         - Item: Costume_Moon_Messenger_Robe
@@ -41298,8 +41298,6 @@ Body:
         - Item: C_Poporing_Muffler
           Rate: 1
         - Item: C_Protect_Cloth
-          Rate: 1
-        - Item: C_Red_Pencil_In_Mouth
           Rate: 1
         - Item: C_Royalguard_Necklace
           Rate: 1
@@ -41324,8 +41322,6 @@ Body:
         - Item: C_Warm_Cat_Muffler_BL
           Rate: 1
         - Item: C_Protect_Feathers
-          Rate: 1
-        - Item: Costume_Yawata_Seal
           Rate: 1
         - Item: C_Yellow_Scarf
           Rate: 1
@@ -41391,8 +41387,6 @@ Body:
           Rate: 1
         - Item: C_L_Knitting_Low_Twin
           Rate: 1
-        - Item: C_Mackerel_Pike
-          Rate: 1
         - Item: C_Monster_Card
           Rate: 1
         - Item: C_NettyHeart_BalloonGum
@@ -41457,8 +41451,6 @@ Body:
           Rate: 1
         - Item: C_Scarlet_Rose
           Rate: 1
-        - Item: C_Feather_Of_Seraphim
-          Rate: 1
         - Item: C_Shadow_Devil
           Rate: 1
         - Item: C_Stall_Of_Dominions
@@ -41512,6 +41504,14 @@ Body:
           Rate: 500
         - Item: Jellopy
           Rate: 500
+        - Item: C_Tiraya_Bonnet
+          Rate: 1
+        - Item: C_White_Baby_Cat_Ears
+          Rate: 1
+        - Item: C_Takius_Blindfold
+          Rate: 1
+        - Item: C_Pecopeco_Wing_Ears
+          Rate: 1
         - Item: C_Protect_Feathers
           Rate: 1
         - Item: aegis_410169
@@ -41607,8 +41607,6 @@ Body:
         - Item: GrimReaper_Protection
           Rate: 1
         - Item: C_ManyStars_TW
-          Rate: 1
-        - Item: C_Gryphon_Wing_Ears
           Rate: 1
         - Item: C_Happy_Lunatic_Ear
           Rate: 1
@@ -41722,8 +41720,6 @@ Body:
           Rate: 1
         - Item: C_Black_Cat
           Rate: 1
-        - Item: C_White_Baby_Cat_Ears
-          Rate: 1
         - Item: C_Cat_Hat_J
           Rate: 1
   - Id: 29505
@@ -41755,6 +41751,36 @@ Body:
           Rate: 500
         - Item: Jellopy
           Rate: 500
+        - Item: C_Good_Wedding_Veil
+          Rate: 0.1
+        - Item: C_Black_Tail_Ribbon
+          Rate: 1
+        - Item: C_Bread_Bag
+          Rate: 1
+        - Item: C_Polar_Bear_Cap
+          Rate: 1
+        - Item: C_Polar_Bear_Cap
+          Rate: 1
+        - Item: C_Vane_Hairpin
+          Rate: 1
+        - Item: C_ShineSantaPoring
+          Rate: 1
+        - Item: C_Rainbow_Poring_Hat
+          Rate: 1
+        - Item: C_Love_Guard
+          Rate: 1
+        - Item: C_Sweet_Bonnet
+          Rate: 1
+        - Item: C_Coppola
+          Rate: 1
+        - Item: C_Moonlight_Flower_Hat
+          Rate: 1
+        - Item: C_Wickebines_Black_Cat_Ears
+          Rate: 1
+        - Item: C_Wondering_Wolf_Helm
+          Rate: 1
+        - Item: C_Hibiscus_J
+          Rate: 1
         - Item: C_Starving_Fish_Hat
           Rate: 1
         - Item: C_Yellow_Ribbon
@@ -42212,13 +42238,9 @@ Body:
           Rate: 1
         - Item: C_Fallen_Angel_Wing
           Rate: 1
-        - Item: C_PinkButterfly_Wing
-          Rate: 1
         - Item: C_Gerhard_Von_Devi_Bag
           Rate: 1
         - Item: C_GiantCatBag_TW
-          Rate: 1
-        - Item: C_Invisible_Manteau
           Rate: 1
         - Item: C_Wings_of_Michael
           Rate: 1
