@@ -41751,7 +41751,7 @@ Body:
           Rate: 500
         - Item: Jellopy
           Rate: 500
-        - Item: 19754
+        - Item: C_Good_Wedding_Veil
           Rate: 1
         - Item: C_Black_Tail_Ribbon
           Rate: 1
@@ -42237,8 +42237,6 @@ Body:
         - Item: C_Evil_Scythe
           Rate: 1
         - Item: C_Fallen_Angel_Wing
-          Rate: 1
-        - Item: C_Gerhard_Von_Devi_Bag
           Rate: 1
         - Item: C_GiantCatBag_TW
           Rate: 1
