@@ -41745,66 +41745,6 @@ Body:
           Rate: 500
         - Item: Jellopy
           Rate: 500
-        - Item: C_Good_Wedding_Veil
-          Rate: 1
-        - Item: C_Black_Tail_Ribbon
-          Rate: 1
-        - Item: C_Bread_Bag
-          Rate: 1
-        - Item: C_Polar_Bear_Cap
-          Rate: 1
-        - Item: C_Polar_Bear_Cap
-          Rate: 1
-        - Item: C_Vane_Hairpin
-          Rate: 1
-        - Item: C_ShineSantaPoring
-          Rate: 1
-        - Item: C_Rainbow_Poring_Hat
-          Rate: 1
-        - Item: C_Love_Guard
-          Rate: 1
-        - Item: C_Sweet_Bonnet
-          Rate: 1
-        - Item: C_Coppola
-          Rate: 1
-        - Item: C_Moonlight_Flower_Hat
-          Rate: 1
-        - Item: C_Wickebines_Black_Cat_Ears
-          Rate: 1
-        - Item: C_Wondering_Wolf_Helm
-          Rate: 1
-        - Item: C_Hibiscus_J
-          Rate: 1
-        - Item: C_Starving_Fish_Hat
-          Rate: 1
-        - Item: C_Yellow_Ribbon
-          Rate: 1
-        - Item: C_Charming_Ribbon
-          Rate: 1
-        - Item: C_Rune_Helm
-          Rate: 1
-        - Item: C_Fluffy_Rabbit_Cape
-          Rate: 1
-        - Item: C_Galanthus_Guard
-          Rate: 1
-        - Item: C_Clinging_Doram_2
-          Rate: 1
-        - Item: C_Asara_Fairy
-          Rate: 1
-        - Item: C_Crescent_Hairpin
-          Rate: 1
-        - Item: C_Bicolor_Cat_Witch_Hat
-          Rate: 1
-        - Item: C_Blue_Frill_Ribbon
-          Rate: 1
-        - Item: C_Cat_Ear_Witch_Hat
-          Rate: 1
-        - Item: C_Cherry
-          Rate: 1
-        - Item: C_Dog_Officer
-          Rate: 1
-        - Item: C_Fawn_Ear
-          Rate: 1
         - Item: C_Forest_Guide
           Rate: 1
         - Item: C_Garnet_Tiara
@@ -42307,4 +42247,122 @@ Body:
         - Item: C_Heart_Wing_Backpack
           Rate: 1
         - Item: C_Poring_Basket
+          Rate: 1
+  - Id: 29507
+    AegisName: TOPPIGREIF
+    Name: ToppiGreif
+    Level: 1
+    Hp: 50
+    BaseExp: 2
+    JobExp: 1
+    Attack: 7
+    Attack2: 10
+    MagicDefense: 5
+    Dex: 6
+    Luk: 30
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Plant
+    Element: Water
+    ElementLevel: 1
+    WalkSpeed: 400
+    AttackDelay: 1872
+    AttackMotion: 672
+    DamageMotion: 480
+    Ai: 02
+    Drops:
+        - Item: Feather
+          Rate: 500
+        - Item: Jellopy
+          Rate: 500
+        - Item: C_Good_Wedding_Veil
+          Rate: 1
+        - Item: C_Black_Tail_Ribbon
+          Rate: 1
+        - Item: C_Bread_Bag
+          Rate: 1
+        - Item: C_Polar_Bear_Cap
+          Rate: 1
+        - Item: C_Polar_Bear_Cap
+          Rate: 1
+        - Item: C_Vane_Hairpin
+          Rate: 1
+        - Item: C_ShineSantaPoring
+          Rate: 1
+        - Item: C_Rainbow_Poring_Hat
+          Rate: 1
+        - Item: C_Love_Guard
+          Rate: 1
+        - Item: C_Sweet_Bonnet
+          Rate: 1
+  - Id: 29508
+    AegisName: TOPPISTRAUSS
+    Name: ToppiStrauss
+    Level: 1
+    Hp: 50
+    BaseExp: 2
+    JobExp: 1
+    Attack: 7
+    Attack2: 10
+    MagicDefense: 5
+    Dex: 6
+    Luk: 30
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Plant
+    Element: Water
+    ElementLevel: 1
+    WalkSpeed: 400
+    AttackDelay: 1872
+    AttackMotion: 672
+    DamageMotion: 480
+    Ai: 02
+    Drops:
+        - Item: Feather
+          Rate: 500
+        - Item: Jellopy
+          Rate: 500
+        - Item: C_Coppola
+          Rate: 1
+        - Item: C_Moonlight_Flower_Hat
+          Rate: 1
+        - Item: C_Wickebines_Black_Cat_Ears
+          Rate: 1
+        - Item: C_Wondering_Wolf_Helm
+          Rate: 1
+        - Item: C_Hibiscus_J
+          Rate: 1
+        - Item: C_Starving_Fish_Hat
+          Rate: 1
+        - Item: C_Yellow_Ribbon
+          Rate: 1
+        - Item: C_Charming_Ribbon
+          Rate: 1
+        - Item: C_Rune_Helm
+          Rate: 1
+        - Item: C_Fluffy_Rabbit_Cape
+          Rate: 1
+        - Item: C_Galanthus_Guard
+          Rate: 1
+        - Item: C_Clinging_Doram_2
+          Rate: 1
+        - Item: C_Asara_Fairy
+          Rate: 1
+        - Item: C_Crescent_Hairpin
+          Rate: 1
+        - Item: C_Bicolor_Cat_Witch_Hat
+          Rate: 1
+        - Item: C_Blue_Frill_Ribbon
+          Rate: 1
+        - Item: C_Cat_Ear_Witch_Hat
+          Rate: 1
+        - Item: C_Cherry
+          Rate: 1
+        - Item: C_Dog_Officer
+          Rate: 1
+        - Item: C_Fawn_Ear
           Rate: 1

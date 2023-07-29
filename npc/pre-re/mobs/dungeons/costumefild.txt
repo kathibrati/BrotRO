@@ -5,3 +5,5 @@ costumefild,0,0	monster	LOWWI	29503,100
 costumefild,0,0	monster	MIDDI	29504,100
 costumefild,0,0	monster	TOPPI	29505,100
 costumefild,0,0	monster	GARMI	29506,100
+costumefild,0,0	monster	GREIF	29507,100
+costumefild,0,0	monster	STRAUSS	29508,100
