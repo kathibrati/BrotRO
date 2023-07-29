@@ -41262,9 +41262,9 @@ Body:
     Ai: 02
     Drops:
         - Item: Feather
-          Rate: 500
+          Rate: 50
         - Item: Jellopy
-          Rate: 500
+          Rate: 50
         - Item: C_Poring_Letter
           Rate: 1
         - Item: C_Flower_L_Knitting
@@ -41345,132 +41345,6 @@ Body:
           Rate: 1
         - Item: C_Well_Baked_Toast
           Rate: 1
-        - Item: C_Pirate_Dagger
-          Rate: 1
-        - Item: C_Blossom_Fluttering
-          Rate: 1
-        - Item: C_Cons_Of_Darkness
-          Rate: 1
-        - Item: C_Donut_in_Mouth
-          Rate: 1
-        - Item: C_Dwarf_Beard
-          Rate: 1
-        - Item: Cons_Of_Earth
-          Rate: 1
-        - Item: C_Elegant_Wave
-          Rate: 1
-        - Item: C_Eremes_Scarf
-          Rate: 1
-        - Item: C_Fish_In_Mouth
-          Rate: 1
-        - Item: C_Fleece_Hat
-          Rate: 1
-        - Item: C_Flu_Mask
-          Rate: 1
-        - Item: C_FlyingGalapago
-          Rate: 1
-        - Item: C_Foxtail
-          Rate: 1
-        - Item: C_Frill_Collar
-          Rate: 1
-        - Item: C_Frozen_Land_Rose
-          Rate: 1
-        - Item: C_Gift_Of_Snow
-          Rate: 1
-        - Item: C_Nut_Donut_In_Mouth
-          Rate: 1
-        - Item: C_Invisible_Mask
-          Rate: 1
-        - Item: C_Iron_Cane
-          Rate: 1
-        - Item: C_Large_Ribbon_Muffler_Red
-          Rate: 1
-        - Item: C_L_Knitting_Low_Twin
-          Rate: 1
-        - Item: C_Monster_Card
-          Rate: 1
-        - Item: C_NettyHeart_BalloonGum
-          Rate: 1
-        - Item: C_Blue_Pencil_In_Mouth
-          Rate: 1
-        - Item: C_Piamette_BowTie_Red
-          Rate: 1
-        - Item: C_Pink_Clover
-          Rate: 1
-        - Item: C_Smoking_Pipe
-          Rate: 1
-        - Item: C_Poring_Soap_Pipe
-          Rate: 1
-        - Item: C_Centimental_Leaf
-          Rate: 1
-        - Item: C_Romantic_White_Flower
-          Rate: 1
-        - Item: C_Mob_Scarf
-          Rate: 1
-        - Item: C_Suit_Sollar
-          Rate: 1
-        - Item: C_Sweet_Candy
-          Rate: 1
-        - Item: C_Tone_of_Gold
-          Rate: 1
-        - Item: C_Under_Rim_Glasses_Red
-          Rate: 1
-        - Item: C_Subject_Aura_Red
-          Rate: 1
-        - Item: C_Worg_In_Mouth
-          Rate: 1
-        - Item: C_Eremes_Scarf_Black
-          Rate: 1
-        - Item: C_Happy_Balloon_J
-          Rate: 1
-        - Item: C_Imperial_Glory
-          Rate: 1
-        - Item: C_Happy_Rabbit_Ribbon
-          Rate: 1
-        - Item: Horo_Ears
-          Rate: 1
-        - Item: C_Charm_Of_Flame_Heart
-          Rate: 1
-        - Item: C_CD_In_Mouth
-          Rate: 1
-        - Item: C_Flame_Muffler
-          Rate: 1
-        - Item: C_Fishbone_Hair
-          Rate: 1
-        - Item: C_Fallen_Angel_Valletta
-          Rate: 1
-        - Item: C_Lucky_Clover
-          Rate: 1
-        - Item: C_Necklace_Rosary
-          Rate: 1
-        - Item: C_Sailor_Collar_WH
-          Rate: 1
-        - Item: C_Stall_Of_Bat
-          Rate: 1
-        - Item: C_Scarlet_Rose
-          Rate: 1
-        - Item: C_Stall_Of_Dominions
-          Rate: 1
-        - Item: C_Strawberry_In_Mouth
-          Rate: 1
-        - Item: C_Cons_Of_Water
-          Rate: 1
-        - Item: C_FlutterButterfly_BL
-          Rate: 1
-        - Item: C_Miracle_Plant
-          Rate: 1
-        - Item: C_Foxtail
-          Rate: 1
-        - Item: C_Necklace_Rosary
-          Rate: 1
-        - Item: C_Pink_Clover
-          Rate: 1
-        - Item: C_Card_In_The_Mouth
-          Rate: 1
-        - Item: C_Stall_Of_Angel
-          Rate: 1
-        - Item: Cherry Blossom
-          Rate: 1
   - Id: 29504
     AegisName: MIDDI
     Name: Middi
@@ -41497,9 +41371,9 @@ Body:
     Ai: 02
     Drops:
         - Item: Feather
-          Rate: 500
+          Rate: 50
         - Item: Jellopy
-          Rate: 500
+          Rate: 50
         - Item: C_Tiraya_Bonnet
           Rate: 1
         - Item: C_White_Baby_Cat_Ears
@@ -41594,128 +41468,6 @@ Body:
           Rate: 1
         - Item: C_Floating_Ball_TW
           Rate: 1
-        - Item: C_Phalanx
-          Rate: 1
-        - Item: C_Furious_Wave
-          Rate: 1
-        - Item: C_Gemini_Eyes
-          Rate: 1
-        - Item: GrimReaper_Protection
-          Rate: 1
-        - Item: C_ManyStars_TW
-          Rate: 1
-        - Item: C_Happy_Lunatic_Ear
-          Rate: 1
-        - Item: C_Ice_Wing_Ear
-          Rate: 1
-        - Item: C_Idun_Wing_Ears
-          Rate: 1
-        - Item: C_Invisible_Sunglasses
-          Rate: 1
-        - Item: C_Katashiro_Flying
-          Rate: 1
-        - Item: C_Little_Aquarium
-          Rate: 1
-        - Item: C_Machoman_Glasses
-          Rate: 1
-        - Item: C_Magic_Heir_TW
-          Rate: 1
-        - Item: C_Snow_Fox_TW
-          Rate: 1
-        - Item: C_Maple_Which_Falls
-          Rate: 1
-        - Item: C_MoonStar_Accessory
-          Rate: 1
-        - Item: C_Pocketwatch_Hair_Ornament
-          Rate: 1
-        - Item: C_Rainbow_Wing_Ears
-          Rate: 1
-        - Item: C_Cat_Ears_Cape_Red
-          Rate: 1
-        - Item: C_Scratching_Cat
-          Rate: 1
-        - Item: C_SeraphimCoronet
-          Rate: 1
-        - Item: C_Shiba_Inu
-          Rate: 1
-        - Item: C_Small_Golden_Wings
-          Rate: 1
-        - Item: C_Pair_Of_Red_Ribbon
-          Rate: 1
-        - Item: C_Mike_Stand
-          Rate: 1
-        - Item: C_Sunglasses
-          Rate: 1
-        - Item: C_Happy_Parrot_J
-          Rate: 1
-        - Item: C_World_Star
-          Rate: 1
-        - Item: C_Twin_Margaret
-          Rate: 1
-        - Item: Costume_Twinkling_Red_Eyes
-          Rate: 1
-        - Item: C_Valhalla_Idol
-          Rate: 1
-        - Item: C_Vampire_Familiar
-          Rate: 1
-        - Item: C_White_Cat_On_Shoulder
-          Rate: 1
-        - Item: C_Wing_Angels_Ears
-          Rate: 1
-        - Item: C_Wings_Of_Victory
-          Rate: 1
-        - Item: C_Wonder_Egg_Basket
-          Rate: 1
-        - Item: C_Zealotus_Mask
-          Rate: 1
-        - Item: T_Sunglasses
-          Rate: 1
-        - Item: C_Black_Glasses
-          Rate: 1
-        - Item: C_Female_Poring_Earmuff
-          Rate: 1
-        - Item: C_Desert_Wolf_B
-          Rate: 1
-        - Item: C_Deviruchi_Apron
-          Rate: 1
-        - Item: C_Fairy_Feathers
-          Rate: 1
-        - Item: C_Fish_Marche
-          Rate: 1
-        - Item: C_Geisha_Make
-          Rate: 1
-        - Item: C_Happy_Lunatic_Ear
-          Rate: 1
-        - Item: C_Lunatic_Ear_Black
-          Rate: 1
-        - Item: C_Heavenly_Order
-          Rate: 1
-        - Item: C_Mischievous_Fairy
-          Rate: 1
-        - Item: C_MoonStar_Accessory
-          Rate: 1
-        - Item: C_Spot_Light
-          Rate: 1
-        - Item: C_Wonderful_Beast_Ear
-          Rate: 1
-        - Item: C_Ancient_Elven_Ear
-          Rate: 1
-        - Item: C_Gemini_Eyes
-          Rate: 1
-        - Item: C_Gryphon_Wing_Ears
-          Rate: 1
-        - Item: C_Mermaid_Headphone
-          Rate: 1
-        - Item: C_Floating_Parasol
-          Rate: 1
-        - Item: C_World_Star
-          Rate: 1
-        - Item: C_White_Cat
-          Rate: 1
-        - Item: C_Black_Cat
-          Rate: 1
-        - Item: C_Cat_Hat_J
-          Rate: 1
   - Id: 29505
     AegisName: TOPPI
     Name: Toppi
@@ -41742,49 +41494,9 @@ Body:
     Ai: 02
     Drops:
         - Item: Feather
-          Rate: 500
+          Rate: 50
         - Item: Jellopy
-          Rate: 500
-        - Item: C_Forest_Guide
-          Rate: 1
-        - Item: C_Garnet_Tiara
-          Rate: 1
-        - Item: C_Ghost_Holiday
-          Rate: 1
-        - Item: C_Happy_Rabbit_Ribbon
-          Rate: 1
-        - Item: C_Rabbit_Hopping
-          Rate: 1
-        - Item: C_Isabella_Blue_Ears
-          Rate: 1
-        - Item: C_Large_Orc_Hero_Helm
-          Rate: 1
-        - Item: C_Large_Sorcerer_Crown
-          Rate: 1
-        - Item: C_Lazy_Cat
-          Rate: 1
-        - Item: C_Let_It_Snow
-          Rate: 1
-        - Item: C_Looking
-          Rate: 1
-        - Item: C_Lovely_Heart_Cap
-          Rate: 1
-        - Item: Costume_Nine_Tail_Fox_Hair
-          Rate: 1
-        - Item: C_Nydhog_Wig_WH
-          Rate: 1
-        - Item: C_Penguin_Cap_BU
-          Rate: 1
-        - Item: Costume_Poring_Beret
-          Rate: 1
-        - Item: C_Pretty_Bear_WH
-          Rate: 1
-        - Item: C_Princess_Ribbon_Crown
-          Rate: 1
-        - Item: C_ResonateTaego
-          Rate: 1
-        - Item: C_Ribbon
-          Rate: 1
+          Rate: 50
         - Item: C_Rune_Hairband
           Rate: 1
         - Item: C_SavageB_On_Shoulder
@@ -41865,230 +41577,6 @@ Body:
           Rate: 1
         - Item: C_Bragi_Wing_Ears
           Rate: 1
-        - Item: C_Bride_Corolla
-          Rate: 1
-        - Item: C_Bunny_Band
-          Rate: 1
-        - Item: C_Bunny_Head_Dress
-          Rate: 1
-        - Item: C_Rabbit_Ribbon_Hat
-          Rate: 1
-        - Item: C_Carnation_Hairband
-          Rate: 1
-        - Item: C_Cat_Hat_J
-          Rate: 1
-        - Item: C_Cat_Lace_Hairband
-          Rate: 1
-        - Item: C_PGstone_Knit_Hat_PK
-          Rate: 1
-        - Item: C_Celines_Ribbon
-          Rate: 1
-        - Item: C_Chung_Hairband
-          Rate: 1
-        - Item: C_Circlet
-          Rate: 1
-        - Item: C_Coronet
-          Rate: 1
-        - Item: C_Crown
-          Rate: 1
-        - Item: C_Mistress_Crown
-          Rate: 1
-        - Item: C_Darkness_Helm
-          Rate: 1
-        - Item: C_Dragon_Helm
-          Rate: 1
-        - Item: C_Drooping_Dorasuke
-          Rate: 1
-        - Item: C_Ear_Mufs
-          Rate: 1
-        - Item: C_Eleanor_Wig
-          Rate: 1
-        - Item: C_Elegant_Wave
-          Rate: 1
-        - Item: C_Elemental_Crown
-          Rate: 1
-        - Item: C_Evil_Druid_Hat
-          Rate: 1
-        - Item: C_Satanic_Chain
-          Rate: 1
-        - Item: C_Cap_Of_Blindness
-          Rate: 1
-        - Item: C_Fashionable_Glasses
-          Rate: 1
-        - Item: C_Feather_Beret
-          Rate: 1
-        - Item: C_Flower_Hairband
-          Rate: 1
-        - Item: C_Flower_Hairpin
-          Rate: 1
-        - Item: C_Fox_Ears_Bell_Ribbon
-          Rate: 1
-        - Item: C_Full_Blossom_Sakura_Hairpin_Blue
-          Rate: 1
-        - Item: C_Galapago_Cap
-          Rate: 1
-        - Item: C_Gram_Peony
-          Rate: 1
-        - Item: C_Lord_Circlet
-          Rate: 1
-        - Item: C_Greater_Dracul_Horn
-          Rate: 1
-        - Item: C_Green_Hat
-          Rate: 1
-        - Item: C_Hair_Band
-          Rate: 1
-        - Item: C_Halloween_Hat
-          Rate: 1
-        - Item: C_Happy_Cat_TW
-          Rate: 1
-        - Item: C_Helm
-          Rate: 1
-        - Item: C_Helm_Of_Angel
-          Rate: 1
-        - Item: C_Helm_of_Darkness
-          Rate: 1
-        - Item: C_Hibiscus
-          Rate: 1
-        - Item: C_Horse_Hairpin
-          Rate: 1
-        - Item: C_Hunting_Cap
-          Rate: 1
-        - Item: C_Husky_Hat
-          Rate: 1
-        - Item: C_Invisible_Cap
-          Rate: 1
-        - Item: C_Jack_A_Dandy
-          Rate: 1
-        - Item: C_Joker_Jester
-          Rate: 1
-        - Item: C_Mask_Of_Fox
-          Rate: 1
-        - Item: C_Cat_Hairband
-          Rate: 1
-        - Item: C_Leopard_Ear_Hat
-          Rate: 1
-        - Item: C_Lush_Rose
-          Rate: 1
-        - Item: C_Magestic_Goat
-          Rate: 1
-        - Item: C_Magical_Feather
-          Rate: 1
-        - Item: C_L_Magestic_Goat
-          Rate: 1
-        - Item: C_Mechanical_Feather_Hairband
-          Rate: 1
-        - Item: C_Misty_Ears
-          Rate: 1
-        - Item: C_Neko_Mimi_Kafra
-          Rate: 1
-        - Item: C_Nekomimi
-          Rate: 1
-        - Item: C_Nurse_Cap
-          Rate: 1
-        - Item: C_Nut_Cracker
-          Rate: 1
-        - Item: C_Panda_Cap
-          Rate: 1
-        - Item: C_Pecopeco_Cap
-          Rate: 1
-        - Item: C_Piamette_Hood
-          Rate: 1
-        - Item: C_Piamette_Red_Hood
-          Rate: 1
-        - Item: C_Piggyback
-          Rate: 1
-        - Item: C_Puppy_Headband
-          Rate: 1
-        - Item: C_Puppy_Love
-          Rate: 1
-        - Item: C_QueenAnzRevenge
-          Rate: 1
-        - Item: C_Rabbit_Earplug
-          Rate: 1
-        - Item: C_Red_Tailed_Ribbon
-          Rate: 1
-        - Item: C_Drooping_Kitty
-          Rate: 1
-        - Item: C_Detective_Hat_K
-          Rate: 1
-        - Item: C_Republic_Hat
-          Rate: 1
-        - Item: C_RuneHelm
-          Rate: 1
-        - Item: C_Saint_Frill_Ribbon
-          Rate: 1
-        - Item: C_Sakura_Coronet
-          Rate: 1
-        - Item: C_Sakura_Hairband
-          Rate: 1
-        - Item: C_Seraph_Wing_Helm
-          Rate: 1
-        - Item: C_Goat_Hat
-          Rate: 1
-        - Item: C_Snownow_Hat
-          Rate: 1
-        - Item: C_Soft_Sheep_Hat
-          Rate: 1
-        - Item: C_Soulless_Wing
-          Rate: 1
-        - Item: C_Spell_Circuit
-          Rate: 1
-        - Item: C_Sharp_Gear
-          Rate: 1
-        - Item: C_Spirit_Of_Chung_E
-          Rate: 1
-        - Item: C_Sprout_Hat
-          Rate: 1
-        - Item: C_Steampunk_Hat
-          Rate: 1
-        - Item: C_Sunday_Hat
-          Rate: 1
-        - Item: C_Brown_Bear_Cap
-          Rate: 1
-        - Item: C_Tiara
-          Rate: 1
-        - Item: C_Frog_Hood
-          Rate: 1
-        - Item: C_Two_Tone_Beret
-          Rate: 1
-        - Item: C_Valkyrie_Feather_Band
-          Rate: 1
-        - Item: C_Valkyrie_Helm
-          Rate: 1
-        - Item: C_Vanargandr_Helm
-          Rate: 1
-        - Item: C_Vicious_Stop_Bandage
-          Rate: 1
-        - Item: C_White_Lily
-          Rate: 1
-        - Item: C_White_Rabbit_Ear
-          Rate: 1
-        - Item: C_Whikebain_Ears
-          Rate: 1
-        - Item: C_Wild_Poring_Rider
-          Rate: 1
-        - Item: C_Wind_Wings
-          Rate: 1
-        - Item: C_Sunglasses_Bball_Hat
-          Rate: 1
-        - Item: Horse_King
-          Rate: 1
-        - Item: C_Magestic_Goat2
-          Rate: 1
-        - Item: Rain_Cloud
-          Rate: 1
-        - Item: Rainbow
-          Rate: 1
-        - Item: Nut_On_Head
-          Rate: 1
-        - Item: T_Valkyrie_Feather_Band
-          Rate: 1
-        - Item: Lightning_Cloud
-          Rate: 1
-        - Item: C_Minstrel_Hat
-          Rate: 1
-        - Item: C_Youinone_Mask
-          Rate: 1
   - Id: 29506
     AegisName: GARMI
     Name: Garmi
@@ -42115,9 +41603,9 @@ Body:
     Ai: 02
     Drops:
         - Item: Jellopy
-          Rate: 500
+          Rate: 50
         - Item: Feather
-          Rate: 500
+          Rate: 50
         - Item: C_Amistr_Bag
           Rate: 1
         - Item: C_School_Bag_BL
@@ -42162,36 +41650,449 @@ Body:
           Rate: 1
         - Item: C_Blue_Fairy_Wing
           Rate: 1
-        - Item: Brilliant_Golden_Wings
+  - Id: 29507
+    AegisName: GREIF
+    Name: Greif
+    Level: 1
+    Hp: 50
+    BaseExp: 2
+    JobExp: 1
+    Attack: 7
+    Attack2: 10
+    MagicDefense: 5
+    Dex: 6
+    Luk: 30
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Plant
+    Element: Water
+    ElementLevel: 1
+    WalkSpeed: 400
+    AttackDelay: 1872
+    AttackMotion: 672
+    DamageMotion: 480
+    Ai: 02
+    Drops:
+        - Item: Feather
+          Rate: 50
+        - Item: Jellopy
+          Rate: 50
+        - Item: C_Good_Wedding_Veil
           Rate: 1
-        - Item: C_Nifl_Bloom
+        - Item: C_Black_Tail_Ribbon
           Rate: 1
-        - Item: C_Devil_Wing
+        - Item: C_Bread_Bag
           Rate: 1
-        - Item: C_Evil_Scythe
+        - Item: C_Polar_Bear_Cap
           Rate: 1
-        - Item: C_Fallen_Angel_Wing
+        - Item: C_Polar_Bear_Cap
           Rate: 1
-        - Item: C_GiantCatBag_TW
+        - Item: C_Vane_Hairpin
           Rate: 1
-        - Item: C_Wings_of_Michael
+        - Item: C_ShineSantaPoring
           Rate: 1
-        - Item: C_Cupid_Wing_Pink
+        - Item: C_Rainbow_Poring_Hat
           Rate: 1
-        - Item: C_Poring_Bag
+        - Item: C_Love_Guard
           Rate: 1
-        - Item: C_Santa_Backpack
+        - Item: C_Sweet_Bonnet
           Rate: 1
-        - Item: C_Shining_Angel_Wing
+        - Item: C_Soulless_Wing
           Rate: 1
-        - Item: C_Blessings_Of_Soul
+        - Item: C_Spell_Circuit
           Rate: 1
-        - Item: C_SwordWing
+        - Item: C_Sharp_Gear
           Rate: 1
-        - Item: C_Wings_of_Uriel
+        - Item: C_Spirit_Of_Chung_E
           Rate: 1
-        - Item: C_WingOfHeart
+        - Item: C_Sprout_Hat
           Rate: 1
+        - Item: C_Steampunk_Hat
+          Rate: 1
+        - Item: C_Sunday_Hat
+          Rate: 1
+        - Item: C_Brown_Bear_Cap
+          Rate: 1
+        - Item: C_Tiara
+          Rate: 1
+        - Item: C_Frog_Hood
+          Rate: 1
+  - Id: 29508
+    AegisName: STRAUSS
+    Name: Strauss
+    Level: 1
+    Hp: 50
+    BaseExp: 2
+    JobExp: 1
+    Attack: 7
+    Attack2: 10
+    MagicDefense: 5
+    Dex: 6
+    Luk: 30
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Plant
+    Element: Water
+    ElementLevel: 1
+    WalkSpeed: 400
+    AttackDelay: 1872
+    AttackMotion: 672
+    DamageMotion: 480
+    Ai: 02
+    Drops:
+        - Item: Feather
+          Rate: 50
+        - Item: Jellopy
+          Rate: 50
+        - Item: C_Coppola
+          Rate: 1
+        - Item: C_Moonlight_Flower_Hat
+          Rate: 1
+        - Item: C_Wickebines_Black_Cat_Ears
+          Rate: 1
+        - Item: C_Wondering_Wolf_Helm
+          Rate: 1
+        - Item: C_Hibiscus_J
+          Rate: 1
+        - Item: C_Starving_Fish_Hat
+          Rate: 1
+        - Item: C_Yellow_Ribbon
+          Rate: 1
+        - Item: C_Charming_Ribbon
+          Rate: 1
+        - Item: C_Rune_Helm
+          Rate: 1
+        - Item: C_Fluffy_Rabbit_Cape
+          Rate: 1
+        - Item: C_Galanthus_Guard
+          Rate: 1
+        - Item: C_Clinging_Doram_2
+          Rate: 1
+        - Item: C_Asara_Fairy
+          Rate: 1
+        - Item: C_Crescent_Hairpin
+          Rate: 1
+        - Item: C_Bicolor_Cat_Witch_Hat
+          Rate: 1
+        - Item: C_Blue_Frill_Ribbon
+          Rate: 1
+        - Item: C_Cat_Ear_Witch_Hat
+          Rate: 1
+        - Item: C_Cherry
+          Rate: 1
+        - Item: C_Dog_Officer
+          Rate: 1
+        - Item: C_Fawn_Ear
+          Rate: 1
+  - Id: 29509
+    AegisName: ANGELSLUG
+    Name: Angelslug
+    Level: 1
+    Hp: 50
+    BaseExp: 2
+    JobExp: 1
+    Attack: 7
+    Attack2: 10
+    MagicDefense: 5
+    Dex: 6
+    Luk: 30
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Plant
+    Element: Water
+    ElementLevel: 1
+    WalkSpeed: 400
+    AttackDelay: 1872
+    AttackMotion: 672
+    DamageMotion: 480
+    Ai: 02
+    Drops:
+        - Item: Feather
+          Rate: 50
+        - Item: Jellopy
+          Rate: 50
+        - Item: C_Forest_Guide
+          Rate: 1
+        - Item: C_Garnet_Tiara
+          Rate: 1
+        - Item: C_Ghost_Holiday
+          Rate: 1
+        - Item: C_Happy_Rabbit_Ribbon
+          Rate: 1
+        - Item: C_Rabbit_Hopping
+          Rate: 1
+        - Item: C_Isabella_Blue_Ears
+          Rate: 1
+        - Item: C_Large_Orc_Hero_Helm
+          Rate: 1
+        - Item: C_Large_Sorcerer_Crown
+          Rate: 1
+        - Item: C_Lazy_Cat
+          Rate: 1
+        - Item: C_Let_It_Snow
+          Rate: 1
+        - Item: C_Looking
+          Rate: 1
+        - Item: C_Lovely_Heart_Cap
+          Rate: 1
+        - Item: Costume_Nine_Tail_Fox_Hair
+          Rate: 1
+        - Item: C_Nydhog_Wig_WH
+          Rate: 1
+        - Item: C_Penguin_Cap_BU
+          Rate: 1
+        - Item: Costume_Poring_Beret
+          Rate: 1
+        - Item: C_Pretty_Bear_WH
+          Rate: 1
+        - Item: C_Princess_Ribbon_Crown
+          Rate: 1
+        - Item: C_ResonateTaego
+          Rate: 1
+        - Item: C_Ribbon
+          Rate: 1
+  - Id: 29510
+    AegisName: ARMOBIRB
+    Name: Armorbirb
+    Level: 1
+    Hp: 50
+    BaseExp: 2
+    JobExp: 1
+    Attack: 7
+    Attack2: 10
+    MagicDefense: 5
+    Dex: 6
+    Luk: 30
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Plant
+    Element: Water
+    ElementLevel: 1
+    WalkSpeed: 400
+    AttackDelay: 1872
+    AttackMotion: 672
+    DamageMotion: 480
+    Ai: 02
+    Drops:
+        - Item: Feather
+          Rate: 50
+        - Item: Jellopy
+          Rate: 50
+        - Item: C_Two_Tone_Beret
+          Rate: 1
+        - Item: C_Valkyrie_Feather_Band
+          Rate: 1
+        - Item: C_Valkyrie_Helm
+          Rate: 1
+        - Item: C_Vanargandr_Helm
+          Rate: 1
+        - Item: C_Vicious_Stop_Bandage
+          Rate: 1
+        - Item: C_White_Lily
+          Rate: 1
+        - Item: C_White_Rabbit_Ear
+          Rate: 1
+        - Item: C_Whikebain_Ears
+          Rate: 1
+        - Item: C_Wild_Poring_Rider
+          Rate: 1
+        - Item: C_Wind_Wings
+          Rate: 1
+        - Item: C_Sunglasses_Bball_Hat
+          Rate: 1
+        - Item: Horse_King
+          Rate: 1
+        - Item: C_Magestic_Goat2
+          Rate: 1
+        - Item: Rain_Cloud
+          Rate: 1
+        - Item: Rainbow
+          Rate: 1
+        - Item: Nut_On_Head
+          Rate: 1
+        - Item: T_Valkyrie_Feather_Band
+          Rate: 1
+        - Item: Lightning_Cloud
+          Rate: 1
+        - Item: C_Minstrel_Hat
+          Rate: 1
+        - Item: C_Youinone_Mask
+          Rate: 1
+  - Id: 29511
+    AegisName: BIRB
+    Name: Birb
+    Level: 1
+    Hp: 50
+    BaseExp: 2
+    JobExp: 1
+    Attack: 7
+    Attack2: 10
+    MagicDefense: 5
+    Dex: 6
+    Luk: 30
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Plant
+    Element: Water
+    ElementLevel: 1
+    WalkSpeed: 400
+    AttackDelay: 1872
+    AttackMotion: 672
+    DamageMotion: 480
+    Ai: 02
+    Drops:
+        - Item: Feather
+          Rate: 50
+        - Item: Jellopy
+          Rate: 50
+        - Item: C_Pecopeco_Cap
+          Rate: 1
+        - Item: C_Piamette_Hood
+          Rate: 1
+        - Item: C_Piamette_Red_Hood
+          Rate: 1
+        - Item: C_Piggyback
+          Rate: 1
+        - Item: C_Puppy_Headband
+          Rate: 1
+        - Item: C_Puppy_Love
+          Rate: 1
+        - Item: C_QueenAnzRevenge
+          Rate: 1
+        - Item: C_Rabbit_Earplug
+          Rate: 1
+        - Item: C_Red_Tailed_Ribbon
+          Rate: 1
+        - Item: C_Drooping_Kitty
+          Rate: 1
+        - Item: C_Detective_Hat_K
+          Rate: 1
+        - Item: C_Republic_Hat
+          Rate: 1
+        - Item: C_RuneHelm
+          Rate: 1
+        - Item: C_Saint_Frill_Ribbon
+          Rate: 1
+        - Item: C_Sakura_Coronet
+          Rate: 1
+        - Item: C_Sakura_Hairband
+          Rate: 1
+        - Item: C_Seraph_Wing_Helm
+          Rate: 1
+        - Item: C_Goat_Hat
+          Rate: 1
+        - Item: C_Snownow_Hat
+          Rate: 1
+        - Item: C_Soft_Sheep_Hat
+          Rate: 1
+  - Id: 29512
+    AegisName: BOBBEL
+    Name: Bobbel
+    Level: 1
+    Hp: 50
+    BaseExp: 2
+    JobExp: 1
+    Attack: 7
+    Attack2: 10
+    MagicDefense: 5
+    Dex: 6
+    Luk: 30
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Plant
+    Element: Water
+    ElementLevel: 1
+    WalkSpeed: 400
+    AttackDelay: 1872
+    AttackMotion: 672
+    DamageMotion: 480
+    Ai: 02
+    Drops:
+        - Item: Feather
+          Rate: 50
+        - Item: Jellopy
+          Rate: 50
+        - Item: C_Hibiscus
+          Rate: 1
+        - Item: C_Horse_Hairpin
+          Rate: 1
+        - Item: C_Hunting_Cap
+          Rate: 1
+        - Item: C_Husky_Hat
+          Rate: 1
+        - Item: C_Jack_A_Dandy
+          Rate: 1
+        - Item: C_Joker_Jester
+          Rate: 1
+        - Item: C_Mask_Of_Fox
+          Rate: 1
+        - Item: C_Cat_Hairband
+          Rate: 1
+        - Item: C_Leopard_Ear_Hat
+          Rate: 1
+        - Item: C_Lush_Rose
+          Rate: 1
+        - Item: C_Magestic_Goat
+          Rate: 1
+        - Item: C_Magical_Feather
+          Rate: 1
+        - Item: C_L_Magestic_Goat
+          Rate: 1
+        - Item: C_Mechanical_Feather_Hairband
+          Rate: 1
+        - Item: C_Misty_Ears
+          Rate: 1
+        - Item: C_Neko_Mimi_Kafra
+          Rate: 1
+        - Item: C_Nekomimi
+          Rate: 1
+        - Item: C_Nurse_Cap
+          Rate: 1
+        - Item: C_Nut_Cracker
+          Rate: 1
+        - Item: C_Panda_Cap
+          Rate: 1
+  - Id: 29513
+    AegisName: DEMIGOD
+    Name: Demigod
+    Level: 1
+    Hp: 50
+    BaseExp: 2
+    JobExp: 1
+    Attack: 7
+    Attack2: 10
+    MagicDefense: 5
+    Dex: 6
+    Luk: 30
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Plant
+    Element: Water
+    ElementLevel: 1
+    WalkSpeed: 400
+    AttackDelay: 1872
+    AttackMotion: 672
+    DamageMotion: 480
+    Ai: 02
+    Drops:
+        - Item: Feather
+          Rate: 50
+        - Item: Jellopy
+          Rate: 50
         - Item: C_Samba_Carnival
           Rate: 1
         - Item: C_Adventure_Cat_Bag
@@ -42248,9 +42149,9 @@ Body:
           Rate: 1
         - Item: C_Poring_Basket
           Rate: 1
-  - Id: 29507
-    AegisName: GREIF
-    Name: Greif
+  - Id: 29514
+    AegisName: GEIST
+    Name: Geist
     Level: 1
     Hp: 50
     BaseExp: 2
@@ -42274,32 +42175,52 @@ Body:
     Ai: 02
     Drops:
         - Item: Feather
-          Rate: 500
+          Rate: 50
         - Item: Jellopy
-          Rate: 500
-        - Item: C_Good_Wedding_Veil
+          Rate: 50
+        - Item: C_Bride_Corolla
           Rate: 1
-        - Item: C_Black_Tail_Ribbon
+        - Item: C_Bunny_Band
           Rate: 1
-        - Item: C_Bread_Bag
+        - Item: C_Bunny_Head_Dress
           Rate: 1
-        - Item: C_Polar_Bear_Cap
+        - Item: C_Rabbit_Ribbon_Hat
           Rate: 1
-        - Item: C_Polar_Bear_Cap
+        - Item: C_Carnation_Hairband
           Rate: 1
-        - Item: C_Vane_Hairpin
+        - Item: C_Cat_Hat_J
           Rate: 1
-        - Item: C_ShineSantaPoring
+        - Item: C_Cat_Lace_Hairband
           Rate: 1
-        - Item: C_Rainbow_Poring_Hat
+        - Item: C_PGstone_Knit_Hat_PK
           Rate: 1
-        - Item: C_Love_Guard
+        - Item: C_Celines_Ribbon
           Rate: 1
-        - Item: C_Sweet_Bonnet
+        - Item: C_Chung_Hairband
           Rate: 1
-  - Id: 29508
-    AegisName: STRAUSS
-    Name: Strauss
+        - Item: C_Circlet
+          Rate: 1
+        - Item: C_Coronet
+          Rate: 1
+        - Item: C_Crown
+          Rate: 1
+        - Item: C_Mistress_Crown
+          Rate: 1
+        - Item: C_Darkness_Helm
+          Rate: 1
+        - Item: C_Dragon_Helm
+          Rate: 1
+        - Item: C_Drooping_Dorasuke
+          Rate: 1
+        - Item: C_Ear_Mufs
+          Rate: 1
+        - Item: C_Eleanor_Wig
+          Rate: 1
+        - Item: C_Elegant_Wave
+          Rate: 1
+  - Id: 29515
+    AegisName: HASE
+    Name: Hase
     Level: 1
     Hp: 50
     BaseExp: 2
@@ -42323,46 +42244,500 @@ Body:
     Ai: 02
     Drops:
         - Item: Feather
-          Rate: 500
+          Rate: 50
         - Item: Jellopy
-          Rate: 500
-        - Item: C_Coppola
+          Rate: 50
+        - Item: C_Deviruchi_Apron
           Rate: 1
-        - Item: C_Moonlight_Flower_Hat
+        - Item: C_Fairy_Feathers
           Rate: 1
-        - Item: C_Wickebines_Black_Cat_Ears
+        - Item: C_Fish_Marche
           Rate: 1
-        - Item: C_Wondering_Wolf_Helm
+        - Item: C_Geisha_Make
           Rate: 1
-        - Item: C_Hibiscus_J
+        - Item: C_Happy_Lunatic_Ear
           Rate: 1
-        - Item: C_Starving_Fish_Hat
+        - Item: C_Lunatic_Ear_Black
           Rate: 1
-        - Item: C_Yellow_Ribbon
+        - Item: C_Heavenly_Order
           Rate: 1
-        - Item: C_Charming_Ribbon
+        - Item: C_Mischievous_Fairy
           Rate: 1
-        - Item: C_Rune_Helm
+        - Item: C_MoonStar_Accessory
           Rate: 1
-        - Item: C_Fluffy_Rabbit_Cape
+        - Item: C_Spot_Light
           Rate: 1
-        - Item: C_Galanthus_Guard
+        - Item: C_Wonderful_Beast_Ear
           Rate: 1
-        - Item: C_Clinging_Doram_2
+        - Item: C_Ancient_Elven_Ear
           Rate: 1
-        - Item: C_Asara_Fairy
+        - Item: C_Gemini_Eyes
           Rate: 1
-        - Item: C_Crescent_Hairpin
+        - Item: C_Gryphon_Wing_Ears
           Rate: 1
-        - Item: C_Bicolor_Cat_Witch_Hat
+        - Item: C_Mermaid_Headphone
           Rate: 1
-        - Item: C_Blue_Frill_Ribbon
+        - Item: C_Floating_Parasol
           Rate: 1
-        - Item: C_Cat_Ear_Witch_Hat
+        - Item: C_World_Star
           Rate: 1
-        - Item: C_Cherry
+        - Item: C_White_Cat
           Rate: 1
-        - Item: C_Dog_Officer
+        - Item: C_Black_Cat
           Rate: 1
-        - Item: C_Fawn_Ear
+        - Item: C_Cat_Hat_J
+          Rate: 1
+  - Id: 29516
+    AegisName: ICEBEAR
+    Name: Icebear
+    Level: 1
+    Hp: 50
+    BaseExp: 2
+    JobExp: 1
+    Attack: 7
+    Attack2: 10
+    MagicDefense: 5
+    Dex: 6
+    Luk: 30
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Plant
+    Element: Water
+    ElementLevel: 1
+    WalkSpeed: 400
+    AttackDelay: 1872
+    AttackMotion: 672
+    DamageMotion: 480
+    Ai: 02
+    Drops:
+        - Item: Feather
+          Rate: 50
+        - Item: Jellopy
+          Rate: 50
+        - Item: C_Shiba_Inu
+          Rate: 1
+        - Item: C_Small_Golden_Wings
+          Rate: 1
+        - Item: C_Pair_Of_Red_Ribbon
+          Rate: 1
+        - Item: C_Mike_Stand
+          Rate: 1
+        - Item: C_Sunglasses
+          Rate: 1
+        - Item: C_Happy_Parrot_J
+          Rate: 1
+        - Item: C_World_Star
+          Rate: 1
+        - Item: C_Twin_Margaret
+          Rate: 1
+        - Item: Costume_Twinkling_Red_Eyes
+          Rate: 1
+        - Item: C_Valhalla_Idol
+          Rate: 1
+        - Item: C_Vampire_Familiar
+          Rate: 1
+        - Item: C_White_Cat_On_Shoulder
+          Rate: 1
+        - Item: C_Wing_Angels_Ears
+          Rate: 1
+        - Item: C_Wings_Of_Victory
+          Rate: 1
+        - Item: C_Wonder_Egg_Basket
+          Rate: 1
+        - Item: C_Zealotus_Mask
+          Rate: 1
+        - Item: T_Sunglasses
+          Rate: 1
+        - Item: C_Black_Glasses
+          Rate: 1
+        - Item: C_Female_Poring_Earmuff
+          Rate: 1
+        - Item: C_Desert_Wolf_B
+          Rate: 1
+  - Id: 29517
+    AegisName: INVISIBILO
+    Name: Invisibilo
+    Level: 1
+    Hp: 50
+    BaseExp: 2
+    JobExp: 1
+    Attack: 7
+    Attack2: 10
+    MagicDefense: 5
+    Dex: 6
+    Luk: 30
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Plant
+    Element: Water
+    ElementLevel: 1
+    WalkSpeed: 400
+    AttackDelay: 1872
+    AttackMotion: 672
+    DamageMotion: 480
+    Ai: 02
+    Drops:
+        - Item: Feather
+          Rate: 50
+        - Item: Jellopy
+          Rate: 50
+        - Item: C_Invisible_Mask
+          Rate: 1
+        - Item: C_Invisible_Sunglasses
+          Rate: 1
+        - Item: C_Invisible_Cap
+          Rate: 1
+        - Item: C_Elemental_Crown
+          Rate: 1
+        - Item: C_Evil_Druid_Hat
+          Rate: 1
+        - Item: C_Satanic_Chain
+          Rate: 1
+        - Item: C_Cap_Of_Blindness
+          Rate: 1
+        - Item: C_Fashionable_Glasses
+          Rate: 1
+        - Item: C_Feather_Beret
+          Rate: 1
+        - Item: C_Flower_Hairband
+          Rate: 1
+        - Item: C_Flower_Hairpin
+          Rate: 1
+        - Item: C_Fox_Ears_Bell_Ribbon
+          Rate: 1
+        - Item: C_Full_Blossom_Sakura_Hairpin_Blue
+          Rate: 1
+        - Item: C_Galapago_Cap
+          Rate: 1
+        - Item: C_Gram_Peony
+          Rate: 1
+        - Item: C_Lord_Circlet
+          Rate: 1
+        - Item: C_Greater_Dracul_Horn
+          Rate: 1
+        - Item: C_Green_Hat
+          Rate: 1
+        - Item: C_Hair_Band
+          Rate: 1
+        - Item: C_Halloween_Hat
+          Rate: 1
+        - Item: C_Happy_Cat_TW
+          Rate: 1
+        - Item: C_Helm
+          Rate: 1
+        - Item: C_Helm_Of_Angel
+          Rate: 1
+        - Item: C_Helm_of_Darkness
+          Rate: 1
+  - Id: 29518
+    AegisName: SCHNECKE
+    Name: Schnecke
+    Level: 1
+    Hp: 50
+    BaseExp: 2
+    JobExp: 1
+    Attack: 7
+    Attack2: 10
+    MagicDefense: 5
+    Dex: 6
+    Luk: 30
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Plant
+    Element: Water
+    ElementLevel: 1
+    WalkSpeed: 400
+    AttackDelay: 1872
+    AttackMotion: 672
+    DamageMotion: 480
+    Ai: 02
+    Drops:
+        - Item: Feather
+          Rate: 50
+        - Item: Jellopy
+          Rate: 50
+        - Item: C_Phalanx
+          Rate: 1
+        - Item: C_Furious_Wave
+          Rate: 1
+        - Item: C_Gemini_Eyes
+          Rate: 1
+        - Item: GrimReaper_Protection
+          Rate: 1
+        - Item: C_ManyStars_TW
+          Rate: 1
+        - Item: C_Happy_Lunatic_Ear
+          Rate: 1
+        - Item: C_Ice_Wing_Ear
+          Rate: 1
+        - Item: C_Idun_Wing_Ears
+          Rate: 1
+        - Item: C_Katashiro_Flying
+          Rate: 1
+        - Item: C_Little_Aquarium
+          Rate: 1
+        - Item: C_Machoman_Glasses
+          Rate: 1
+        - Item: C_Magic_Heir_TW
+          Rate: 1
+        - Item: C_Snow_Fox_TW
+          Rate: 1
+        - Item: C_Maple_Which_Falls
+          Rate: 1
+        - Item: C_MoonStar_Accessory
+          Rate: 1
+        - Item: C_Pocketwatch_Hair_Ornament
+          Rate: 1
+        - Item: C_Rainbow_Wing_Ears
+          Rate: 1
+        - Item: C_Cat_Ears_Cape_Red
+          Rate: 1
+        - Item: C_Scratching_Cat
+          Rate: 1
+        - Item: C_SeraphimCoronet
+          Rate: 1
+  - Id: 29519
+    AegisName: WOBBEL
+    Name: Wobbel
+    Level: 1
+    Hp: 50
+    BaseExp: 2
+    JobExp: 1
+    Attack: 7
+    Attack2: 10
+    MagicDefense: 5
+    Dex: 6
+    Luk: 30
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Plant
+    Element: Water
+    ElementLevel: 1
+    WalkSpeed: 400
+    AttackDelay: 1872
+    AttackMotion: 672
+    DamageMotion: 480
+    Ai: 02
+    Drops:
+        - Item: Feather
+          Rate: 50
+        - Item: Jellopy
+          Rate: 50
+        - Item: C_Pirate_Dagger
+          Rate: 1
+        - Item: C_Blossom_Fluttering
+          Rate: 1
+        - Item: C_Cons_Of_Darkness
+          Rate: 1
+        - Item: C_Donut_in_Mouth
+          Rate: 1
+        - Item: C_Dwarf_Beard
+          Rate: 1
+        - Item: Cons_Of_Earth
+          Rate: 1
+        - Item: C_Elegant_Wave
+          Rate: 1
+        - Item: C_Eremes_Scarf
+          Rate: 1
+        - Item: C_Fish_In_Mouth
+          Rate: 1
+        - Item: C_Fleece_Hat
+          Rate: 1
+        - Item: C_Flu_Mask
+          Rate: 1
+        - Item: C_FlyingGalapago
+          Rate: 1
+        - Item: C_Foxtail
+          Rate: 1
+        - Item: C_Frill_Collar
+          Rate: 1
+        - Item: C_Frozen_Land_Rose
+          Rate: 1
+        - Item: C_Gift_Of_Snow
+          Rate: 1
+        - Item: C_Nut_Donut_In_Mouth
+          Rate: 1
+        - Item: C_Iron_Cane
+          Rate: 1
+        - Item: C_Large_Ribbon_Muffler_Red
+          Rate: 1
+        - Item: C_L_Knitting_Low_Twin
+          Rate: 1
+  - Id: 29520
+    AegisName: WURMI
+    Name: Wurmi
+    Level: 1
+    Hp: 50
+    BaseExp: 2
+    JobExp: 1
+    Attack: 7
+    Attack2: 10
+    MagicDefense: 5
+    Dex: 6
+    Luk: 30
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Plant
+    Element: Water
+    ElementLevel: 1
+    WalkSpeed: 400
+    AttackDelay: 1872
+    AttackMotion: 672
+    DamageMotion: 480
+    Ai: 02
+    Drops:
+        - Item: Feather
+          Rate: 50
+        - Item: Jellopy
+          Rate: 50
+        - Item: C_CD_In_Mouth
+          Rate: 1
+        - Item: C_Flame_Muffler
+          Rate: 1
+        - Item: C_Fishbone_Hair
+          Rate: 1
+        - Item: C_Fallen_Angel_Valletta
+          Rate: 1
+        - Item: C_Lucky_Clover
+          Rate: 1
+        - Item: C_Necklace_Rosary
+          Rate: 1
+        - Item: C_Sailor_Collar_WH
+          Rate: 1
+        - Item: C_Stall_Of_Bat
+          Rate: 1
+        - Item: C_Scarlet_Rose
+          Rate: 1
+        - Item: C_Stall_Of_Dominions
+          Rate: 1
+        - Item: C_Strawberry_In_Mouth
+          Rate: 1
+        - Item: C_Cons_Of_Water
+          Rate: 1
+        - Item: C_FlutterButterfly_BL
+          Rate: 1
+        - Item: C_Miracle_Plant
+          Rate: 1
+        - Item: C_Foxtail
+          Rate: 1
+        - Item: C_Necklace_Rosary
+          Rate: 1
+        - Item: C_Pink_Clover
+          Rate: 1
+        - Item: C_Card_In_The_Mouth
+          Rate: 1
+        - Item: C_Stall_Of_Angel
+          Rate: 1
+        - Item: Cherry Blossom
+          Rate: 1
+        - Item: C_Monster_Card
+          Rate: 1
+        - Item: C_NettyHeart_BalloonGum
+          Rate: 1
+        - Item: C_Blue_Pencil_In_Mouth
+          Rate: 1
+        - Item: C_Piamette_BowTie_Red
+          Rate: 1
+        - Item: C_Pink_Clover
+          Rate: 1
+        - Item: C_Smoking_Pipe
+          Rate: 1
+        - Item: C_Poring_Soap_Pipe
+          Rate: 1
+        - Item: C_Centimental_Leaf
+          Rate: 1
+        - Item: C_Romantic_White_Flower
+          Rate: 1
+        - Item: C_Mob_Scarf
+          Rate: 1
+        - Item: C_Suit_Sollar
+          Rate: 1
+        - Item: C_Sweet_Candy
+          Rate: 1
+        - Item: C_Tone_of_Gold
+          Rate: 1
+        - Item: C_Subject_Aura_Red
+          Rate: 1
+        - Item: C_Worg_In_Mouth
+          Rate: 1
+        - Item: C_Eremes_Scarf_Black
+          Rate: 1
+        - Item: C_Happy_Balloon_J
+          Rate: 1
+        - Item: C_Imperial_Glory
+          Rate: 1
+        - Item: C_Happy_Rabbit_Ribbon
+          Rate: 1
+        - Item: Horo_Ears
+          Rate: 1
+        - Item: C_Charm_Of_Flame_Heart
+          Rate: 1
+  - Id: 29521
+    AegisName: BLAUHORN
+    Name: Blauhorn
+    Level: 1
+    Hp: 50
+    BaseExp: 2
+    JobExp: 1
+    Attack: 7
+    Attack2: 10
+    MagicDefense: 5
+    Dex: 6
+    Luk: 30
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Plant
+    Element: Water
+    ElementLevel: 1
+    WalkSpeed: 400
+    AttackDelay: 1872
+    AttackMotion: 672
+    DamageMotion: 480
+    Ai: 02
+    Drops:
+        - Item: Feather
+          Rate: 50
+        - Item: Jellopy
+          Rate: 50
+        - Item: Brilliant_Golden_Wings
+          Rate: 1
+        - Item: C_Nifl_Bloom
+          Rate: 1
+        - Item: C_Devil_Wing
+          Rate: 1
+        - Item: C_Evil_Scythe
+          Rate: 1
+        - Item: C_Fallen_Angel_Wing
+          Rate: 1
+        - Item: C_GiantCatBag_TW
+          Rate: 1
+        - Item: C_Wings_of_Michael
+          Rate: 1
+        - Item: C_Cupid_Wing_Pink
+          Rate: 1
+        - Item: C_Poring_Bag
+          Rate: 1
+        - Item: C_Santa_Backpack
+          Rate: 1
+        - Item: C_Shining_Angel_Wing
+          Rate: 1
+        - Item: C_Blessings_Of_Soul
+          Rate: 1
+        - Item: C_SwordWing
+          Rate: 1
+        - Item: C_Wings_of_Uriel
+          Rate: 1
+        - Item: C_WingOfHeart
           Rate: 1

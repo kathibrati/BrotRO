@@ -7,3 +7,16 @@ costumefild,0,0	monster	TOPPI	29505,100
 costumefild,0,0	monster	GARMI	29506,100
 costumefild,0,0	monster	GREIF	29507,100
 costumefild,0,0	monster	STRAUSS	29508,100
+costumefild,0,0	monster	ANGELSLUG	29509,100
+costumefild,0,0	monster	ARMORBIRB	29510,100
+costumefild,0,0	monster	BIRB	29511,100
+costumefild,0,0	monster	BOBBEL	29512,100
+costumefild,0,0	monster	DEMIGOD	29513,100
+costumefild,0,0	monster	GEIST	29514,100
+costumefild,0,0	monster	HASE	29515,100
+costumefild,0,0	monster	ICEBEAR	29516,100
+costumefild,0,0	monster	INVISIBILO	29517,100
+costumefild,0,0	monster	SCHNECKE	29518,100
+costumefild,0,0	monster	WOBBEL	29519,100
+costumefild,0,0	monster	WURMI	29520,100
+costumefild,0,0	monster	BLAUHORN	29521,100
