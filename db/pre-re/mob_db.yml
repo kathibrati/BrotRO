@@ -41323,8 +41323,6 @@ Body:
           Rate: 1
         - Item: C_Protect_Feathers
           Rate: 1
-        - Item: C_Yellow_Scarf
-          Rate: 1
         - Item: C_Subject_Aura
           Rate: 1
         - Item: C_Blessings_Of_Soul
@@ -42272,8 +42270,6 @@ Body:
         - Item: C_Ancient_Elven_Ear
           Rate: 1
         - Item: C_Gemini_Eyes
-          Rate: 1
-        - Item: C_Gryphon_Wing_Ears
           Rate: 1
         - Item: C_Mermaid_Headphone
           Rate: 1
