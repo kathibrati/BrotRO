@@ -42249,8 +42249,8 @@ Body:
         - Item: C_Poring_Basket
           Rate: 1
   - Id: 29507
-    AegisName: TOPPIGREIF
-    Name: ToppiGreif
+    AegisName: GREIF
+    Name: Greif
     Level: 1
     Hp: 50
     BaseExp: 2
@@ -42298,8 +42298,8 @@ Body:
         - Item: C_Sweet_Bonnet
           Rate: 1
   - Id: 29508
-    AegisName: TOPPISTRAUSS
-    Name: ToppiStrauss
+    AegisName: STRAUSS
+    Name: Strauss
     Level: 1
     Hp: 50
     BaseExp: 2
