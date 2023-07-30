@@ -4759,7 +4759,7 @@ Body:
     Weight: 10
     Delay:
       Duration: 60000
-      Status: Reuse_Limit_C
+      Status: Reuse_Limit_D
     Trade:
       NoDrop: true
       NoTrade: false
