@@ -6603,7 +6603,7 @@ Body:
       Status: Reuse_Limit_C
     Trade:
       NoDrop: true
-      NoTrade: true
+      NoTrade: false
       NoSell: true
       NoCart: true
       NoGuildStorage: true
