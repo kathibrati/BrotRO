@@ -42145,7 +42145,7 @@ Body:
           Rate: 1
         - Item: C_Heart_Wing_Backpack
           Rate: 1
-        - Item: C_Poring_Basket
+        - Item: Gold
           Rate: 1
   - Id: 29514
     AegisName: GEIST
@@ -42283,6 +42283,8 @@ Body:
           Rate: 1
         - Item: C_Cat_Hat_J
           Rate: 1
+        - Item: Gold
+          Rate: 1
   - Id: 29516
     AegisName: ICEBEAR
     Name: Icebear
@@ -42347,8 +42349,6 @@ Body:
         - Item: T_Sunglasses
           Rate: 1
         - Item: C_Black_Glasses
-          Rate: 1
-        - Item: C_Female_Poring_Earmuff
           Rate: 1
         - Item: C_Desert_Wolf_B
           Rate: 1
@@ -42497,6 +42497,8 @@ Body:
         - Item: C_Scratching_Cat
           Rate: 1
         - Item: C_SeraphimCoronet
+          Rate: 1
+        - Item: Gold
           Rate: 1
   - Id: 29519
     AegisName: WOBBEL
@@ -42736,4 +42738,6 @@ Body:
         - Item: C_Wings_of_Uriel
           Rate: 1
         - Item: C_WingOfHeart
+          Rate: 1
+        - Item: Gold
           Rate: 1
