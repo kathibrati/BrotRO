@@ -1,16 +1,16 @@
-//===== rAthena Script ======================================= 
+//===== rAthena Script =======================================
 //= Payon Warps
-//===== By: ================================================== 
+//===== By: ==================================================
 //= Muad Dib (1.0)
 //= Darkchild (1.1)
 //= Nana (1.3)
-//===== Current Version: ===================================== 
+//===== Current Version: =====================================
 //= 1.7
-//===== Compatible With: ===================================== 
+//===== Compatible With: =====================================
 //= rAthena Project
-//===== Description: ========================================= 
+//===== Description: =========================================
 //= Payon warps
-//===== Additional Comments: ================================= 
+//===== Additional Comments: =================================
 //= Warps Done By Muad Dib, All Credits To Him
 //= 1.2 Removed Duplicated Warp
 //= 1.3 Separated and reorganized field and dungeons
@@ -140,3 +140,6 @@ payon_in01,93,37,0	warp	payonwarp090	2,2,payon_in01,104,71
 // -- Custom Warp --
 //payon,187,135,0	warp	custompaywarp1	2,2,costumefild,206,19
 //costumefild,206,13,0	warp	custompaywarp2	2,2,payon,187,130
+payon,175,139,0	warp	mallpaywarp1	2,2,quiz_02,148,382
+quiz_02,160,367,0	warp	mallpaywarp2	2,2,payon,172,135
+quiz_02,144,366,0	warp	mallpaywarp3	2,2,payon,172,135
