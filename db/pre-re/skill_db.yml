@@ -9701,7 +9701,7 @@ Body:
       - Level: 4
         Time: 80000
       - Level: 5
-        Time: 100000
+        Time: 300000
     Requires:
       SpCost:
         - Level: 1
