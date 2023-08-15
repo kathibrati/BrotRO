@@ -62,8 +62,8 @@ restart_sp_rate: 100
 // Are arrows/ammo consumed when used on a bow/gun?
 // 0 = No
 // 1 = Yes
-// 2 = Yes even for skills that do not specify arrow consumption when said 
-//     skill is weapon-based and used with ranged weapons (auto-guesses which 
+// 2 = Yes even for skills that do not specify arrow consumption when said
+//     skill is weapon-based and used with ranged weapons (auto-guesses which
 //     skills should consume ammo when it's acquired via a card or plagiarize)
 arrow_decrement: 0
 
@@ -94,7 +94,7 @@ homunculus_exp_gain: 100
 castrate_dex_scale: 100
 
 // How much (dex*2+int) does variable cast turns zero?
-vcast_stat_scale: 200
+vcast_stat_scale: 230
 
 // For RENEWAL_CAST (Note 2)
 // By default skill that has '-1' value for Fixed Casting Time will use 20% of cast time
@@ -104,5 +104,5 @@ default_fixed_castrate: 0
 
 // Does the delay time depend on the caster's DEX and/or AGI? (Note 1)
 // Note: On Official servers, neither Dex nor Agi affect delay time
-delay_dependon_dex: yes
+//delay_dependon_dex: yes
 delay_dependon_agi: yes
