@@ -91,7 +91,7 @@ homunculus_autoloot: yes
 homunculus_exp_gain: 100
 
 // At what dex does the cast time become zero (instacast)?
-castrate_dex_scale: 100
+castrate_dex_scale: 120
 
 // How much (dex*2+int) does variable cast turns zero?
 vcast_stat_scale: 230
@@ -104,5 +104,5 @@ default_fixed_castrate: 0
 
 // Does the delay time depend on the caster's DEX and/or AGI? (Note 1)
 // Note: On Official servers, neither Dex nor Agi affect delay time
-//delay_dependon_dex: yes
+delay_dependon_dex: yes
 delay_dependon_agi: yes
