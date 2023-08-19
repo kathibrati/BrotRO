@@ -1,9 +1,9 @@
-//===== rAthena Script ======================================= 
+//===== rAthena Script =======================================
 //= Dress Room
 //===== Description ==========================================
 //= Dress room NPC that allows players to disguise as another
 //= class in their classline.
-//===== By: ================================================== 
+//===== By: ==================================================
 //= Secret's Scripting Service
 //===== Changelog: ===========================================
 //= 1.0 Initial version. [Secret]
@@ -54,6 +54,7 @@
             case Job_Sorcerer:
             case Job_Sura:
             case Job_Rune_Knight:
+            case Job_Shadow_Chaser:
                 return 1;
             default:
                 return 0;
@@ -89,7 +90,7 @@
 
         .@TYPE_CHANGEBASE = 0;
         .@TYPE_SETLOOK = 1;
-        
+
         mes .n$;
         if(!RestrictClass()){
             mes "Your class isn't allowed to use this NPC.";
@@ -116,7 +117,7 @@
                 break;
         }
         close;
-            
+
     OnPCLoginEvent:
         if(baselook && .dress_perma){
             changebase baselook;
