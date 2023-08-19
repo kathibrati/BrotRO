@@ -1,0 +1,51 @@
+//============================================
+//= 3rdJob Mount
+//============================================================
+payon,166,114,4    script    3rd Job Mount Rental NPC    10066,{
+                   cutin "sarah_hero3",2;
+                    mes "[ RO:^FF0000 WoozyRO ^000000]";
+                    mes "[ ^FF77003rd Job Mount Rental NPC^000000 ]";
+                    mes "^777777-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-^000000";
+                    mes "Cart";
+                 mes "Falcon";
+                    mes "Dragon";
+                    mes "Gyrphon";
+                    mes "Mado";
+                 close2;
+                   cutin "",255;
+
+                if(getskilllv("NC_MADOLICENCE") > 0 || getskilllv("RK_DRAGONTRAINING") > 0){
+
+                if((Class == Job_Blacksmith || Class == Job_Whitesmith || Class == Job_Baby_Whitesmith) && checkcart() == 0 && getskilllv("NC_MADOLICENCE") > 0){
+                    setmadogear;
+                }else if(Class == Job_Lord_Knight || Class == Job_Baby_Knight && getskilllv("RK_DRAGONTRAINING") > 0){
+                    setoption Option_Dragon1;
+                    setriding;
+                }
+
+                }else{
+                if((Class == Job_Hunter || Class == Job_Sniper) && checkfalcon() == 0 && getskilllv("HT_FALCON") > 0){
+                    setfalcon;
+                }else if((Class == Job_Merchant || Class == Job_Blacksmith || Class == Job_Whitesmith || Class == Job_Baby_Whitesmith || Class == Job_SuperNovice) && checkcart() == 0 && getskilllv("MC_PUSHCART") > 0){
+                    setcart;
+                }else if(checkriding() || checkfalcon() == 1 || checkcart() == 1){
+                    npctalk "You already have a Cart / Falcon / Peco / Dragon.";
+                    end;
+                }else if(getskilllv("KN_RIDING") == 1){
+                    setriding;
+                }else{
+                    npctalk "Sorry " + strcharinfo(0) + ", Please make sure you are the required job and have the required skill.";
+                 close2;
+                   cutin "",255;
+                    end;
+                }
+                }
+                OnInit:
+                    initnpctimer;
+                    end;
+
+                OnTimer1000:
+                    showscript("3rd Job Mount");
+                    setnpctimer 0;
+                    end;
+}
