@@ -1,8 +1,10 @@
 //============================================
 //= 3rdJob Mount
 //============================================================
-payon,166,114,4    script    3rd Job Mount Rental NPC    614,{
-                   cutin "sarah_hero3",2;
+//payon,166,114,4    script    3rd Job Mount Rental NPC    614,{
+ //                  cutin "sarah_hero3",2;
+ payon,166,114,4	script	3rd Job Mount Rental NPC	614,{
+					cutin "",2;
                     mes "[ RO:^FF0000 WoozyRO ^000000]";
                     mes "[ ^FF77003rd Job Mount Rental NPC^000000 ]";
                     mes "^777777-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-^000000";
