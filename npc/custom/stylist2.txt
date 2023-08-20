@@ -30,7 +30,7 @@ OnTalk:
 //===== Additional Comments: =================================
 //= someone said I helped a rude person =/
 //============================================================
-payon,183,114,4	script	Stylist#custom_1	2_M_DYEINGER,{
+payon,166,114,4	script	Stylist#custom_1	2_M_DYEINGER,{
 	if (.gravity_logic[Class])
 		.@job = .gravity_logic[Class];
 	else
