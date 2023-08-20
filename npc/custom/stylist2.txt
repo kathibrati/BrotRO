@@ -12,137 +12,96 @@ prontera,147,172,5	script	Outfit Stylist	10115,{
 	mes .npcName$;
 
 	@eac = eaclass();
-	if(!(@eac&EAJL_THIRD)){
-		mes "Sorry I only work with 3rd jobs.";
-		close;
-	}
 	mes "Hello I am the Outfit Stylist!";
 	mes "I can offer you new outfits for a price!";
 	next;
-	opendressroom(1);
+	F_ChangeSuit();
 	mes .npcName$;
 	.@menu$ = "";
 
-		//	----------------------------------------------
-		// Is the Alternate Outfit available for this job?.
-			.@stylemax = .maxOutfit;
-			for(.@i = 0; .@i < .maxRestrict; .@i++){
-				if(Class == .outfitRestrict[.@i]){
-					.@i = .maxRestrict;
-					.@stylemax -= 1;
-				}
-			}
-		//	----------------------------------------------
+	function	script	F_ChangeSuit	{
+    	if (getarg(0)) {
+    		changebase Class;
+    		return;
+    	}
+    	switch(Class) {
+    		case Job_Lord_Knight: changebase 4060; break;
+    		case Job_Assassin_Cross: changebase 4065; break;
+    		case Job_Paladin: changebase 4073; break;
+    		case Job_Whitesmith: changebase 4064; break;
+    		case Job_Creator: changebase 4078; break;
+    		case Job_Stalker: changebase 4079; break;
+    		case Job_Professor: changebase 4074; break;
+    		case Job_Gypsy: changebase 4076; break;
+    		case Job_Champion: changebase 4077; break;
+    		case Job_Sniper: changebase 4062; break;
+    		case Job_Clown: changebase 4075; break;
+    		case Job_High_Wizard: changebase 4061; break;
+    		case Job_High_Priest: changebase 4063; break;
+    		case Job_Gunslinger: changebase 4215; break;
+    		case Job_Taekwon:
+    		case Job_Star_Gladiator: changebase 4239; break;
+    		case Job_Soul_Linker: changebase 4240; break;
+    		case Job_Ninja: changebase (Sex?4211:4212); break;
+    		case Job_Baby_Knight: changebase 4096; break;
+    		case Job_Baby_Priest: changebase 4099; break;
+    		case Job_Baby_Wizard: changebase 4097; break;
+    		case Job_Baby_Blacksmith: changebase 4100; break;
+    		case Job_Baby_Hunter: changebase 4098; break;
+    		case Job_Baby_Assassin: changebase 4101; break;
+    		case Job_Baby_Crusader: changebase 4102; break;
+    		case Job_Baby_Monk: changebase 4106; break;
+    		case Job_Baby_Sage: changebase 4103; break;
+    		case Job_Baby_Rogue: changebase 4108; break;
+    		case Job_Baby_Alchemist: changebase 4107; break;
+    		case Job_Baby_Bard: changebase 4104; break;
+    		case Job_Baby_Dancer: changebase 4105; break;
+    		default:
+    			message(strcharinfo(0),"Your job doesn't have 3rd Job Suit.");
+    			end;
+    	}
+    return;
+    }
 
-
-		//	-------------------------------------------------------
-		//	Get purchased outfits list.
-			.@curOpen = openOutfit;
-
-			if(.@curOpen > 0){
-				setarray .@purchased[0],0,0,0;
-				for(.@i = 0; .@curOpen != 0; .@i++){
-					.@curOpen -= .outfitNum[.@i];
-						if(.@curOpen < 0){
-							.@curOpen += .outfitNum[.@i];
-						}else{
-							.@purchased[.@i] = 1;
-						}
-				}
-			}
-		//	-------------------------------------------------------
-
-
-	mes "Select the outfit that you want.";
-		for(.@i = 0;.@i < .@stylemax;.@i++){
-			if(.@purchased[.@i] == 1){
-				.@menu$ += .outfit$[.@i] + " - " + "<Purchased>"+ ":";
-			}else{
-			.@menu$ += .outfit$[.@i] + " - <" + .outfitPrice[.@i] +  " Cash>"+ ":";
-			}
-			if(.@i == (.@stylemax - 1)){
-				.@menu$ += "Default Outfit";
-			}
-		}
-	next;
-	.@pick = (select(.@menu$)-1);
-
-
-		// ------------------------------------------------------
-		//	This Resets the style if Default Style is selected.
-			if((.@pick + 1) > .@stylemax ){
-				mes .npcName$;
-				mes "Oh so you prefer the original huh? well here you go!";
-				setlook  LOOK_BODY2,0;
-				close;
-			}
-		// ------------------------------------------------------
-
-
-
-
-
-		for(.@i = 0;.@i < 3; .@i++){
-					if(.@purchased[.@pick] == 1){
-						mes .npcName$;
-						mes "Well thank you for using the service here you go!";
-						.@setStyle = .outfitNum[.@pick];
-						if(.@setStyle == 4){
-							.@setStyle--;
-						}
-						setlook  LOOK_BODY2,.@setStyle;
-						close;
-					}
-			}
-
-		mes .npcName$;
-		mes "Do you really want to proceed?";
-		next;
-		if(select("Proceed...:Changed my mind!") == 2){
-			mes "Well its you're decision!";
-			close;
-		}
-	// ------------------------------------------------------
-		//if(#CASHPOINTS < .outfitPrice[.@pick]){
-		//	mes .npcName$;
-		//	mes "You do not have what it takes to buy this outfit!";
-		//	close;
-		//}
-
-	// Change Cloths to desired.
-			mes .npcName$;
-			mes "Well thank you using the service here you go!";
-			.@setStyle = .outfitNum[.@pick];
-			if(.@setStyle == 4){
-				.@setStyle--;
-			}
-			setlook  LOOK_BODY2,.@setStyle;
-			// Character variable for purchased outfits.
-			openOutfit += .outfitNum[.@pick];
-
-			// #CASHPOINTS -= .outfitPrice[.@pick];
-			// dispbottom "You now have " +#CASHPOINTS+ " cash points.";
-	close;
-end;
-
-OnInit:
-	.npcName$ = "[Fashionista Merry]";
-
-	// Input the names of the outfits that is available into your client.
-	setarray .outfit$[0],"^0000FFTranscendent Outfit^000000","^00FF00Second Class Outfit^000000","^FF0000Alternate Outfit^000000";
-	setarray .outfitPrice[0],5000,5000,5000; // in cashpoints
-	setarray .outfitNum[0],4,2,1;
-	.maxOutfit = getarraysize(.outfit$);
-
-	//list of restricted classes.
-	// As of now restricted classes are.
-	//	Rune Knight
-	//	Sorcerer
-	//	Shura
-	setarray .outfitRestrict[0],	4060,4054,4096,4067,4074,4103,4070,4077,4106;
-	.maxRestrict = getarraysize(.outfitRestrict);
-
-
-
-end;
-}
+    //callfunc("F_ChangeSuitAlt",0) <-- Enable
+    //callfunc("F_ChangeSuitAlt",1) <-- Disable
+    function	script	F_ChangeSuitAlt	{
+    	if (getarg(0)) {
+    		setlook LOOK_BODY2,0;
+    		changebase Class;
+    		return;
+    	}
+    	switch(Class) {
+    		case Job_Lord_Knight: changebase 4060; break;
+    		case Job_Assassin_Cross: changebase 4065; break;
+    		case Job_Paladin: changebase 4073; break;
+    		case Job_Whitesmith: changebase 4064; break;
+    		case Job_Creator: changebase 4078; break;
+    		case Job_Stalker: changebase 4079; break;
+    		case Job_Professor: changebase 4074; break;
+    		case Job_Gypsy: changebase 4076; break;
+    		case Job_Champion: changebase 4077; break;
+    		case Job_Sniper: changebase 4062; break;
+    		case Job_Clown: changebase 4075; break;
+    		case Job_High_Wizard: changebase 4061; break;
+    		case Job_High_Priest: changebase 4063; break;
+    		case Job_Baby_Knight: changebase 4096; break;
+    		case Job_Baby_Priest: changebase 4099; break;
+    		case Job_Baby_Wizard: changebase 4097; break;
+    		case Job_Baby_Blacksmith: changebase 4100; break;
+    		case Job_Baby_Hunter: changebase 4098; break;
+    		case Job_Baby_Assassin: changebase 4101; break;
+    		case Job_Baby_Crusader: changebase 4102; break;
+    		case Job_Baby_Monk: changebase 4106; break;
+    		case Job_Baby_Sage: changebase 4103; break;
+    		case Job_Baby_Rogue: changebase 4108; break;
+    		case Job_Baby_Alchemist: changebase 4107; break;
+    		case Job_Baby_Bard: changebase 4104; break;
+    		case Job_Baby_Dancer: changebase 4105; break;
+    		default:
+    			message(strcharinfo(0),"Your job doesn't have 3rd Job Alternative Suit.");
+    			end;
+    	}
+    	setlook LOOK_BODY2,1;
+    return;
+    }
