@@ -25,7 +25,7 @@ OnTalk:
 		.@job = .gravity_logic[Class];
 	//else
 	//	.@job = Class;
-	.@choose = select("Hair style", "Hair color", "Cloth Color", (.bodystyle_num[.@job] > 1)? "Body Style" :"") -1;
+	.@choose = select("Hair style", "Hair color", "Cloth Color", (.bodystyle_num[.@job] > 0)? "Body Style" :"") -1;
 	if (.@choose < 2 && BaseClass != Job_Summoner)
 		.@job = Job_Novice;
 	if (.@choose == 3) {
