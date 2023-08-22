@@ -15,7 +15,7 @@
 //= someone said I helped a rude person =/
 //============================================================
 
-prontera,170,180,1	script	Stylist#custom_1	2_M_DYEINGER,{
+prontera,170,180,1	script	Stylist#custom_1	878,{
 	if (.gravity_logic[Class])
 		.@job = .gravity_logic[Class];
 	else
