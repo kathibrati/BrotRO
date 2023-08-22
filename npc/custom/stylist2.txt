@@ -16,10 +16,15 @@
 //============================================================
 
 prontera,170,180,1	script	Stylist#custom_1	878,{
-	if (.gravity_logic[Class])
+OnTalk:
+        if (.ignore_secure_npctimeout)
+                ignoretimeout 1;
+        mes "[^0055FF ::: Adv. Stylist ::: ^000000]";
+        mes "I can change your appearance.";
+	//if (.gravity_logic[Class])
 		.@job = .gravity_logic[Class];
-	else
-		.@job = Class;
+	//else
+	//	.@job = Class;
 	.@choose = select("Hair style", "Hair color", "Cloth Color", (.bodystyle_num[.@job] > 1)? "Body Style" :"") -1;
 	if (.@choose < 2 && BaseClass != Job_Summoner)
 		.@job = Job_Novice;
