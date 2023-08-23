@@ -14,7 +14,7 @@
 //= Made for Pre-Renewal Servers in mind.
 //= Requires: rb_jobsuit.grf or the data folder of it
 //============================================================
-prontera,160,173,4	script	Job Suit Service	100,{
+prontera,160,173,4	script	Job Suit Service	124,{
 
 mes .n$;
 if(Class < 4008 && Class > 4022 && Class != 24 && Class != 25 && Class != 4046 && Class != 4047 && Class != 4049) {
