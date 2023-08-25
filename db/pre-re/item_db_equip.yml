@@ -11889,8 +11889,6 @@ Body:
     WeaponLevel: 3
     EquipLevelMin: 65
     Refineable: true
-    Script: |
-      bonus2 bAddMonsterDropItem,1753,200;
   - Id: 1735
     AegisName: Kkakkung
     Name: Kkakkung
