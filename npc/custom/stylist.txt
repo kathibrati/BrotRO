@@ -18,6 +18,10 @@ OnTalk:
                 ignoretimeout 1;
         mes "[^0055FF ::: Adv. Stylist ::: ^000000]";
         mes "I can change your appearance.";
+        mes "Your Current Style is:";
+        mes "Hair Color : "+getlook( LOOK_HAIR_COLOR );
+        mes "Hair Style : "+getlook( LOOK_HAIR );
+        mes "Cloth Color : "+getlook( LOOK_CLOTHES_COLOR );
         if (.cost_size){
                 mes " ";
                 mes "^777777[ SERVICES PAYMENT ]^000000";
