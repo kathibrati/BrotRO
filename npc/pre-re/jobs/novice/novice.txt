@@ -2175,6 +2175,10 @@ new_1-4,100,29,1	script	Job Quester	46,{
 snov:
 	mes "[Job Quest]";
 	mes "Well good luck to your quest";
+	getitem 7059,5; //Cargo_Free_Ticket
+	getitem 7060,5; //Warp_Free_Ticket
+	getitem 1204,1; //Cutter
+	getitem 1010,7; //Phracon
 	warp "aldeba_in" ,219,167;
 	close;
 
@@ -2211,6 +2215,7 @@ mage:
 	mes "Well good luck to your quest";
 	getitem 7059,5; //Cargo_Free_Ticket
 	getitem 7060,5; //Warp_Free_Ticket
+	getitem 1204,1; //Cutter
 	getitem 1601,1; //Rod
 	getitem 1010,7; //Phracon
 	warp "geffen_in" ,157,119;
@@ -2232,7 +2237,7 @@ sword:
 	mes "Well good luck to your quest";
 	getitem 7059,5; //Cargo_Free_Ticket
 	getitem 7060,5; //Warp_Free_Ticket
-	getitem 1204,1; //Cutter
+	getitem 1207,1; //Main_Gauche
 	getitem 1010,7; //Phracon
 	warp "izlude_in" ,74,167;
 	close;
