@@ -2170,7 +2170,15 @@ new_1-4,100,29,1	script	Hanson#nv	46,{
 		mes "What Job";
 		mes "you like to pick?";
 		next;
-S_UserJobchoice:
+mes "[Hanson]";
+		mes "Do you wish to start Ragnarok Online immediately, or take this personality test course first?";
+		next;
+		switch(select("I'll take the course.:Let me start Ragnarok Online please.")) {
+		case 1:
+			mes "[Hanson]";
+			mes "Excellent choice!";
+			next;
+		case 2:
 	mes "[Hanson]";
 	mes "I see. It's your choice.";
 	mes "There is no obligation to change to the job we recommend. Please choose the job you wish to become.";
@@ -2178,7 +2186,6 @@ S_UserJobchoice:
 	select( "Swordsman:Mage:Merchant:Thief:Archer:Acolyte" );
 	// @menu is already set by Core.
 	setarray .@Jobs$[1],"Swordsman","Mage","Merchant","Thief","Archer","Acolyte";
-
 	mes "[Hanson]";
 	mes "You have chosen";
 while(1) {
