@@ -2153,7 +2153,7 @@ new_5-3,96,174,3	duplicate(NovKeyman)	Test Examiner#nv5	85
 //Potato Merchant
 new_1-2,28,185,4	shop	Potato Merchant	90,516:15
 
-new_1-4,100,29,1	script	Hanson#nv	46,{
+new_1-4,100,29,1	script	Job Quester	46,{
 	mes "[Job Quest]";
 	mes "Hello there!";
 	mes "are you qualified to test your";
