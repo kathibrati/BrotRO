@@ -670,7 +670,7 @@ new_1-2,99,105,3	script	Interfaces Tutor#nv1	751,{
 
 
 
-new_1-2,118,108,3	script	Kafra Employee#nv1	117,{
+new_1-2,20,186,3	script	Kafra Employee#nv1	117,{
 	mes "[Kafra Employee]";
 	mes "Welcome to";
 	mes "Kafra Corporation.";
