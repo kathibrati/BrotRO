@@ -2199,6 +2199,7 @@ aco:
 	getitem 7060,5; //Warp_Free_Ticket
 	getitem 1504,1; //Mace
 	getitem 1010,7; //Phracon
+	savepoint "prontera",117,72,1,1;
 	warp "prt_church" ,184,36;
 	close;
 
@@ -2209,6 +2210,7 @@ arch:
 	getitem 7060,5; //Warp_Free_Ticket
 	getitem 1704,1; //Composite_Bow
 	getitem 1010,7; //Phracon
+	savepoint "payon",70,100,1,1;
 	warp "payon_in02" ,64,66;
 	close;
 
@@ -2220,6 +2222,7 @@ mage:
 	getitem 1204,1; //Cutter
 	getitem 1601,1; //Rod
 	getitem 1010,7; //Phracon
+	savepoint "geffen",119,37,1,1;
 	warp "geffen_in" ,157,119;
 	close;
 
@@ -2231,6 +2234,7 @@ merch:
 	getitem 7061,4; //Cart_Free_Ticket
 	getitem 1351,1; //Battle_Axe
 	getitem 1010,7; //Phracon
+	savepoint "alberta",30,232,1,1;
 	warp "alberta_in" ,61,43;
 	close;
 
@@ -2241,6 +2245,7 @@ sword:
 	getitem 7060,5; //Warp_Free_Ticket
 	getitem 1207,1; //Main_Gauche
 	getitem 1010,7; //Phracon
+	savepoint "izlude",93,104,1,1;
 	warp "izlude_in" ,74,167;
 	close;
 
@@ -2251,6 +2256,7 @@ thief:
 	getitem 7060,5; //Warp_Free_Ticket
 	getitem 1207,1; //Main_Gauche
 	getitem 1010,7; //Phracon
+	savepoint "morocc",150,99,1,1;
 	warp "moc_prydb1" ,47,120;
 	close;
 }
