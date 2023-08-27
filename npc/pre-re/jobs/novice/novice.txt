@@ -551,7 +551,7 @@ new_1-2,99,105,3	script	Interfaces Tutor#nv1	751,{
 			}
 			next;
 			mes "[Kris]";
-			mes "Now, why don't you speak to Edwin? He will teach you more regarding the basic use of Skills. Ah, and let me give you a starter Pack!";
+			mes "Before you proceed, let me give you a starter Pack!";
 			set nov_get_item02,12;
 			getitem 569,300; //Novice_Potion
 			getitem 1243,1; //Novice_Knife
@@ -565,6 +565,8 @@ new_1-2,99,105,3	script	Interfaces Tutor#nv1	751,{
 			getitem 7059,5; //Cargo_Free_Ticket
 			getitem 7060,5; //Warp_Free_Ticket
 			getitem 611,2; //Spectacles
+			mes "[Kris]";
+			mes "Go level up in field combat! You will find the entrance in the next room to our left!";
 			close;
 		case 2:
 			mes "[Kris]";
