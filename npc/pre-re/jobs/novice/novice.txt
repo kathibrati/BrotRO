@@ -2234,7 +2234,7 @@ sword:
 	getitem 7060,5; //Warp_Free_Ticket
 	getitem 1204,1; //Cutter
 	getitem 1010,7; //Phracon
-	warp "izlude" ,94,103;
+	warp "izlude_in" ,74,167;
 	close;
 
 thief:
