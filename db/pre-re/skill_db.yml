@@ -1861,7 +1861,7 @@ Body:
       - Level: 9
         Time: 220000
       - Level: 10
-        Time: 240000
+        Time: 300000
     Requires:
       SpCost:
         - Level: 1
@@ -10327,7 +10327,7 @@ Body:
       NoDamage: true
     Hit: Single
     HitCount: 1
-    Duration1: 30000
+    Duration1: 300000
     Requires:
       SpCost:
         - Level: 1
