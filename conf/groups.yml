@@ -61,6 +61,9 @@ Body:
       autotrade: true
       iteminfo: true
       duel: true
+      leave: true
+      reject: true
+      accept: true
     Permissions:
       # without this basic permissions regular players could not trade or party
       can_trade: true
