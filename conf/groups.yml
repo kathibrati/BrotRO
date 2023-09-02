@@ -54,6 +54,11 @@ Body:
       whodrops: true
       whereis: true
       rates: true
+      alootid: true
+      hominfo: true
+      homstats: true
+      autoloottype: true
+      autotrade: true
     Permissions:
       # without this basic permissions regular players could not trade or party
       can_trade: true
