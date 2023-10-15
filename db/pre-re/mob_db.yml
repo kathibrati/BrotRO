@@ -42145,6 +42145,8 @@ Body:
           Rate: 1
         - Item: C_Heart_Wing_Backpack
           Rate: 1
+        - Item: C_AngelRibbonWing_TW
+          Rate: 1
         - Item: Gold
           Rate: 1
   - Id: 29514
@@ -42216,6 +42218,8 @@ Body:
           Rate: 1
         - Item: C_Elegant_Wave
           Rate: 1
+        - Item: C_Mecha_Cat_Ears
+          Rate: 1
   - Id: 29515
     AegisName: HASE
     Name: Hase
@@ -42282,6 +42286,8 @@ Body:
         - Item: C_Black_Cat
           Rate: 1
         - Item: C_Cat_Hat_J
+          Rate: 1
+        - Item: C_Crown_of_Old_King_Red
           Rate: 1
         - Item: Gold
           Rate: 1
@@ -42351,6 +42357,8 @@ Body:
         - Item: C_Black_Glasses
           Rate: 1
         - Item: C_Desert_Wolf_B
+          Rate: 1
+        - Item: C_Survival_Circlet
           Rate: 1
   - Id: 29517
     AegisName: INVISIBILO
@@ -42498,6 +42506,8 @@ Body:
           Rate: 1
         - Item: C_SeraphimCoronet
           Rate: 1
+        - Item: C_Ribbon_White
+          Rate: 1
         - Item: Gold
           Rate: 1
   - Id: 29519
@@ -42568,6 +42578,26 @@ Body:
         - Item: C_Large_Ribbon_Muffler_Red
           Rate: 1
         - Item: C_L_Knitting_Low_Twin
+          Rate: 1
+        - Item: C_Drooping_Kitty_Pink
+          Rate: 1
+        - Item: C_White_Lily_Black_Ribbon
+          Rate: 1
+        - Item: C_Alchemist_Mask
+          Rate: 1
+        - Item: C_Drooping_Eddga
+          Rate: 1
+        - Item: C_Sting_Hat
+          Rate: 1
+        - Item: C_Sailor_Hat
+          Rate: 1
+        - Item: C_Starfish_Headband
+          Rate: 1
+        - Item: C_Nipper_Hairpin
+          Rate: 1
+        - Item: C_Mad_Hatter
+          Rate: 1
+        - Item: C_Gold_Shower
           Rate: 1
   - Id: 29520
     AegisName: WURMI
@@ -42680,6 +42710,8 @@ Body:
           Rate: 1
         - Item: C_Charm_Of_Flame_Heart
           Rate: 1
+        - Item: C_Blue_Rear_Ribbon
+          Rate: 1
   - Id: 29521
     AegisName: BLAUHORN
     Name: Blauhorn
@@ -42738,6 +42770,8 @@ Body:
         - Item: C_Wings_of_Uriel
           Rate: 1
         - Item: C_WingOfHeart
+          Rate: 1
+        - Item: C_AngelRibbonWing_TW
           Rate: 1
         - Item: Gold
           Rate: 1
