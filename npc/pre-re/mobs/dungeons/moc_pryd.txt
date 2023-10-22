@@ -35,7 +35,7 @@ moc_pryd03,0,0	monster	Drainliar	1111,5
 moc_pryd03,0,0	monster	Mimic	1191,5
 moc_pryd03,0,0	monster	Matyr	1146,10
 moc_pryd03,0,0	monster	Mummy	1041,70
-moc_pryd03,0,0	monster	Verit	1032,20,600000,300000
+moc_pryd03,0,0	monster	Verit	1032,70
 
 //==================================================
 // moc_pryd04 - Inside Pyramid F4
