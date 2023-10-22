@@ -46,3 +46,4 @@
 // Duplicates
 //============================================================
 payon,166,99,6	duplicate(Healer)	Healer#pay	412
+gonryun,161,124,6	duplicate(Healer)	Healer#gon	412
