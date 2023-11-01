@@ -548,10 +548,8 @@ G4: Restrict("RE",2,3);
 G5: Go("arug_dun01",199,195);
 G6: Go("schg_dun01",200,124);
 G7: Restrict("RE");
-G7: Restrict("Pre-RE");
 	Go("teg_dun01",42,36);
 G8: Restrict("RE");
-G8: Restrict("Pre-RE");
 	Go("teg_dun02",26,160);
 
 // --------------------------------------------------
@@ -591,7 +589,7 @@ I12: Restrict("RE");
 I13: Go("nyd_dun02",95,193);
 I14: Restrict("RE");
 	Go("mal_dun01",152,230);
-I15: Restrict("Pre-RE");
+I15: Restrict("RE");
 	Go("glast_01",204,268);
 I16: Go("gef_fild10",240,198);
 I17: Restrict("RE");
