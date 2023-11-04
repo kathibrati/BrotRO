@@ -33650,14 +33650,6 @@ Body:
     Weight: 10
     NoUse:
       Sitting: true
-    Trade:
-      NoDrop: true
-      NoTrade: true
-      NoSell: true
-      NoCart: true
-      NoGuildStorage: true
-      NoMail: true
-      NoAuction: true
     Script: |
       sc_start SC_JEXPBOOST,1800000,50;
   - Id: 14593
