@@ -5423,9 +5423,9 @@ int skill_castend_damage_id (struct block_list* src, struct block_list *bl, uint
 #else
 				uint8 dir = map_calc_dir(src, bl->x, bl->y), t_dir = unit_getdir(bl);
 
-				if (bl->type == BL_SKILL) {
+				if (!map_check_dir(dir, t_dir) || bl->type == BL_SKILL) {
 #endif
-					status_change_end(src, SC_HIDING, INVALID_TIMER);
+					status_change_end(src, SC_HIDING);
 					dir = dir < 4 ? dir+4 : dir-4; // change direction [Celest]
 					unit_setdir(bl,dir);
 #ifdef RENEWAL
@@ -12707,7 +12707,12 @@ static int8 skill_castend_id_check(struct block_list *src, struct block_list *ta
 			break;
 		case RG_BACKSTAP:
 			{
+#ifndef RENEWAL
 				uint8 dir = map_calc_dir(src,target->x,target->y), t_dir = unit_getdir(target);
+
+				if (map_check_dir(dir, t_dir))
+					return USESKILL_FAIL_MAX;
+#endif
 
 				if (check_distance_bl(src, target, 0))
 					return USESKILL_FAIL_MAX;
