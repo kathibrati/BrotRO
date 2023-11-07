@@ -396,7 +396,7 @@ Body:
     AegisName: Grape_Juice
     Name: Grape Juice
     Type: Healing
-    Buy: 20
+    Buy: 10
     Weight: 40
     Flags:
       BuyingStore: true
