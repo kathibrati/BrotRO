@@ -27,19 +27,19 @@
 //		mes "Have a nice day... >.>";
 //		close;
 //	}
-payon,128,200,6	script	Cart Decoration	4219,{
+payon,128,200,6	script	Cart Decoration	665,{
 
 				function SetSkills;
 				function SetJobLevel;
 				function Validate;
 
-        mes "[Platinum Skill Pusher]";
+        mes "[Cart Decoration]";
         mes "Pssst, ehy you!";
         mes "Hand me ^0000FF100.000 zeny^000000 and you'll get a fancy cart, none will know!";
         mes "Man, there's no refund... are you sure you want it?";
         next;
         if (select("Yes Please:No") == 2) {
-                mes "[Platinum Skill Pusher]";
+                mes "[Cart Decoration]";
                 mes "Have a nice day... dude!";
                 close;
         }
@@ -54,7 +54,7 @@ payon,128,200,6	script	Cart Decoration	4219,{
 
         set Zeny,Zeny -100000;
         callfunc "F_GetPlatinumSkills";
-        mes "[Platinum Skill Pusher]";
+        mes "[Cart Decoration]";
         mes "Dehee thanks man...lazy people like you makes me rich buahah!";
         close;
 
