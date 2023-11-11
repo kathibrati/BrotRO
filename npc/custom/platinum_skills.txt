@@ -17,7 +17,7 @@
 //= 3.0 Migrate/Integrate to Global Functions. [mazvi]
 //============================================================
 
-prontera,128,200,6	script	Cart Decorator	94,{
+payon,179,112,6	script	Cart Decorator	614,{
        mes "[Cart Decorator]";
         mes "Pssst, ehy you!";
         mes "Hand me ^0000FF100.000 zeny^000000 and you'll learn to pimp your cart, none will know!";
@@ -31,33 +31,67 @@ prontera,128,200,6	script	Cart Decorator	94,{
 
 		switch (Class) {
 	    case Job_Merchant:
-		if (getskilllv(153) && getskilllv(154)&& getskilllv(155)) {
+		if (getskilllv(154) && getskilllv(2544)) {
                 mes "[Cart Decorator]";
                 mes "Hey Amazon, you already have them, do not waste my time!";
                 close;
 				}
+			if( Zeny <100000 ) {
+					mes "...ehy dude, you need ^0000FF100.000 zeny^000000,";
+					mes "ask them to mom!";
+					close;
+			}
+			set Zeny,Zeny -100000;
+			skill "MC_CHANGECART",1,SKILL_PERM;
+			skill "MC_CARTDECORATE",1,SKILL_PERM;
+			mes "[Cart Decorator]";
+			mes "Dehee thanks man...lazy people like you makes me rich buahah!";
+			close;
 		break;
 
-	    case Job_Blacksmith:
-		if (getskilllv(1012) && getskilllv(1013)) {
+	    case Job_Alchemist:
+		if (getskilllv(154) && getskilllv(2544)) {
                 mes "[Cart Decorator]";
                 mes "Hey Metal Head, you already have them, do not waste my time!";
                 close;
 				}
+			if( Zeny <100000 ) {
+					mes "...ehy dude, you need ^0000FF100.000 zeny^000000,";
+					mes "ask them to mom!";
+					close;
+			}
+			set Zeny,Zeny -100000;
+			skill "MC_CHANGECART",1,SKILL_PERM;
+			skill "MC_CARTDECORATE",1,SKILL_PERM;
+			mes "[Cart Decorator]";
+			mes "Dehee thanks man...lazy people like you makes me rich buahah!";
+			close;
 		break;
+
+	    case Job_Blacksmith:
+		if (getskilllv(154) && getskilllv(2544)) {
+                mes "[Cart Decorator]";
+                mes "Hey Metal Head, you already have them, do not waste my time!";
+                close;
+				}
+			if( Zeny <100000 ) {
+					mes "...ehy dude, you need ^0000FF100.000 zeny^000000,";
+					mes "ask them to mom!";
+					close;
+			}
+			set Zeny,Zeny -100000;
+			skill "MC_CHANGECART",1,SKILL_PERM;
+			skill "MC_CARTDECORATE",1,SKILL_PERM;
+			mes "[Cart Decorator]";
+			mes "Dehee thanks man...lazy people like you makes me rich buahah!";
+			close;
 		break;
+
 		default:
+			mes "[Cart Decorator]";
+			mes "This is not quite your business!";
+			close;
 		break;
         }
-                if( Zeny <100000 ) {
-                        mes "...ehy dude, you need ^0000FF100.000 zeny^000000,";
-                        mes "ask them to mom!";
-                        close;
-                }
-                set Zeny,Zeny -100000;
-				skill "MC_CHANGECART",1,SKILL_PERM;
-				skill "MC_CARTDECORATE",1,SKILL_PERM;
-                mes "[Cart Decorator]";
-                mes "Dehee thanks man...lazy people like you makes me rich buahah!";
-                close;
+
 }
