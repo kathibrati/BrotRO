@@ -20,7 +20,9 @@
 payon,179,112,6	script	Cart Decorator	614,{
        mes "[Cart Decorator]";
         mes "Pssst, ehy you!";
-        mes "Hand me ^0000FF100.000 zeny^000000 50 Trunks, 10 Iron and 20 Animal Skins you'll learn to pimp your cart, none will know!";
+        mes "Hand me ^0000FF100.000 zeny^000000 ";
+        mes "50 Trunks, 10 Iron and 20 Animal Skins";
+        mes "you'll learn to pimp your cart, none will know!";
         mes "Man, there's no refund... are you sure you want it?";
         next;
         if (select("Yes Please:No") == 2) {
@@ -74,7 +76,7 @@ payon,179,112,6	script	Cart Decorator	614,{
                 mes "Hey Metal Head, you already have them, do not waste my time!";
                 close;
 				}
-			if( Zeny < 100000 countitem(1019) < 50 && countitem(998) < 10 && countitem(919) < 20) {
+			if(Zeny < 100000 countitem(1019) < 50 || countitem(998) < 10 || countitem(919) < 20) {
 					mes "...ehy dude, you need ^0000FF100.000 zeny^000000,";
 					mes "...50 Trunks, 10 Iron and 20 Animal Skins";
 					mes "ask them to mom!";
