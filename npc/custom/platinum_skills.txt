@@ -81,6 +81,9 @@ payon,179,112,6	script	Cart Decorator	614,{
 					close;
 			}
 			set Zeny,Zeny -100000;
+			delitem 1019,50; //Trunk
+			delitem 998,10; //Iron
+			delitem 919,20; //Animal Skin
 			skill "MC_CHANGECART",1,SKILL_PERM;
 			skill "MC_CARTDECORATE",1,SKILL_PERM;
 			mes "[Cart Decorator]";
