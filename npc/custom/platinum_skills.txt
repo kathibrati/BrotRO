@@ -17,18 +17,47 @@
 //= 3.0 Migrate/Integrate to Global Functions. [mazvi]
 //============================================================
 
-prontera,128,200,6	script	Platinum Skill NPC	94,{
-	mes "[Platinum Skill NPC]";
-	mes "I can give you the special skills available to your job.";
-	mes "Would you like these skills now?";
-	next;
-	if (select("Yes Please:No") == 2) {
-		mes "[Platinum Skill NPC]";
-		mes "Have a nice day... >.>";
-		close;
-	}
-	callfunc "F_GetPlatinumSkills";
-	mes "[Platinum Skill NPC]";
-	mes "There you go!";
-	close;
+prontera,128,200,6	script	Cart Decorator	94,{
+       mes "[Cart Decorator]";
+        mes "Pssst, ehy you!";
+        mes "Hand me ^0000FF100.000 zeny^000000 and you'll learn to pimp your cart, none will know!";
+        mes "Man, there's no refund... are you sure you want it?";
+        next;
+        if (select("Yes Please:No") == 2) {
+                mes "[Cart Decorator]";
+                mes "Have a nice day... dude!";
+                close;
+        }
+
+		switch (Class) {
+	    case Job_Merchant:
+		if (getskilllv(153) && getskilllv(154)&& getskilllv(155)) {
+                mes "[Cart Decorator]";
+                mes "Hey Amazon, you already have them, do not waste my time!";
+                close;
+				}
+		break;
+
+	    case Job_Blacksmith:
+		if (getskilllv(1012) && getskilllv(1013)) {
+                mes "[Cart Decorator]";
+                mes "Hey Metal Head, you already have them, do not waste my time!";
+                close;
+				}
+		break;
+		break;
+		default:
+		break;
+        }
+                if( Zeny <100000 ) {
+                        mes "...ehy dude, you need ^0000FF100.000 zeny^000000,";
+                        mes "ask them to mom!";
+                        close;
+                }
+                set Zeny,Zeny -100000;
+				skill "MC_CHANGECART",1,SKILL_PERM;
+				skill "MC_CARTDECORATE",1,SKILL_PERM;
+                mes "[Cart Decorator]";
+                mes "Dehee thanks man...lazy people like you makes me rich buahah!";
+                close;
 }
