@@ -21517,11 +21517,11 @@ Body:
     NoUse:
       Sitting: true
     Trade:
-      NoDrop: true
-      NoTrade: true
-      NoSell: true
-      NoCart: true
-      NoGuildStorage: true
+      NoDrop: false
+      NoTrade: false
+      NoSell: false
+      NoCart: false
+      NoGuildStorage: false
       NoMail: true
       NoAuction: true
     Script: |
