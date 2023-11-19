@@ -2190,7 +2190,7 @@ taek:
 	mes "Well good luck to your quest";
 	getitem 7059,5; //Cargo_Free_Ticket
 	getitem 7060,5; //Warp_Free_Ticket
-	savepoint "payon",700,100,1,1;
+	savepoint "payon",159,59,1,1;
 	warp "payon" ,160,140;
 	close;
 
@@ -2200,7 +2200,7 @@ guns:
 	getitem 7059,5; //Cargo_Free_Ticket
 	getitem 7060,5; //Warp_Free_Ticket
 	getitem 1010,7; //Phracon
-	savepoint "payon",700,100,1,1;
+	savepoint "payon",159,59,1,1;
 	warp "que_ng" ,149,167;
 	close;
 
@@ -2210,7 +2210,7 @@ ninja:
 	getitem 7059,5; //Cargo_Free_Ticket
 	getitem 7060,5; //Warp_Free_Ticket
 	getitem 1010,7; //Phracon
-	savepoint "payon",700,100,1,1;
+	savepoint "payon",159,59,1,1;
 	warp "alberta" ,30,65;
 	close;
 
@@ -2241,7 +2241,7 @@ arch:
 	getitem 7060,5; //Warp_Free_Ticket
 	getitem 1704,1; //Composite_Bow
 	getitem 1010,7; //Phracon
-	savepoint "payon",70,100,1,1;
+	savepoint "payon",159,59,1,1;
 	warp "payon_in02" ,64,66;
 	close;
 
