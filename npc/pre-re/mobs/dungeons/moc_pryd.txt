@@ -21,12 +21,12 @@ moc_pryd01,0,0	monster	Poporing	1031,20
 //==================================================
 // moc_pryd02 - Inside Pyramid F2
 //==================================================
-moc_pryd02,0,0	monster	Poporing	1031,20
+//moc_pryd02,0,0	monster	Poporing	1031,20
 moc_pryd02,0,0	monster	Drainliar	1111,20
 moc_pryd02,0,0	monster	Mummy	1041,30
 moc_pryd02,0,0	monster	Isis	1029,5
 moc_pryd02,0,0	monster	Soldier Skeleton	1028,30
-moc_pryd02,0,0	monster	Archer Skeleton	1016,30
+moc_pryd02,0,0	monster	Archer Skeleton	1016,50
 
 //==================================================
 // moc_pryd03 - Inside Pyramid F3
