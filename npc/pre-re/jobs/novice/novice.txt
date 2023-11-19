@@ -2171,7 +2171,7 @@ new_1-4,100,29,1	script	Job Quester	46,{
 	mes "[Job Quest]";
 	mes "Please make a Selection";
 	next;
-	menu "1st Job Quest",FJob,"Super Novice",snov;
+	menu "1st Job Quest",FJob,"Super Novice",snov,"Taekwon",taek,"Gunslinger",guns,"Ninja",ninja;
 	next;
 
 snov:
@@ -2182,7 +2182,38 @@ snov:
 	getitem 1204,1; //Cutter
 	getitem 1010,7; //Phracon
 	warp "aldeba_in" ,219,167;
+	savepoint "prontera",117,72,1,1;
 	close;
+
+taek:
+	mes "[Job Quest]";
+	mes "Well good luck to your quest";
+	getitem 7059,5; //Cargo_Free_Ticket
+	getitem 7060,5; //Warp_Free_Ticket
+	savepoint "payon",700,100,1,1;
+	warp "payon" ,160,140;
+	close;
+
+guns:
+	mes "[Job Quest]";
+	mes "Well good luck to your quest";
+	getitem 7059,5; //Cargo_Free_Ticket
+	getitem 7060,5; //Warp_Free_Ticket
+	getitem 1010,7; //Phracon
+	savepoint "payon",700,100,1,1;
+	warp "que_ng" ,149,167;
+	close;
+
+ninja:
+	mes "[Job Quest]";
+	mes "Well good luck to your quest";
+	getitem 7059,5; //Cargo_Free_Ticket
+	getitem 7060,5; //Warp_Free_Ticket
+	getitem 1010,7; //Phracon
+	savepoint "payon",700,100,1,1;
+	warp "alberta" ,30,65;
+	close;
+
 
 //First Job Quest----------------------------------
 FJob:
