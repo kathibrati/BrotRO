@@ -2211,7 +2211,7 @@ ninja:
 	getitem 7060,5; //Warp_Free_Ticket
 	getitem 1010,7; //Phracon
 	savepoint "payon",159,59,1,1;
-	warp "alberta" ,30,65;
+	warp "alberta" ,36,57;
 	close;
 
 
