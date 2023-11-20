@@ -139,14 +139,14 @@ gl_chyard,0,0,0,0	boss_monster	Dark Lord	1272,1,3600000,600000,1
 //==================================================
 // gl_sew01 - Glast Heim Culvert F1
 //==================================================
-gl_sew01,0,0	monster	Gargoyle	1253,30
-gl_sew01,0,0	monster	Arclouze	1194,10
-gl_sew01,0,0	monster	Whisper	1179,40
+//gl_sew01,0,0	monster	Gargoyle	1253,30
+//gl_sew01,0,0	monster	Arclouze	1194,10
+gl_sew01,0,0	monster	Whisper	1179,80
 
 //==================================================
 // gl_sew02 - Glast Heim Culvert F2
 //==================================================
-gl_sew02,0,0	monster	Gargoyle	1253,55
+gl_sew02,0,0	monster	Gargoyle	1253,85
 gl_sew02,0,0	monster	Cramp	1209,15
 
 //==================================================
