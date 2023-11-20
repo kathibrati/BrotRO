@@ -38,7 +38,7 @@ prt_fild01,199,266,3,3	monster	Blue Plant	1079,1,900000,450000
 //==================================================
 // prt_fild02 - Prontera Field
 //==================================================
-prt_fild02,0,0	monster	Mandragora	1020,70
+prt_fild02,0,0	monster	Mandragora	1020,210
 prt_fild02,0,0	monster	Fabre	1007,50
 prt_fild02,0,0	monster	Pupa	1008,20
 prt_fild02,0,0	monster	Lunatic	1063,10
