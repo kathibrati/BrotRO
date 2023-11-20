@@ -124,11 +124,11 @@ pay_fild09,198,217,30,30	monster	Shining Plant	1083,1,1800000,900000
 // pay_fild10 - Payon Forest
 //==================================================
 pay_fild10,0,0	monster	Greatest General	1277,65
-pay_fild10,0,0	monster	Dokebi	1110,70
-pay_fild10,0,0	monster	Poison Spore	1077,20
-pay_fild10,0,0	monster	Nine Tail	1180,2
-pay_fild10,0,0	monster	Nine Tail	1180,1,1800000,900000
-pay_fild10,0,0	monster	Nine Tail	1180,1,900000,450000
+pay_fild10,0,0	monster	Dokebi	1110,140
+//pay_fild10,0,0	monster	Poison Spore	1077,20
+//pay_fild10,0,0	monster	Nine Tail	1180,2
+//pay_fild10,0,0	monster	Nine Tail	1180,1,1800000,900000
+//pay_fild10,0,0	monster	Nine Tail	1180,1,900000,450000
 pay_fild10,213,157,10,10	monster	Green Plant	1080,5,360000,180000
 pay_fild10,281,307,10,10	monster	Green Plant	1080,5,360000,180000
 pay_fild10,66,332,10,10	monster	Green Plant	1080,5,360000,180000
