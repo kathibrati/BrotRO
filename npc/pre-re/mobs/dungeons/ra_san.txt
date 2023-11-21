@@ -57,7 +57,7 @@ ra_san02,0,0	monster	Seeker	1774,2
 //==================================================
 ra_san03,0,0	monster	Beholder	1633,5
 ra_san03,0,0	monster	Gremlin	1632,5
-ra_san03,148,221,145,71	monster	Seeker	1774,40
+ra_san03,148,221,145,71	monster	Seeker	1774,100
 ra_san03,0,0	monster	Hodremlin	1773,20
 ra_san03,148,79,146,71	monster	Hodremlin	1773,40
 
