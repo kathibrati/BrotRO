@@ -40,8 +40,8 @@ mosk_dun02,0,0	monster	Uzhas	1883,5,20000,10000
 //==================================================
 // mosk_dun03 - Moscovia Dungeon 3
 //==================================================
-//mosk_dun03,0,0	monster	Baba Yaga	1882,60,10000,10000
-//mosk_dun03,0,0	monster	Uzhas	1883,35,20000,10000
+mosk_dun03,0,0	monster	Baba Yaga	1882,60,10000,10000
+mosk_dun03,0,0	monster	Uzhas	1883,35,20000,10000
 mosk_dun03,0,0	monster	Mavka	1884,100,20000,10000
 mosk_dun03,0,0	monster	Yellow Plant	1081,10
 mosk_dun03,0,0	monster	White Plant	1082,10
