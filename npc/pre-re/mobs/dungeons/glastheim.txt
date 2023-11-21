@@ -175,8 +175,8 @@ gl_step,0,0	monster	Wind Ghost	1263,100,120000
 //==================================================
 // gl_knt01 - Inside Glast Heim Chivalry F1
 //==================================================
-gl_knt01,0,0	monster	Raydric	1163,60
-gl_knt01,0,0	monster	Raydric Archer	1276,20
+gl_knt01,0,0	monster	Raydric	1163,120
+//gl_knt01,0,0	monster	Raydric Archer	1276,20
 gl_knt01,0,0	monster	Khalitzburg	1132,10
 gl_knt01,0,0	monster	Abysmal Knight	1219,10
 gl_knt01,0,0	monster	Alice	1275,1
