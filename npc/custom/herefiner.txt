@@ -23,7 +23,8 @@ quiz_02,156,367,1	script	HE Trader	4_CAT_SAILOR5,{
                     set @rand,rand(1,100);
                         if(@rand <= 70) {
                             delitem 984,100;
-                            getitem 6240,1;
+                            getitem 7620,1;
+                            getitem 6635,2;
                             mes "Congrats you just made an HD Oridecon.";
                             mes "This item's density ensures that refine attempts will";
                             mes "not break the weapon and if the attempt fails it will only downgrade by 1.";
@@ -45,7 +46,8 @@ quiz_02,156,367,1	script	HE Trader	4_CAT_SAILOR5,{
                     set @rand,rand(1,100);
                     if(@rand <= 70) {
                             delitem 985,100;
-                            getitem 6241,1;
+                            getitem 7619,1;
+                            getitem 6635,2;
                             mes "Congrats you just made a HD Elunium.";
                             mes "This item's density ensures that refine attempts will";
                             mes "not break the armor and if the attempt fails it will only downgrade by 1.";
