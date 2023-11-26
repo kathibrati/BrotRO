@@ -565,7 +565,7 @@ payon,144,173,5	script	Antonio	4_M_ORIENT01,{
 	}
 }
 
-quiz_02,141,367,2	script	Antonio	4_M_ORIENT01,{
+quiz_02,141,367,1	script	Antonio	4_M_ORIENT01,{
 	if( getbattleflag( "feature.refineui" ) ){
 		mes "[Antonio]";
 		mes "Stop nagging and get me the equipment you want to refine.";
