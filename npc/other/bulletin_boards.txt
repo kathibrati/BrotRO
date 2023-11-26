@@ -416,3 +416,12 @@ glast_01,369,308,5	script	Bulletin Board#28	837,{
 	mes "Enjoy your dungeon expedition.";
 	close;
 }
+
+payon,173,84,5	script	Bulletin Board#29	624,{
+	mes "[Itemmall Entrance Fairy]";
+	mes "Welcome to Payons Itemmall";
+	next;
+	mes "[Itemmall Entrance Fairy]";
+	mes "Time to spent some Zeny!!";
+	close;
+}
