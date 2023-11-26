@@ -417,7 +417,7 @@ glast_01,369,308,5	script	Bulletin Board#28	837,{
 	close;
 }
 
-payon,173,84,5	script	Bulletin Board#29	624,{
+payon,174,83,5	script	Itemmall Fairy#29	624,{
 	mes "[Itemmall Entrance Fairy]";
 	mes "Welcome to Payons Itemmall";
 	next;
