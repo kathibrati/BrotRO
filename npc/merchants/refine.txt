@@ -1106,7 +1106,7 @@ payon,137,178,5	script	Hakhim	88,{
 	callfunc "orimain","Hakhim";
 	end;
 }
-quiz_02,147,367,2	script	Achim	88,{
+quiz_02,147,367,2	script	Ori Elu Achim	88,{
 	callfunc "orimain","Achim";
 	end;
 }
