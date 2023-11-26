@@ -7,9 +7,9 @@
 //= 1.0 First version. [Toast]
 //============================================================
 
-// Costume exchange
-quiz_02,156,367,1	script	Costume Cat	4_CAT_SAILOR5,{
-mes "^0000ff[Capt. Krauser]^000000";
+// HE Ori exchanger
+quiz_02,156,367,1	script	HE Trader	4_CAT_SAILOR5,{
+	mes "^0000ff[Capt. Krauser]^000000";
 	mes "Ahoy mate! Do ye have spare Eluniums or Oridecons?";
 	mes "that ye wanna get rid 'o?";
 	next;
@@ -18,18 +18,18 @@ mes "^0000ff[Capt. Krauser]^000000";
 		mes "^0000ff[Capt. Krauser]^000000";
 		mes "Okay 'ave a nice day.";
 	}
-	if( .@s == 2 && countitem(985)>= 100) {
-	delitem 985,100; //Elunium
-	giveitem 6241,1; //HE-Elunium
+	else if( .@s == 2 && countitem(985)>= 100) {
+		delitem 985,100; //Elunium
+		giveitem 6241,1; //HE-Elunium
 		mes "^0000ff[Capt. Krauser]^000000";
 		mes "There ya go!";
 		next;
 		mes "^0000ff[Capt. Krauser]^000000";
 		mes "These loots might come in handy fer ye someday too mate!";
 	}
-	if( .@s == 3 && countitem(984)>= 100) {
-	delitem 984,100; //Oridecon
-	giveitem 6240,1; //HE-Oridecon
+	else if( .@s == 3 && countitem(984)>= 100) {
+		delitem 984,100; //Oridecon
+		giveitem 6240,1; //HE-Oridecon
 		mes "^0000ff[Capt. Krauser]^000000";
 		mes "There ya go!";
 		next;
