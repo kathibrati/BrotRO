@@ -18,7 +18,7 @@ quiz_02,156,367,1	script	HE Trader	4_CAT_SAILOR5,{
                         if(@rand <= 10) {
                             delitem 984,100;
                             getitem 7620,1;
-                            mes "Congrats you just made a Enriched Oridecon.";
+                            mes "Congrats you just made an Enriched Oridecon.";
                             emotion 21;
                             close;
                         } else {
@@ -55,4 +55,3 @@ quiz_02,156,367,1	script	HE Trader	4_CAT_SAILOR5,{
             close;
     }
 }
-//quiz_02,150,367,4	duplicate(Costume Clown)	Costume Clown	951
