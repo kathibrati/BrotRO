@@ -15,7 +15,7 @@ quiz_02,156,367,1	script	HE Trader	4_CAT_SAILOR5,{
 	next;
 	set .@s, select( "No! Goood bye.", "Trade-in Elunium", "Trade-in Oridecon" );
 
-	switch (.@s) {
+	switch (select) {
 		case 1:
 			mes "^0000ff[Capt. Krauser]^000000";
 			mes "Okay 'ave a nice day.";
