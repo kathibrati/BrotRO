@@ -9,6 +9,12 @@
 
 // HE Ori exchanger
 quiz_02,156,367,1	script	HE Trader	4_CAT_SAILOR5,{
+        mes "[HE Trader]";
+        mes "Pssst, ehy you!";
+        mes "Hand me ^0000FF100 Oridecon or Elunium^000000 and you might get the HE Version out of it!";
+        mes "There's no refund... are you sure you want it?";
+        mes "50 percent chance to get the smelting right";
+        next;
  switch(select("Make Enriched Oridecon:Make Enriched Elunium:Nevermind")) {
         case 1:
             mes "I will need 100pcs of Oridecon.";
