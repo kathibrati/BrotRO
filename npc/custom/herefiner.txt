@@ -9,45 +9,50 @@
 
 // HE Ori exchanger
 quiz_02,156,367,1	script	HE Trader	4_CAT_SAILOR5,{
-	mes "^0000ff[Capt. Krauser]^000000";
-	mes "Ahoy mate! Do ye have spare Eluniums or Oridecons?";
-	mes "that ye wanna get rid 'o?";
-	next;
-	set .@s, select( "No! Goood bye.", "Trade-in Elunium", "Trade-in Oridecon" );
+ switch(select("Make Enriched Oridecon:Make Enriched Elunium:Nevermind")) {
+        case 1:
+            mes "I will need 100pcs of Oridecon.";
+            next;
+                if(countitem(984) >= 100) {
+                    set @rand,rand(1,100);
+                        if(@rand <= 10) {
+                            delitem 984,100;
+                            getitem 7620,1;
+                            mes "Congrats you just made a Enriched Oridecon.";
+                            emotion 21;
+                            close;
+                        } else {
+                        delitem 984,100;
+                        mes "Sorry! Failed to make item.";
+                        emotion 23;
+                        close;
+                        }
+                    }
+                mes "You do not have enough Oridecon.";
+                close;
+        case 2:
+            mes "I will need 100pcs of Elunium.";
+            next;
+                if(countitem(985) >= 100) {
+                    set @rand,rand(1,100);
+                    if(@rand <= 10) {
+                            delitem 985,100;
+                            getitem 7619,1;
+                            mes "Congrats you just made a Enriched Elunium.";
+                            emotion 21;
+                            close;
+                        } else {
+                    delitem 985,100;
+                    mes "Sorry! Failed to make item.";
+                    emotion 23;
+                    close;
+                    }
+                }
+            mes "You do not have enough Elunium.";
+            close;
 
-	switch (select) {
-		case 1:
-			mes "^0000ff[Capt. Krauser]^000000";
-			mes "Okay 'ave a nice day.";
-			break;
-		case 2:
-			if (countitem(985) >= 100) {
-				delitem 985, 100; // Elunium
-				giveitem 6241, 1; // HE-Elunium
-				mes "^0000ff[Capt. Krauser]^000000";
-				mes "There ya go!";
-				next;
-				mes "^0000ff[Capt. Krauser]^000000";
-				mes "These loots might come in handy fer ye someday too mate!";
-			} else {
-				mes "^0000ff[Capt. Krauser]^000000";
-				mes "Ye don't have enough Eluniums, mate!";
-			}
-			break;
-		case 3:
-			if (countitem(984) >= 100) {
-				delitem 984, 100; // Oridecon
-				giveitem 6240, 1; // HE-Oridecon
-				mes "^0000ff[Capt. Krauser]^000000";
-				mes "There ya go!";
-				next;
-				mes "^0000ff[Capt. Krauser]^000000";
-				mes "These loots might come in handy fer ye someday too mate!";
-			} else {
-				mes "^0000ff[Capt. Krauser]^000000";
-				mes "Ye don't have enough Oridecons, mate!";
-			}
-			break;
-	}
+        case 3:
+            close;
+    }
 }
 //quiz_02,150,367,4	duplicate(Costume Clown)	Costume Clown	951
