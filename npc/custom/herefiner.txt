@@ -28,6 +28,7 @@ quiz_02,156,367,1	script	HE Trader	4_CAT_SAILOR5,{
                             mes "Congrats you just made an HD Oridecon.";
                             mes "This item's density ensures that refine attempts will";
                             mes "increse your success chance immensely for upgrade attempts.";
+                            mes "^0000FFBlacksmiths Blessing^000000 will protect your items beginning at upgrade lvl 7!";
                             emotion 21;
                             close;
                         } else {
@@ -51,6 +52,7 @@ quiz_02,156,367,1	script	HE Trader	4_CAT_SAILOR5,{
                             mes "Congrats you just made a HD Elunium.";
                             mes "This item's density ensures that refine attempts will";
                             mes "increse your success chance immensely for upgrade attempts.";
+                            mes "^0000FFBlacksmiths Blessing^000000 will protect your items beginning at upgrade lvl 7!";
                             emotion 21;
                             close;
                         } else {
