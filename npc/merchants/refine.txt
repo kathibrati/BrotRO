@@ -988,7 +988,7 @@ payon,145,178,3	script	Begnahd	88,{
 	callfunc "phramain","Begnahd";
 	end;
 }
-quiz_02,144,367,1	script	Phracon and Emveretarcon Begnahdi	88,{
+quiz_02,144,367,1	script	Metal Seller	88,{
 	callfunc "phramain","Begnahdi";
 	end;
 }
