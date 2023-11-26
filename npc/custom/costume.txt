@@ -1,196 +1,398 @@
-// -------------------------------------------------------------------------------
-// 	Script Name : Headgear to Costume converter >> Costume to Headgear converter
-// -------------------------------------------------------------------------------
-// Description :
-// - Allows a user to convert the equipped headgear (on Top, Mid or Low) into a
-//   costume item. It will remove any card and refine of the Item.
-// - Allows a user to restore the equipped costume headgear (on Top, Mid or Low)
-//    into its original form. It will not return any card or refine of the item.
-// -------------------------------------------------------------------------------
- //     Script Name : Headgear to Costume converter >> Costume to Headgear converter
- // -------------------------------------------------------------------------------
- // Description :
- // - Allows a user to convert the equipped headgear (on Top, Mid or Low) into a
- //   costume item. It will remove any card and refine of the Item.
- // - Allows a user to restore the equipped costume headgear (on Top, Mid or Low)
- //   into its original form. It will not return any card or refine of the item.
- // -------------------------------------------------------------------------------
-quiz_02,150,367,1	script	Costume Clown	715,{
-	 .@npc_name$ = getarg(0);
-	 disable_items;
-	 mes "[ ^FF7700Costume Clown^000000 ]";
-	 mes "Here you can convert your headgears into a Costume Headgear or restore to its Original form.";
-	 next;
-	 mes "[ ^FF7700Costume Clown^000000 ]";
-	 mes "I cannot convert Rental or bounded items into costume.";
-	 next;
-	 mes "[ ^FF7700Costume Clown^000000 ]";
-	 mes "I will require 1 Costume Ticket to transform an ordinary headgear into a costume.";
-	 mes "";
-	 mes "Restoring a costume back to it's original form will cost ^9900002,000,000^000000 Zeny.";
-	 next;
-	 switch(select("I want to convert.:I want to restore.:No thanks.")) {
-	 case 1:
-		 setarray .@indices[1], EQI_HEAD_TOP, EQI_HEAD_MID, EQI_HEAD_LOW;
-		 for (.@i = 1; .@i<=3; ++.@i) {
-			 if (getequipisequiped(.@indices[.@i])) {
-				 .@menu$ = .@menu$ + F_getpositionname(.@indices[.@i]) + "-[" + getequipname(.@indices[.@i]) + "]";
-				 .@equipped = 1;
-			 }
-			 .@menu$ = .@menu$ + ":";
-		 }
-		 if (.@equipped == 0) {
-			 mes "[ ^FF7700Costume Clown^000000 ]";
-			 mes "You need to wear headgears that I can costume...";
-			 close;
-		 }
-		 if (countitem(60000) < 1){
-		 mes "You do not have the Costume Ticket from your inventory.";
-		 close;
-		 }
-		 mes "[ ^FF7700Costume Clown^000000 ]";
-		 mes "Please select what to convert.";
-		 mes "^FF0000 Take note: ^0000FF";
-		 mes "^0B27F3 I cannot convert items that has a refine OR a card inserted. ^0000FF";
-		 next;
-		 .@part = .@indices[ select(.@menu$) ];
-		 if (!getequipisequiped(.@part)) {
-			 mes "[ ^FF7700Costume Clown^000000 ]";
-			 mes "You're not wearing anything there...";
-			 close;
-		 }
-		 getinventorylist;
-			 for (.@i = 0; .@i < @inventorylist_count; .@i++) {
-			 //    mes "test " + getequipid(EQI_HEAD_TOP) + " test";
-  //     if (@inventorylist_bound[.@i]) {
-  //          mes "you are wearing "+ @inventorylist_equip[.@i];
- //        mes "you are wearin1g "+   @inventorylist_id[.@i] ;
- //        mes "wew" + getequipid(.@part);
- //close;
- //
-  //      }
+//===== rAthena Script =======================================
+//= Costumes NPCs.
+//===== Description: =========================================
+//= [Official Conversion]
+//= Costumes exchange/enchant NPCs in Malangdo.
+//= The database of the following box are left empty
+//= until high items ID are supported:
+//=   Enchant_Stone_Box19
+//=   Enchant_Stone_Box20
+//=   Enchant_Stone_Box21
+//===== Changelogs: ==========================================
+//= 1.0 First version. [Capuche]
+//============================================================
 
-				 if (@inventorylist_expire[.@i]) {
-					 if (@inventorylist_equip[.@i] > 0 && @inventorylist_id[.@i] == getequipid(.@part)){
-						 mes "Your item ( ^FF0000"+ getitemname(getequipid(.@part)) + "^0000FF ) is rental. I cannot convert this item.";
-						 mes "";
-					 close;
-					 }
-				 }
-				 if (@inventorylist_bound[.@i] ) {
-					 if (@inventorylist_equip[.@i] > 0 && @inventorylist_id[.@i] == getequipid(.@part)){
-						 mes "Your item ( ^FF0000"+ getitemname(getequipid(.@part)) + "^0000FF ) is bounded. I cannot convert this item";
-						 mes"";
-					 close;
-					 }
-				 }
+// Costume exchange
+quiz_02,150,367,1	script	Designer Heidam#eventhat	4_CAT_SAILOR5,{
+	if (checkweight(1301,1) == 0) {
+		mes "- Please stop here!! -";
+		mes "- You have carried too much items, -";
+		mes "- Therefore unable receive any item again, -";
+		mes "- Please reduce your weight, -";
+		mes "- And come back again later! -";
+		close;
+	}
+	disable_items;
+	mes "[Designer Heidam]";
+	mes "I am Designer Heidam, who has all kinds of cool costumes in the World.";
+	mes "If you have any Kitcoins with you, come look for Designer Heidam!";
+	next;
+	if (select( "Exchange costume for random enchant box", "Continue conversation" ) == 2) {
+		mes "[Designer Heidam]";
+		mes "Though I look out of shape right now, I used to be a well known fashion model and designer!";
+		next;
+		mes "[Designer Heidam]";
+		mes "Don't pity me! I am well aware of my looks, but I like who I am inside.";
+		close;
+	}
+	mes "[" + strcharinfo(0) + "]";
+	mes "This item is useless to me! Do you have anything else?";
+	next;
+	mes "[Designer Heidam]";
+	mes "Oh, then I can exchange it for a box of costume enchantment items.";
+	next;
+	mes "- Rummaging -";
+	next;
+	// ===================================================================
+	// =================== Costume Enchant Stone Box 4 ===================
+	// ===================================================================
+	.@box_list[0] = 22826;		// Enchant_Stone_Box4
+	setarray .@item_list_0[0],
+		19608,		// C_Chick_Hat
+		19654,		// C_J_Captain_Hat
+		19712,		// C_Little_Angel_Doll
+		19721,		// C_Darkness_Helm
+		19823,		// C_White_Cat_Hood
+		19876,		// C_Rabbit_Ear_Hat
+		20036,		// C_Sword_Master_Crown
+		20145,		// C_Robo_Eye
+		20146,		// C_Angel_Spirit
+		20147,		// C_Bell_Pigeon
+		20746;		// C_Rudra_Wing
+	// ===================================================================
+	// =================== Costume Enchant Stone Box 5 ===================
+	// ===================================================================
+	.@box_list[1] = 22868;		// Enchant_Stone_Box5
+	setarray .@item_list_1[0],
+		19601,		// Drooping_Aliot
+		19643,		// C_Whikebain_Ears
+		19787,		// C_Devoted_Eyes
+		19836,		// C_L_Magestic_Goat
+		19912,		// C_Cat_Eye
+		19928,		// C_Gothic_Heart_Wing
+		19930,		// C_Angel_Mini_Silk_Hat
+		19668,		// C_Wind_Milestone
+		20070,		// C_Alpaca_Hood
+		20115,		// C_Under_Rim_Glasses
+		20130,		// C_Whisper_Tall_Hat
+		20132,		// C_Subject_Aura
+		20133,		// C_Poring_Mascot_Costume
+		20199,		// C_Evil_Marcher_Hat
+		20200,		// C_Rabbit_Head_Dress
+		20202,		// C_Deviruchi_Balloon
+		20217,		// C_Arabian_Veil
+		20224,		// C_Red_Tailed_Ribbon
+		20230,		// C_Mask_Of_Bankrupt
+		20231,		// C_Snowman_Hat
+		20232,		// C_Celines_Ribbon
+		20233,		// C_Gold_Angel_Sculpture
+		20263,		// C_Hat_Of_Drowsy_Cat
+		20761,		// C_Wing_Of_Happiness
+		20798;		// GrimReaper_Protection
+	// ===================================================================
+	// =================== Costume Enchant Stone Box 6 ===================
+	// ===================================================================
+	.@box_list[2] = 22905;		// Enchant_Stone_Box6
+	setarray .@item_list_2[0],
+		19954,		// C_3D_Glasses
+		20071,		// C_Worg_In_Mouth
+		20239,		// C_Large_Ribbon_Muffler
+		20242,		// C_Snownow_Hat
+		20273,		// C_Soft_Sheep_Hat
+		20762;		// C_GreatDevilWing
+	// ===================================================================
+	// =================== Costume Enchant Stone Box 7 ===================
+	// ===================================================================
+	.@box_list[3] = 22953;		// Enchant_Stone_Box7
+	setarray .@item_list_3[0],
+		18740,		// C_Hair_Of_The_Strong
+		19815,		// C_Lolita_Ten_Gallon_Hat
+		20255,		// C_Love_Cheek
+		20266,		// C_Secret_Zipper
+		20268,		// C_Sleep_Eclipse_Family
+		20286,		// C_Under_Rim_Glasses_Red
+		20329,		// C_Tare_HSchool_Doll_Hat
+		20330;		// C_Sombrero
+	// ===================================================================
+	// =================== Costume Enchant Stone Box 8 ===================
+	// ===================================================================
+	.@box_list[4] = 23001;		// Enchant_Stone_Box8
+	setarray .@item_list_4[0],
+		19158,		// C_Gemini_Eyes
+		19816,		// C_Pecopeco_Cap
+		19925,		// C_One_Eyed_Glasses
+		20071,		// C_Worg_In_Mouth
+		20125,		// C_Mini_Glasses
+		20201,		// C_Banshee_Master_Kiss
+		20204,		// C_Hunting_Cap
+		20235,		// C_Frozen_Land_Rose
+		20253,		// C_Droopy_Alice_Doll
+		20254,		// C_Ribbon_Yellow
+		20258,		// C_Blue_Head_Dress
+		20264,		// C_Blood_Sucker
+		20266,		// C_Secret_Zipper
+		20270,		// C_Gryphon_Wing_Ears
+		20315,		// C_Analyze_Eye
+		20318,		// C_Charleston_Antenna
+		20340,		// C_Straight_Pony_BL
+		20341,		// C_Cowlick_BL
+		20342,		// C_Loose_Wave_Twin_BL
+		20349,		// C_FlyingGalapago
+		20350,		// C_Cowlick_YL
+		20351,		// C_Cowlick_GN
+		20352,		// C_Cowlick_PP
+		20353,		// C_Cowlick_RD
+		20354,		// C_Cowlick_OM
+		20355,		// C_Cowlick_BU
+		20356,		// C_Cowlick_WH
+		20357,		// C_Straight_Pony_YL
+		20358,		// C_Straight_Pony_GN
+		20359,		// C_Straight_Pony_PP
+		20360,		// C_Straight_Pony_RD
+		20361,		// C_Straight_Pony_OM
+		20362,		// C_Straight_Pony_BU
+		20363,		// C_Straight_Pony_WH
+		20364,		// C_Loose_Wave_Twin_YL
+		20365,		// C_Loose_Wave_Twin_GN
+		20366,		// C_Loose_Wave_Twin_PP
+		20367,		// C_Loose_Wave_Twin_RD
+		20368,		// C_Loose_Wave_Twin_OM
+		20369,		// C_Loose_Wave_Twin_BU
+		20370,		// C_Loose_Wave_Twin_WH
+		20396,		// C_Woodie_Hat
+		20448,		// C_Cons_Of_Water
+		20457,		// C_Feather_Fluttering
+		20487,		// C_Floral_Waltz
+		20489,		// C_Pope_Crown
+		20504,		// C_Cupid_Wing_Pink
+		20299,		// C_Face_Crusher
+		19598,		// C_Wondering_Wolf_Helm
+		20300;		// C_Hill_Wind_Mask
+	// ===================================================================
+	// =================== Costume Enchant Stone Box 9 ===================
+	// ===================================================================
+	.@box_list[5] = 23058;		// Enchant_Stone_Box9
+	setarray .@item_list_5[0],
+		18744,		// C_World_Star
+		19600,		// Drooping_Kiehl
+		19760,		// C_Rainbow_Veil
+		19761,		// C_White_Lily
+		19978,		// C_Silver_Exclamation
+		19979,		// C_Golden_Question
+		20172,		// C_Pumpkin_Head
+		20180,		// C_Westren_Grace
+		20278,		// C_Man_Medal
+		20325,		// C_Little_Aquarium
+		20344,		// C_Happy_Balloon_J
+		20398,		// C_Niflheim_Bunny_Hat
+		20399,		// C_Crow_Tengu_Mask
+		20404,		// C_Blessing_Of_Angels
+		20405,		// C_Eremes_Scarf
+		20447,		// C_Small_Poring_Band
+		31331,		// C_Chung_E_Shinyon_Cap
+		31372,		// C_Binit_Doll_Hat
+		31430,		// C_Seppl_Hat_TW
+		31431;	// C_Curupira_Hat_TW
+	// ====================================================================
+	// =================== Costume Enchant Stone Box 10 ===================
+	// ====================================================================
+	.@box_list[6] = 23086;		// Enchant_Stone_Box10
+	setarray .@item_list_6[0],
+		20430,		// C_Morocc_Kid_Servant
+		20432,		// C_Khalitzburg_KN_Helm
+		20433,		// C_Louise_Red_Hat
+		20440,		// C_Tone_Of_Gold
+		20458,		// C_Wild_Poring_Rider
+		20459,		// C_Valhalla_Idol
+		20464,		// C_Monochrome_RibbonHat
+		20491,		// C_Laser_Of_Eagle
+		20502,		// C_Devil_Wing
+		20507,		// C_Poring_Bag
+		31087,		// C_Dwarf_Beard
+		31088;		// C_Mad_Hatter
+	// ====================================================================
+	// =================== Costume Enchant Stone Box 11 ===================
+	// ====================================================================
+	.@box_list[7] = 23174;		// Enchant_Stone_Box11
+	setarray .@item_list_7[0],
+		5909,		// C_Valkyrie_Circlet
+		5979,		// C_Angel_Fluttering
+		19745,		// C_Holy_Marching_Hat_J
+		19825,		// C_Vicious_Stop_Bandage
+		20149,		// C_Hexagon_Spectacles
+		20381,		// C_Steampunk_Hat
+		20383,		// C_Magicdecoy_Doll
+		20483,		// C_Butterfly_Barrettes
+		20490,		// C_Full_Bloom_Hp_Blue
+		20499,		// C_Cat_Ear_Hat
+		20509,		// C_Wings_of_Uriel
+		31029,		// C_Pig_Nose
+		31032,		// C_Tare_Luwmin
+		31040,		// C_Magical_Feather
+		31055,		// C_Poring_Soap_Pipe
+		31057,		// C_Eremes_Scarf_Black
+		31062,		// C_Eleanor_Wig
+		31063,		// C_Hair_Bun_BU
+		31064,		// C_Hair_Bun_RD
+		31065,		// C_Hair_Bun_YL
+		31066,		// C_Hair_Bun_GN
+		31067,		// C_Hair_Bun_BL
+		31068,		// C_Hair_Bun_WH
+		31069,		// C_Hair_Bun_OM
+		31070,		// C_Hair_Bun_PP
+		31071,		// C_Roll_Twin_BU
+		31072,		// C_Roll_Twin_RD
+		31073,		// C_Roll_Twin_YL
+		31074,		// C_Roll_Twin_GN
+		31075,		// C_Roll_Twin_BL
+		31076,		// C_Roll_Twin_WH
+		31077,		// C_Roll_Twin_OM
+		31078,		// C_Roll_Twin_PP
+		31079,		// C_Long_Pony_BU
+		31080,		// C_Long_Pony_RD
+		31081,		// C_Long_Pony_YL
+		31082,		// C_Long_Pony_GN
+		31083,		// C_Long_Pony_BL
+		31084,		// C_Long_Pony_WH
+		31085,		// C_Long_Pony_OM
+		31086,		// C_Long_Pony_PP
+		31120,		// C_Vampire_Familiar
+		31123,		// C_Ghostring_Tall_Hat
+		31125,		// C_QueenAnzRevenge
+		31118,		// C_Assassin_Skull_Mask
+		31370,		// C_Straight_Long_YLK
+		31376,		// C_Jirant_Circlet
+		31391,		// C_Floating_Stone_Of_Int
+		31418,		// C_Leek_In_Mouth
+		20508,		// C_Poster_Girl_Hat
+		20530,		// C_Wings_of_Gabriel
+		19555;		// C_Crescent_Helm
+	// ====================================================================
+	// =================== Costume Enchant Stone Box 12 ===================
+	// ====================================================================
+	.@box_list[8] = 23299;		// Enchant_Stone_Box12
+	setarray .@item_list_8[0],
+		20156,		// C_Fan_In_Mouth
+		20195,		// C_Scratching_Cat
+		20449,		// C_White_Black_Temp
+		20511,		// C_Blue_Fairy_Wing
+		20514,		// C_Thanatos_Sword
+		20765,		// C_Archangel_Wing
+		31134,		// C_Happy_Parrot_J
+		31136,		// C_Clock_Casket
+		31160,		// C_RuneHelm
+		31162,		// C_Shaving_Foam
+		31165,		// C_Piggyback
+		31186,		// C_Black_Cat
+		31300,		// C_Warm_Cat_Muffler
+		31327;		// C_Stretched_Nose_M
+		// 31627;		// C_L_Magesic2_TW
+	// ====================================================================
+	// =================== Costume Enchant Stone Box 13 ===================
+	// ====================================================================
+	.@box_list[9] = 23524;		// Enchant_Stone_Box13
+	setarray .@item_list_9[0],
+		20488,		// C_Pope_Ribbon
+		20495,		// C_Quati_Hat_J
+		31031,		// C_Tare_Pope_Casual
+		31033,		// C_BelieversCap
+		31122,		// C_Bloody_Stop_Bandage
+		31164,		// C_Brown_Stall
+		31166,		// C_Teddy_Bear_Hood
+		31168,		// C_Mouton_Life_BL
+		31178,		// C_Flame_Muffler
+		31294,		// C_Jirant_Circlet_Red
+		31397,		// C_Pope_Sitting_Head
+		31545,		// C_Eremes_Scarf_BU
+		// 31626,		// C_FluffyWing_TW
+		31628;		// C_Bogy_Cap_TW
+	// ====================================================================
+	// =================== Costume Enchant Stone Box 14 ===================
+	// ====================================================================
+	.@box_list[10] = 23629;		// Enchant_Stone_Box14
+	setarray .@item_list_10[0],
+		31415,		// C_Wanderer_Sakkat
+		19289,		// C_Moon_Eyepatch
+		19291,		// C_Shiba_Inu
+		19294,		// C_CatEars_Cyber_HeadP_R
+		19763,		// C_Leaf_Cat_Hat
+		20376,		// C_Memories_Of_Lovers
+		20493,		// C_Wing_Headphone
+		20498,		// C_Elephant_Hat
+		20516,		// C_Wings_of_Michael
+		31180,		// C_Shura_King_Pledge
+		31329,		// C_Alice_Wig
+		31332,		// Khalitzburg_KN_Helm_BL
+		31414,		// C_Cancer_Diadem
+		31504;		// C_Starving_Fish_Hat
+	// ====================================================================
+	// =================== Costume Enchant Stone Box 15 ===================
+	// ====================================================================
+	.@box_list[11] = 23682;		// Enchant_Stone_Box15
+	setarray .@item_list_11[0],
+		19723,		// C_Sacred_Torch_Coronet
+		19953,		// C_Parade_Cap
+		19959,		// C_Drooping_Argiope
+		19960,		// C_Chain_Puppet
+		19992,		// C_Chilly_Breath
+		20179,		// C_Monkey_On_Fur_Hat
+		20510,		// C_SwordWing
+		20515,		// C_Magic_Circle
+		20517,		// C_GiantCatBag_TW
+		31152,		// C_Piamette_BowTie_Red
+		31314,		// C_Ghost_Holiday
+		31396,		// C_Sorcerer_Hood
+		31398,		// C_Blinking_Thin_Eyes
+		31432,		// C_Luwmin_Ice
+		31433,		// C_Astro_Circle
+		31437,		// C_Baby_Penguin
+		31439,		// C_Fluffy_Heart_Earmuffs
+		31452,		// C_White_Cat
+		31460,		// C_Blessing_Sky_Lantern
+		31463,		// C_Flying_Drone
+		31498,		// C_Elephangel_TH
+		// 31722,		// C_Sedora_Hat
+		31412;		// C_Virgo_Crown
+	// ====================================================================
+	// =================== Costume Enchant Stone Box 16 ===================
+	// ====================================================================
+	// Note: The reward is 'Costume Enchant Stone Box 16' on items description but Enchant_Stone_Box21 in the file
+	.@box_list[12] = 100314;		// Enchant_Stone_Box21
+	setarray .@item_list_12[0],
+		20033,		// C_Buddhist_Priest_Crown
+		20098,		// C_Vampire_Hairband
+		20171,		// C_Sepia_Cap
+		20174,		// C_Halloween_Hat_Orange
+		20395,		// C_BlackWitchHat
+		20482,		// C_Heaven_Cage
+		20533,		// C_PinkButterfly_Wing_T
+		20535,		// C_Digital_Space
+		20543,		// C_Halloween_Poring_Bag
+		31139,		// C_White_Rabbit_Ear
+		31249,		// C_Rabbit_Hopping
+		31489,		// C_Bouquet_Hat
+		31490,		// C_Poring_Muffler
+		31529,		// C_Happy_Rabbit_Ribbon
+		31606;		// C_Autumn_Headband
+	// ====================================================================
+	// =================== Costume Enchant Stone Box 17 ===================
+	// ====================================================================
+	.@box_list[13] = 100314;		// Enchant_Stone_Box21
+	setarray .@item_list_13[0],
+		19990,		// C_Snow_Rabbit_Knit_Hat
+		20175,		// C_Diabolic_Headphone
+		20546,		// C_Backside_Ribbon_Bell
+		20764,		// C_Fallen_Angel_Wing
+		31440,		// C_Snow_Bear_Food
+		31565,		// C_Princess_Ribbon_Crown
+		31586,		// C_Poporing_Muffler
+		31616,		// C_Sleep_Sheep_TW
+		31625,		// C_Protect_Cloth
+		31693;		// C_LunaticMuffler
+	// ====================================================================
+	// =================== Costume Enchant Stone Box 18 ===================
+	// ====================================================================
+	.@box_list[14] = 100314;		// Enchant_Stone_Box21
+	setarray .@item_list_14[0],
 
-			 }
-		 if ( getequiprefinerycnt(.@part) >= 1 ) {
-			 mes "[ ^FF7700Costume Clown^000000 ]";
-			 mes "Your item (" + getitemname(getequipid(.@part)) + ") that you want to convert has a refine. I cannot convert this to costume.";
-			 close;
-		 }
-		 set .@cardcount,getequipcardcnt(.@part);
-		 if(.@cardcount > 0) {
-			 mes "[ ^FF7700Costume Clown^000000 ]";
-			 mes "Young one... There are card/s compounded on this item (" + getitemname(getequipid(.@part)) + "). I can do nothing with it, I'm afraid.";
-			 close;
-		 }
-		 mes "[ ^FF7700Costume Clown^000000 ]";
-		 mes "You want to Costume your " + getitemname(getequipid(.@part)) + "?";
-		 next;
-
-		 if (select("Yes, proceed:No, sorry.") == 2) {
-			 mes "["+ .@npc_name$ + "]";
-			 mes "Need some time to think about it, huh?";
-			 mes "Alright, I can understand.";
-			 close;
-		 }
-
-		 costume .@part; // Convert the Headgear
-		 delitem 60000,1;
-		 mes "[ ^FF7700Costume Clown^000000 ]";
-		 mes "Done, enjoy your costume headgear.";
-		 close;
-	 case 2:
-		 setarray .@indices[1], EQI_COSTUME_HEAD_TOP, EQI_COSTUME_HEAD_MID, EQI_COSTUME_HEAD_LOW;
-		 for (.@i = 1; .@i<=3; ++.@i) {
-			 if (getequipisequiped(.@indices[.@i])) {
-				 .@menu$ = .@menu$ + F_getpositionname(.@indices$[.@i]) + "-[" + getequipname(.@indices[.@i]) + "]";
-				 .@equipped = 1;
-			 }
-			 .@menu$ = .@menu$ + ":";
-		 }
-
-		 if (.@equipped == 0) {
-			 mes "[ ^FF7700Costume Clown^000000 ]";
-			 mes "You need to wear costumed headgears that I can restore...";
-			 close;
-		 }
-
-		 mes "[ ^FF7700Costume Clown^000000 ]";
-		 mes "Please select what to restore.";
-		 mes "Remember, I will only restore it back without refine and cards.";
-		 mes "I also need 2,000,000 Zeny to restore.";
-		 next;
-
-		 .@part = .@indices[ select(.@menu$) ];
-		 if (!getequipisequiped(.@part)) {
-			 mes "[ ^FF7700Costume Clown^000000 ]";
-			 mes "You're not wearing anything there...";
-			 close;
-		 }
-		 if (Zeny < 2000000) {
-		 mes " You do not have enough Zeny. I require 2,000,000 Zeny to use my service.";
-		 close;
-		 }
-		 if (isequippedcnt(getequipid(.@part)) > 1) {
-			 mes "[ ^FF7700Costume Clown^000000 ]";
-			 mes "You're wearing too many of the same headgear!";
-			 mes "How am I supposed to know which one to restore?";
-			 mes "See me when you have one equipped.";
-			 close;
-		 }
-
-		 if (countitem(getequipid(.@part)) > 1) {
-			 mes "[ ^FF7700Costume Clown^000000 ]";
-			 mes "You have another " + getitemname(getequipid(.@part)) + " with you.";
-			 mes "Put it away before restoring.";
-			 close;
-		 }
-
-		 mes "[" + .@npc_name$ + "]";
-		 mes "You want to restore your " + getitemname(getequipid(.@part)) + "?";
-		 next;
-
-		 if (select("Yes, proceed:No, sorry.") == 2) {
-			 mes "[ ^FF7700Costume Clown^000000 ]";
-			 mes "Need some time to think about it, huh?";
-			 mes "Alright, I can understand.";
-			 close;
-		 }
-
-		 // Restore headgear by recreating
-		 a = getequipid(.@part);
-		 delitem a,1;
-		 getitem a,1;
-		 set Zeny, Zeny-2000000;
-		 mes "[ ^FF7700Costume Clown^000000 ]";
-		 mes "Done, enjoy your restored headgear.";
-		 close;
-	 case 3:
-		 mes "[ ^FF7700Costume Clown^000000 ]";
-		 mes "Very well. Return at once if you seek my services.";
-		 close;
-	 }
- }
-
- // ---------------------------------------------------------------------------
- // Add more lines to put your npc on different cities (adjust name if desired)
- // ---------------------------------------------------------------------------
- prontera,155,177,5    script    Costume Clown#1    715,{
- callfunc "costume","Costume Clown",0;
- end;
- }
 //quiz_02,150,367,4	duplicate(Costume Clown)	Costume Clown	951
