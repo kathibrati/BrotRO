@@ -5,107 +5,94 @@
 // - Allows a user to convert the equipped headgear (on Top, Mid or Low) into a
 //   costume item. It will remove any card and refine of the Item.
 // - Allows a user to restore the equipped costume headgear (on Top, Mid or Low)
-     into its original form. It will not return any card or refine of the item.
-// -------------------------------------------------------------------------------
-// -------------------------------------------------------------------------------
-
-//  Script Name : Headgear to Costume converter >> Costume to Headgear converter
-
+//    into its original form. It will not return any card or refine of the item.
 // -------------------------------------------------------------------------------
 
-// Description :
+quiz_02,150,367,6	script	Costume Clown	715,{
+	mes "[Clown]";
+	mes "Here you can convert your headgears into a Costume Headgear or restore to its Original form.";
+	switch(select("I want to convert.:I want to restore.:No thanks.")) {
+	case 1:
+			next;
+			mes "Please, select what to convert.";
+			mes "Remember, cards and refine will be removed.";
+			next;
+				setarray .@Position$[1],"Top","Mid","Low";
+				setarray .@Position[1],     256,    512,   1;
+				set .@Menu$,"";
+			for( set .@i, 1; .@i < 5; set .@i, .@i + 1 )
+			{
+				if( getequipisequiped(.@Position[.@i]) )
+				set .@Menu$, .@Menu$ + .@Position$[.@i] + "-" + "[" + getequipname(.@Position[.@i]) + "]";
+				set .@Menu$, .@Menu$ + ":";
+			}
+			set .@Part, .@Position[ select(.@Menu$) ];
+			if( !getequipisequiped(.@Part) )
+			{
+				mes "[Clown]";
+				mes "Your not wearing anything there...";
+				close;
+			}
+			mes "[Clown]";
+			mes "You want to Costume your " + getitemname(getequipid(.@Part)) + "?";
+			next;
+			if( select("Yes, proceed:No, I am sorry.") == 2 )
+			{
+				mes "[Clown]";
+				mes "Need some time to think about it, huh?";
+				mes "Alright, I can understand.";
+				close;
+			}
+			costume .@Part; // Convert the Headgear
+			mes "[Clown]";
+			mes "Done, enjoy your costume headgear.";
+			close;
+	case 2:
+			next;
+			mes "Please, select what to restore.";
+			mes "Remember, I will only restore it back without refine and cards.";
+			next;
+				setarray .@Position$[1],"Top","Mid","Low";
+				setarray .@Position[1],     256,    512,   1;
+				set .@Menu$,"";
+			for( set .@i, 1; .@i < 5; set .@i, .@i + 1 )
+			{
+				if( getequipisequiped(.@Position[.@i]) )
+				set .@Menu$, .@Menu$ + .@Position$[.@i] + "-" + "[" + getequipname(.@Position[.@i]) + "]";
+				set .@Menu$, .@Menu$ + ":";
+			}
+			set .@Part, .@Position[ select(.@Menu$) ];
+			if( !getequipisequiped(.@Part) )
+			{
+				mes "[Clown]";
+				mes "Your not wearing anything there...";
+				close;
+			}
+			mes "[Clown]";
+			mes "You want to restore your " + getitemname(getequipid(.@Part)) + "?";
+			next;
+			if( select("Yes, proceed:No, I am sorry.") == 2 )
+			{
+				mes "[Clown]";
+				mes "Need some time to think about it, huh?";
+				mes "Alright, I can understand.";
+				close;
+			}
+			a = getequipid(.@Part);
+			delitem a,1;
+			getitem a,1;
 
-// - Allows a user to convert the equipped headgear (on Top, Mid or Low) into a
-
-//   costume item. It will remove any card and refine of the Item.
-
-// - Allows a user to restore the equipped costume headgear (on Top, Mid or Low)
-
-     into its original form. It will not return any card or refine of the item.
-
-// -------------------------------------------------------------------------------
-
-
-quiz_02,150,367,6	script	Costume Clown	951,{
-
-mes "Neste npc você poderá converte seus Equipamentos para cabeça em itens visuais.";
-
-next;
-
-mes "Por favor, selecione o que você deseja converter.";
-
-mes "Lembre-se, cartas, atributos dos  equipamentos e refinamentos serão perdidos...";
-
-next;
-
-setarray .@Position$[1],"Cima","Meio","Baixo";
-
-setarray .@Position[1],     1,    9,   10;
-
-
-
-set .@Menu$,"";
-
-for( set .@i, 1; .@i < 4; set .@i, .@i + 1 )
-
-{
-
-if( getequipisequiped(.@Position[.@i]) )
-
-set .@Menu$, .@Menu$ + .@Position$[.@i] + "-" + "[" + getequipname(.@Position[.@i]) + "]";
-
-
-
-set .@Menu$, .@Menu$ + ":";
-
+			mes "[Clown]";
+			mes "Done, enjoy your restored headgear.";
+			close;
+	case 3:
+		mes "[Clown]";
+		mes "Very well. Return at once if you seek my services.";
+		close;
+	}
 }
-
-
-
-set .@Part, .@Position[ select(.@Menu$) ];
-
-if( !getequipisequiped(.@Part) )
-
-{
-
-mes "Você não está utilizando nada lá...";
-
-close;
-
-}
-
-
-
-mes "Você deseja transforma este item " + getitemname(getequipid(.@Part)) + " em visual?";
-
-next;
-
-if( select("Sim, continuar com o processo.:Não, Desculpe-me.") == 2 )
-
-{
-
-mes "Precisa de algum tempo para pensar sobre isso, hein?";
-
-mes "Tudo bem, eu posso entender.";
-
-close;
-
-}
-
-
-
-costume .@Part; // Convert the Headgear
-
-mes "Processo finalizado com sucesso, faça um bom uso do seu equipamento visual ^^.";
-
-close;
-
-end;
-
-}
-
-
 // --------------------------------------------------------------------------
 // Use duplicates to put your npc on different cities
 // --------------------------------------------------------------------------
-quiz_02,150,367,4	duplicate(Costume Clown)	Costume Clown	951
+//prontera,155,181,4	duplicate(Costume Clown)	Costume Clown#1	715
+//quiz_02,150,367,4	duplicate(Costume Clown)	Costume Clown	951
