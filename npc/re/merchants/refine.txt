@@ -677,7 +677,7 @@ OnInit:
 	end;
 }
 payon,137,178,5	duplicate(Dietrich#ns_prt)	Hakhim#2	4_M_ORIENT01
-quiz_02,144,367,5	duplicate(Dietrich#ns_prt)	Hakhim#2	4_M_ORIENT01
+quiz_02,144,367,5	duplicate(Dietrich#ns_prt)	Achim#2	4_M_ORIENT01
 morocc_in,72,32,3	duplicate(Dietrich#ns_prt)	Abdula#2	4W_M_03
 alberta_in,21,63,5	duplicate(Dietrich#ns_prt)	Xenophon#ns_albe	4_M_02
 yuno_in01,164,27,4	duplicate(Dietrich#ns_prt)	Delight#2	4_M_ORIENT01
