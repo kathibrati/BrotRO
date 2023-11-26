@@ -565,7 +565,7 @@ payon,144,173,5	script	Antonio	4_M_ORIENT01,{
 	}
 }
 
-quiz_02,141,367,3	script	Antonio	4_M_ORIENT01,{
+quiz_02,141,367,2	script	Antonio	4_M_ORIENT01,{
 	if( getbattleflag( "feature.refineui" ) ){
 		mes "[Antonio]";
 		mes "Stop nagging and get me the equipment you want to refine.";
@@ -988,7 +988,7 @@ payon,145,178,3	script	Begnahd	88,{
 	callfunc "phramain","Begnahd";
 	end;
 }
-quiz_02,144,367,2	script	Begnahdi	88,{
+quiz_02,144,367,1	script	Begnahdi	88,{
 	callfunc "phramain","Begnahdi";
 	end;
 }
