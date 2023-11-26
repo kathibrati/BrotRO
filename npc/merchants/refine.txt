@@ -1106,6 +1106,10 @@ payon,137,178,5	script	Hakhim	88,{
 	callfunc "orimain","Hakhim";
 	end;
 }
+quiz_02,147,367,5	script	Achim	88,{
+	callfunc "orimain","Achim";
+	end;
+}
 morocc_in,72,32,6	script	Abdula	99,{
 	callfunc "orimain","Abdula";
 	end;
