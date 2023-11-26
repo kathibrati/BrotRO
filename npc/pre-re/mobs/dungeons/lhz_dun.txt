@@ -96,12 +96,12 @@ lhz_dun02,0,0,0,0	boss_monster	Egnigem Cenia	1658,1,7200000,600000,1
 //========================================================================================
 // lhz_dun03 - Bio-life Labs 3F
 //========================================================================================
-lhz_dun03,140,235,116,30	monster	Seyren Windsor	1634,20
-lhz_dun03,140,235,116,30	monster	Eremes Guile	1635,20
-lhz_dun03,140,235,116,30	monster	Howard Alt-Eisen	1636,20
-lhz_dun03,140,235,116,30	monster	Margaretha Sorin	1637,20
-lhz_dun03,140,235,116,30	monster	Cecil Damon	1638,20
-lhz_dun03,140,235,116,30	monster	Kathryne Keyron	1639,20
+lhz_dun03,0,0	monster	Seyren Windsor	1634,20
+lhz_dun03,0,0	monster	Eremes Guile	1635,20
+lhz_dun03,0,0	monster	Howard Alt-Eisen	1636,20
+lhz_dun03,0,0	monster	Margaretha Sorin	1637,20
+lhz_dun03,0,0	monster	Cecil Damon	1638,20
+lhz_dun03,0,0	monster	Kathryne Keyron	1639,20
 
 //lhz_dun03,40,214,16,16	monster	Seyren Windsor	1634,1,120000,60000
 //lhz_dun03,40,214,16,16	monster	Eremes Guile	1635,1,120000,60000
