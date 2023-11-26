@@ -14,27 +14,40 @@ quiz_02,156,367,1	script	HE Trader	4_CAT_SAILOR5,{
 	mes "that ye wanna get rid 'o?";
 	next;
 	set .@s, select( "No! Goood bye.", "Trade-in Elunium", "Trade-in Oridecon" );
-	if( .@s == 1 ) {
-		mes "^0000ff[Capt. Krauser]^000000";
-		mes "Okay 'ave a nice day.";
-	}
-	else if( .@s == 2 && countitem(985)>= 100) {
-		delitem 985,100; //Elunium
-		giveitem 6241,1; //HE-Elunium
-		mes "^0000ff[Capt. Krauser]^000000";
-		mes "There ya go!";
-		next;
-		mes "^0000ff[Capt. Krauser]^000000";
-		mes "These loots might come in handy fer ye someday too mate!";
-	}
-	else if( .@s == 3 && countitem(984)>= 100) {
-		delitem 984,100; //Oridecon
-		giveitem 6240,1; //HE-Oridecon
-		mes "^0000ff[Capt. Krauser]^000000";
-		mes "There ya go!";
-		next;
-		mes "^0000ff[Capt. Krauser]^000000";
-		mes "These loots might come in handy fer ye someday too mate!";
+
+	switch (.@s) {
+		case 1:
+			mes "^0000ff[Capt. Krauser]^000000";
+			mes "Okay 'ave a nice day.";
+			break;
+		case 2:
+			if (countitem(985) >= 100) {
+				delitem 985, 100; // Elunium
+				giveitem 6241, 1; // HE-Elunium
+				mes "^0000ff[Capt. Krauser]^000000";
+				mes "There ya go!";
+				next;
+				mes "^0000ff[Capt. Krauser]^000000";
+				mes "These loots might come in handy fer ye someday too mate!";
+			} else {
+				mes "^0000ff[Capt. Krauser]^000000";
+				mes "Ye don't have enough Eluniums, mate!";
+			}
+			break;
+		case 3:
+			if (countitem(984) >= 100) {
+				delitem 984, 100; // Oridecon
+				giveitem 6240, 1; // HE-Oridecon
+				mes "^0000ff[Capt. Krauser]^000000";
+				mes "There ya go!";
+				next;
+				mes "^0000ff[Capt. Krauser]^000000";
+				mes "These loots might come in handy fer ye someday too mate!";
+			} else {
+				mes "^0000ff[Capt. Krauser]^000000";
+				mes "Ye don't have enough Oridecons, mate!";
+			}
+			break;
 	}
 }
 //quiz_02,150,367,4	duplicate(Costume Clown)	Costume Clown	951
