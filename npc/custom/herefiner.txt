@@ -8,7 +8,7 @@
 //============================================================
 
 // Costume exchange
-quiz_02,150,367,1	script	Costume Cat	4_CAT_SAILOR5,{
+quiz_02,156,367,1	script	Costume Cat	4_CAT_SAILOR5,{
 mes "^0000ff[Capt. Krauser]^000000";
 	mes "Ahoy mate! Do ye have spare Eluniums or Oridecons?";
 	mes "that ye wanna get rid 'o?";
