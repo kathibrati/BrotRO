@@ -13,30 +13,86 @@
 //============================================================
 
 // Costume exchange
-quiz_02,150,367,1	script	Costume Clown	4_CAT_SAILOR5,{
-mes "[ Costume Exchanger ]";
-mes "Hello there!";
-mes "I can help you exchange your item into a costume by chance";
-mes "Do you want to continue?";
-next;
-switch(select("Costume Exchange:Maybe next time.")) {
-case 1:
-if((countitem(5389)>=1) && (Zeny > 99)) {
-	progressbar "ffff00",7;
-	delitem 5389,1;
-	set Zeny, Zeny-99;
-	mes "[ Costume Exchanger ]";
-	if(rand(100) < 50) {
-	mes "Here you are!";
-	getitem 20146,1;
-	close;
+quiz_02,150,367,1	script	Costume Cat	4_CAT_SAILOR5,{
+mes "^0000ff[Capt. Krauser]^000000";
+	mes "Ahoy mate! Do ye have spare costumes";
+	mes "that ye wanna get rid 'o?";
+	next;
+	set .@s, select( "No! Goood bye.", "Trade-in Costumes", "More information" );
+	if( .@s == 1 ) {
+		mes "^0000ff[Capt. Krauser]^000000";
+		mes "Okay 'ave a nice day.";
 	}
+    else if( .@s == 3 ) {
+		mes "^0000ff[Capt. Krauser]^000000";
+		mes "I needs more clothes fer me mates fer our adventures in th' sea, so I be buyin' some fer these ^00ff00Pirate Doubloons^000000 that we 'ave!";
+		next;
+		mes "^0000ff[Capt. Krauser]^000000";
+		mes "These loots might come in handy fer ye someday too mate!";
 	}
 
-case 2:
-mes "[ Costume Exchanger ]";
-mes "Come and see me again!";
-close;
-}
+	getinventorylist;
+	.@calc = 1024|2048|4096|8192;// to lazy to calculate
+	for( set .@i, 0; .@i < @inventorylist_count; set .@i, .@i + 1 )
+		if( !@inventorylist_expire[.@i] ) {
+			if ( getiteminfo( @inventorylist_id[.@i],5 ) & .@calc ) {
+				for( set .@j, 0; .@j < @inventorylist_amount[.@i]; set .@j, .@j + 1 ) {
+					set .@list_id[ .@size_shop ], @inventorylist_id[.@i];
+					set .@size_shop, .@size_shop + 1;
+				}
+			}
+		}
+
+	if( !.@size_shop ) {
+		mes "^0000ff[Capt. Krauser]^000000";
+		mes "Shiver me timbers!  I don't see any costumes on yer booty mate!";
+	} else {
+		mes "^0000ff[Capt. Krauser]^000000";
+		mes "Okay, here's a list o' th' costumes in yer loot.";
+		next;
+		npcshopitem "costume_shop",501,-1;
+		for( set .@i, 0; .@i < .@size_shop; set .@i, .@i + 1 )
+			npcshopadditem "costume_shop",.@list_id[.@i],0;
+		npcshopdelitem "costume_shop",501;
+		callshop "costume_shop", 1;
+		npcshopattach "costume_shop";
+	}
+	end;
+
+OnBuyItem:
+	if( !checkweight2( .reward_ID,.reward_amount ) ) {
+		message strcharinfo(0),"You need additional weight capacity to complete this trade.";
+		close;
+	 }
+	set .@count, getarraysize( @bought_nameid );
+	for( set .@i, 0; .@i < .size_count; set .@i, .@i + 1 ) {// don't check the weight..
+		set .@check, .reward_amount[.@i] * .@count;
+		if( .@check > 30000 ) {
+			message strcharinfo(0),"You can't purchase that many "+ getitemname( .reward_ID[.@i] ) +".";
+			end;
+		}
+		set .@gain$, .@gain$ + ( getstrlen( .@gain$ ) ? ", " : "" ) + .@check +" "+ getitemname( .reward_ID[.@i] );
+	}
+	mes "Sell the costume for "+ .@gain$ +"?";
+	next;
+	if( select( "Yes, I sell", "No" ) -1 ) end;
+
+	for( set .@i, 0; .@i < .@count; set .@i, .@i + 1 )
+		if ( countitem( @bought_nameid[.@i] ) < @bought_quantity[.@i] ) {
+			mes "Have you lost one item?";
+			close;
+		}
+	for( set .@i, 0; .@i < .@count; set .@i, .@i + 1 )
+		delitem @bought_nameid[.@i], @bought_quantity[.@i];
+	for( set .@i, 0; .@i < .size_count; set .@i, .@i + 1 )
+		getitem .reward_ID[.@i], .reward_amount[.@i] * .@count;
+	mes "Nice doin' business wit' ye!";
+	close;
+
+OnInit:
+	setarray .reward_ID, 7875; // item ID gained - you can add more ID <item ID>, <item ID>,...
+	setarray .reward_amount, 1; // item count gained - ( count of the item /element of array of .reward_ID )
+	set .size_count, getarraysize( .reward_amount );
+	end;
 }
 //quiz_02,150,367,4	duplicate(Costume Clown)	Costume Clown	951
