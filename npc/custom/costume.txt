@@ -23,7 +23,7 @@ mes "^0000ff[Capt. Krauser]^000000";
 		mes "^0000ff[Capt. Krauser]^000000";
 		mes "Okay 'ave a nice day.";
 	}
-    else if( .@s == 3 ) {
+	if( .@s == 3 ) {
 		mes "^0000ff[Capt. Krauser]^000000";
 		mes "I needs more clothes fer me mates fer our adventures in th' sea, so I be buyin' some fer these ^00ff00Pirate Doubloons^000000 that we 'ave!";
 		next;
