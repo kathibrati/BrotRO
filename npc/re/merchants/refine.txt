@@ -1,4 +1,4 @@
-//===== rAthena Script ======================================= 
+//===== rAthena Script =======================================
 //= Renewal Refining NPCs
 //===== By: ==================================================
 //= rAthena Dev Team
@@ -110,7 +110,7 @@ function	script	refinenew	{
 	.@material = getequiprefinecost(.@part, REFINE_COST_NORMAL, REFINE_MATERIAL_ID);
 	.@safe = 10;
 	.@itemtype = getiteminfo( .@refineitemid, ITEMINFO_TYPE );
-	
+
 	if( .@itemtype == IT_WEAPON ){
 		.@article$ = "a";
 		.@type$ = "weapon";
@@ -227,7 +227,7 @@ function	script	refinenew	{
 	} else
 		.@menu2 = 2;
 	switch(.@menu2){
-	case 1: 
+	case 1:
 		.@refinecnt = .@safe - .@refinerycnt;
 		break;
 	case 2:
@@ -455,7 +455,7 @@ malangdo,224,172,6	script	Clink#mal_normal	544,{
 		mes "Perfect refining. Did I do this for you?";
 		close;
 	}
-	
+
 	.@refineitemid = getequipid(.@part); // save id of the item
 	setarray .@card[0], getequipcardid(.@part,0), getequipcardid(.@part,1), getequipcardid(.@part,2), getequipcardid(.@part,3);
 	.@price = getequiprefinecost(.@part, REFINE_COST_NORMAL, REFINE_ZENY_COST);
@@ -610,7 +610,7 @@ OnInit:
 		npcshopupdate "market_refine_yuno_in01",1010,200,999999;
 		npcshopupdate "market_refine_ein_in01",1010,200,999999;
 		npcshopupdate "market_refine_lhz_in02",1010,200,999999;
-		
+
 		npcshopupdate "market_refine_prt_in",1011,1000,999999;
 		npcshopupdate "market_refine_payon",1011,1000,999999;
 		npcshopupdate "market_refine_morocc_in",1011,1000,999999;
@@ -677,6 +677,7 @@ OnInit:
 	end;
 }
 payon,137,178,5	duplicate(Dietrich#ns_prt)	Hakhim#2	4_M_ORIENT01
+quiz_02,144,367,5	duplicate(Dietrich#ns_prt)	Hakhim#2	4_M_ORIENT01
 morocc_in,72,32,3	duplicate(Dietrich#ns_prt)	Abdula#2	4W_M_03
 alberta_in,21,63,5	duplicate(Dietrich#ns_prt)	Xenophon#ns_albe	4_M_02
 yuno_in01,164,27,4	duplicate(Dietrich#ns_prt)	Delight#2	4_M_ORIENT01
