@@ -18,7 +18,7 @@ quiz_02,150,367,6	script	Costume Clown	715,{
 			mes "Remember, cards and refine will be removed.";
 			next;
 				setarray .@Position$[1],"Top","Mid","Low";
-				setarray .@Position[1],     256,    512,   1;
+				setarray .@Position[1],     EQI_HEAD_TOP,    EQI_HEAD_MID,   EQI_HEAD_LOW;
 				set .@Menu$,"";
 			for( set .@i, 1; .@i < 5; set .@i, .@i + 1 )
 			{
