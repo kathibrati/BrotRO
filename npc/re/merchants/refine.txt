@@ -602,6 +602,7 @@ OnInit:
 		unloadnpc "Delight";
 		unloadnpc "Matestein";
 		unloadnpc "Fruel";
+		unloadnpc "Achim";
 
 		npcshopupdate "market_refine_prt_in",1010,200,999999;
 		npcshopupdate "market_refine_payon",1010,200,999999;
