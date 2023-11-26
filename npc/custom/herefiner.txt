@@ -13,7 +13,7 @@ quiz_02,156,367,1	script	HE Trader	4_CAT_SAILOR5,{
         mes "Pssst, ehy you!";
         mes "Hand me ^0000FF100 Oridecon or Elunium^000000 and you might get the HE version out of it!";
         mes "There's no refund... are you sure you want it?";
-        mes "^0000FF10 percent chance to get the smelting right...";
+        mes "^0000FF70^000000 percent chance to get the smelting right...";
         next;
  switch(select("Make Enriched Oridecon:Make Enriched Elunium:Nevermind")) {
         case 1:
@@ -21,10 +21,12 @@ quiz_02,156,367,1	script	HE Trader	4_CAT_SAILOR5,{
             next;
                 if(countitem(984) >= 100) {
                     set @rand,rand(1,100);
-                        if(@rand <= 10) {
+                        if(@rand <= 70) {
                             delitem 984,100;
-                            getitem 7620,1;
-                            mes "Congrats you just made an Enriched Oridecon.";
+                            getitem 6240,1;
+                            mes "Congrats you just made an HD Oridecon.";
+                            mes "This item's density ensures that refine attempts will";
+                            mes "not break the weapon and if the attempt fails it will only downgrade by 1.";
                             emotion 21;
                             close;
                         } else {
@@ -41,10 +43,12 @@ quiz_02,156,367,1	script	HE Trader	4_CAT_SAILOR5,{
             next;
                 if(countitem(985) >= 100) {
                     set @rand,rand(1,100);
-                    if(@rand <= 10) {
+                    if(@rand <= 70) {
                             delitem 985,100;
-                            getitem 7619,1;
-                            mes "Congrats you just made a Enriched Elunium.";
+                            getitem 6241,1;
+                            mes "Congrats you just made a HD Elunium.";
+                            mes "This item's density ensures that refine attempts will";
+                            mes "not break the armor and if the attempt fails it will only downgrade by 1.";
                             emotion 21;
                             close;
                         } else {
