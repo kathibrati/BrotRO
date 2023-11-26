@@ -988,6 +988,10 @@ payon,145,178,3	script	Begnahd	88,{
 	callfunc "phramain","Begnahd";
 	end;
 }
+quiz_02,144,367,3	script	Begnahdi	88,{
+	callfunc "phramain","Begnahdi";
+	end;
+}
 morocc_in,63,32,6	script	Sade	99,{
 	callfunc "phramain","Sade";
 	end;

@@ -591,6 +591,7 @@ OnInit:
 	if (getbattleflag("feature.barter")) {
 		unloadnpc "Vurewell";
 		unloadnpc "Begnahd";
+		unloadnpc "Begnahdi";
 		unloadnpc "Sade";
 		unloadnpc "Kahlamanlith";
 		unloadnpc "Dilemma";
