@@ -7,7 +7,7 @@
 // - Allows a user to restore the equipped costume headgear (on Top, Mid or Low)
      into its original form. It will not return any card or refine of the item.
 // -------------------------------------------------------------------------------
--	script	Costume Clown	-1,{
+quiz_02,150,367,6	script	Costume Clown	951,{
 	mes "[Clown]";
 	mes "Here you can convert your headgears into a Costume Headgear or restore to its Original form.";
 	switch(select("I want to convert.:I want to restore.:No thanks.")) {
@@ -93,4 +93,4 @@
 // --------------------------------------------------------------------------
 // Use duplicates to put your npc on different cities
 // --------------------------------------------------------------------------
-quiz_02,150,367,4	duplicate(Costume Clown)	Costume Clown#1	715
+quiz_02,150,367,4	duplicate(Costume Clown)	Costume Clown	951
