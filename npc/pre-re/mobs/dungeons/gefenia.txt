@@ -18,8 +18,8 @@
 // gefenia01 - Geffenia
 //==================================================
 gefenia01,0,0	monster	False Angel	1371,60
-gefenia01,0,0	monster	Succubus	1370,10
-gefenia01,0,0	monster	Incubus	1374,10
+gefenia01,0,0	monster	Succubus	1370,100
+gefenia01,0,0	monster	Incubus	1374,100
 gefenia01,0,0	monster	Violy	1390,30
 gefenia01,0,0	monster	Mini Demon	1292,20
 gefenia01,0,0	monster	Abysmal Knight	1219,10
