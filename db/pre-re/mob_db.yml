@@ -41495,6 +41495,8 @@ Body:
           Rate: 50
         - Item: Jellopy
           Rate: 50
+        - Item: C_PoringBeret_TW
+          Rate: 1
         - Item: C_Rune_Hairband
           Rate: 1
         - Item: C_SavageB_On_Shoulder
