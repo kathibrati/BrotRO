@@ -14,7 +14,7 @@
 //============================================================
 
 //prontera,148,174,5	script	Private MVP Room	100,{
-payon,184,90,5	script	Private MVP Room	100,{
+payon,183,90,3	script	Private MVP Room	100,{
 	mes "[Private MVP Room]";
 	mes "Please select a private MVP room.";
 	if ( getvariableofnpc( .rentcost, "MVP Summoner" ) )
