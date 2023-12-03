@@ -6692,11 +6692,11 @@ Body:
     Buy: 2
     Weight: 10
     Trade:
-      NoDrop: true
-      NoTrade: true
-      NoSell: true
-      NoCart: true
-      NoGuildStorage: true
+      NoDrop: false
+      NoTrade: false
+      NoSell: falsefalse
+      NoCart: false
+      NoGuildStorage: false
       NoMail: true
       NoAuction: true
     Script: |
