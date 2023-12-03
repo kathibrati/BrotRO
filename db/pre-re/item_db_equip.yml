@@ -28239,8 +28239,8 @@ Body:
     Refineable: true
     View: 264
     Trade:
-      NoDrop: true
-      NoSell: true
+      NoDrop: false
+      NoSell: false
       NoGuildStorage: true
     Script: |
       bonus bCastrate,-3;
@@ -29810,12 +29810,12 @@ Body:
     EquipLevelMin: 70
     View: 314
     Trade:
-      NoDrop: true
-      NoSell: true
+      NoDrop: false
+      NoSell: false
       NoGuildStorage: true
     Script: |
       bonus bSpeedRate,25;
-      bonus bAspdRate,-10;
+      bonus bAspdRate,5;
       bonus bCastrate,25;
   - Id: 5287
     AegisName: Vacation_Hat
