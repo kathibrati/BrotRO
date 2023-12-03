@@ -13,7 +13,8 @@
 //= 1.0 First version, edited. [Euphy]
 //============================================================
 
-prontera,148,174,5	script	Private MVP Room	100,{
+//prontera,148,174,5	script	Private MVP Room	100,{
+payon,184,90,5	script	Private MVP Room	100,{
 	mes "[Private MVP Room]";
 	mes "Please select a private MVP room.";
 	if ( getvariableofnpc( .rentcost, "MVP Summoner" ) )
@@ -228,9 +229,9 @@ OnInit:
 	// Do NOT set this to zero!
 	set .timeout, 60;
 
-	set .rentcost, 100000;	// Zeny cost for renting a room (0 = free)
-	set .mvpcost, 100000;	// Zeny cost to summon an MVP (0 = free)
-	set .bosscost, 50000;	// Zeny cost to summon a boss monster (0 = free)
+	set .rentcost, 1000;	// Zeny cost for renting a room (0 = free)
+	set .mvpcost, 1000000;	// Zeny cost to summon an MVP (0 = free)
+	set .bosscost, 500000;	// Zeny cost to summon a boss monster (0 = free)
 
 	//	Options setting inside MVP room
 	set .@menu[1], 1;	// Turn Heal option On/Off
@@ -239,9 +240,9 @@ OnInit:
 	set .@menu[4], 0;	// Sell items (branches) On/Off (see shop below, before the mapflags)
 
 	// Respawn point when players leave the room
-	set .respawnmap$, "prontera";
-	set .respawnx, 150;
-	set .respawny, 174;
+	set .respawnmap$, "payon";
+	set .respawnx, 173;
+	set .respawny, 94;
 
 	setarray .mvpid[0],
 		1511,//	Amon Ra
