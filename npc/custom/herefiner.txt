@@ -2,13 +2,13 @@
 //= Costumes NPCs.
 //===== Description: =========================================
 //= Exhcange Amounts of Elunium/Oridecon for corresponding
-//= HD Version of it.
+//= HE Version of it.
 //===== Changelogs: ==========================================
 //= 1.0 First version. [Toast]
 //============================================================
 
 // HE Ori exchanger
-quiz_02,165,367,1	script	HE Trader	726,{
+quiz_02,156,367,1	script	HE Trader	4_CAT_SAILOR5,{
         mes "[HE Trader]";
         mes "Pssst, ehy you!";
         mes "Hand me ^0000FF100 Oridecon or Elunium^000000 and you might get the HE version out of it!";
@@ -27,7 +27,7 @@ quiz_02,165,367,1	script	HE Trader	726,{
                             getitem 6635,2;
                             mes "Congrats you just made an Enriched Oridecon.";
                             mes "This item's density ensures that refine attempts will";
-                            mes "increse your success chance immensely for upgrade attempts.";
+                            mes "increase your success chance immensely for upgrade attempts.";
                             mes "^0000FFBlacksmiths Blessing^000000 will protect your items beginning at upgrade lvl 7!";
                             emotion 21;
                             close;
@@ -49,9 +49,9 @@ quiz_02,165,367,1	script	HE Trader	726,{
                             delitem 985,100;
                             getitem 7619,1;
                             getitem 6635,2;
-                            mes "Congrats you just made a Enriched Elunium.";
+                            mes "Congrats you just made an Enriched Elunium.";
                             mes "This item's density ensures that refine attempts will";
-                            mes "increse your success chance immensely for upgrade attempts.";
+                            mes "increase your success chance immensely for upgrade attempts.";
                             mes "^0000FFBlacksmiths Blessing^000000 will protect your items beginning at upgrade lvl 7!";
                             emotion 21;
                             close;
