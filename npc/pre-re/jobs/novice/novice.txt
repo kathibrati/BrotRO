@@ -561,7 +561,7 @@ new_1-2,99,105,3	script	Interfaces Tutor#nv1	751,{
 			getitem 2112,1; //Novice_Guard
 			getitem 5055,1; //Novice_Egg_Cap
 			getitem 601,20; //Wing_Of_Fly
-			getitem 602,3; //Wing_Of_Butterfly
+			getitem 602,10; //Wing_Of_Butterfly
 			getitem 7059,5; //Cargo_Free_Ticket
 			getitem 7060,5; //Warp_Free_Ticket
 			getitem 611,2; //Spectacles

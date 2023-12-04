@@ -38,7 +38,7 @@ namespace rathena{
 extern int login_fd; //login file descriptor
 extern int char_fd; //char file descriptor
 
-#define MAX_STARTPOINT 5
+#define MAX_STARTPOINT 1
 #define MAX_STARTITEM 32
 
 enum e_char_delete {
@@ -242,7 +242,7 @@ struct online_char_data {
 	short server; // -2: unknown server, -1: not connected, 0+: id of server
 	bool pincode_success;
 
-public: 
+public:
 	online_char_data( uint32 account_id );
 };
 
