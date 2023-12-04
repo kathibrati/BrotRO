@@ -17,7 +17,7 @@ quiz_02,165,367,1	script	HD Trader	726,{
         mes "There's no refund... are you sure you want it?";
         mes "^0000FF70^000000 percent chance to get the smelting right...";
         next;
- switch(select("Make Enriched Oridecon:Make Enriched Elunium:Nevermind")) {
+ switch(select("Make HD Oridecon:Make HD Elunium:Nevermind")) {
         case 1:
             mes "I will need 25 pcs of Oridecon.";
             next;
