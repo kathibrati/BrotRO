@@ -2,29 +2,31 @@
 //= Costumes NPCs.
 //===== Description: =========================================
 //= Exhcange Amounts of Elunium/Oridecon for corresponding
-//= HD Version of it.
+//= HE Version of it.
 //===== Changelogs: ==========================================
 //= 1.0 First version. [Toast]
 //============================================================
 
-// HE Ori exchanger
-quiz_02,165,367,1	script	HE Trader	726,{
+// HD Ori/Elu exchanger
+quiz_02,156,367,1	script	HE Trader	4_CAT_SAILOR5,{
         mes "[HE Trader]";
         mes "Pssst, ehy you!";
-        mes "Hand me ^0000FF100 Oridecon or Elunium^000000 and you might get the HE version out of it!";
+        mes "Hand me ^0000FF25 Oridecon or Elunium^000000 and you might get the HD version out of it!";
+        mes "HD Refining Materials won't higher your chances but your items wont break in the attempt!";
+        mes "Failed attempts result in refine degrade by 1 level";
         mes "There's no refund... are you sure you want it?";
         mes "^0000FF70^000000 percent chance to get the smelting right...";
         next;
  switch(select("Make Enriched Oridecon:Make Enriched Elunium:Nevermind")) {
         case 1:
-            mes "I will need 100 pcs of Oridecon.";
+            mes "I will need 25 pcs of Oridecon.";
             next;
-                if(countitem(984) >= 100) {
+                if(countitem(984) >= 25) {
                     set @rand,rand(1,100);
                         if(@rand <= 70) {
-                            delitem 984,100;
+                            delitem 984,25;
                             getitem 7620,1;
-                            getitem 6635,2;
+                            getitem 6635,1;
                             mes "Congrats you just made an Enriched Oridecon.";
                             mes "This item's density ensures that refine attempts will";
                             mes "increse your success chance immensely for upgrade attempts.";
@@ -32,7 +34,7 @@ quiz_02,165,367,1	script	HE Trader	726,{
                             emotion 21;
                             close;
                         } else {
-                        delitem 984,100;
+                        delitem 984,25;
                         mes "Sorry! Failed to make item.";
                         emotion 23;
                         close;
@@ -41,14 +43,14 @@ quiz_02,165,367,1	script	HE Trader	726,{
                 mes "You do not have enough Oridecon.";
                 close;
         case 2:
-            mes "I will need 100 pcs of Elunium.";
+            mes "I will need 25 pcs of Elunium.";
             next;
-                if(countitem(985) >= 100) {
+                if(countitem(985) >= 25) {
                     set @rand,rand(1,100);
                     if(@rand <= 70) {
-                            delitem 985,100;
+                            delitem 985,25;
                             getitem 7619,1;
-                            getitem 6635,2;
+                            getitem 6635,1;
                             mes "Congrats you just made a Enriched Elunium.";
                             mes "This item's density ensures that refine attempts will";
                             mes "increse your success chance immensely for upgrade attempts.";
@@ -56,7 +58,7 @@ quiz_02,165,367,1	script	HE Trader	726,{
                             emotion 21;
                             close;
                         } else {
-                    delitem 985,100;
+                    delitem 985,25;
                     mes "Sorry! Failed to make item.";
                     emotion 23;
                     close;
