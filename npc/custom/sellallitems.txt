@@ -1,0 +1,31 @@
+payon,160,99,5	script	Sell All Items	757,{
+getinventorylist;
+.@overcharge_lv = getskilllv( "MC_OVERCHARGE" );
+if( .@overcharge_lv )
+	.@overcharge_rate = 105 + ( 2  * .@overcharge_lv ) - ( ( .@overcharge_lv >= 10 )? 1:0 );
+while( .@i < @inventorylist_count ){
+	if( !@inventorylist_equip[.@i] ){
+		.@item_sell_price = getiteminfo( @inventorylist_id[.@i],1 );
+		if( .@overcharge_lv )
+			.@item_sell_price = ( ( .@item_sell_price * .@overcharge_rate ) / 100 );
+		mes " > "+@inventorylist_amount[.@i]+ "x " +getitemname( @inventorylist_id[.@i] )+" : "+.@item_sell_price+"z";
+		.@cost += .@item_sell_price * @inventorylist_amount[.@i];
+	}
+	.@i++;
+}
+if( .@cost ){
+	if( select( "Sell all items for "+.@cost+" zeny?","Cancel" ) == 1 ){
+		.@i = 0;
+		while( .@i < @inventorylist_count ){
+			if( !@inventorylist_equip[.@i] )
+				delitem @inventorylist_id[.@i],@inventorylist_amount[.@i];
+			.@i++;
+		}
+		Zeny += .@cost;
+		mes "Gained "+.@cost+" zeny.";
+	}
+}else{
+	mes "You don't have any items to sell.";
+}
+close;
+}
