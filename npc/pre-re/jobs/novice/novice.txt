@@ -2296,15 +2296,15 @@ thief:
 new_1-3,0,0	monster	Poring	1002,20
 new_1-3,0,0	monster	Fabre	1184,10
 new_1-3,0,0	monster	Drops	1113,20
-new_1-3,0,0	monster	Lunatic	1063,30
+new_1-3,0,0	monster	Lunatic	1063,20
 new_1-3,0,0	monster	Condor	1009,20
 new_1-3,0,0	monster	Picky	1050,20
-new_1-3,0,0	monster	Willow	1010,40
-new_1-3,0,0	monster	Roda Frog	1012,40
-new_1-3,0,0	monster	Rocker	1052,40
+new_1-3,0,0	monster	Willow	1010,20
+new_1-3,0,0	monster	Roda Frog	1012,20
+new_1-3,0,0	monster	Rocker	1052,20
 new_1-3,0,0	monster	Thief Bug	1051,10
 new_1-3,0,0	monster	Thief Bug	1053,10
-new_1-3,0,0	monster	Spore	1014,40
+new_1-3,0,0	monster	Spore	1014,20
 
 new_2-3,0,0	monster	Condor	1009,20
 new_2-3,0,0	monster	Picky	1050,20
