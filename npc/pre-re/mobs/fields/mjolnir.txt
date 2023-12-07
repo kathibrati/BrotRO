@@ -156,12 +156,12 @@ mjolnir_06,55,276	monster	Red Mushroom	1085,1,180000,90000
 //==================================================
 // mjolnir_07 - Mt.Mjolnir
 //==================================================
-mjolnir_07,0,0	monster	Poison Spore	1077,60
+mjolnir_07,0,0	monster	Poison Spore	1077,120
 mjolnir_07,0,0	monster	Ambernite	1094,30
 mjolnir_07,0,0	monster	Coco	1104,20
 mjolnir_07,0,0	monster	Horn	1128,20
 mjolnir_07,0,0	monster	Poporing	1031,20
-mjolnir_07,0,0	monster	Hornet	1004,20
+mjolnir_07,0,0	monster	Hornet	1004,120
 mjolnir_07,314,133	monster	Green Plant	1080,1,180000,90000
 mjolnir_07,299,145	monster	Green Plant	1080,1,180000,90000
 mjolnir_07,272,152	monster	Green Plant	1080,1,180000,90000
