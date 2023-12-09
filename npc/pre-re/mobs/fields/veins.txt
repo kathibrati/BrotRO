@@ -85,5 +85,5 @@ ve_fild07,256,76,75,37	monster	Shellfish	1074,7
 ve_fild07,0,0	monster	Raggler	1254,24
 ve_fild07,64,126,35,55	monster	Raggler	1254,4
 ve_fild07,256,76,75,37	monster	Raggler	1254,7
-ve_fild07,0,0	monster	Side Winder	1037,70
+ve_fild07,0,0	monster	Side Winder	1037,200
 ve_fild07,0,0	monster	White Plant	1082,10,600000
