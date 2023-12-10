@@ -276,6 +276,7 @@ OnInit:
 		1147,//	Maya
 		1059,//	Mistress
 		1150,//	Moonlight Flower
+		2022,//	Nidhoggur
 		1087,//	Orc Hero
 		1190,//	Orc Lord
 		1038,//	Osiris
