@@ -12,7 +12,7 @@ quiz_02,248,382,3	script	Erundek	109,{
 	}
 	mes "[Erundek]";
 	mes "Do you have the battlefield badges?";
-	mes "I can exchange Gold Coins and Zeny for reward items.";
+	mes "I can exchange Gold Coins and Mithril Coins for reward items.";
 	next;
 	switch(select("Exchange Currency:Check the Catalog")) {
 	case 1:
@@ -25,7 +25,7 @@ quiz_02,248,382,3	script	Erundek	109,{
 			mes "[Erundek]";
 			mes "You chose ^3131FFWeapon^000000.";
 			mes "The following weapons are available for exchange with the battlefield badges.";
-			mes "Please note that items for ^3131FFBravery Badges are indicated as (BB)^000000, and ^3131FFValor Badges as (VB)^000000.";
+			mes "Please note that items for ^3131FFGold Coins are indicated as (GC)^000000, and ^3131FFMithril Coins as (MC)^000000.";
 			next;
 			switch(select("Dagger/OneSword/TwoSword/TwoSpear:Staff/Mace/TwoAxe/Shuriken:Bow/Katar/Music/Whip:Book/Knuckle:Revolver/Rifle/Gatling/Shotgun/Launcher")) {
 			case 1:
@@ -61,9 +61,9 @@ quiz_02,248,382,3	script	Erundek	109,{
 			}
 			set .@menu$,"";
 			for(set .@i,0; .@i<getarraysize(.@Weapons); set .@i,.@i+2)
-				set .@menu$, .@menu$+getitemname(.@Weapons[.@i])+((.@Weapons[.@i+1]==7929)?"(BB)":"(VB)")+":";
+				set .@menu$, .@menu$+getitemname(.@Weapons[.@i])+((.@Weapons[.@i+1]==7929)?"(GC)":"(MC)")+":";
 			set .@i, (select(.@menu$)-1)*2;
-			set .@type$, ((.@Weapons[.@i+1]==7929)?"(BB)":"(VB)");
+			set .@type$, ((.@Weapons[.@i+1]==7929)?"(GC)":"(MC)");
 			mes "[Erundek]";
 			mes "You chose ^3131FF"+getitemname(.@Weapons[.@i])+.@type$+"^000000.";
 			mes "You can exchange for this item with ^FF0000100 "+getitemname(.@Weapons[.@i+1])+"^000000.";
