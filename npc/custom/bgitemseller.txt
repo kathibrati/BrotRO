@@ -1,0 +1,189 @@
+// Badges Exchange
+//============================================================
+//bat_room,160,150,3	script	Erundek	109,{
+quiz_02,248,382,3	script	Erundek	109,{
+	if (checkweight(1201,1) == 0) {
+		mes "- Wait a minute !! -";
+		mes "- Currently you're carrying -";
+		mes "- too many items with you. -";
+		mes "- Please try again -";
+		mes "- after you loose some weight. -";
+		close;
+	}
+	mes "[Erundek]";
+	mes "Do you have the battlefield badges?";
+	mes "I can exchange Gold Coins and Zeny for reward items.";
+	next;
+	switch(select("Exchange Currency:Check the Catalog")) {
+	case 1:
+		mes "[Erundek]";
+		mes "Which type of items would you like to exchange?";
+		mes "To check more information about the reward items, please use our ^3131FFCatalog^000000.";
+		next;
+		switch(select("Weapon:Armor:Accessory:Consumable")) {
+		case 1:
+			mes "[Erundek]";
+			mes "You chose ^3131FFWeapon^000000.";
+			mes "The following weapons are available for exchange with the battlefield badges.";
+			mes "Please note that items for ^3131FFBravery Badges are indicated as (BB)^000000, and ^3131FFValor Badges as (VB)^000000.";
+			next;
+			switch(select("Dagger/OneSword/TwoSword/TwoSpear:Staff/Mace/TwoAxe/Shuriken:Bow/Katar/Music/Whip:Book/Knuckle:Revolver/Rifle/Gatling/Shotgun/Launcher")) {
+			case 1:
+				mes "[Erundek]";
+				mes "The following items are available in the ^3131FFDagger, One-Handed Sword, Two-Handed Sword, and Two-Handed Spear^000000 category.";
+				next;
+				setarray .@Weapons[0],13036,7929,13037,674,13411,7929,13410,674,1183,7929,1184,674,1425,7929,1482,674;
+				break;
+			case 2:
+				mes "[Erundek]";
+				mes "The following items are available in the ^3131FFStaff / Mace / Two-Handed Axe / Huuma Shuriken^000000 category.";
+				next;
+				setarray .@Weapons[0],1632,7929,1633,674,1634,7929,1635,674,1543,7929,1542,674,1380,7929,1379,674,13305,7929,13306,674;
+				break;
+			case 3:
+				mes "[Erundek]";
+				mes "The following weapons are available in the ^3131FFBow / Katar / Musical Instrument / Whip^000000 category.";
+				next;
+				setarray .@Weapons[0],1739,7929,1738,674,1279,7929,1280,674,1924,7929,1923,674,1978,7929,1977,674;
+				break;
+			case 4:
+				mes "[Erundek]";
+				mes "The following weapons are available in the ^3131FFBook / Knuckle^000000 category.";
+				next;
+				setarray .@Weapons[0],1574,7929,1575,674,1824,7929,1823,674;
+				break;
+			case 5:
+				mes "[Erundek]";
+				mes "The following weapons are available in the ^3131FFRevolver / Rifle / Gatling Gun / Shotgun / Grenade Launcher^000000 category.";
+				next;
+				setarray .@Weapons[0],13108,7929,13171,674,13172,7929,13173,674,13174,674;
+				break;
+			}
+			set .@menu$,"";
+			for(set .@i,0; .@i<getarraysize(.@Weapons); set .@i,.@i+2)
+				set .@menu$, .@menu$+getitemname(.@Weapons[.@i])+((.@Weapons[.@i+1]==7929)?"(BB)":"(VB)")+":";
+			set .@i, (select(.@menu$)-1)*2;
+			set .@type$, ((.@Weapons[.@i+1]==7929)?"(BB)":"(VB)");
+			mes "[Erundek]";
+			mes "You chose ^3131FF"+getitemname(.@Weapons[.@i])+.@type$+"^000000.";
+			mes "You can exchange for this item with ^FF0000100 "+getitemname(.@Weapons[.@i+1])+"^000000.";
+			mes "Would you like to exchange?";
+			next;
+			switch(select("Do not exchange:Exchange")) {
+			case 1:
+				break;
+			case 2:
+				mes "[Erundek]";
+				mes "Would you like to spend ^FF0000100 "+getitemname(.@Weapons[.@i+1])+"^000000 and receive a ^3131FF"+getitemname(.@Weapons[.@i])+.@type$+"^000000?";
+				next;
+				mes "[Erundek]";
+				mes "Remember, Battleground Reward Items are ^FF0000Character Bound^000000. Are you sure you want this item?";
+				next;
+				switch(select("Yes:No")) {
+				case 1:
+					mes "[Erundek]";
+					if (countitem(.@Weapons[.@i+1]) >= 100) {
+						mes "Thank you for exchanging.";
+						delitem .@Weapons[.@i+1],100;
+						getitem .@Weapons[.@i],1;
+					}
+					else mes "I'm sorry, but you don't have enough badges to exchange.";
+					close;
+				case 2:
+					break;
+				}
+				break;
+			}
+			mes "[Erundek]";
+			mes "Do you need more time to check the items?";
+			close;
+		case 2:
+			mes "[Erundek]";
+			mes "You chose ^3131FFArmor^000000.";
+			mes "The following armors are available for exchange with the battlefield badges.";
+			next;
+			switch(select("Garments / Shoes:Armor")) {
+			case 1:
+				setarray .@Items[0],2538,50,2539,50,2540,50,2435,50,2436,50,2437,50;
+				break;
+			case 2:
+				setarray .@Items[0],2376,80,2377,80,2378,80,2379,80,2380,80,2381,80,2382,80;
+				break;
+			}
+			break;
+		case 3:
+			mes "[Erundek]";
+			mes "You chose ^3131FFAccessory^000000.";
+			mes "You can exchange the Medal of Honors with your Badges according to the job classes, as follows:";
+			next;
+			setarray .@Items[0],2733,500,2720,500,2721,500,2722,500,2723,500,2724,500,2725,500;
+			set .@menu1$,"Gunslinger:Swordman/Taekwon Master:Thief:Acolyte:Magician:Archer:Merchant";
+			break;
+		case 4:
+			mes "[Erundek]";
+			mes "You chose ^3131FFConsumable^000000.";
+			mes "The following consumable items are available for exchange with the battlefield badges:";
+			next;
+			setarray .@Items[0],12269,10,12270,10,12271,5,12272,10,12273,10;
+			break;
+		}
+		break;
+	case 2:
+		mes "[Erundek]";
+		mes "We have many items, so please take a look and purchase deliberately.";
+		close2;
+		readbook 11010,1;
+		end;
+	}
+	set .@menu$,"";
+	if (.@menu1$ != "") set .@menu$, .@menu1$;
+	else for(set .@i,0; .@i<getarraysize(.@Items); set .@i,.@i+2)
+		set .@menu$, .@menu$+getitemname(.@Items[.@i])+":";
+	set .@i, (select(.@menu$)-1)*2;
+	mes "[Erundek]";
+	mes "You chose ^3131FF"+getitemname(.@Items[.@i])+"^000000.";
+	switch(.@Items[.@i]) {
+		case 2720: mes "This item is for Swordman and Taekwon Master Class only."; break;
+		case 2721: mes "This item is for Thief Class only."; break;
+		case 2722: mes "This item is for Acolyte Class only."; break;
+		case 2723: mes "This item is for Magician Class only."; break;
+		case 2724: mes "This item is for Archer Class only."; break;
+		case 2725: mes "This item is for Merchant Class only."; break;
+		case 2733: mes "This item is for Gunslinger only."; break;
+		default: break;
+	}
+	mes "You can exchange for this item with ^FF0000"+.@Items[.@i+1]+" "+getitemname(7929)+" or "+.@Items[.@i+1]+" "+getitemname(674)+"^000000.";
+	mes "Would you like to exchange?";
+	next;
+	switch(select("Do not exchange:Exchange")) {
+	case 1:
+		mes "[Erundek]";
+		mes "Do you need more time to check the items?";
+		break;
+	case 2:
+		mes "[Erundek]";
+		mes "Which Badge do you want to exchange?";
+		mes "You need ^3131FF"+.@Items[.@i+1]+" Badges^000000 to exchange.";
+		next;
+		if (.@item[0] < 12269 || .@item[0] > 12273 ) {
+			mes "[Erundek]";
+			mes "Remember, Battleground Reward Items are ^FF0000Character Bound^000000. Are you sure you want this item?";
+			next;
+		}
+		set .@j, select("Gold Coin:Mithril Coin:Cancel");
+		mes "[Erundek]";
+		if (.@j == 3) {
+			mes "You cancelled the exchange.";
+			break;
+		}
+		set .@cost, ((.@j==1)?7929:674);
+		if (countitem(.@cost) >= .@Items[.@i+1]) {
+			mes "Thank you for exchanging.";
+			delitem .@cost, .@Items[.@i+1];
+			getitem .@Items[.@i],1;
+		}
+		else mes "You do not have enough "+getitemname(.@cost)+"s.";
+		break;
+	}
+	close;
+}
