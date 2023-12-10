@@ -83,7 +83,7 @@ quiz_02,125,372,3	shop	Gods selling Godlikes	657,2629:1000000000,2541:1000000000
 
 // Repairman
 //============================================================
-quiz_02,139,367,4	script	Repairman#it	86,{
+quiz_02,139,367,1	script	Repairman#it	86,{
 	callfunc "repairmain","Repairman";
 	end;
 }
