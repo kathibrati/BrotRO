@@ -33501,11 +33501,11 @@ Body:
     Refineable: true
     View: 495
     Trade:
-      NoDrop: true
-      NoSell: true
-      NoGuildStorage: true
-      NoMail: true
-      NoAuction: true
+      NoDrop: false
+      NoSell: false
+      NoGuildStorage: false
+      NoMail: false
+      NoAuction: false
     Script: |
       bonus bStr,2;
   - Id: 5498
