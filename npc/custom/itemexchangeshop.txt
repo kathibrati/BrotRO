@@ -18,7 +18,7 @@ end;
 
 OnInit:
 	//<arg 1: Material;>, <arg 2: Material Amount;>, <arg 3:Prize;>, <arg 4: Prize amount;>,{Repeat}
-	setarray .Exchange[0],523,5,12915,1,
+	setarray .Exchange[0],523,5,12217,5,
 						5007,1,12248,1,
 						904,3,12114,1,
 						946,3,12115,1,
