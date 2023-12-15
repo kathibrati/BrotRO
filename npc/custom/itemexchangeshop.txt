@@ -1,4 +1,4 @@
-quiz_02,167,367,1	script	Kniggerich	619,{
+quiz_02,167,367,1	script	Weapon Element Exchanger	619,{
 
 for(.@i=0;.@i<getarraysize(.Exchange);.@i+=4){
 	mes (++.@x)+". "+.Exchange[.@i+1]+"x "+getitemname(.Exchange[.@i])+" = "+.Exchange[.@i+3]+"x "+getitemname(.Exchange[.@i+2]);
