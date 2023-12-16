@@ -1,8 +1,8 @@
 quiz_02,171,367,1	script	Weapon Element Exchanger	619,{
 
 for (.@i = 0; .@i < getarraysize(.Exchange); .@i += 4) {
-    set .@amountStr1$, .Exchange[.@i+1] > 1 ? " " + .Exchange[.@i+1] + " " : " ";
-    set .@amountStr2$, .Exchange[.@i+3] > 1 ? " " + .Exchange[.@i+3] + " " : " ";
+    set .@amountStr1$, .Exchange[.@i+1] > 1 ? " " + .Exchange[.@i+1] + " " : "";
+    set .@amountStr2$, .Exchange[.@i+3] > 1 ? " " + .Exchange[.@i+3] + " " : "";
     mes (++.@x)+". "+getitemname(.Exchange[.@i+2]);
     set .@menu$, .@menu$ + .@amountStr1$ + getitemname(.Exchange[.@i]) + " to " + .@amountStr2$ + getitemname(.Exchange[.@i+2]) + ":";
 }
@@ -35,8 +35,8 @@ end;
 quiz_02,169,367,1	script	Middle Costume Exchanger	626,{
 
 for (.@i = 0; .@i < getarraysize(.Exchange); .@i += 4) {
-    set .@amountStr1$, .Exchange[.@i+1] > 1 ? " " + .Exchange[.@i+1] + " " : " ";
-    set .@amountStr2$, .Exchange[.@i+3] > 1 ? " " + .Exchange[.@i+3] + " " : " ";
+    set .@amountStr1$, .Exchange[.@i+1] > 1 ? " " + .Exchange[.@i+1] + " " : "";
+    set .@amountStr2$, .Exchange[.@i+3] > 1 ? " " + .Exchange[.@i+3] + " " : "";
     mes (++.@x)+". "+getitemname(.Exchange[.@i+2]);
     set .@menu$, .@menu$ + .@amountStr1$ + getitemname(.Exchange[.@i]) + " to " + .@amountStr2$ + getitemname(.Exchange[.@i+2]) + ":";
 }
@@ -130,8 +130,8 @@ end;
 quiz_02,167,367,1	script	Upper Costume Exchanger	510,{
 
 for (.@i = 0; .@i < getarraysize(.Exchange); .@i += 4) {
-    set .@amountStr1$, .Exchange[.@i+1] > 1 ? " " + .Exchange[.@i+1] + " " : " ";
-    set .@amountStr2$, .Exchange[.@i+3] > 1 ? " " + .Exchange[.@i+3] + " " : " ";
+    set .@amountStr1$, .Exchange[.@i+1] > 1 ? " " + .Exchange[.@i+1] + " " : "";
+    set .@amountStr2$, .Exchange[.@i+3] > 1 ? " " + .Exchange[.@i+3] + " " : "";
     mes (++.@x)+". "+getitemname(.Exchange[.@i+2]);
     set .@menu$, .@menu$ + .@amountStr1$ + getitemname(.Exchange[.@i]) + " to " + .@amountStr2$ + getitemname(.Exchange[.@i+2]) + ":";
 }
