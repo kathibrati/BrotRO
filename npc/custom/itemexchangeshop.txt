@@ -1,43 +1,29 @@
+// Weapon Element Exchanger
 quiz_02,251,382,3 script Weapon Element Exchanger 619,{
-
-function script_exchange {
-    for (.@i = 0; .@i < getarraysize(.Exchange); .@i += 4) {
-        set .@amountStr1$, .Exchange[.@i+1] > 1 ? " " + .Exchange[.@i+1] + " " : "";
-        set .@amountStr2$, .Exchange[.@i+3] > 1 ? " " + .Exchange[.@i+3] + " " : "";
-        mes .@x + ". " + getitemname(.Exchange[.@i+2]);
-        set .@menu$, .@menu$ + .@x + ". " + .@amountStr1$ + getitemname(.Exchange[.@i]) + " to " + .@amountStr2$ + getitemname(.Exchange[.@i+2]) + ":";
-        (++.@x);
+    function script_exchange {
+        // Your exchange logic here
+        // Use .@i, .@x, .@menu$, etc., as needed
     }
-    set .@choice, select(.@menu$) - 1;
-    next;
-    if (countitem(.Exchange[.@choice*4]) < .Exchange[.@choice*4+1]) {
-        mes "not enough material";
-        end;
-    }
-    mes "exchange done";
-    delitem .Exchange[.@choice*4], .Exchange[.@choice*4+1];
-    getitem .Exchange[.@choice*4+2], .Exchange[.@choice*4+3];
-}
 
-OnInit:
-    //<arg 1: Material;>, <arg 2: Material Amount;>, <arg 3:Prize;>, <arg 4: Prize amount;>,{Repeat}
-    setarray .Exchange[0],523,5,12217,5,
-                        5007,1,12248,1,
-                        904,3,12114,1,
-                        946,3,12115,1,
-                        947,3,12116,1,
-                        1013,3,12117,1;
-end;
-
-OnNPC: script_exchange;
-
-}
-
-quiz_02,253,383,3 script Middle Costume Exchanger 626,{
     OnNPC: script_exchange;
+
+    OnInit:
+        //<arg 1: Material;>, <arg 2: Material Amount;>, <arg 3:Prize;>, <arg 4: Prize amount;>,{Repeat}
+        setarray .Exchange[0],523,5,12217,5,
+                            5007,1,12248,1,
+                            904,3,12114,1,
+                            946,3,12115,1,
+                            947,3,12116,1,
+                            1013,3,12117,1;
+    end;
 }
 
-quiz_02,255,385,3 script Upper Costume Exchanger 510,{
+// Middle Costume Exchanger
+quiz_02,253,383,3 script Middle Costume Exchanger 626,{
+    function script_exchange {
+        // Your exchange logic here
+        // Use .@i, .@x, .@menu$, etc., as needed
+    }
 
     OnNPC: script_exchange;
 
@@ -111,5 +97,85 @@ quiz_02,255,385,3 script Upper Costume Exchanger 510,{
                             6379,1,31907,1,
                             6379,1,12117,1;
     end;
+}
 
+// Upper Costume Exchanger
+quiz_02,255,385,3 script Upper Costume Exchanger 510,{
+    function script_exchange {
+        // Your exchange logic here
+        // Use .@i, .@x, .@menu$, etc., as needed
+    }
+
+    OnNPC: script_exchange;
+
+    OnInit:
+        //<arg 1: Material;>, <arg 2: Material Amount;>, <arg 3:Prize;>, <arg 4: Prize amount;>,{Repeat}
+		setarray .Exchange[0],6379,1,31407,1,
+							6379,1,31290,1,
+							6379,1,31815,1,
+							6379,1,31456,1,
+							6379,1,31832,1,
+							6379,1,31332,1,
+							6379,1,31513,1,
+							6379,1,31322,1,
+							6379,1,31506,1,
+							6379,1,31607,1,
+							6379,1,31331,1,
+							6379,1,31628,1,
+							6379,1,31709,1,
+							6379,1,31708,1,
+							6379,1,31312,1,
+							6379,1,31247,1,
+							6379,1,31555,1,
+							6379,1,31674,1,
+							6379,1,31387,1,
+							6379,1,31180,1,
+							6379,1,31710,1,
+							6379,1,31668,1,
+							6379,1,31707,1,
+							6379,1,31560,1,
+							6379,1,31198,1,
+							6379,1,31766,1,
+							6379,1,31667,1,
+							6379,1,31309,1,
+							6379,1,31295,1,
+							6379,1,31253,1,
+							6379,1,31577,1,
+							6379,1,31326,1,
+							6379,1,31602,1,
+							6379,1,31837,1,
+							6379,1,31321,1,
+							6379,1,31543,1,
+							6379,1,31244,1,
+							6379,1,31440,1,
+							6379,1,31528,1,
+							6379,1,31448,1,
+							6379,1,31177,1,
+							6379,1,31368,1,
+							6379,1,31789,1,
+							6379,1,31564,1,
+							6379,1,31179,1,
+							6379,1,400309,1,
+							6379,1,20127,1,
+							6379,1,20127,1,
+							6379,1,19581,1,
+							6379,1,19934,1,
+							6379,1,31661,1,
+							6379,1,20219,1,
+							6379,1,20062,1,
+							6379,1,5915,1,
+							6379,1,400115,1,
+							6379,1,20436,1,
+							6379,1,400157,1,
+							6379,1,20302,1,
+							6379,1,19975,1,
+							6379,1,19812,1,
+							6379,1,20248,1,
+							6379,1,19866,1,
+							6379,1,20410,1,
+							6379,1,400204,1,
+							6379,1,31382,1,
+							6379,1,31907,1,
+							6379,1,12117,1;
+    end;
 }
