@@ -8,8 +8,6 @@ for (.@i = 0; .@i < getarraysize(.Exchange); .@i += 4) {
 }
 
 set .@choice, select(.@menu$) - 1;
-
-set .@choice, select(.@menu$) - 1;
 next;
 if(countitem(.Exchange[.@choice*4])<.Exchange[.@choice*4+1]){
 	mes "not enough material";
@@ -40,9 +38,6 @@ for (.@i = 0; .@i < getarraysize(.Exchange); .@i += 4) {
     mes (++.@x)+". "+getitemname(.Exchange[.@i+2]);
     set .@menu$, .@menu$ + .@amountStr1$ + getitemname(.Exchange[.@i]) + " to " + .@amountStr2$ + getitemname(.Exchange[.@i+2]) + ":";
 }
-
-set .@choice, select(.@menu$) - 1;
-
 set .@choice, select(.@menu$) - 1;
 next;
 if(countitem(.Exchange[.@choice*4])<.Exchange[.@choice*4+1]){
@@ -135,8 +130,6 @@ for (.@i = 0; .@i < getarraysize(.Exchange); .@i += 4) {
     mes (++.@x)+". "+getitemname(.Exchange[.@i+2]);
     set .@menu$, .@menu$ + .@amountStr1$ + getitemname(.Exchange[.@i]) + " to " + .@amountStr2$ + getitemname(.Exchange[.@i+2]) + ":";
 }
-
-set .@choice, select(.@menu$) - 1;
 
 set .@choice, select(.@menu$) - 1;
 next;
