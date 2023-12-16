@@ -119,7 +119,7 @@ end;
 }
 
 
-quiz_02,171,367,1	script	Upper Costume Exchanger	510,{
+quiz_02,167,367,1	script	Upper Costume Exchanger	510,{
 
 for(.@i=0;.@i<getarraysize(.Exchange);.@i+=4){
 	mes (++.@x)+". "+.Exchange[.@i+1]+"x "+getitemname(.Exchange[.@i])+" = "+.Exchange[.@i+3]+"x "+getitemname(.Exchange[.@i+2]);
