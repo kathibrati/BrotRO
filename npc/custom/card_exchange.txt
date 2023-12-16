@@ -514,3 +514,4 @@ L_Exchange:
 	freeloop(0);
 	return;
 }
+quiz_02,249,387,4	duplicate(Card Vendor Machine#pa08)	Card Vendor Machine	562
