@@ -1,31 +1,40 @@
 // Weapon Element Exchanger
-quiz_02,251,382,3 script Weapon Element Exchanger 619,{
-    function script_exchange {
-        // Your exchange logic here
-        // Use .@i, .@x, .@menu$, etc., as needed
-    }
+quiz_02,251,382,3 script Weapon_Element_Exchanger 619,{
 
-    OnNPC: script_exchange;
-
-    OnInit:
-        //<arg 1: Material;>, <arg 2: Material Amount;>, <arg 3:Prize;>, <arg 4: Prize amount;>,{Repeat}
-        setarray .Exchange[0],523,5,12217,5,
-                            5007,1,12248,1,
-                            904,3,12114,1,
-                            946,3,12115,1,
-                            947,3,12116,1,
-                            1013,3,12117,1;
+OnInit:
+    setarray .Exchange[0],523,5,12217,5,
+                        5007,1,12248,1,
+                        904,3,12114,1,
+                        946,3,12115,1,
+                        947,3,12116,1,
+                        1013,3,12117,1;
     end;
+
+function script_exchange {
+    for (.@i = 0; .@i < getarraysize(.Exchange); .@i += 4) {
+        set .@amountStr1$, .Exchange[.@i+1] > 1 ? " " + .Exchange[.@i+1] + " " : "";
+        set .@amountStr2$, .Exchange[.@i+3] > 1 ? " " + .Exchange[.@i+3] + " " : "";
+        mes .@x + ". " + getitemname(.Exchange[.@i+2]);
+        set .@menu$, .@menu$ + .@x + ". " + .@amountStr1$ + getitemname(.Exchange[.@i]) + " to " + .@amountStr2$ + getitemname(.Exchange[.@i+2]) + ":";
+        (++.@x);
+    }
+    set .@choice, select(.@menu$) - 1;
+    next;
+    if (countitem(.Exchange[.@choice*4]) < .Exchange[.@choice*4+1]) {
+        mes "not enough material";
+        end;
+    }
+    mes "exchange done";
+    delitem .Exchange[.@choice*4], .Exchange[.@choice*4+1];
+    getitem .Exchange[.@choice*4+2], .Exchange[.@choice*4+3];
+}
+
+OnNPC:
+    script_exchange;
 }
 
 // Middle Costume Exchanger
 quiz_02,253,383,3 script Middle Costume Exchanger 626,{
-    function script_exchange {
-        // Your exchange logic here
-        // Use .@i, .@x, .@menu$, etc., as needed
-    }
-
-    OnNPC: script_exchange;
 
     OnInit:
         //<arg 1: Material;>, <arg 2: Material Amount;>, <arg 3:Prize;>, <arg 4: Prize amount;>,{Repeat}
@@ -97,17 +106,32 @@ quiz_02,253,383,3 script Middle Costume Exchanger 626,{
                             6379,1,31907,1,
                             6379,1,12117,1;
     end;
+    function script_exchange {
+        for (.@i = 0; .@i < getarraysize(.Exchange); .@i += 4) {
+            set .@amountStr1$, .Exchange[.@i+1] > 1 ? " " + .Exchange[.@i+1] + " " : "";
+            set .@amountStr2$, .Exchange[.@i+3] > 1 ? " " + .Exchange[.@i+3] + " " : "";
+            mes .@x + ". " + getitemname(.Exchange[.@i+2]);
+            set .@menu$, .@menu$ + .@x + ". " + .@amountStr1$ + getitemname(.Exchange[.@i]) + " to " + .@amountStr2$ + getitemname(.Exchange[.@i+2]) + ":";
+            (++.@x);
+        }
+        set .@choice, select(.@menu$) - 1;
+        next;
+        if (countitem(.Exchange[.@choice*4]) < .Exchange[.@choice*4+1]) {
+            mes "not enough material";
+            end;
+        }
+        mes "exchange done";
+        delitem .Exchange[.@choice*4], .Exchange[.@choice*4+1];
+        getitem .Exchange[.@choice*4+2], .Exchange[.@choice*4+3];
+    }
+
+    OnNPC:
+        script_exchange;
+    }
 }
 
 // Upper Costume Exchanger
 quiz_02,255,385,3 script Upper Costume Exchanger 510,{
-    function script_exchange {
-        // Your exchange logic here
-        // Use .@i, .@x, .@menu$, etc., as needed
-    }
-
-    OnNPC: script_exchange;
-
     OnInit:
         //<arg 1: Material;>, <arg 2: Material Amount;>, <arg 3:Prize;>, <arg 4: Prize amount;>,{Repeat}
 		setarray .Exchange[0],6379,1,31407,1,
@@ -178,4 +202,26 @@ quiz_02,255,385,3 script Upper Costume Exchanger 510,{
 							6379,1,31907,1,
 							6379,1,12117,1;
     end;
+    function script_exchange {
+        for (.@i = 0; .@i < getarraysize(.Exchange); .@i += 4) {
+            set .@amountStr1$, .Exchange[.@i+1] > 1 ? " " + .Exchange[.@i+1] + " " : "";
+            set .@amountStr2$, .Exchange[.@i+3] > 1 ? " " + .Exchange[.@i+3] + " " : "";
+            mes .@x + ". " + getitemname(.Exchange[.@i+2]);
+            set .@menu$, .@menu$ + .@x + ". " + .@amountStr1$ + getitemname(.Exchange[.@i]) + " to " + .@amountStr2$ + getitemname(.Exchange[.@i+2]) + ":";
+            (++.@x);
+        }
+        set .@choice, select(.@menu$) - 1;
+        next;
+        if (countitem(.Exchange[.@choice*4]) < .Exchange[.@choice*4+1]) {
+            mes "not enough material";
+            end;
+        }
+        mes "exchange done";
+        delitem .Exchange[.@choice*4], .Exchange[.@choice*4+1];
+        getitem .Exchange[.@choice*4+2], .Exchange[.@choice*4+3];
+    }
+
+    OnNPC:
+        script_exchange;
+    }
 }
