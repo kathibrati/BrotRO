@@ -1,11 +1,11 @@
 quiz_02,171,367,1	script	Weapon Element Exchanger	619,{
 
-for(.@i=0;.@i<getarraysize(.Exchange);.@i+=4){
-	mes (++.@x)+". "+.Exchange[.@i+1]+"x "+getitemname(.Exchange[.@i])+" = "+.Exchange[.@i+3]+"x "+getitemname(.Exchange[.@i+2]);
-	set .@menu$, .@menu$ + getitemname(.Exchange[.@i+2]) + ":";
+for (.@i = 0; .@i < getarraysize(.Exchange); .@i += 4) {
+    mes (++.@x)+". "+.Exchange[.@i+1]+"x "+getitemname(.Exchange[.@i])+" = "+.Exchange[.@i+3]+"x "+getitemname(.Exchange[.@i+2]);
+    set .@menu$, .@menu$ + getitemname(.Exchange[.@i]) + " to " + getitemname(.Exchange[.@i+2]) + ":"; // Updated this line
 }
 
-set .@choice,select(.@menu$)-1;
+set .@choice, select(.@menu$) - 1;
 next;
 if(countitem(.Exchange[.@choice*4])<.Exchange[.@choice*4+1]){
 	mes "not enough material";
@@ -30,12 +30,12 @@ end;
 
 quiz_02,169,367,1	script	Middle Costume Exchanger	626,{
 
-for(.@i=0;.@i<getarraysize(.Exchange);.@i+=4){
-	mes (++.@x)+". "+.Exchange[.@i+1]+"x "+getitemname(.Exchange[.@i])+" = "+.Exchange[.@i+3]+"x "+getitemname(.Exchange[.@i+2]);
-	set .@menu$, .@menu$ + getitemname(.Exchange[.@i+2]) + ":";
+for (.@i = 0; .@i < getarraysize(.Exchange); .@i += 4) {
+    mes (++.@x)+". "+.Exchange[.@i+1]+"x "+getitemname(.Exchange[.@i])+" = "+.Exchange[.@i+3]+"x "+getitemname(.Exchange[.@i+2]);
+    set .@menu$, .@menu$ + getitemname(.Exchange[.@i]) + " to " + getitemname(.Exchange[.@i+2]) + ":"; // Updated this line
 }
 
-set .@choice,select(.@menu$)-1;
+set .@choice, select(.@menu$) - 1;
 next;
 if(countitem(.Exchange[.@choice*4])<.Exchange[.@choice*4+1]){
 	mes "not enough material";
@@ -121,12 +121,12 @@ end;
 
 quiz_02,167,367,1	script	Upper Costume Exchanger	510,{
 
-for(.@i=0;.@i<getarraysize(.Exchange);.@i+=4){
-	mes (++.@x)+". "+.Exchange[.@i+1]+"x "+getitemname(.Exchange[.@i])+" = "+.Exchange[.@i+3]+"x "+getitemname(.Exchange[.@i+2]);
-	set .@menu$, .@menu$ + getitemname(.Exchange[.@i+2]) + ":";
+for (.@i = 0; .@i < getarraysize(.Exchange); .@i += 4) {
+    mes (++.@x)+". "+.Exchange[.@i+1]+"x "+getitemname(.Exchange[.@i])+" = "+.Exchange[.@i+3]+"x "+getitemname(.Exchange[.@i+2]);
+    set .@menu$, .@menu$ + getitemname(.Exchange[.@i]) + " to " + getitemname(.Exchange[.@i+2]) + ":"; // Updated this line
 }
 
-set .@choice,select(.@menu$)-1;
+set .@choice, select(.@menu$) - 1;
 next;
 if(countitem(.Exchange[.@choice*4])<.Exchange[.@choice*4+1]){
 	mes "not enough material";
