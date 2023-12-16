@@ -144,3 +144,7 @@ payon,181,84,0	warp	mallpaywarp1	2,2,quiz_02,148,382
 payon,175,79,0	warp	mallpaywarp1	2,2,quiz_02,148,382
 quiz_02,160,367,0	warp	mallpaywarp2	2,2,payon,180,87
 quiz_02,134,366,0	warp	mallpaywarp3	2,2,payon,180,87
+//Costume or Item Exchange Mall
+payon,195,84,0	warp	mallpaywarp4	2,2,quiz_02,250,376
+quiz_02,237,367,0	warp	mallpaywarp5	2,2,payon,193,87
+quiz_02,262,366,0	warp	mallpaywarp6	2,2,payon,193,87

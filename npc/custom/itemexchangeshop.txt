@@ -1,4 +1,4 @@
-quiz_02,171,367,1	script	Weapon Element Exchanger	619,{
+quiz_02,251,382,3	script	Weapon Element Exchanger	619,{
 
 for (.@i = 0; .@i < getarraysize(.Exchange); .@i += 4) {
     set .@amountStr1$, .Exchange[.@i+1] > 1 ? " " + .Exchange[.@i+1] + " " : "";
@@ -29,7 +29,7 @@ end;
 
 }
 
-quiz_02,169,367,1	script	Middle Costume Exchanger	626,{
+quiz_02,253,383,3	script	Middle Costume Exchanger	626,{
 
 for (.@i = 0; .@i < getarraysize(.Exchange); .@i += 4) {
     set .@amountStr1$, .Exchange[.@i+1] > 1 ? " " + .Exchange[.@i+1] + " " : "";
@@ -121,7 +121,7 @@ end;
 }
 
 
-quiz_02,167,367,1	script	Upper Costume Exchanger	510,{
+quiz_02,255,385,3	script	Upper Costume Exchanger	510,{
 
 for (.@i = 0; .@i < getarraysize(.Exchange); .@i += 4) {
     set .@amountStr1$, .Exchange[.@i+1] > 1 ? " " + .Exchange[.@i+1] + " " : "";

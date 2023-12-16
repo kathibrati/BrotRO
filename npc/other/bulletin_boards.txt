@@ -84,13 +84,13 @@ payon,178,108,5	script	Bulletin Board#06	837,{
 	mes "Enter the Fantastic Itemmall for shopping the best gear.";
 	next;
 	mes "[Payon: The Mountain City]";
-	mes "The entrannce can be found next to the southern Entrance get to the right.";
+	mes "The entrance can be found next to the southern Entrance get to the right.";
 	next;
 	mes "[Payon: The Mountain City]";
 	mes "Follow the Fairy Spirit Guarding the Entrance ";
 	next;
 	mes "[Payon: The Mountain City]";
-	mes "Best regards";
+	mes "Exchange Coins for Battleground Gear or Costumes in the building next to the mall!";
 	next;
 	mes "[Payon: The Mountain City]";
 	mes "BrotRO Family";
