@@ -1,34 +1,33 @@
-quiz_02,251,382,3	script	Weapon Element Exchanger	619,{
+quiz_02,251,382,3 script Weapon Element Exchanger 619,{
+    OnInit:
+        // 2-dimensional array: {{Material ID, Material Amount, Prize ID, Prize Amount}, {...}, ...}
+        setarray .Exchange$[][],
+            {523, 5, 12217, 5},
+            {5007, 1, 12248, 1},
+            {904, 3, 12114, 1},
+            {946, 3, 12115, 1},
+            {947, 3, 12116, 1},
+            {1013, 3, 12117, 1};
+    end;
 
-for (.@i = 0; .@i < getarraysize(.Exchange); .@i += 4) {
-    set .@amountStr1$, .Exchange[.@i+1] > 1 ? " " + .Exchange[.@i+1] + " " : "";
-    set .@amountStr2$, .Exchange[.@i+3] > 1 ? " " + .Exchange[.@i+3] + " " : "";
-    set .@x_temp, (++.@x); // Increment .@x and store in a temporary variable
-    mes .@x_temp + ". " + getitemname(.Exchange[.@i+2]);
-    set .@menu$, .@menu$ + .@x_temp + ". " + .@amountStr1$ + getitemname(.Exchange[.@i]) + " to " + .@amountStr2$ + getitemname(.Exchange[.@i+2]) + ":";
-}
+    OnMenu:
+        for (.@i = 0; .@i < getarraysize(.Exchange$); .@i++) {
+            set .@amountStr1$, .Exchange$[.@i][1] > 1 ? " " + .Exchange$[.@i][1] + " " : "";
+            set .@amountStr2$, .Exchange$[.@i][3] > 1 ? " " + .Exchange$[.@i][3] + " " : "";
+            mes (++.@x) + ". " + .Exchange$[.@i][1] + "x " + getitemname(.Exchange$[.@i][0]) + " = " + .Exchange$[.@i][3] + "x " + getitemname(.Exchange$[.@i][2]);
+            set .@menu$, .@menu$ + .@x + ". " + .@amountStr1$ + getitemname(.Exchange$[.@i][0]) + " to " + .@amountStr2$ + getitemname(.Exchange$[.@i][2]) + ":";
+        }
+        set .@choice, select(.@menu$) - 1;
+        next;
 
-set .@choice, select(.@menu$) - 1;
-next;
-if(countitem(.Exchange[.@choice*4])<.Exchange[.@choice*4+1]){
-	mes "not enough material";
-	end;
-}
-	mes "exchange done";
-	delitem .Exchange[.@choice*4],.Exchange[.@choice*4+1];
-	getitem .Exchange[.@choice*4+2],.Exchange[.@choice*4+3];
-end;
-
-OnInit:
-	//<arg 1: Material;>, <arg 2: Material Amount;>, <arg 3:Prize;>, <arg 4: Prize amount;>,{Repeat}
-	setarray .Exchange[0],523,5,12217,5,
-						5007,1,12248,1,
-						904,3,12114,1,
-						946,3,12115,1,
-						947,3,12116,1,
-						1013,3,12117,1;
-end;
-
+        if (countitem(.Exchange$[.@choice][0]) < .Exchange$[.@choice][1]) {
+            mes "Not enough material.";
+            close;
+        }
+        mes "Exchange done.";
+        delitem .Exchange$[.@choice][0], .Exchange$[.@choice][1];
+        getitem .Exchange$[.@choice][2], .Exchange$[.@choice][3];
+        close;
 }
 
 quiz_02,253,383,3	script	Middle Costume Exchanger	626,{
