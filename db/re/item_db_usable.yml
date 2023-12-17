@@ -5468,7 +5468,7 @@ Body:
       sc_start SC_STUN,10000,1;
   - Id: 12114
     AegisName: Elemental_Fire
-    Name: Elemental Converter
+    Name: Elemental Converter Fire
     Type: Delayconsume
     Buy: 2
     Weight: 10
@@ -5478,7 +5478,7 @@ Body:
       itemskill "ITEM_ENCHANTARMS",4;
   - Id: 12115
     AegisName: Elemental_Water
-    Name: Elemental Converter
+    Name: Elemental Converter Water
     Type: Delayconsume
     Buy: 2
     Weight: 10
@@ -5488,7 +5488,7 @@ Body:
       itemskill "ITEM_ENCHANTARMS",2;
   - Id: 12116
     AegisName: Elemental_Earth
-    Name: Elemental Converter
+    Name: Elemental Converter Earth
     Type: Delayconsume
     Buy: 2
     Weight: 10
@@ -5498,7 +5498,7 @@ Body:
       itemskill "ITEM_ENCHANTARMS",3;
   - Id: 12117
     AegisName: Elemental_Wind
-    Name: Elemental Converter
+    Name: Elemental Converter Wind
     Type: Delayconsume
     Buy: 2
     Weight: 10
