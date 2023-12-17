@@ -38,7 +38,10 @@ for (.@i = 0; .@i < getarraysize(.Exchange); .@i += 4) {
     set .@amountStr2$, .Exchange[.@i+3] > 1 ? " " + .Exchange[.@i+3] + " " : "";
     set .@x_temp, (++.@x); // Increment .@x and store in a temporary variable
     set .@item_name, getitemname(.Exchange[.@i+2]);
-    replace .@item_name, ":", " "; // Replace ":" with a space
+    // Replace ":" with a space in .@item_name
+    for (.@j = 0; .@j < strlen(.@item_name); .@j++)
+        if (strcharinfo(0) == ":")
+            set .@item_name, strcat(.@item_name, " ");
     mes .@x_temp + ". " + .@item_name;
     set .@menu$, .@menu$ + .@x_temp + ". " + .@amountStr1$ + getitemname(.Exchange[.@i]) + " to " + .@amountStr2$ + .@item_name + ":";
 }
