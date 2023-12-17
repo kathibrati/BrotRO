@@ -1,7 +1,7 @@
-quiz_02,251,382,3 script Weapon Element Exchanger 619,{
+quiz_02,251,382,3 script Weapon_Element_Exchanger 619,{
     OnInit:
         // 2-dimensional array: {{Material ID, Material Amount, Prize ID, Prize Amount}, {...}, ...}
-        setarray .Exchange$[][],
+        setarray .Exchange$[][4],
             {523, 5, 12217, 5},
             {5007, 1, 12248, 1},
             {904, 3, 12114, 1},
