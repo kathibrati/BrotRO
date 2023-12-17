@@ -5,8 +5,12 @@ for (.@i = 0; .@i < getarraysize(.Exchange); .@i += 4) {
 //    set .@amountStr2$, .Exchange[.@i+3] > 1 ? " " + .Exchange[.@i+3] + " " : "";
 //    mes (++.@x)+". "+getitemname(.Exchange[.@i+2]);
 //    set .@menu$, .@menu$ + .@x+". " + .@amountStr1$ + getitemname(.Exchange[.@i]) + " to " + .@amountStr2$ + getitemname(.Exchange[.@i+2]) + ":";
-	mes (++.@x)+". "+.Exchange[.@i+1]+"x "+getitemname(.Exchange[.@i])+" = "+.Exchange[.@i+3]+"x "+getitemname(.Exchange[.@i+2]);
-	set .@menu$,.@menu$+getitemname(.Exchange[.@i])+":";
+//	mes (++.@x)+". "+.Exchange[.@i+1]+"x "+getitemname(.Exchange[.@i])+" = "+.Exchange[.@i+3]+"x "+getitemname(.Exchange[.@i+2]);
+//	set .@menu$,.@menu$+getitemname(.Exchange[.@i])+":";
+set .@amountStr1$, .Exchange[.@i+1] > 1 ? " " + .Exchange[.@i+1] + " " : "";
+    set .@amountStr2$, .Exchange[.@i+3] > 1 ? " " + .Exchange[.@i+3] + " " : "";
+    mes (++.@x)+". "+.Exchange[.@i+1]+"x "+getitemname(.Exchange[.@i])+" = "+.Exchange[.@i+3]+"x "+getitemname(.Exchange[.@i+2]);
+    set .@menu$,.@menu$+getitemname(.Exchange[.@i])+":";
 }
 set .@choice, select(.@menu$) - 1;
 next;
@@ -34,10 +38,10 @@ end;
 quiz_02,253,383,3	script	Middle Costume Exchanger	626,{
 
 for (.@i = 0; .@i < getarraysize(.Exchange); .@i += 4) {
-    set .@amountStr1$, .Exchange[.@i+1] > 1 ? " " + .Exchange[.@i+1] + " " : "";
+	set .@amountStr1$, .Exchange[.@i+1] > 1 ? " " + .Exchange[.@i+1] + " " : "";
     set .@amountStr2$, .Exchange[.@i+3] > 1 ? " " + .Exchange[.@i+3] + " " : "";
-    mes (++.@x)+". "+getitemname(.Exchange[.@i+2]);
-    set .@menu$, .@menu$ + .@x+". " + .@amountStr1$ + getitemname(.Exchange[.@i]) + " to " + .@amountStr2$ + getitemname(.Exchange[.@i+2]) + ":";
+    mes (++.@x)+". "+.Exchange[.@i+1]+"x "+getitemname(.Exchange[.@i])+" = "+.Exchange[.@i+3]+"x "+getitemname(.Exchange[.@i+2]);
+    set .@menu$,.@menu$+getitemname(.Exchange[.@i])+":";
 }
 set .@choice, select(.@menu$) - 1;
 next;
@@ -126,10 +130,10 @@ end;
 quiz_02,255,385,3	script	Upper Costume Exchanger	510,{
 
 for (.@i = 0; .@i < getarraysize(.Exchange); .@i += 4) {
-    set .@amountStr1$, .Exchange[.@i+1] > 1 ? " " + .Exchange[.@i+1] + " " : "";
+	set .@amountStr1$, .Exchange[.@i+1] > 1 ? " " + .Exchange[.@i+1] + " " : "";
     set .@amountStr2$, .Exchange[.@i+3] > 1 ? " " + .Exchange[.@i+3] + " " : "";
-    mes (++.@x)+". "+getitemname(.Exchange[.@i+2]);
-    set .@menu$, .@menu$ + .@x+". " + .@amountStr1$ + getitemname(.Exchange[.@i]) + " to " + .@amountStr2$ + getitemname(.Exchange[.@i+2]) + ":";
+    mes (++.@x)+". "+.Exchange[.@i+1]+"x "+getitemname(.Exchange[.@i])+" = "+.Exchange[.@i+3]+"x "+getitemname(.Exchange[.@i+2]);
+    set .@menu$,.@menu$+getitemname(.Exchange[.@i])+":";
 }
 
 set .@choice, select(.@menu$) - 1;
