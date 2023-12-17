@@ -1,8 +1,11 @@
 quiz_02,251,382,3	script	Weapon Element Exchanger	619,{
 
 for (.@i = 0; .@i < getarraysize(.Exchange); .@i += 4) {
-    mes (++.@x)+". "+getitemname(.Exchange[.@i+2]);
-    set .@menu$, .@menu$ + .Exchange[.@i+1] + " " + getitemname(.Exchange[.@i]) + " to " + .Exchange[.@i+3] + " " + getitemname(.Exchange[.@i+2]) + ":";
+    set .@amountStr1$, .Exchange[.@i+1] > 1 ? " " + .Exchange[.@i+1] + " " : "";
+    set .@amountStr2$, .Exchange[.@i+3] > 1 ? " " + .Exchange[.@i+3] + " " : "";
+    set .@x_temp, (++.@x); // Increment .@x and store in a temporary variable
+    mes .@x_temp + ". " + getitemname(.Exchange[.@i+2]);
+    set .@menu$, .@menu$ + .@x_temp + ". " + .@amountStr1$ + getitemname(.Exchange[.@i]) + " to " + .@amountStr2$ + getitemname(.Exchange[.@i+2]) + ":";
 }
 
 set .@choice, select(.@menu$) - 1;
@@ -35,7 +38,7 @@ for (.@i = 0; .@i < getarraysize(.Exchange); .@i += 4) {
     set .@amountStr2$, .Exchange[.@i+3] > 1 ? " " + .Exchange[.@i+3] + " " : "";
     set .@x_temp, (++.@x); // Increment .@x and store in a temporary variable
     mes .@x_temp + ". " + getitemname(.Exchange[.@i+2]);
-    set .@menu$, .@menu$ + .@x_temp + .@amountStr1$ + getitemname(.Exchange[.@i]) + " to " + .@amountStr2$ + getitemname(.Exchange[.@i+2]) + ":";
+    set .@menu$, .@menu$ + .@x_temp + ". " + .@amountStr1$ + getitemname(.Exchange[.@i]) + " to " + .@amountStr2$ + getitemname(.Exchange[.@i+2]) + ":";
 }
 
 set .@choice,select(.@menu$)-1;
@@ -125,8 +128,11 @@ end;
 quiz_02,255,385,3	script	Upper Costume Exchanger	510,{
 
 for (.@i = 0; .@i < getarraysize(.Exchange); .@i += 4) {
-    mes (++.@x)+". "+getitemname(.Exchange[.@i+2]);
-    set .@menu$, .@menu$ + .Exchange[.@i+1] + " " + getitemname(.Exchange[.@i]) + " to " + .Exchange[.@i+3] + " " + getitemname(.Exchange[.@i+2]) + ":";
+    set .@amountStr1$, .Exchange[.@i+1] > 1 ? " " + .Exchange[.@i+1] + " " : "";
+    set .@amountStr2$, .Exchange[.@i+3] > 1 ? " " + .Exchange[.@i+3] + " " : "";
+    set .@x_temp, (++.@x); // Increment .@x and store in a temporary variable
+    mes .@x_temp + ". " + getitemname(.Exchange[.@i+2]);
+    set .@menu$, .@menu$ + .@x_temp + ". " + .@amountStr1$ + getitemname(.Exchange[.@i]) + " to " + .@amountStr2$ + getitemname(.Exchange[.@i+2]) + ":";
 }
 
 set .@choice, select(.@menu$) - 1;
