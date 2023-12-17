@@ -39,13 +39,15 @@ for (.@i = 0; .@i < getarraysize(.Exchange); .@i += 4) {
     set .@x_temp, (++.@x); // Increment .@x and store in a temporary variable
     set .@item_name, getitemname(.Exchange[.@i+2]);
 
-    // Replace ":" with a space in .@item_name
-    for (.@j = 0; .@j < strlen(.@item_name); .@j++)
-        if (strcharinfo(0) == ":")
-            set .@item_name, strcat(.@item_name, " ");
+    // Replace ":" with a space in .@item_name_display
+    set .@item_name_display, .@item_name;
+    for (.@j = 0; .@j < strlen(.@item_name_display); .@j++) {
+        if (.@item_name_display[.@j] == ":")
+            set .@item_name_display, .@item_name_display[0, .@j] + " " + .@item_name_display[.@j+1, strlen(.@item_name_display)-.@j-1];
+    }
 
-    mes .@x_temp + ". " + .@item_name;
-    set .@menu$, .@menu$ + .@x_temp + ". " + .@amountStr1$ + getitemname(.Exchange[.@i]) + " to " + .@amountStr2$ + .@item_name + ":";
+    mes .@x_temp + ". " + .@item_name_display;
+    set .@menu$, .@menu$ + .@x_temp + ". " + .@amountStr1$ + getitemname(.Exchange[.@i]) + " to " + .@amountStr2$ + .@item_name_display + ":";
 }
 
 set .@choice,select(.@menu$)-1;
