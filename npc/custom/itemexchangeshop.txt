@@ -5,7 +5,7 @@ for (.@i = 0; .@i < getarraysize(.Exchange); .@i += 4) {
     set .@amountStr2$, .Exchange[.@i+3] > 1 ? " " + .Exchange[.@i+3] + " " : "";
     set .@x_temp, (++.@x); // Increment .@x and store in a temporary variable
     mes .@x_temp + ". " + getitemname(.Exchange[.@i+2]);
-    set .@menu$, .@menu$ + .@x_temp + ". " + .@amountStr1$ + getitemname(.Exchange[.@i]) + " to " + .@amountStr2$ + getitemname(.Exchange[.@i+2]) + ":";
+    set .@menu$, .@menu$ + .@x_temp + ". " + .@amountStr1$ + getitemname(.Exchange[.@i]) + " to :" + .@amountStr2$ + getitemname(.Exchange[.@i+2]) + ":";
 }
 
 set .@choice, select(.@menu$) - 1;
@@ -24,7 +24,6 @@ OnInit:
 	setarray .Exchange[0],523,5,12217,5,
 						5007,1,12248,1,
 						904,3,12114,1,
-						904,3,410145,1,
 						946,3,12115,1,
 						947,3,12116,1,
 						1013,3,12117,1;
