@@ -8,7 +8,7 @@ quiz_02,251,382,3 script Weapon Element Exchanger 619,{
             {946, 3, 12115, 1},
             {947, 3, 12116, 1},
             {1013, 3, 12117, 1};
-    end;
+        end;
 
     OnMenu:
         for (.@i = 0; .@i < getarraysize(.Exchange$); .@i++) {
@@ -28,6 +28,7 @@ quiz_02,251,382,3 script Weapon Element Exchanger 619,{
         delitem .Exchange$[.@choice][0], .Exchange$[.@choice][1];
         getitem .Exchange$[.@choice][2], .Exchange$[.@choice][3];
         close;
+    }
 }
 
 quiz_02,253,383,3	script	Middle Costume Exchanger	626,{
