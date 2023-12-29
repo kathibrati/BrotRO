@@ -567,7 +567,7 @@ new_1-2,99,105,3	script	Interfaces Tutor#nv1	751,{
 			emotion ET_PROFUSELY_SWEAT;
 			close;
 		}
-	} 	else if (BaseLevel < 8) {
+	} 	else if (BaseLevel >= 8) {
 			mes "[Kris]";
 			mes "Let me guide you";
 			mes "to the Field Combat";
