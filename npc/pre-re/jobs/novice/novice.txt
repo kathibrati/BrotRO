@@ -413,20 +413,6 @@ new_1-2,99,105,3	script	Interfaces Tutor#nv1	751,{
 		mes "Hello, may I see your";
 		mes "proof of registration?";
 		next;
-		if (NEW_MES_FLAG0) {
-			mes "[Kris]";
-			mes "Ah, " + strcharinfo(0) + ", you've applied for an old training course that we no longer provide for our trainees. Let me issue a new proof of registration for you.";
-			set NEW_MES_FLAG0,0;
-			set NEW_MES_FLAG1,0;
-			set NEW_MES_FLAG2,0;
-			set NEW_MES_FLAG3,0;
-			set NEW_MES_FLAG4,0;
-			set NEW_MES_FLAG5,0;
-			set NEW_LVUP0,0;
-			set NEW_LVUP1,0;
-			set NEW_JOBLVUP,0;
-			next;
-		}
 		mes "[Kris]";
 		mes "Okay, now";
 		mes "you're ready to go.";
