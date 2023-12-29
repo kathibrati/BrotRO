@@ -408,7 +408,7 @@ new_1-2,99,105,3	script	Interfaces Tutor#nv1	751,{
 			close;
 		}
 	}
-	else if (nov_get_item02 < 10) {
+	else if (BaseLevel < 8) {
 		mes "[Kris]";
 		mes "Hello, may I see your";
 		mes "proof of registration?";
@@ -577,89 +577,6 @@ new_1-2,99,105,3	script	Interfaces Tutor#nv1	751,{
 			close2;
 			warp "new_1-2",41,172;
 			end;
-		case 3:
-			emotion ET_PROFUSELY_SWEAT;
-			close;
-		}
-	}
-	else if (nov_get_item03 < 10) {
-		mes "[Kris]";
-		mes "How may I help you?";
-		mes "Can I see your proof of registration?";
-		next;
-		mes "[Kris]";
-		mes "It seems that you haven't attended the Skill Information class yet. Please talk to a tutor to the very left of this room to attend his class.";
-		next;
-		switch(select("Thank you!:I'm tired of classes~:Cancel")) {
-		case 1:
-			mes "[Kris]";
-			mes "When you attend the Skill Information class, you'll gain a better understanding of the use of skills.";
-			next;
-			mes "[Kris]";
-			mes "Since the use of skills is integral to survival in Midgard, I strongly suggest that you attend the class. Come, I shall guide you there.";
-			close2;
-			warp "new_1-2",84,107;
-			end;
-		case 2:
-			mes "[Kris]";
-			mes "I see. In that case, you must be ready for the Field Combat Training Course. Shall I send you there right away?";
-			next;
-			if (select("No! W-wait!:Please do~!") == 1) {
-				mes "[Kris]";
-				mes "...?!";
-				mes "O...kay then.";
-				mes "Please come back";
-				mes "when you're ready.";
-				close;
-			}
-			else {
-				mes "[Kris]";
-				mes "Godspeed,";
-				mes "young Novice.";
-				close2;
-				warp "new_1-2",28,178;
-				end;
-			}
-		case 3:
-			emotion ET_PROFUSELY_SWEAT;
-			close;
-		}
-	}
-	else if (nov_get_item04 < 10) {
-		mes "[Kris]";
-		mes "How may I help you?";
-		mes "Can I see your proof of registration?";
-		next;
-		mes "[Kris]";
-		mes "It looks like you still haven't attended the Item Information class yet. Please speak to the tutor to the very right of this room to attend her class.";
-		next;
-		switch(select("Thank you.:I'm tired of classes~:Cancel")) {
-		case 1:
-			mes "[Kris]";
-			mes "The Item Information class is very useful for you to learn how to use your Hot keys and Hot key bars. Come, let me guide you there.";
-			close2;
-			warp "new_1-2",115,107;
-			end;
-		case 2:
-			mes "[Kris]";
-			mes "I see. In that case, you must be ready for the Field Combat Training Course. Shall I send you there right away?";
-			next;
-			if (select("No! W-wait!:Please do~!") == 1) {
-				mes "[Kris]";
-				mes "...?!";
-				mes "O...kay then.";
-				mes "Please come back";
-				mes "when you're ready.";
-				close;
-			}
-			else {
-				mes "[Kris]";
-				mes "Godspeed,";
-				mes "young Novice.";
-				close2;
-				warp "new_1-2",28,178;
-				end;
-			}
 		case 3:
 			emotion ET_PROFUSELY_SWEAT;
 			close;
